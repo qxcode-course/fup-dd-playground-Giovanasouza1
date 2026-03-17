@@ -1,3 +1,7 @@
 2026-03-17 17:18:02, MOVE, v:1, k:fup@tres, mode:DOWN
 2026-03-17 17:18:03, MOVE, v:1, k:fup@tres, mode:PICK
 2026-03-17 17:18:20, MOVE, v:1, k:fup@tres, mode:BACK
+2026-03-17 17:19:58, MOVE, v:1, k:fup@resto, mode:DOWN
+2026-03-17 17:19:59, MOVE, v:1, k:fup@resto, mode:PICK
+2026-03-17 17:20:10, EXEC, v:1, k:fup@resto, mode:FULL, rate:0, size:5
+2026-03-17 17:20:11, MOVE, v:1, k:fup@resto, mode:BACK
