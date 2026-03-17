@@ -5,3 +5,11 @@
 2026-03-17 17:19:59, MOVE, v:1, k:fup@resto, mode:PICK
 2026-03-17 17:20:10, EXEC, v:1, k:fup@resto, mode:FULL, rate:0, size:5
 2026-03-17 17:20:11, MOVE, v:1, k:fup@resto, mode:BACK
+2026-03-17 17:20:44, MOVE, v:1, k:fup@tres, mode:PICK
+2026-03-17 17:20:46, EXEC, v:1, k:fup@tres, mode:FULL, rate:0, size:5
+2026-03-17 17:33:02, EXEC, v:1, k:fup@tres, mode:FULL, rate:0, size:12
+2026-03-17 17:55:54, EXEC, v:1, k:fup@tres, mode:FULL, size:11, fail:COMP
+2026-03-17 18:02:49, EXEC, v:1, k:fup@tres, mode:FULL, size:12, fail:COMP
+2026-03-17 18:17:47, EXEC, v:1, k:fup@tres, mode:FREE, size:12
+2026-03-17 18:17:58, EXEC, v:1, k:fup@tres, mode:FULL, rate:100
+2026-03-17 18:19:43, MOVE, v:1, k:fup@tres, mode:BACK

@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-17_17-20-46",
+            "content": "@@ -41,156 +41,27 @@\n     \n-var a = 2%0A    var b = 3%0A    var c = 4%0A    fmt.Scan(&a)%0A    fmt.Scan(&b)%0A    fmt.Scan(&c)%0A    fmt.Println(%22soma a + b + c%22)%0A    fmt.Print(%22resultado:\n+fmt.Println(%22qxcode\n %22)%0A%7D\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-17_17-33-02",
+            "content": "@@ -134,29 +134,64 @@\n     \n-resultado := a + b + c\n+fmt.Println(%22soma a + b + c%22)%0A    fmt.Print(%22resultado:%22)\n %0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-17_17-55-54",
+            "content": "@@ -144,10 +144,10 @@\n ado \n-=\n :\n+=\n  a +\n@@ -157,30 +157,6 @@\n + c%0A\n-    fmt.Println(%22soma%22)%0A\n %7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-17_18-02-49",
+            "content": "@@ -144,10 +144,10 @@\n ado \n-:\n =\n+:\n  a +\n@@ -169,21 +169,18 @@\n Println(\n-resultado\n+%22soma%22\n )%0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-17_18-17-47",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a = 2\n    var b = 3\n    var c = 4\n    fmt.Scan(&a)\n    fmt.Scan(&b)\n    fmt.Scan(&c)\n    resultado := a + b + c\n    fmt.Println(resultado)\n}\n",
+            "lines": "12"
+        }
+    ]
+}
