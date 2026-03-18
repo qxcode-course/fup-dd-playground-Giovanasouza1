@@ -22,8 +22,18 @@
         },
         {
             "label": "2026-03-17_18-17-47",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a = 2\n    var b = 3\n    var c = 4\n    fmt.Scan(&a)\n    fmt.Scan(&b)\n    fmt.Scan(&c)\n    resultado := a + b + c\n    fmt.Println(resultado)\n}\n",
+            "content": "@@ -46,18 +46,40 @@\n ar a\n-, b, c int\n+ = 2%0A    var b = 3%0A    var c = 4\n %0A   \n@@ -91,48 +91,99 @@\n Scan\n- \n (&a\n-, &b, &c)%0A    fmt.Println (a + b + c\n+)%0A    fmt.Scan(&b)%0A    fmt.Scan(&c)%0A    resultado := a + b + c%0A    fmt.Println(resultado\n )%0A%7D%0A\n",
             "lines": "12"
+        },
+        {
+            "label": "2026-03-18_13-04-44",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-18_13-05-58",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    var a, b, c int\n    fmt.Scan (&a, &b, &c)\n    fmt.Println (a + b + c)\n}\n",
+            "lines": "9"
         }
     ]
 }

@@ -1,3 +1,4 @@
+
 # Resultado e resto na divisão
 
 ![Imagem Teorema da Divisão](../../.tko/cache/e2bc1de5ac270eaa50476053dc6bb1f9ff79f7ba/base/resto/cover.png)

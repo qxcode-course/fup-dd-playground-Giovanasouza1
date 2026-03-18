@@ -2,8 +2,18 @@
     "patches": [
         {
             "label": "2026-03-17_17-20-10",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"qxcode\")\n}\n",
+            "content": "@@ -41,70 +41,28 @@\n     \n-var a, b int%0A    fmt.Scan(&a, &b)%0A    fmt.Println(a / b, a %25 b\n+fmt.Println(%22qxcode%22\n )%0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-03-18_13-13-02",
+            "content": "@@ -103,9 +103,8 @@\n  %25 b)%0A%7D%0A\n-%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-18_13-21-16",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    fmt.Scan(&a, &b)\n    fmt.Println(a / b, a % b)\n}\n\n",
+            "lines": "8"
         }
     ]
 }
