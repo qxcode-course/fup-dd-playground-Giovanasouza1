@@ -13,19 +13,21 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@missão-operações
-- fup@campanha-principal
+- '@fup@operacoes-basic-base_sem_quest'
+- fup@operacoes-basic-base
 tasks:
   fup@tres: '{self:1, rate:100, study:30, friend:hanna, guided:1, debug:1}'
   fup@resto: '{self:1, rate:100, study:20, guided:1}'
   fup@media: '{self:1, rate:100, study:20, guided:1}'
   fup@sobrou: '{self:1, rate:100, study:60, friend:David, concept:1, code:1}'
+  fup@segundos: '{self:1, rate:100, friend:Hanna, guided:1, refactor:1}'
+  fup@celsius: '{self:1, rate:100, friend:hanna}'
 flags:
-  painel: 0
-  quests: 0
-  tracks: 2
-  tasks: 0
+  painel: 1
+  quests: 1
+  tracks: 1
+  tasks: 1
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@segundos
+selected: fup@recursao-rec2-rec-list1

@@ -7,5 +7,5 @@ func main() {
     tempo = tempo % 3600
     min := tempo/60
     seg := (tempo%60)
-    fmt.Printf(hora, min, seg)
+    fmt.Printf("%01d:%01d:%01d\n",hora, min, seg)
 }

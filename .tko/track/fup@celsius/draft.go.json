@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-24_17-00-06",
+            "content": "@@ -37,115 +37,8 @@\n ) %7B%0A\n-    var celsius, fahrenheit float64%0A    fmt.Scan(&celsius, &fahrenheit)%0A    fahrenheit := 1,8*celsius + 32%0A\n     \n@@ -53,18 +53,16 @@\n tln(\n-fahrenheit\n+%22qxcode%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-24_17-19-05",
+            "content": "@@ -128,13 +128,11 @@\n := 1\n-.8 * \n+,8*\n cels\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-24_17-19-37",
+            "content": "@@ -120,16 +120,17 @@\n renheit \n+:\n = 1.8 * \n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-24_17-20-03",
+            "content": "@@ -158,20 +158,11 @@\n rint\n-f(%22%25.6f%5Cn%22, \n+ln(\n fahr\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-24_17-20-57",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var celsius, fahrenheit float64\n    fmt.Scan(&celsius, &fahrenheit)\n    fahrenheit = 1.8 * celsius + 32\n    fmt.Printf(\"%.6f\\n\", fahrenheit)\n}\n",
+            "lines": "8"
+        }
+    ]
+}

@@ -37,8 +37,68 @@
         },
         {
             "label": "2026-03-23_18-06-30",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var tempo int\n    fmt.Scan(&tempo)\n    hora := tempo/3600\n    tempo = tempo % 3600\n    min := tempo/60\n    seg := (tempo%60)\n    fmt.Println(hora, min, seg)\n}",
+            "content": "@@ -175,17 +175,18 @@\n mt.Print\n-f\n+ln\n (hora, m\n",
             "lines": "11"
+        },
+        {
+            "label": "2026-03-24_16-42-08",
+            "content": "@@ -194,9 +194,8 @@\n , seg)%0A%7D\n-%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-24_16-42-27",
+            "content": "@@ -181,19 +181,8 @@\n ntf(\n-%22%25d:%25d/n%22, \n hora\n@@ -193,11 +193,10 @@\n n, seg)%0A\n-%0A\n %7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-24_16-49-24",
+            "content": "@@ -183,15 +183,11 @@\n f(%22%25\n-02\n d:%25\n-02\n d/n%22\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-24_16-51-00",
+            "content": "@@ -187,21 +187,18 @@\n 02d:%2502d\n-:%2502d\n+/n\n %22, hora,\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-24_16-52-06",
+            "content": "@@ -189,9 +189,10 @@\n d:%250\n-1\n+2d\n :%2502\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-24_16-52-18",
+            "content": "@@ -184,16 +184,17 @@\n (%22%2502d:%25\n+0\n 1:%2502d%22,\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-24_16-52-27",
+            "content": "@@ -188,18 +188,17 @@\n 2d:%25\n-01d\n+1\n :%2502d%22,\n+ \n hora\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-24_16-53-30",
+            "content": "@@ -180,17 +180,18 @@\n intf(%22%250\n-1\n+2d\n :%2501d:%250\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-24_16-53-42",
+            "content": "@@ -181,17 +181,16 @@\n ntf(%22%2501\n-d\n :%2501d:%250\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-24_16-53-58",
+            "content": "@@ -196,10 +196,8 @@\n %2502d\n-%5Cn\n %22,ho\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-24_16-54-51",
+            "content": "@@ -190,17 +190,17 @@\n :%2501d:%250\n-1\n+2\n d%5Cn%22,hor\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-24_16-55-33",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var tempo int\n    fmt.Scan(&tempo)\n    hora := tempo/3600\n    tempo = tempo % 3600\n    min := tempo/60\n    seg := (tempo%60)\n    fmt.Printf(\"%01d:%01d:%01d\\n\",hora, min, seg)\n\n}\n",
+            "lines": "12"
         }
     ]
 }
