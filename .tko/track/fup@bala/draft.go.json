@@ -1,0 +1,59 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-28_17-41-11",
+            "content": "@@ -73,16 +73,8 @@\n , y2\n- float64\n %0A   \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-28_17-41-49",
+            "content": "@@ -115,25 +115,25 @@\n y2)%0A    dist\n-a\n+%C3%A2\n ncia := math\n@@ -203,17 +203,17 @@\n tln(dist\n-a\n+%C3%A2\n ncia)%0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-28_17-43-25",
+            "content": "@@ -60,21 +60,21 @@\n ar x\n-2, x1, y2, y1\n+1, x2, y1, y2\n  flo\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-28_17-44-45",
+            "content": "@@ -200,19 +200,11 @@\n rint\n-f(%22%25.2%5Cn%22, \n+ln(\n dist\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-28_17-45-40",
+            "content": "@@ -202,17 +202,16 @@\n ntf(%22%25.2\n-f\n %5Cn%22, dis\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-28_17-45-57",
+            "content": "@@ -97,24 +97,24 @@\n n(&x\n-2\n+1\n , &x\n-1\n+2\n , &y\n-2\n+1\n , &y\n-1\n+2\n )%0A  \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-28_18-01-24",
+            "content": "@@ -154,16 +154,19 @@\n (x2 - x1\n+, 2\n ) + math\n@@ -177,16 +177,19 @@\n (y2 - y1\n+, 2\n ))%0A    f\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-28_18-04-32",
+            "content": "@@ -142,17 +142,8 @@\n qrt(\n-float64((\n math\n@@ -176,17 +176,16 @@\n 2 - y1))\n-)\n %0A    fmt\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-28_18-05-05",
+            "content": "@@ -138,16 +138,25 @@\n th.Sqrt(\n+float64((\n math.Pow\n@@ -163,19 +163,16 @@\n (x2 - x1\n-, 2\n ) + math\n@@ -187,11 +187,9 @@\n - y1\n-, 2\n+)\n ))%0A \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-28_18-08-28",
+            "content": "@@ -60,21 +60,21 @@\n ar x\n-1, y1, x\n+2, x1, y\n 2, y\n-2\n+1\n  flo\n@@ -97,24 +97,24 @@\n n(&x\n-1, &y\n+2, &x\n 1, &\n-x\n+y\n 2, &y\n-2\n+1\n )%0A  \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-28_18-15-01",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\nfunc main() {\n    var x1, y1, x2, y2 float64\n    fmt.Scan(&x1, &y1, &x2, &y2)\n    distancia := math.Sqrt(math.Pow(x2 - x1, 2) + math.Pow(y2 - y1, 2))\n    fmt.Printf(\"%.2f\\n\", distancia)\n}\n",
+            "lines": "12"
+        }
+    ]
+}

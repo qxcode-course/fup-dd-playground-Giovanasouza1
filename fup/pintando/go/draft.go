@@ -1,8 +1,14 @@
 package main
-import "fmt"
+
+import (
+	"fmt"
+	"math"
+)
 func main() {
     var a, b, c float64
     fmt.Scan(&a, &b, &c)
+    p := (a + b + c)/2
+    Area := math.Sqrt(float64(p * (p - a) * (p - b) * (p - c)))
 
-    fmt.Println("qxcode")
+    fmt.Printf("%.2f\n", Area)
 }
