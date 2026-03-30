@@ -1,0 +1,59 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-30_17-42-51",
+            "content": "@@ -159,23 +159,14 @@\n ntf(\n-float64(\n a %25 b)\n-)\n %0A   \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-30_17-45-30",
+            "content": "@@ -159,18 +159,8 @@\n ntf(\n-%22%25.2f%5Cn%22, \n floa\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-30_17-47-18",
+            "content": "@@ -144,31 +144,8 @@\n  b)%0A\n-    fmt.Println(a / b)%0A\n     \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-30_17-48-54",
+            "content": "@@ -153,28 +153,19 @@\n mt.Print\n-f(%22%25.2f%5Cn%22, \n+ln(\n a / b)%0A \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-30_17-52-43",
+            "content": "@@ -169,23 +169,14 @@\n n%22, \n-float64(\n a / b)\n-)\n %0A   \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-30_17-53-33",
+            "content": "@@ -170,18 +170,18 @@\n %22, float\n-32\n+64\n (a / b))\n@@ -215,10 +215,10 @@\n loat\n-32\n+64\n (a %25\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-30_17-55-41",
+            "content": "@@ -200,14 +200,33 @@\n ntf(\n+%22%25.2f%5Cn%22, float32(\n a %25 b)\n+)\n %0A   \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-30_17-56-05",
+            "content": "@@ -194,16 +194,17 @@\n mt.Print\n+f\n (a %25 b)%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-30_17-56-13",
+            "content": "@@ -174,10 +174,10 @@\n loat\n-64\n+32\n (a /\n@@ -194,18 +194,16 @@\n mt.Print\n-ln\n (a %25 b)%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-30_17-57-44",
+            "content": "@@ -178,20 +178,11 @@\n 64(a\n-)\n  / \n-float64(\n b))%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-30_17-59-39",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    fmt.Scan(&a, &b)\n    fmt.Println(a + b)\n    fmt.Println(a - b)\n    fmt.Println(a * b)\n    fmt.Printf(\"%.2f\\n\", float64(a) / float64(b))\n    fmt.Println(a % b)\n    }\n",
+            "lines": "11"
+        }
+    ]
+}
