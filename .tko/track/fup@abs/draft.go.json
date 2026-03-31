@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-31_13-33-26",
+            "content": "@@ -94,10 +94,26 @@\n (a - b)%0A\n+    if a - b = %0A\n %7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-31_13-34-02",
+            "content": "@@ -58,26 +58,25 @@\n     \n-if a - b %3C0 %7B%0A    \n+fmt.Scan(&a, &b)%0A\n     \n@@ -96,22 +96,8 @@\n  - b\n- %3C0 * -1)%0A    %7D\n+)\n %0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-31_13-43-13",
+            "content": "@@ -92,15 +92,17 @@\n tln(\n-(\n a - b\n-)\n+ %3C0 \n * -1\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-31_13-43-46",
+            "content": "@@ -96,16 +96,17 @@\n (a - b)*\n+ \n -1)%0A    \n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-31_13-44-05",
+            "content": "@@ -104,48 +104,8 @@\n -1)%0A\n-    %7D else %7B%0A        fmt.Println(a - b)%0A\n     \n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-31_13-48-37",
+            "content": "@@ -96,17 +96,16 @@\n (a - b)*\n- \n -1)%0A    \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-31_13-48-47",
+            "content": "@@ -95,17 +95,16 @@\n ((a - b)\n- \n * -1)%0A  \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-31_13-48-53",
+            "content": "@@ -54,29 +54,8 @@\n int%0A\n-    fmt.Scan(&a, &b)%0A\n     \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-31_13-50-07",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    fmt.Scan(&a, &b)\n    if a - b <0 {\n        fmt.Println((a - b) * -1)\n    } else {\n        fmt.Println(a - b)\n    }\n}\n",
+            "lines": "11"
+        }
+    ]
+}

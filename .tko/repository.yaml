@@ -13,10 +13,10 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@if_extra
 - fup@if1
-- fup@base
 - fup@games
+- fup@if_extra
+- fup@base
 tasks:
   fup@tres: '{self:1, rate:100, study:30, friend:hanna, guided:1, debug:1}'
   fup@resto: '{self:1, rate:100, study:20, guided:1}'
@@ -28,6 +28,8 @@ tasks:
   fup@bala: '{self:1, rate:100, friend:chat gpt, code:1, debug:1}'
   fup@quebrada: '{self:1, rate:100, study:30, friend:David}'
   fup@operacoes: '{self:1, rate:100, friend:hanna e David, problem:1}'
+  fup@data: '{self:1, rate:100, concept:1, problem:1, debug:1}'
+  fup@abs: '{self:1, rate:100, concept:1, code:1}'
 flags:
   panel: 3
   inbox: 1
@@ -35,4 +37,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@tv
+selected: fup@max
