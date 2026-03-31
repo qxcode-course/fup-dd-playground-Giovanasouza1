@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-31_16-43-16",
+            "content": "@@ -153,25 +153,25 @@\n ln(b)%0A    %7D \n-;\n+,\n  if a = b %7B%0A\n@@ -199,10 +199,15 @@\n )%0A    %7D%0A\n+    %0A\n %7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-31_16-44-23",
+            "content": "@@ -166,16 +166,13 @@\n  if \n-(\n a =\n-=\n  b\n-)\n  %7B%0A \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_16-45-06",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    fmt.Scan(&a, &b)\n    if a > b {\n        fmt.Println(a)\n    } ; if b > a {\n        fmt.Println(b)\n    } ; if (a == b) {\n        fmt.Println(a)\n    }\n}\n",
+            "lines": "13"
+        }
+    ]
+}

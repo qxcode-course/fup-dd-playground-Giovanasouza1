@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-31_17-21-34",
+            "content": "@@ -136,16 +136,18 @@\n Println(\n+%22%22\n )%0A    %7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-31_17-21-40",
+            "content": "@@ -46,12 +46,8 @@\n ar a\n- int\n %0A   \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-31_17-21-53",
+            "content": "@@ -78,16 +78,8 @@\n  a %3E\n- 0 %7C%7C a \n = 0 \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-31_17-22-22",
+            "content": "@@ -75,26 +75,22 @@\n  if \n-(\n a %3E 0\n-)\n  %7C%7C \n-(\n a = 0\n-)\n  %7B%0A \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-31_17-22-43",
+            "content": "@@ -86,17 +86,16 @@\n  %7C%7C (a =\n-=\n  0) %7B%0A  \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-31_17-22-50",
+            "content": "@@ -157,13 +157,8 @@\n tln(\n-%22NAO%22\n )%0A  \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-31_17-24-29",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a int\n    fmt.Scan(&a)\n    if (a > 0) || (a == 0) {\n        fmt.Println(\"SIM\")\n    } else {\n        fmt.Println(\"NAO\")\n    }\n}\n",
+            "lines": "11"
+        }
+    ]
+}

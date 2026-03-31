@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-31_17-41-29",
+            "content": "@@ -114,26 +114,26 @@\n     \n-fmt.Println(\n+distancia := \n v * t\n-)\n %0A   \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-31_17-42-01",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var v, t, c float64\n    fmt.Scan(&v, &t, &c)\n    fmt.Println(t * 60)\n    fmt.Println(v * t)\n    desempenho := (t *60)/(v * t)\n    fmt.Println(desempenho)\n    \n}\n",
+            "lines": "11"
+        }
+    ]
+}
