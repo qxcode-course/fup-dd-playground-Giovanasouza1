@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-01_13-17-28",
+            "content": "@@ -85,15 +85,13 @@\n  if \n-(\n p = 2\n-)\n  %7B%0A \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-01_13-17-39",
+            "content": "@@ -85,17 +85,16 @@\n  if (p =\n-=\n  2) %7B%0A  \n@@ -112,51 +112,88 @@\n rint\n-ln\n+f\n (v * \n-(5/100))%0A    %7D ; if (p == 3) %7B%0A%0A    %7D\n+5%25)%0A    %7D%0A    %0A    %0A    fmt.Println()%0A    %0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-01_13-19-07",
+            "content": "@@ -151,432 +151,13 @@\n ) %7B%0A\n-        fmt.Println(v * (10/100))%0A    %7D ; if (p == 4) %7B%0A        fmt.Println(v * (15/100))%0A    %7D ; if (p == 5) %7B%0A        fmt.Println(v * (20/100))%0A    %7D ; if (p == 6) %7B%0A        fmt.Println(v * (25/100))%0A    %7D ; if (p == 7) %7B%0A        fmt.Println(v * (30/100)%0A    %7D ; if (p == 8) %7B%0A        fmt.Println(v * (35/100)%0A    %7D ; if (p == 9) %7B%0A        fmt.Println(v * (40/100)%0A    %7D ; if (p == 10) %7B%0A        fmt.Println(v * (45/100)\n %0A    %7D\n+%0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-01_13-25-45",
+            "content": "@@ -399,25 +399,24 @@\n v * (30/100)\n-)\n %0A    %7D ; if \n@@ -454,25 +454,24 @@\n v * (35/100)\n-)\n %0A    %7D ; if \n@@ -509,25 +509,24 @@\n v * (40/100)\n-)\n %0A    %7D ; if \n@@ -573,8 +573,10 @@\n 100)\n-)%0A%7D \n+%0A    %7D\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-01_13-28-03",
+            "content": "@@ -580,35 +580,4 @@\n )%0A%7D \n-else %7B%0A        fmt.Println(v)%0A%7D\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-01_13-32-15",
+            "content": "@@ -578,19 +578,9 @@\n 0))%0A\n-        %7D ;\n+%7D\n  els\n@@ -610,19 +610,5 @@\n (v)%0A\n-        %7D%0A    \n %7D\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-01_13-33-12",
+            "content": "@@ -574,22 +574,27 @@\n 5/100))%0A\n+    \n     %7D \n+;\n  else %7B%0A\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-04-01_13-35-55",
+            "content": "@@ -609,20 +609,11 @@\n rint\n-f(%22%25.2f%5Cn%22, \n+ln(\n v)%0A \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-04-01_13-36-40",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var v, p float64\n    fmt.Scan(&v,&p)\n    if (p == 2) {\n        fmt.Println(v * (5/100))\n    } ; if (p == 3) {\n        fmt.Println(v * (10/100))\n    } ; if (p == 4) {\n        fmt.Println(v * (15/100))\n    } ; if (p == 5) {\n        fmt.Println(v * (20/100))\n    } ; if (p == 6) {\n        fmt.Println(v * (25/100))\n    } ; if (p == 7) {\n        fmt.Println(v * (30/100))\n    } ; if (p == 8) {\n        fmt.Println(v * (35/100))\n    } ; if (p == 9) {\n        fmt.Println(v * (40/100))\n    } ; if (p == 10) {\n        fmt.Println(v * (45/100))\n    }  else {\n        fmt.Printf(\"%.2f\\n\", v)\n        }\n    }",
+            "lines": "27"
+        }
+    ]
+}
