@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-02_01-20-31",
+            "content": "@@ -46,12 +46,8 @@\n ar a\n- int\n %0A   \n@@ -77,18 +77,16 @@\n %25 7 == 0\n- %7B\n %0A    fmt\n@@ -105,22 +105,20 @@\n %5Cn%22)\n-%0A%7D\n+;%0A   \n  else \n-%7B%0A    \n+%0A\n     \n@@ -138,36 +138,8 @@\n ao%22)\n- %0A    fmt.Printf(%22nao%22)%0A    \n+%0A\n %7D %0A\n-%7D\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-02_01-26-13",
+            "content": "@@ -144,16 +144,38 @@\n %22nao%22) %0A\n+    fmt.Printf(%22nao%22)%0A\n     %7D %0A%7D\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-02_01-26-40",
+            "content": "@@ -104,11 +104,11 @@\n tf(%22\n-SIM\n+sim\n %5Cn%22)\n@@ -141,11 +141,11 @@\n tf(%22\n-NAO\n+nao\n %22) %0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-02_01-26-52",
+            "content": "@@ -138,10 +138,9 @@\n rint\n-ln\n+f\n (%22NA\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-02_01-27-14",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a int\n    fmt.Scan(&a)\n    if a % 7 == 0 {\n    fmt.Printf(\"SIM\\n\")\n} else {\n        fmt.Println(\"NAO\") \n    } \n}",
+            "lines": "11"
+        }
+    ]
+}

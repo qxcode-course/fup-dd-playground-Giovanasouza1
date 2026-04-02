@@ -42,8 +42,18 @@
         },
         {
             "label": "2026-04-01_13-36-40",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var v, p float64\n    fmt.Scan(&v,&p)\n    if (p == 2) {\n        fmt.Println(v * (5/100))\n    } ; if (p == 3) {\n        fmt.Println(v * (10/100))\n    } ; if (p == 4) {\n        fmt.Println(v * (15/100))\n    } ; if (p == 5) {\n        fmt.Println(v * (20/100))\n    } ; if (p == 6) {\n        fmt.Println(v * (25/100))\n    } ; if (p == 7) {\n        fmt.Println(v * (30/100))\n    } ; if (p == 8) {\n        fmt.Println(v * (35/100))\n    } ; if (p == 9) {\n        fmt.Println(v * (40/100))\n    } ; if (p == 10) {\n        fmt.Println(v * (45/100))\n    }  else {\n        fmt.Printf(\"%.2f\\n\", v)\n        }\n    }",
+            "content": "@@ -42,16 +42,19 @@\n    var v\n+, p\n  float64\n@@ -62,77 +62,376 @@\n     \n-var np int%0A    fmt.Scan(&v, &np)%0A    np = 1%0A    for %7B%0A        np += 1\n+fmt.Scan(&v,&p)%0A    if (p == 2) %7B%0A        fmt.Println(v * (5/100))%0A    %7D ; if (p == 3) %7B%0A        fmt.Println(v * (10/100))%0A    %7D ; if (p == 4) %7B%0A        fmt.Println(v * (15/100))%0A    %7D ; if (p == 5) %7B%0A        fmt.Println(v * (20/100))%0A    %7D ; if (p == 6) %7B%0A        fmt.Println(v * (25/100))%0A    %7D ; if (p == 7) %7B%0A        fmt.Println(v * (30/100))%0A    %7D ; if (p == 8) %7B\n %0A   \n@@ -451,43 +451,192 @@\n tln(\n-np)%0A        if 0 %3C np %3C 10 %0A%0A    %7D%0A%0A%0A%0A\n+v * (35/100))%0A    %7D ; if (p == 9) %7B%0A        fmt.Println(v * (40/100))%0A    %7D ; if (p == 10) %7B%0A        fmt.Println(v * (45/100))%0A    %7D  else %7B%0A        fmt.Printf(%22%25.2f%5Cn%22, v)%0A        %7D%0A    \n %7D\n",
             "lines": "27"
+        },
+        {
+            "label": "2026-04-02_00-54-04",
+            "content": "@@ -159,16 +159,20 @@\n       if\n+ 0 %3C\n  np %3C 10\n@@ -176,45 +176,17 @@\n  10 \n-%7B%0A            break%0A        %7D\n+%0A\n %0A    %7D%0A%0A\n %0A%0A%0A%7D\n@@ -181,12 +181,11 @@\n %0A    %7D%0A%0A\n-%0A\n %0A%0A%7D\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-02_00-57-22",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var v float64\n    var np int\n    fmt.Scan(&v, &np)\n    np = 1\n    for {\n        np += 1\n        fmt.Println(np)\n        if np < 10 {\n            break\n        }\n    }\n\n\n\n\n}",
+            "lines": "19"
         }
     ]
 }

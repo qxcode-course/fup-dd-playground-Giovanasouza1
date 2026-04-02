@@ -1,9 +1,11 @@
 package main
 import "fmt"
 func main() {
-    var a
+    var a int
     fmt.Scan(&a)
-    if a == 
-    
-    fmt.Println("Hello, World!")
+    if a % 7 == 0 {
+    fmt.Printf("SIM\n")
+} else {
+        fmt.Println("NAO") 
+    } 
 }
