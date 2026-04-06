@@ -52,8 +52,13 @@
         },
         {
             "label": "2026-04-02_00-57-22",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var v float64\n    var np int\n    fmt.Scan(&v, &np)\n    np = 1\n    for {\n        np += 1\n        fmt.Println(np)\n        if np < 10 {\n            break\n        }\n    }\n\n\n\n\n}",
+            "content": "@@ -37,18 +37,17 @@\n ) %7B%0A\n-%09\n+    \n var v\n-alor\n  flo\n@@ -55,27 +55,27 @@\n t64%0A\n-%09var parcelas\n+    var np\n  int%0A\n-%09\n+    \n fmt.\n@@ -85,59 +85,132 @@\n n(&v\n-alor, &parcelas)%0A%09valo *= (1 + 0.05 + (parcela - 1))\n+, &np)%0A    np = 1%0A    for %7B%0A        np += 1%0A        fmt.Println(np)%0A        if np %3C 10 %7B%0A            break%0A        %7D%0A    %7D%0A%0A%0A\n %0A%0A%7D\n",
             "lines": "19"
+        },
+        {
+            "label": "2026-04-06_17-07-06",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tvar valor float64\n\tvar parcelas int\n\tfmt.Scan(&valor, &parcelas)\n\tvalo *= (1 + 0.05 + (parcela - 1))\n\n}",
+            "lines": "9"
         }
     ]
 }

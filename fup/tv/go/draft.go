@@ -1,21 +1,11 @@
 package main
 import "fmt"
 func main() {
-    var v float64
-    var np int
-    fmt.Scan(&v, &np)
-    np = 1
-    for {
-        np += 1
-        fmt.Println(np)
-        if np <= 10 {
-            break
-        }
-    } 
-    valor := v *np
-
-
-
-
+	var valor float64
+	var parcelas int
+	fmt.Scan(&valor, &parcelas)
+	valor *= (1 + 0.05 + (parcelas - 1))
+	cada := valor / float64(parcelas)
+	fmt.Printf()
 
 }

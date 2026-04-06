@@ -1,0 +1,64 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-06_16-10-28",
+            "content": "@@ -163,15 +163,15 @@\n n(n1\n-,\n+;\n  simb\n-,\n+;\n  n2)\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-06_16-10-39",
+            "content": "@@ -118,24 +118,32 @@\n  == \n-+\n+%22+%22\n  %7C%7C \n--\n+%22-%22\n  %7C%7C \n-*\n+%22*%22\n  %7C%7C \n-/\n+%22/%22\n  %7B%0A \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-06_16-10-54",
+            "content": "@@ -192,10 +192,15 @@\n tln()%0A%7D%0A\n+    %0A\n %7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-06_16-12-29",
+            "content": "@@ -118,32 +118,24 @@\n  == \n-%22+%22\n++\n  %7C%7C \n-%22-%22\n+-\n  %7C%7C \n-%22*%22\n+*\n  %7C%7C \n-%22/%22\n+/\n  %7B%0A \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-06_16-13-36",
+            "content": "@@ -124,43 +124,22 @@\n %22 %7C%7C\n-simb == %22-%22 %7C%7Csimb == %22*%22 %7C%7Csimb ==\n+ %22-%22 %7C%7C %22*%22 %7C%7C\n  %22/%22\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-06_16-14-27",
+            "content": "@@ -60,64 +60,47 @@\n     \n-fmt.Scan(&n1, &n2)%0A    char operador = 0%0A    fmt.Scanf()\n+var simb string%0A    fmt.Scan(&n1, &n2, \n &sim\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-06_16-16-40",
+            "content": "@@ -100,39 +100,31 @@\n  = 0\n-;\n %0A    \n-s\n+fmt.S\n canf(\n-%22%25\n+)&\n simb\n-%22, &operador\n )\n+ \n %0Aif \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-06_16-18-17",
+            "content": "@@ -109,17 +109,16 @@\n  scanf(%22\n- \n %25simb%22, \n@@ -127,17 +127,16 @@\n perador)\n-;\n %0Aif simb\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-06_16-18-37",
+            "content": "@@ -19,19 +19,20 @@\n t %22fmt%22%0A\n-int\n+func\n  main() \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-06_16-19-23",
+            "content": "@@ -23,12 +23,11 @@\n mt%22%0A\n-func\n+int\n  mai\n@@ -55,28 +55,8 @@\n int%0A\n-    var simb string%0A\n     \n@@ -76,78 +76,65 @@\n  &n2\n-, &simb)%0A    if simb == %22+%22 %7B%0A        fmt.Println(n1 + n2)%0A    %7D else \n+)%0A    char operador = 0;%0A    scanf(%22 %25simb%22, &operador);%0A\n if s\n@@ -145,56 +145,41 @@\n == %22\n-=%22 %7B%0A        fmt.Println(n1 - n2)%0A    %7D else if \n++%22 %7C%7Csimb == %22-%22 %7C%7Csimb == %22*%22 %7C%7C\n simb\n@@ -187,17 +187,17 @@\n == %22\n-*\n+/\n %22 %7B%0A    \n     \n@@ -184,36 +184,32 @@\n mb == %22/%22 %7B%0A    \n-    \n fmt.Println(n1 *\n@@ -210,82 +210,47 @@\n n(n1\n- *\n+, simb,\n  n2)%0A\n-    \n %7D else \n-if simb == %22/%22 %7B%0A        fmt.Println(n1 / n2)%0A    %7D%0A   %0A%7D%0A%0A\n+%7B%0A    fmt.Println()%0A%7D%0A%7D\n %0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-06_18-24-11",
+            "content": "@@ -175,17 +175,17 @@\n imb == %22\n--\n+=\n %22 %7B%0A    \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-06_18-25-03",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n1, n2 int\n    var simb string\n    fmt.Scan(&n1, &n2, &simb)\n    if simb == \"+\" {\n        fmt.Println(n1 + n2)\n    } else if simb == \"-\" {\n        fmt.Println(n1 - n2)\n    } else if simb == \"*\" {\n        fmt.Println(n1 * n2)\n    } else if simb == \"/\" {\n        fmt.Println(n1 / n2)\n    }\n   \n}\n\n\n",
+            "lines": "19"
+        }
+    ]
+}

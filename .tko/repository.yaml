@@ -13,12 +13,12 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@if1
+- fup@base
 - fup@if2
 - fup@if_extra
-- fup@games
+- fup@if1
 - fup@for1
-- fup@base
+- fup@games
 tasks:
   fup@tres: '{self:1, rate:100, study:30, friend:hanna, guided:1, debug:1}'
   fup@resto: '{self:1, rate:100, study:20, guided:1}'
@@ -36,7 +36,11 @@ tasks:
   fup@max: '{self:1, rate:100, concept:1}'
   fup@ou: '{self:1, rate:100}'
   fup@positivo: '{self:1, rate:100}'
-  fup@multiplo: '{rate:100}'
+  fup@multiplo: '{self:1, rate:100, code:1}'
+  fup@calc: '{self:1, rate:100}'
+  fup@guarda: '{self:1, rate:100, friend:hanna}'
+  fup@quantos: '{self:1, rate:100, friend:hanna, debug:1}'
+  fup@mumia: '{self:1, rate:100, friend:hanna}'
 flags:
   panel: 3
   inbox: 1
@@ -44,4 +48,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@multiplo
+selected: fup@impar

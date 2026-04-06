@@ -1,0 +1,134 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-06_17-36-43",
+            "content": "@@ -134,10 +134,43 @@\n %0A    %7D%0A%0A\n+    fmt.Println(%22Hello, World!%22)%0A\n %7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-06_17-36-56",
+            "content": "@@ -126,11 +126,9 @@\n ln(a\n- eh\n+,\n  b)%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-06_17-37-13",
+            "content": "@@ -122,17 +122,19 @@\n rintln(a\n-,\n+ eh\n  b)%0A    \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-06_17-37-35",
+            "content": "@@ -128,69 +128,9 @@\n (a, \n-crianca)%0A    %7D; if 12 %3C b %3E 18 %7B%0A        fmt.Println(a, jovem\n+b\n )%0A  \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-06_17-40-12",
+            "content": "@@ -128,17 +128,15 @@\n (a, \n-%22\n crianca\n-%22\n )%0A  \n@@ -146,22 +146,17 @@\n ; if\n- b %3E\n  12 \n-&& b %3C\n+%3C b %3E\n  18 \n@@ -184,15 +184,13 @@\n (a, \n-%22\n jovem\n-%22\n )%0A  \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-06_17-42-15",
+            "content": "@@ -125,19 +125,16 @@\n tln(a, %22\n-eh \n crianca%22\n@@ -192,11 +192,8 @@\n a, %22\n-eh \n jove\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-06_17-42-28",
+            "content": "@@ -206,73 +206,8 @@\n m%22)%0A\n-    %7D; if b %3E 18 && b %3C 65 %7B%0A        fmt.Println(a, %22eh adulto%22)%0A\n     \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-06_17-43-54",
+            "content": "@@ -271,74 +271,8 @@\n o%22)%0A\n-    %7D; if b %3E 65 && b %3C 1000 %7B%0A        fmt.Println(a, %22eh idoso%22)%0A\n     \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-06_17-45-03",
+            "content": "@@ -342,59 +342,8 @@\n    %7D\n- else if %7B%0A        fmt.Println(a, %22eh mumia%22)%0A    %7D\n %0A%0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-06_17-46-33",
+            "content": "@@ -344,16 +344,19 @@\n  %7D else \n+if \n %7B%0A      \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-06_17-46-42",
+            "content": "@@ -344,19 +344,16 @@\n  %7D else \n-if \n %7B%0A      \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-06_17-47-28",
+            "content": "@@ -110,32 +110,34 @@\n        fmt.Print\n+ln\n (a, %22eh crianca%22\n@@ -176,32 +176,34 @@\n        fmt.Print\n+ln\n (a, %22eh jovem%22)%0A\n@@ -240,32 +240,34 @@\n        fmt.Print\n+ln\n (a, %22eh adulto%22)\n@@ -307,32 +307,34 @@\n        fmt.Print\n+ln\n (a, %22eh idoso%22)%0A\n@@ -337,15 +337,22 @@\n o%22)%0A\n+    \n %7D else \n+if \n %7B%0A  \n@@ -366,16 +366,18 @@\n mt.Print\n+ln\n (a, %22eh \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-06_17-50-15",
+            "content": "@@ -325,20 +325,16 @@\n idoso%22)%0A\n-    \n %7D else %7B\n@@ -366,13 +366,18 @@\n  mumia%22)\n+%0A    \n %7D%0A%0A%7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-06_17-50-57",
+            "content": "@@ -370,18 +370,13 @@\n  mumia%22)\n-%0A    \n %7D%0A%0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-06_17-51-02",
+            "content": "@@ -340,12 +340,8 @@\n lse \n-for \n %7B%0A  \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-06_17-51-37",
+            "content": "@@ -336,16 +336,20 @@\n  %7D else \n+for \n %7B%0A      \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-06_17-51-57",
+            "content": "@@ -370,13 +370,18 @@\n  mumia%22)\n+%0A    \n %7D%0A%0A%7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-06_17-52-52",
+            "content": "@@ -123,17 +123,16 @@\n int(a, %22\n- \n eh crian\n@@ -187,17 +187,16 @@\n int(a, %22\n- \n eh jovem\n@@ -249,17 +249,16 @@\n int(a, %22\n- \n eh adult\n@@ -314,17 +314,16 @@\n int(a, %22\n- \n eh idoso\n@@ -360,17 +360,16 @@\n int(a, %22\n- \n eh mumia\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-06_17-54-02",
+            "content": "@@ -120,17 +120,16 @@\n .Print(a\n- \n , %22 eh c\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-06_17-54-14",
+            "content": "@@ -182,25 +182,24 @@\n  fmt.Print(a\n- \n , %22 eh jovem\n@@ -245,25 +245,24 @@\n  fmt.Print(a\n- \n , %22 eh adult\n@@ -311,25 +311,24 @@\n  fmt.Print(a\n- \n , %22 eh idoso\n@@ -358,25 +358,24 @@\n  fmt.Print(a\n- \n , %22 eh mumia\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-06_17-54-25",
+            "content": "@@ -142,22 +142,18 @@\n a%22)%0A    \n+%7D\n ;\n- else\n  if b %3E \n@@ -200,37 +200,32 @@\n h jovem%22)%0A    %7D;\n- else\n  if b %3E 18 && b \n@@ -271,19 +271,14 @@\n o%22)%0A\n+\n     %7D;\n- else\n  if \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-06_17-57-02",
+            "content": "@@ -138,25 +138,24 @@\n ianca%22)%0A    \n-%7D\n ; else if b \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-06_17-57-17",
+            "content": "@@ -135,32 +135,33 @@\n  crianca%22)%0A    %7D\n+;\n  else if b %3E 12 \n@@ -172,16 +172,16 @@\n  %3C 18 %7B%0A\n-\n         \n@@ -204,32 +204,33 @@\n eh jovem%22)%0A    %7D\n+;\n  else if b %3E 18 \n@@ -273,29 +273,30 @@\n eh adulto%22)%0A\n-\n     %7D\n+;\n  else if b %3E\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-06_17-57-51",
+            "content": "@@ -135,18 +135,16 @@\n  crianca\n-%5Cn\n %22)%0A    %7D\n@@ -203,18 +203,16 @@\n eh jovem\n-%5Cn\n %22)%0A    %7D\n@@ -272,18 +272,16 @@\n h adulto\n-%5Cn\n %22)%0A    %7D\n@@ -342,18 +342,16 @@\n eh idoso\n-%5Cn\n %22)%0A    %7D\n@@ -394,10 +394,8 @@\n umia\n-%5Cn\n %22)%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-06_17-58-49",
+            "content": "@@ -157,17 +157,16 @@\n e if b %3E\n-=\n  12 && b\n@@ -173,16 +173,16 @@\n  %3C 18 %7B%0A\n+\n         \n@@ -227,17 +227,16 @@\n e if b %3E\n-=\n  18 && b\n@@ -277,24 +277,24 @@\n  adulto%5Cn%22)%0A\n+\n     %7D else i\n@@ -302,9 +302,8 @@\n  b %3E\n-=\n  65 \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-06_17-59-36",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a string\n    var b int\n    fmt.Scan(&a, &b)\n    if b < 12 {\n        fmt.Print(a , \" eh crianca\\n\")\n    } else if b >= 12 && b < 18 {\n        fmt.Print(a , \" eh jovem\\n\")\n    } else if b >= 18 && b < 65 {\n        fmt.Print(a , \" eh adulto\\n\")\n    } else if b >= 65 && b < 1000 {\n        fmt.Print(a , \" eh idoso\\n\")\n    } else {\n        fmt.Print(a , \" eh mumia\\n\")}\n\n}\n",
+            "lines": "18"
+        }
+    ]
+}

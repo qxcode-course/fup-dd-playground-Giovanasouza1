@@ -1,0 +1,93 @@
+2026-04-06 15:56:07, MOVE, v:1, k:fup@tv, mode:PICK
+2026-04-06 15:56:48, MOVE, v:1, k:fup@tv, mode:BACK
+2026-04-06 15:57:25, MOVE, v:1, k:fup@calc, mode:PICK
+2026-04-06 16:10:28, EXEC, v:1, k:fup@calc, mode:FULL, size:13, fail:COMP
+2026-04-06 16:10:39, EXEC, v:1, k:fup@calc, mode:FULL, size:13, fail:COMP
+2026-04-06 16:10:54, EXEC, v:1, k:fup@calc, mode:FREE, size:13
+2026-04-06 16:11:25, MOVE, v:1, k:fup@calc, mode:PICK
+2026-04-06 16:11:26, EXEC, v:1, k:fup@calc, mode:FULL, fail:COMP
+2026-04-06 16:12:29, EXEC, v:1, k:fup@calc, mode:FULL, size:12, fail:COMP
+2026-04-06 16:13:36, EXEC, v:1, k:fup@calc, mode:FULL, size:12, fail:COMP
+2026-04-06 16:14:27, EXEC, v:1, k:fup@calc, mode:FULL, rate:0, size:12
+2026-04-06 16:16:40, EXEC, v:1, k:fup@calc, mode:FULL, size:13, fail:COMP
+2026-04-06 16:18:17, EXEC, v:1, k:fup@calc, mode:FULL, size:13, fail:COMP
+2026-04-06 16:18:19, EXEC, v:1, k:fup@calc, mode:FULL, fail:COMP
+2026-04-06 16:18:19, EXEC, v:1, k:fup@calc, mode:FULL, fail:COMP
+2026-04-06 16:18:37, EXEC, v:1, k:fup@calc, mode:FULL, size:13, fail:COMP
+2026-04-06 16:19:23, EXEC, v:1, k:fup@calc, mode:FULL, size:13, fail:COMP
+2026-04-06 16:20:28, MOVE, v:1, k:fup@quantos, mode:DOWN
+2026-04-06 16:20:37, MOVE, v:1, k:fup@quantos, mode:PICK
+2026-04-06 16:29:22, EXEC, v:1, k:fup@quantos, mode:FULL, rate:37, size:17
+2026-04-06 16:30:09, EXEC, v:1, k:fup@quantos, mode:FULL, rate:37, size:17
+2026-04-06 16:30:32, EXEC, v:1, k:fup@quantos, mode:FULL, rate:37, size:17
+2026-04-06 16:32:20, EXEC, v:1, k:fup@quantos, mode:FULL, rate:0, size:17
+2026-04-06 16:32:25, EXEC, v:1, k:fup@quantos, mode:FULL, rate:0, size:17
+2026-04-06 16:32:34, EXEC, v:1, k:fup@quantos, mode:FULL, rate:0, size:17
+2026-04-06 16:32:39, EXEC, v:1, k:fup@quantos, mode:FULL, rate:37, size:17
+2026-04-06 16:33:18, MOVE, v:1, k:fup@quantos, mode:PICK
+2026-04-06 16:33:21, EXEC, v:1, k:fup@quantos, mode:FULL, rate:37
+2026-04-06 16:33:29, EXEC, v:1, k:fup@quantos, mode:FULL, rate:0, size:17
+2026-04-06 16:33:42, EXEC, v:1, k:fup@quantos, mode:FULL, rate:37, size:17
+2026-04-06 16:36:18, EXEC, v:1, k:fup@quantos, mode:FULL, rate:37, size:13
+2026-04-06 16:40:03, EXEC, v:1, k:fup@quantos, mode:FULL, rate:75, size:13
+2026-04-06 16:42:25, EXEC, v:1, k:fup@quantos, mode:FULL, rate:0, size:15
+2026-04-06 16:42:28, EXEC, v:1, k:fup@quantos, mode:FULL, rate:0
+2026-04-06 16:47:33, EXEC, v:1, k:fup@quantos, mode:FULL, rate:100, size:13
+2026-04-06 16:47:43, MOVE, v:1, k:fup@quantos, mode:BACK
+2026-04-06 16:48:30, SELF, v:1, k:fup@quantos, self:1, rate:100, friend:hanna, debug:1
+2026-04-06 16:50:50, MOVE, v:1, k:fup@mumia, mode:DOWN
+2026-04-06 16:55:01, MOVE, v:1, k:fup@tv, mode:PICK
+2026-04-06 17:07:06, EXEC, v:1, k:fup@tv, mode:FULL, size:9, fail:COMP
+2026-04-06 17:12:08, MOVE, v:1, k:fup@tv, mode:BACK
+2026-04-06 17:36:41, MOVE, v:1, k:fup@mumia, mode:PICK
+2026-04-06 17:36:43, EXEC, v:1, k:fup@mumia, mode:FULL, rate:0, size:12
+2026-04-06 17:36:56, EXEC, v:1, k:fup@mumia, mode:FULL, rate:0, size:11
+2026-04-06 17:37:13, EXEC, v:1, k:fup@mumia, mode:FULL, size:11, fail:COMP
+2026-04-06 17:37:33, MOVE, v:1, k:fup@mumia, mode:PICK
+2026-04-06 17:37:35, EXEC, v:1, k:fup@mumia, mode:FULL, rate:0, size:11
+2026-04-06 17:40:12, EXEC, v:1, k:fup@mumia, mode:FULL, size:13, fail:COMP
+2026-04-06 17:42:15, EXEC, v:1, k:fup@mumia, mode:FULL, rate:0, size:13
+2026-04-06 17:42:28, EXEC, v:1, k:fup@mumia, mode:FULL, rate:33, size:13
+2026-04-06 17:43:54, EXEC, v:1, k:fup@mumia, mode:FULL, rate:44, size:15
+2026-04-06 17:45:03, EXEC, v:1, k:fup@mumia, mode:FULL, rate:44, size:17
+2026-04-06 17:46:33, EXEC, v:1, k:fup@mumia, mode:FULL, size:19, fail:COMP
+2026-04-06 17:46:42, EXEC, v:1, k:fup@mumia, mode:FULL, rate:11, size:19
+2026-04-06 17:47:28, EXEC, v:1, k:fup@mumia, mode:FULL, size:19, fail:COMP
+2026-04-06 17:50:15, EXEC, v:1, k:fup@mumia, mode:FULL, rate:0, size:19
+2026-04-06 17:50:28, EXEC, v:1, k:fup@mumia, mode:FULL, rate:0
+2026-04-06 17:50:29, EXEC, v:1, k:fup@mumia, mode:FULL, rate:0
+2026-04-06 17:50:57, EXEC, v:1, k:fup@mumia, mode:FULL, rate:0, size:18
+2026-04-06 17:51:02, EXEC, v:1, k:fup@mumia, mode:FULL, rate:0, size:19
+2026-04-06 17:51:37, EXEC, v:1, k:fup@mumia, mode:FULL, size:19, fail:COMP
+2026-04-06 17:51:57, EXEC, v:1, k:fup@mumia, mode:FULL, rate:0, size:19
+2026-04-06 17:52:52, EXEC, v:1, k:fup@mumia, mode:FULL, rate:0, size:18
+2026-04-06 17:54:02, EXEC, v:1, k:fup@mumia, mode:FULL, rate:0, size:18
+2026-04-06 17:54:14, EXEC, v:1, k:fup@mumia, mode:FULL, rate:0, size:18
+2026-04-06 17:54:25, EXEC, v:1, k:fup@mumia, mode:FULL, rate:0, size:18
+2026-04-06 17:57:03, EXEC, v:1, k:fup@mumia, mode:FULL, size:18, fail:COMP
+2026-04-06 17:57:17, EXEC, v:1, k:fup@mumia, mode:FULL, size:18, fail:COMP
+2026-04-06 17:57:51, EXEC, v:1, k:fup@mumia, mode:FULL, rate:0, size:18
+2026-04-06 17:58:49, EXEC, v:1, k:fup@mumia, mode:FULL, rate:55, size:18
+2026-04-06 17:59:36, EXEC, v:1, k:fup@mumia, mode:FULL, rate:100, size:18
+2026-04-06 17:59:42, MOVE, v:1, k:fup@mumia, mode:BACK
+2026-04-06 17:59:57, SELF, v:1, k:fup@mumia, self:1, rate:100, friend:hanna
+2026-04-06 18:00:29, MOVE, v:1, k:fup@guarda, mode:DOWN
+2026-04-06 18:00:43, MOVE, v:1, k:fup@guarda, mode:PICK
+2026-04-06 18:10:23, EXEC, v:1, k:fup@guarda, mode:FULL, rate:71, size:13
+2026-04-06 18:12:07, EXEC, v:1, k:fup@guarda, mode:FULL, rate:85, size:15
+2026-04-06 18:12:27, EXEC, v:1, k:fup@guarda, mode:FULL, rate:14, size:15
+2026-04-06 18:12:31, EXEC, v:1, k:fup@guarda, mode:FULL, rate:14
+2026-04-06 18:15:18, EXEC, v:1, k:fup@guarda, mode:FULL, rate:85, size:15
+2026-04-06 18:15:35, EXEC, v:1, k:fup@guarda, mode:FULL, rate:100, size:15
+2026-04-06 18:15:40, MOVE, v:1, k:fup@guarda, mode:BACK
+2026-04-06 18:15:54, SELF, v:1, k:fup@guarda, self:1, rate:100, friend:hanna
+2026-04-06 18:16:50, MOVE, v:1, k:fup@multiplo, mode:PICK
+2026-04-06 18:17:06, EXEC, v:1, k:fup@multiplo, mode:FULL, rate:100
+2026-04-06 18:17:33, SELF, v:1, k:fup@multiplo, self:1, rate:100, code:1
+2026-04-06 18:17:35, MOVE, v:1, k:fup@multiplo, mode:BACK
+2026-04-06 18:17:46, MOVE, v:1, k:fup@calc, mode:PICK
+2026-04-06 18:24:11, EXEC, v:1, k:fup@calc, mode:FULL, rate:88, size:19
+2026-04-06 18:25:03, EXEC, v:1, k:fup@calc, mode:FULL, rate:100, size:19
+2026-04-06 18:25:06, MOVE, v:1, k:fup@calc, mode:BACK
+2026-04-06 18:25:13, SELF, v:1, k:fup@calc, self:1, rate:100
+2026-04-06 18:25:28, MOVE, v:1, k:fup@impar, mode:DOWN
