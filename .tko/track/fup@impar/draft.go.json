@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-07_17-55-01",
+            "content": "@@ -23,16 +23,39 @@\n %0A%09%22fmt%22%0A\n+%09%22text/template/parse%22%0A\n )%0Afunc m\n@@ -184,18 +184,19 @@\n  %7D else \n-i\n f\n+or\n  (da + d\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-07_17-55-20",
+            "content": "@@ -223,44 +223,8 @@\n (0)%0A\n-    %7D else %7B%0A        fmt.Println(1)%0A\n     \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-07_17-55-52",
+            "content": "@@ -191,17 +191,17 @@\n && n == \n-1\n+0\n  %7B%0A     \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-07_17-56-43",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n)\nfunc main() {\n    var n, da, db int\n    fmt.Scan(&n, &da, &db)\n    if (da + db) % 2 == 0 && n == 0 {\n         fmt.Println(0)\n    } else if (da + db) % 2 == 1 && n == 1 {\n         fmt.Println(0)\n    } else {\n        fmt.Println(1)\n    }\n    \n}\n",
+            "lines": "17"
+        }
+    ]
+}

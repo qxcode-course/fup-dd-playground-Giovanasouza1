@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-07_18-03-48",
+            "content": "@@ -163,67 +163,6 @@\n ta)%0A\n-    x := (- b + math.Sqrt(delta)) / 2 * a%0A    fmt.Println(x)%0A\n %7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-07_18-05-48",
+            "content": "@@ -199,15 +199,13 @@\n ) / \n-(\n 2 * a\n-)\n %0A   \n@@ -224,21 +224,6 @@\n (x)%0A\n-    if delta =%0A\n %7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-07_18-07-22",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\nfunc main() {\n    var a, b, c float64\n    fmt.Scan(&a, &b, &c)\n    delta := math.Pow(b, 2) - 4 * a * c\n    fmt.Println(delta)\n    x := (- b + math.Sqrt(delta)) / (2 * a)\n    fmt.Println(x)\n    if delta =\n}\n",
+            "lines": "15"
+        }
+    ]
+}

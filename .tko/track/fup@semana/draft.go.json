@@ -47,8 +47,83 @@
         },
         {
             "label": "2026-04-07_13-57-45",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a string\n    var b int\n    fmt.Scan(&a, &b)\n    if a == \"1\" {\n        fmt.Println(\"NAO\")\n    } else {\n            fmt.Println(\"SIM\")\n    }; if b > 7 && b < 11 {\n        fmt.Println(\"SIM\")\n    } else if b > 14 && b < 17 {\n        fmt.Println(\"SIM\")\n    } else if (a == 7) && (b > 11) {\n        fmt.Println(\"NAO\")\n    }\n\n}\n",
+            "content": "@@ -307,24 +307,28 @@\n  if \n+(\n a == 7\n+)\n  && \n+(\n b %3E 11\n+)\n  %7B%0A \n",
             "lines": "19"
+        },
+        {
+            "label": "2026-04-07_16-53-08",
+            "content": "@@ -43,19 +43,22 @@\n   var a \n+str\n in\n-t\n+g\n %0A    var\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-07_16-55-51",
+            "content": "@@ -94,17 +94,19 @@\n if a == \n-1\n+%221%22\n  %7B%0A     \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-07_16-57-16",
+            "content": "@@ -138,32 +138,36 @@\n  else %7B%0A        \n+    \n fmt.Println(%22SIM\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-07_16-58-55",
+            "content": "@@ -284,58 +284,8 @@\n M%22)%0A\n-    %7D else if b %3C 14 %7B%0A        fmt.Println(%22NAO%22)%0A\n     \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-07_17-01-18",
+            "content": "@@ -187,17 +187,16 @@\n 7 && b %3C\n-=\n  11 %7B%0A  \n@@ -237,17 +237,16 @@\n e if b %3E\n-=\n  14 && b\n@@ -247,17 +247,16 @@\n 4 && b %3C\n-=\n  17 %7B%0A  \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-07_17-02-58",
+            "content": "@@ -187,16 +187,17 @@\n 7 && b %3C\n+=\n  11 %7B%0A  \n@@ -238,16 +238,17 @@\n e if b %3E\n+=\n  14 && b\n@@ -249,16 +249,17 @@\n 4 && b %3C\n+=\n  17 %7B%0A  \n@@ -310,13 +310,8 @@\n 4 %7B%0A\n-    %0A\n     \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-07_17-03-36",
+            "content": "@@ -191,15 +191,14 @@\n  b %3C\n-=\n  11 %7B%0A\n+\n     \n@@ -237,17 +237,16 @@\n e if b %3E\n-=\n  14 && b\n@@ -247,17 +247,16 @@\n 4 && b %3C\n-=\n  17 %7B%0A  \n@@ -303,16 +303,21 @@\n  %3C 14 %7B%0A\n+    %0A\n         \n@@ -327,32 +327,32 @@\n .Println(%22NAO%22)%0A\n+\n     %7D else if a \n@@ -404,58 +404,8 @@\n    %7D\n- else if b %3E 17 %7B%0A        fmt.Println(%22NAO%22)%0A    %7D\n %0A%0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-07_17-10-36",
+            "content": "@@ -161,28 +161,24 @@\n ntln(%22SIM%22)%0A\n-    \n     %7D; if b \n@@ -194,36 +194,32 @@\n %3C= 11 %7B%0A        \n-    \n fmt.Println(%22SIM\n@@ -217,36 +217,32 @@\n ntln(%22SIM%22)%0A    \n-  \n-  \n %7D else if b %3E= 1\n@@ -256,36 +256,32 @@\n %3C= 17 %7B%0A        \n-    \n fmt.Println(%22SIM\n@@ -283,20 +283,16 @@\n (%22SIM%22)%0A\n-    \n     %7D el\n@@ -306,36 +306,32 @@\n  %3C 14 %7B%0A        \n-    \n fmt.Println(%22NAO\n@@ -325,36 +325,32 @@\n .Println(%22NAO%22)%0A\n-    \n     %7D else if a \n@@ -366,36 +366,32 @@\n  %3E 11 %7B%0A        \n-  \n-  \n fmt.Println(%22NAO\n@@ -397,20 +397,16 @@\n O%22)%0A    \n-   \n- \n %7D else i\n@@ -412,28 +412,24 @@\n if b %3E 17 %7B%0A\n-    \n         fmt.\n@@ -454,11 +454,6 @@\n  %7D%0A%0A\n+\n %7D%0A\n-    %0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-07_17-12-01",
+            "content": "@@ -174,17 +174,16 @@\n        %7D\n- \n ; if b %3E\n@@ -497,10 +497,8 @@\n %0A%7D%0A    %0A\n-%0A%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-07_17-13-11",
+            "content": "@@ -117,36 +117,32 @@\n .Println(%22NAO%22)%0A\n-    \n     %7D else if %7B%0A\n@@ -140,17 +140,10 @@\n lse \n-if %7B%0A    \n+%7B%0A\n     \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-07_17-14-00",
+            "content": "@@ -117,32 +117,36 @@\n .Println(%22NAO%22)%0A\n+    \n     %7D else if %7B%0A\n@@ -145,16 +145,20 @@\n se if %7B%0A\n+    \n         \n@@ -172,24 +172,28 @@\n ntln(%22SIM%22)%0A\n+    \n     %7D ; if b\n@@ -210,32 +210,36 @@\n %3C= 11 %7B%0A        \n+    \n fmt.Println(%22SIM\n@@ -233,32 +233,36 @@\n .Println(%22SIM%22)%0A\n+    \n     %7D else if b \n@@ -276,24 +276,28 @@\n & b %3C= 17 %7B%0A\n+    \n         fmt.\n@@ -307,24 +307,28 @@\n ntln(%22SIM%22)%0A\n+    \n     %7D else i\n@@ -338,32 +338,36 @@\n  %3C 14 %7B%0A        \n+  \n+  \n fmt.Println(%22NAO\n@@ -361,32 +361,36 @@\n .Println(%22NAO%22)%0A\n+    \n     %7D else if a \n@@ -406,32 +406,36 @@\n  %3E 11 %7B%0A        \n+    \n fmt.Println(%22NAO\n@@ -437,24 +437,28 @@\n (%22NAO%22)%0A    \n+  \n+  \n %7D else if b \n@@ -460,24 +460,28 @@\n if b %3E 17 %7B%0A\n+    \n         fmt.\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-07_17-14-35",
+            "content": "@@ -136,16 +136,19 @@\n  %7D else \n+if \n %7B%0A      \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-07_17-14-45",
+            "content": "@@ -100,57 +100,8 @@\n = 1 \n-%7C%7C a == 7 && b %3E 11 %7C%7C b %3C 14 && b %3E 11 %7C%7C b %3E 17\n %7B%0A  \n@@ -164,16 +164,299 @@\n n(%22SIM%22)\n+%0A    %7D ; if b %3E 7 && b %3C= 11 %7B%0A        fmt.Println(%22SIM%22)%0A    %7D else if b %3E= 14 && b %3C= 17 %7B%0A        fmt.Println(%22SIM%22)%0A    %7D else if b %3C 14 %7B%0A        fmt.Println(%22NAO%22)%0A    %7D else if a == 7 && b %3E 11 %7B%0A        fmt.Println(%22NAO%22)%0A    %7D else if b %3E 17 %7B%0A        fmt.Println(%22NAO%22)%0A   \n  %7D%0A%0A%7D%0A  \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-07_17-17-43",
+            "content": "@@ -149,20 +149,9 @@\n %3E 17\n- %7C%7C b %3C 8 %7B \n+%7B\n %0A   \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-07_17-19-11",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a int\n    var b int\n    fmt.Scan(&a, &b)\n    if a == 1 || a == 7 && b > 11 || b < 14 && b > 11 || b > 17 || b < 8 { \n        fmt.Println(\"NAO\")\n    } else {\n        fmt.Println(\"SIM\") }\n\n}\n    \n\n\n",
+            "lines": "15"
         }
     ]
 }

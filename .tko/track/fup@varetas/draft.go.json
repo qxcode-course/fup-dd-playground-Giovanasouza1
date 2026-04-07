@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-07_17-37-30",
+            "content": "@@ -125,22 +125,8 @@\n + b \n-%7C%7C a == b + c \n %7B%0A  \n@@ -189,21 +189,22 @@\n tln(%22True%22)%0A\n+%0A\n     %7D%0A%0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-07_17-40-09",
+            "content": "@@ -138,29 +138,8 @@\n  + c\n- %7C%7C b == a + c %7C%7C c =\n  %7B%0A \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-07_17-40-37",
+            "content": "@@ -159,14 +159,8 @@\n  c =\n- b + a\n  %7B%0A \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-07_17-40-40",
+            "content": "@@ -155,17 +155,16 @@\n c %7C%7C c =\n-=\n  b + a %7B\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-07_17-40-49",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b, c int\n    fmt.Scan(&a, &b, &c)\n    if a > b + c || b > a + c || c > a + b || a == b + c || b == a + c || c == b + a {\n        fmt.Println(\"False\")\n    } else {\n        fmt.Println(\"True\")\n    }\n\n}\n",
+            "lines": "12"
+        }
+    ]
+}
