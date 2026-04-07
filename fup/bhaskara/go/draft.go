@@ -12,18 +12,16 @@ func main() {
     if delta > 0 {
         x1 := (- b + math.Sqrt(delta)) / (2 * a) 
         x2 := (- b - math.Sqrt(delta)) / (2 * a) 
-        fmt.Println(x1)
-        fmt.Println(x2)
-    } if delta < 0 {
+        fmt.Printf("%.2f\n", x1)
+        fmt.Printf("%.2f\n", x2)
+
+    } else if delta < 0 {
         fmt.Println("nao ha raiz real")
-    } if delta = 0 {
+
+    } else if delta == 0 {
+        fmt.Printf("%.2f\n", x1)
+        var x1
         
     }
-
-    
-    
-    
-    x := (- b + math.Sqrt(delta)) / (2 * a) //Bhaskara
-    fmt.Printf(x)
-    if 
 }
+

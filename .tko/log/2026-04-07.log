@@ -114,3 +114,13 @@
 2026-04-07 18:07:22, EXEC, v:1, k:fup@bhaskara, mode:FULL, size:15, fail:COMP
 2026-04-07 18:07:30, EXEC, v:1, k:fup@bhaskara, mode:FULL, fail:COMP
 2026-04-07 18:20:01, MOVE, v:1, k:fup@bhaskara, mode:BACK
+2026-04-07 20:16:29, MOVE, v:1, k:fup@round, mode:PICK
+2026-04-07 20:17:07, MOVE, v:1, k:fup@round, mode:BACK
+2026-04-07 20:17:16, MOVE, v:1, k:fup@bhaskara, mode:PICK
+2026-04-07 20:19:42, EXEC, v:1, k:fup@bhaskara, mode:FULL, size:29, fail:COMP
+2026-04-07 20:26:01, EXEC, v:1, k:fup@bhaskara, mode:FULL, size:22, fail:COMP
+2026-04-07 20:27:31, EXEC, v:1, k:fup@bhaskara, mode:FULL, rate:28, size:24
+2026-04-07 20:28:31, EXEC, v:1, k:fup@bhaskara, mode:FULL, rate:28, size:24
+2026-04-07 20:28:54, EXEC, v:1, k:fup@bhaskara, mode:FULL, rate:71, size:24
+2026-04-07 20:30:06, EXEC, v:1, k:fup@bhaskara, mode:FULL, rate:71, size:25
+2026-04-07 20:31:11, MOVE, v:1, k:fup@bhaskara, mode:BACK
