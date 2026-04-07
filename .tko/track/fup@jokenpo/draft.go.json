@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-07_00-31-42",
+            "content": "@@ -441,32 +441,33 @@\n .Println(empate)\n+%5D\n %0A    %7D else if a\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-07_00-31-53",
+            "content": "@@ -55,21 +55,16 @@\n tring   \n-%0A    \n var joga\n@@ -81,14 +81,8 @@\n dor2\n- int64\n %0A   \n@@ -258,17 +258,16 @@\n else if \n-(\n a == tes\n@@ -285,17 +285,16 @@\n  tesoura\n-)\n  %7B%0A     \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-07_00-32-42",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b string   \n    var jogador1, jogador2 int64\n    fmt.Scan(&a, &b, &jog1, &jog2)\n    if a == tesoura && b == papel {\n        fmt.Println(jog1)\n    } else if a == tesoura && b == pedra {\n        fmt.Println(jog2)\n    } else if (a == tesoura && b = tesoura) {\n        fmt.Println(empate)\n    } else if a == pedra && b = papel {\n        fmt.Println(jog2)\n    } else if a == pedra && b = pedra {\n        fmt.Println(empate)\n    } else if a == pedra && b = tesoura {\n        fmt.Println(jog1)\n    } else if a == papel && b = papel {\n        fmt.Println(empate)\n    } else if a == papel && b = pedra {\n        fmt.Println(jogador2)\n    } else if a == papel && b = tesoura {\n        fmt.Println(jog2)\n    }\n}\n",
+            "lines": "26"
+        }
+    ]
+}

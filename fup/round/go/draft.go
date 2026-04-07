@@ -1,5 +1,7 @@
 package main
 import "fmt"
 func main() {
-    fmt.Println("Hello, World!")
+    var n1, r, f, c float64
+    fmt.Scan(&n1, &r, &f, &c)
+    if n1 
 }

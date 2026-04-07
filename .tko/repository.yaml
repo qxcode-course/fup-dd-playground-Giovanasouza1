@@ -13,11 +13,11 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@if1
-- fup@if2
-- fup@base
 - fup@for1
+- fup@if1
 - fup@if_extra
+- fup@base
+- fup@if2
 - fup@games
 tasks:
   fup@tres: '{self:1, rate:100, study:30, friend:hanna, guided:1, debug:1}'
