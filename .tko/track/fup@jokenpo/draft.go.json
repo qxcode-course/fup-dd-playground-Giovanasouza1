@@ -12,8 +12,58 @@
         },
         {
             "label": "2026-04-07_00-32-42",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b string   \n    var jogador1, jogador2 int64\n    fmt.Scan(&a, &b, &jog1, &jog2)\n    if a == tesoura && b == papel {\n        fmt.Println(jog1)\n    } else if a == tesoura && b == pedra {\n        fmt.Println(jog2)\n    } else if (a == tesoura && b = tesoura) {\n        fmt.Println(empate)\n    } else if a == pedra && b = papel {\n        fmt.Println(jog2)\n    } else if a == pedra && b = pedra {\n        fmt.Println(empate)\n    } else if a == pedra && b = tesoura {\n        fmt.Println(jog1)\n    } else if a == papel && b = papel {\n        fmt.Println(empate)\n    } else if a == papel && b = pedra {\n        fmt.Println(jogador2)\n    } else if a == papel && b = tesoura {\n        fmt.Println(jog2)\n    }\n}\n",
+            "content": "@@ -71,14 +71,22 @@\n  jog\n+ador\n 1, jog\n+ador\n 2 in\n@@ -281,33 +281,32 @@\n = tesoura && b =\n-=\n  tesoura) %7B%0A    \n@@ -352,33 +352,32 @@\n  == pedra && b =\n-=\n  papel %7B%0A       \n@@ -418,33 +418,32 @@\n  == pedra && b =\n-=\n  pedra %7B%0A       \n@@ -490,25 +490,24 @@\n pedra && b =\n-=\n  tesoura %7B%0A \n@@ -558,25 +558,24 @@\n papel && b =\n-=\n  papel %7B%0A   \n@@ -626,25 +626,24 @@\n papel && b =\n-=\n  pedra %7B%0A   \n@@ -700,17 +700,16 @@\n l && b =\n-=\n  tesoura\n",
             "lines": "26"
+        },
+        {
+            "label": "2026-04-07_12-17-17",
+            "content": "@@ -124,33 +124,31 @@\n     if a == \n-%22\n tesoura\n-%22\n  && b == %22pa\n@@ -136,39 +136,37 @@\n tesoura && b == \n-%22\n papel\n-%22\n  %7B%0A        fmt.P\n@@ -164,38 +164,36 @@\n     fmt.Println(\n-%22\n jog1\n-%22\n )%0A    %7D else if \n@@ -193,33 +193,31 @@\n lse if a == \n-%22\n tesoura\n-%22\n  && b == %22pe\n@@ -205,39 +205,37 @@\n tesoura && b == \n-%22\n pedra\n-%22\n  %7B%0A        fmt.P\n@@ -233,38 +233,36 @@\n     fmt.Println(\n-%22\n jog2\n-%22\n )%0A    %7D else if \n@@ -267,25 +267,23 @@\n f (a == \n-%22\n tesoura\n-%22\n  && b ==\n@@ -283,25 +283,23 @@\n && b == \n-%22\n tesoura\n-%22\n ) %7B%0A    \n@@ -310,32 +310,30 @@\n fmt.Println(\n-%22\n empate\n-%22\n )%0A    %7D else\n@@ -333,39 +333,37 @@\n  %7D else if a == \n-%22\n pedra\n-%22\n  && b == %22papel%22\n@@ -347,39 +347,37 @@\n = pedra && b == \n-%22\n papel\n-%22\n  %7B%0A        fmt.P\n@@ -375,38 +375,36 @@\n     fmt.Println(\n-%22\n jog2\n-%22\n )%0A    %7D else if \n@@ -400,39 +400,37 @@\n  %7D else if a == \n-%22\n pedra\n-%22\n  && b == %22pedra%22\n@@ -414,39 +414,37 @@\n = pedra && b == \n-%22\n pedra\n-%22\n  %7B%0A        fmt.P\n@@ -446,32 +446,30 @@\n fmt.Println(\n-%22\n empate\n-%22\n )%0A    %7D else\n@@ -477,23 +477,21 @@\n if a == \n-%22\n pedra\n-%22\n  && b ==\n@@ -487,33 +487,31 @@\n dra && b == \n-%22\n tesoura\n-%22\n  %7B%0A        f\n@@ -525,14 +525,12 @@\n tln(\n-%22\n jog1\n-%22\n )%0A  \n@@ -538,39 +538,37 @@\n  %7D else if a == \n-%22\n papel\n-%22\n  && b == %22papel%22\n@@ -560,23 +560,21 @@\n && b == \n-%22\n papel\n-%22\n  %7B%0A     \n@@ -592,16 +592,14 @@\n tln(\n-%22\n empate\n-%22\n )%0A  \n@@ -607,39 +607,37 @@\n  %7D else if a == \n-%22\n papel\n-%22\n  && b == %22pedra%22\n@@ -633,15 +633,13 @@\n  == \n-%22\n pedra\n-%22\n  %7B%0A \n@@ -653,30 +653,32 @@\n fmt.Println(\n-%22\n jog\n+ador\n 2\n-%22\n )%0A    %7D else\n@@ -690,15 +690,13 @@\n  == \n-%22\n papel\n-%22\n  && \n@@ -704,17 +704,15 @@\n  == \n-%22\n tesoura\n-%22\n  %7B%0A \n@@ -734,14 +734,12 @@\n tln(\n-%22\n jog2\n-%22\n )%0A  \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-07_12-25-01",
+            "content": "@@ -100,16 +100,30 @@\n n(&a, &b\n+, &jog1, &jog2\n )%0A    if\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-07_12-26-24",
+            "content": "@@ -104,22 +104,8 @@\n , &b\n-, &jog1, &jog2\n )%0A  \n@@ -765,17 +765,16 @@\n rintln(%22\n-t\n jog2%22)%0A \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-07_12-26-50",
+            "content": "@@ -251,20 +251,22 @@\n Println(\n+%22\n jog2\n+%22\n )%0A    %7D \n@@ -771,31 +771,32 @@\n    fmt.Println(%22\n+t\n jog2%22)%0A    %7D%0A%7D%0A\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-07_12-27-09",
+            "content": "@@ -176,20 +176,22 @@\n Println(\n+%22\n jog1\n+%22\n )%0A    %7D \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-07_12-27-20",
+            "content": "@@ -168,38 +168,36 @@\n     fmt.Println(\n-%22\n jog1\n-%22\n )%0A    %7D else if \n@@ -393,36 +393,38 @@\n     fmt.Println(\n+%22\n jog2\n+%22\n )%0A    %7D else if \n@@ -691,36 +691,38 @@\n     fmt.Println(\n+%22\n jog2\n+%22\n )%0A    %7D else if \n@@ -770,26 +770,28 @@\n fmt.Println(\n+%22\n jog2\n+%22\n )%0A    %7D%0A%7D%0A\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-07_12-27-57",
+            "content": "@@ -56,16 +56,41 @@\n ring   %0A\n+    var jog1, jog2 int64%0A\n     fmt.\n@@ -100,16 +100,30 @@\n n(&a, &b\n+, &jog1, &jog2\n )%0A    if\n@@ -243,38 +243,36 @@\n     fmt.Println(\n-%22\n jog2\n-%22\n )%0A    %7D else if \n@@ -395,38 +395,36 @@\n     fmt.Println(\n-%22\n jog2\n-%22\n )%0A    %7D else if \n@@ -695,30 +695,28 @@\n fmt.Println(\n-%22\n jog2\n-%22\n )%0A    %7D else\n@@ -776,14 +776,12 @@\n tln(\n-%22\n jog2\n-%22\n )%0A  \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-07_12-28-47",
+            "content": "@@ -82,33 +82,39 @@\n b)%0A    if a == %22\n-S\n+tesoura\n %22 && b == %22P%22 %7B%0A\n@@ -100,33 +100,37 @@\n soura%22 && b == %22\n-P\n+papel\n %22 %7B%0A        fmt.\n@@ -161,25 +161,31 @@\n se if a == %22\n-S\n+tesoura\n %22 && b == %22R\n@@ -175,33 +175,37 @@\n soura%22 && b == %22\n-R\n+pedra\n %22 %7B%0A        fmt.\n@@ -241,17 +241,23 @@\n  (a == %22\n-S\n+tesoura\n %22 && b =\n@@ -259,17 +259,23 @@\n & b == %22\n-S\n+tesoura\n %22) %7B%0A   \n@@ -313,33 +313,37 @@\n %7D else if a == %22\n-R\n+pedra\n %22 && b == %22P%22 %7B%0A\n@@ -329,33 +329,37 @@\n pedra%22 && b == %22\n-P\n+papel\n %22 %7B%0A        fmt.\n@@ -386,33 +386,37 @@\n %7D else if a == %22\n-R\n+pedra\n %22 && b == %22R%22 %7B%0A\n@@ -402,33 +402,37 @@\n pedra%22 && b == %22\n-R\n+pedra\n %22 %7B%0A        fmt.\n@@ -469,17 +469,21 @@\n f a == %22\n-R\n+pedra\n %22 && b =\n@@ -477,33 +477,39 @@\n pedra%22 && b == %22\n-S\n+tesoura\n %22 %7B%0A        fmt.\n@@ -536,33 +536,37 @@\n %7D else if a == %22\n-P\n+papel\n %22 && b == %22P%22 %7B%0A\n@@ -560,17 +560,21 @@\n & b == %22\n-P\n+papel\n %22 %7B%0A    \n@@ -611,33 +611,37 @@\n %7D else if a == %22\n-P\n+papel\n %22 && b == %22R%22 %7B%0A\n@@ -639,9 +639,13 @@\n == %22\n-R\n+pedra\n %22 %7B%0A\n@@ -692,17 +692,21 @@\n f a == %22\n-P\n+papel\n %22 && b =\n@@ -708,17 +708,23 @@\n & b == %22\n-S\n+tesoura\n %22 %7B%0A    \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-07_12-35-18",
+            "content": "@@ -586,33 +586,33 @@\n fmt.Println(%22jog\n-1\n+2\n %22)%0A    %7D else if\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-07_12-35-57",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b string   \n    fmt.Scan(&a, &b)\n    if a == \"S\" && b == \"P\" {\n        fmt.Println(\"jog1\")\n    } else if a == \"S\" && b == \"R\" {\n        fmt.Println(\"jog2\")\n    } else if (a == \"S\" && b == \"S\") {\n        fmt.Println(\"empate\")\n    } else if a == \"R\" && b == \"P\" {\n        fmt.Println(\"jog2\")\n    } else if a == \"R\" && b == \"R\" {\n        fmt.Println(\"empate\")\n    } else if a == \"R\" && b == \"S\" {\n        fmt.Println(\"jog1\")\n    } else if a == \"P\" && b == \"P\" {\n        fmt.Println(\"empate\")\n    } else if a == \"P\" && b == \"R\" {\n        fmt.Println(\"jog1\")\n    } else if a == \"P\" && b == \"S\" {\n        fmt.Println(\"jog2\")\n    }\n}\n",
+            "lines": "25"
         }
     ]
 }

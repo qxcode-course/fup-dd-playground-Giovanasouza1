@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-07_12-47-20",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n1, carac float64\n    fmt.Scan(&carac, &n1)\n    if carac == r {\n        int round(float64 num)\n    }\n}\n",
+            "lines": "9"
+        }
+    ]
+}

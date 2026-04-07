@@ -1,0 +1,89 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-07_13-08-07",
+            "content": "@@ -293,10 +293,8 @@\n = 5)\n- ;\n %0A   \n@@ -302,21 +302,16 @@\n         \n-else \n if (n1 +\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-07_13-08-25",
+            "content": "@@ -289,16 +289,18 @@\n /3 %3E= 5)\n+ ;\n %0A       \n@@ -293,33 +293,34 @@\n = 5) ;%0A         \n-%7D\n+  \n  else if (n1 + n\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-07_13-09-36",
+            "content": "@@ -301,33 +301,32 @@\n       %7D else if \n-(\n (n1 + n2 + n3)/3\n@@ -329,14 +329,14 @@\n 3)/3\n-)\n  %3E= 5\n+)\n  %7B%0A \n@@ -405,17 +405,16 @@\n else if \n-(\n (n1 + n2\n@@ -484,16 +484,16 @@\n       %7D%0A\n-\n         \n@@ -486,16 +486,57 @@\n     %7D%0A        %7D%0A\n+    %7D%0A    fmt.Println(%22Hello, World!%22)%0A%7D%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-07_13-10-50",
+            "content": "@@ -266,27 +266,16 @@\n         \n-fmt.Println\n ((n1 + n\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-07_13-11-09",
+            "content": "@@ -87,25 +87,24 @@\n &n3)%0A    if \n-(\n (n1 + n2)/2 \n@@ -107,17 +107,16 @@\n )/2 %3E= 7\n-)\n  %7B%0A     \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-07_13-12-37",
+            "content": "@@ -218,6 +218,299 @@\n    %7D\n+ else if (n1 + n2)/2 %3E 4 && (n1 + n2)/2 %3C 7 %7B%0A        fmt.Println((n1 + n2 + n3)/3 %3E= 5)%0A         %7D else if ((n1 + n2 + n3)/3) %3E= 5 %7B%0A                fmt.Println(%22aprovado na final%22)%0A            %7D else if ((n1 + n2 + n3)/3 %3C 5) %7B%0A                fmt.Println(%22reprovado%22)%0A            %7D%0A        %7D\n %0A\n-%7D\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-07_13-13-42",
+            "content": "@@ -213,191 +213,8 @@\n o%22)%0A\n-    %7D else if (n1 + n2)/2 %3E 4 %7C%7C (n1 + n2)/2 %3C 7 %7B%0A        fmt.Println((n1 + n2 + n3)/3 %3E= 5) %0A        fmt. Println(%22aprovado na final%22)%0A    %7D else %7B%0A        fmt.Println(%22reprovado%22)%0A\n     \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-07_13-21-24",
+            "content": "@@ -268,16 +268,27 @@\n         \n+fmt.Println\n ((n1 + n\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-07_13-21-42",
+            "content": "@@ -264,27 +264,24 @@\n 7 %7B%0A        \n-if \n ((n1 + n2 + \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-07_13-24-09",
+            "content": "@@ -295,17 +295,16 @@\n 3 %3E= 5) \n-%7B\n %0A       \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-07_13-24-30",
+            "content": "@@ -339,21 +339,16 @@\n final%22)%0A\n-     \n     %7D el\n@@ -352,20 +352,16 @@\n  else %7B%0A\n-    \n         \n@@ -388,15 +388,9 @@\n do%22)\n-%7D%0A     \n+%0A\n     \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-07_13-25-55",
+            "content": "@@ -395,25 +395,16 @@\n vado\n- na final\n %22)%7D%0A    \n %7D %0A%7D\n@@ -399,12 +399,16 @@\n %22)%7D%0A    \n-%7D\n  \n+    %7D\n %0A%7D\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-07_13-26-49",
+            "content": "@@ -301,28 +301,24 @@\n ) %7B%0A        \n-    \n fmt. Println\n@@ -348,19 +348,16 @@\n         \n-   \n %7D else %7B\n@@ -357,20 +357,16 @@\n  else %7B%0A\n-    \n         \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-07_13-27-26",
+            "content": "@@ -347,24 +347,28 @@\n l%22)%0A        \n+    \n %7D else %7B%0A   \n@@ -364,16 +364,20 @@\n  else %7B%0A\n+    \n         \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-07_13-27-56",
+            "content": "@@ -361,34 +361,8 @@\n else\n- if ((n1 + n2 + n3)/3 %3C 5)\n  %7B%0A \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-07_13-28-37",
+            "content": "@@ -272,17 +272,31 @@\n     if (\n-n\n+(n1 + n2 + n3)/\n 3 %3E= 5) \n@@ -362,17 +362,31 @@\n lse if (\n-n\n+(n1 + n2 + n3)/\n 3 %3C 5) %7B\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-07_13-31-27",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n1, n2, n3 int\n    fmt.Scan(&n1, &n2, &n3)\n    if ((n1 + n2)/2 >= 7) {\n        fmt.Println(\"aprovado\")\n    } else if (n1 + n2)/2 < 4 {\n        fmt.Println(\"reprovado\")\n    } else if (n1 + n2)/2 > 4 || (n1 + n2)/2 < 7 {\n        if (n3 >= 5) {\n            fmt. Println(\"aprovado na final\")\n        } else if (n3 < 5) {\n            fmt.Println(\"reprovado na final\")}\n    } \n}",
+            "lines": "16"
+        }
+    ]
+}

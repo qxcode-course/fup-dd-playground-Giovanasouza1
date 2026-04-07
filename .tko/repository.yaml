@@ -13,12 +13,12 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@for1
 - fup@if1
 - fup@if_extra
 - fup@base
 - fup@if2
 - fup@games
+- fup@for1
 tasks:
   fup@tres: '{self:1, rate:100, study:30, friend:hanna, guided:1, debug:1}'
   fup@resto: '{self:1, rate:100, study:20, guided:1}'
@@ -42,6 +42,9 @@ tasks:
   fup@quantos: '{self:1, rate:100, friend:hanna, debug:1}'
   fup@mumia: '{self:1, rate:100, friend:hanna}'
   fup@meio: '{self:1, rate:100, refactor:1}'
+  fup@jokenpo: '{self:1, rate:100, refactor:1}'
+  fup@final: '{self:1, rate:100, problem:1}'
+  fup@semana: '{rate:42}'
 flags:
   panel: 3
   inbox: 1
@@ -49,4 +52,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@jokenpo
+selected: fup@semana
