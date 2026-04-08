@@ -13,9 +13,10 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@for1
 - fup@if1
 - fup@if2
+- fup@base
+- fup@for1
 - fup@games
 tasks:
   fup@tres: '{self:1, rate:100, study:30, friend:hanna, guided:1, debug:1}'
@@ -45,12 +46,13 @@ tasks:
   fup@final: '{self:1, rate:100, problem:1}'
   fup@semana: '{self:1, rate:100}'
   fup@varetas: '{self:1, rate:100}'
-  fup@bhaskara: '{rate:71}'
+  fup@bhaskara: '{self:1, rate:100, friend:David}'
+  fup@cortada: '{self:1, rate:100, friend:Emily}'
 flags:
-  panel: 3
+  panel: 1
   inbox: 1
   show_panel: 1
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@bhaskara
+selected: fup@monica

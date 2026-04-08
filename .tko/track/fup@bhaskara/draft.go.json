@@ -42,8 +42,28 @@
         },
         {
             "label": "2026-04-07_20-30-06",
-            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\nfunc main() {\n    var a, b, c float64\n    fmt.Scan(&a, &b, &c)\n    delta := math.Pow(b, 2) - 4 * a * c\n\n    if delta > 0 {\n        x1 := (- b + math.Sqrt(delta)) / (2 * a) \n        x2 := (- b - math.Sqrt(delta)) / (2 * a) \n        fmt.Printf(\"%.2f\\n\", x1)\n        fmt.Printf(\"%.2f\\n\", x2)\n\n    } else if delta < 0 {\n        fmt.Println(\"nao ha raiz real\")\n\n    } else if delta == 0 {\n        fmt.Printf(\"%.2f\\n\", a)\n    }\n}\n\n",
+            "content": "@@ -450,35 +450,10 @@\n n%22, \n-x1)%0A        var x1%0A        \n+a)\n %0A   \n",
             "lines": "25"
+        },
+        {
+            "label": "2026-04-08_13-43-43",
+            "content": "@@ -446,22 +446,34 @@\n .2f%5Cn%22, \n-delta)\n+x1)%0A        var x1\n %0A       \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-04-08_13-44-51",
+            "content": "@@ -446,17 +446,21 @@\n .2f%5Cn%22, \n-c\n+delta\n )%0A      \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-08_13-46-30",
+            "content": "@@ -449,43 +449,10 @@\n %5Cn%22,\n-(- b + math.Sqrt(delta)) / (2 * a)\n  \n+c\n )%0A  \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-08_13-47-35",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\nfunc main() {\n    var a, b, c float64\n    fmt.Scan(&a, &b, &c)\n    delta := math.Pow(b, 2) - 4 * a * c\n\n    if delta > 0 {\n        x1 := (- b + math.Sqrt(delta)) / (2 * a) \n        x2 := (- b - math.Sqrt(delta)) / (2 * a) \n        fmt.Printf(\"%.2f\\n\", x1)\n        fmt.Printf(\"%.2f\\n\", x2)\n\n    } else if delta < 0 {\n        fmt.Println(\"nao ha raiz real\")\n\n    } else if delta == 0 {\n        fmt.Printf(\"%.2f\\n\",(- b + math.Sqrt(delta)) / (2 * a) )\n        \n    }\n}\n\n",
+            "lines": "26"
         }
     ]
 }

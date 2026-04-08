@@ -19,8 +19,7 @@ func main() {
         fmt.Println("nao ha raiz real")
 
     } else if delta == 0 {
-        fmt.Printf("%.2f\n", x1)
-        var x1
+        fmt.Printf("%.2f\n",(- b + math.Sqrt(delta)) / (2 * a) )
         
     }
 }

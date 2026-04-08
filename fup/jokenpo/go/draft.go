@@ -22,4 +22,4 @@ func main() {
     } else if a == "P" && b == "S" {
         fmt.Println("jog2")
     }
-}
+} 

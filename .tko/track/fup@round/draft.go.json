@@ -2,8 +2,13 @@
     "patches": [
         {
             "label": "2026-04-07_12-47-20",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n1, carac float64\n    fmt.Scan(&carac, &n1)\n    if carac == r {\n        int round(float64 num)\n    }\n}\n",
+            "content": "@@ -98,11 +98,54 @@\n f carac \n+== r %7B%0A        int round(float64 num)%0A    %7D\n %0A%7D%0A\n",
             "lines": "9"
+        },
+        {
+            "label": "2026-04-08_14-38-18",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n1, carac float64\n    fmt.Scan(&carac, &n1)\n    if carac \n}\n",
+            "lines": "7"
         }
     ]
 }
