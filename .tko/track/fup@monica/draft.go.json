@@ -1,0 +1,104 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-10_19-46-16",
+            "content": "@@ -101,16 +101,24 @@\n + b - m%0A\n+    if %0A\n     fmt.\n@@ -125,17 +125,27 @@\n Println(\n-velho\n+%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-10_19-46-37",
+            "content": "@@ -94,21 +94,18 @@\n o :=\n- - m +\n  a + b \n+- m\n %0A   \n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-04-10_19-48-04",
+            "content": "@@ -95,19 +95,20 @@\n  := \n-(a + b) - m\n+- m + a + b \n %0A   \n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-04-10_19-48-27",
+            "content": "@@ -94,20 +94,16 @@\n o :=\n- m -\n  (a + b)\n %0A   \n@@ -98,16 +98,20 @@\n  (a + b)\n+ - m\n %0A    fmt\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-04-10_19-49-09",
+            "content": "@@ -107,153 +107,8 @@\n  b)%0A\n-    if a %3E b && a %3E m %7B%0A        fmt.Println(a)%0A%0A    %7D else if b %3E a && b %3E m %7B%0A        fmt.Println(b)%0A    %7D else if velho %3E a && velho %3E b %7B%0A    \n     \n@@ -130,17 +130,6 @@\n ho)%0A\n-    %7D%0A    %0A\n %7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-04-10_19-55-10",
+            "content": "@@ -151,11 +151,9 @@\n tln(\n-%22a%22\n+a\n )%0A%0A \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-10_19-55-21",
+            "content": "@@ -208,11 +208,9 @@\n tln(\n-%22b%22\n+b\n )%0A  \n@@ -270,15 +270,13 @@\n tln(\n-%22\n velho\n-%22\n )%0A  \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-10_19-55-35",
+            "content": "@@ -151,11 +151,14 @@\n tln(\n-a\n+%22a%22\n )%0A\n+%0A\n     \n@@ -204,17 +204,19 @@\n Println(\n-b\n+%22b%22\n )%0A    %7D \n@@ -268,21 +268,23 @@\n Println(\n+%22\n velho\n+%22\n )%0A    %7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-10_19-56-04",
+            "content": "@@ -114,74 +114,8 @@\n  if \n-velho %3E a && velho %3E b %7B%0A        fmt.Println(velho)%0A    %7D else if \n a %3E \n@@ -208,16 +208,77 @@\n (b)%0A    \n+%7D else if velho %3E a && velho %3E b %7B%0A        fmt.Println(velho)\n %0A    %7D%0A \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-10_19-59-07",
+            "content": "@@ -82,17 +82,21 @@\n &b)%0A    \n-c\n+velho\n  := m - \n@@ -114,17 +114,21 @@\n  if \n-c\n+velho\n  %3E a && \n c %3E \n@@ -123,17 +123,21 @@\n  %3E a && \n-c\n+velho\n  %3E b %7B%0A \n@@ -155,17 +155,21 @@\n Println(\n-c\n+velho\n )%0A    %7D \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-10_20-01-27",
+            "content": "@@ -147,11 +147,9 @@\n tln(\n-%22c%22\n+c\n )%0A  \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-10_20-02-14",
+            "content": "@@ -143,17 +143,19 @@\n Println(\n-c\n+%22c%22\n )%0A    %7D \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-10_20-02-45",
+            "content": "@@ -102,32 +102,16 @@\n + b)%0A   \n-  fmt.Println(c)\n  if c %3E \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-10_20-03-20",
+            "content": "@@ -122,9 +122,8 @@\n n(c)\n-;\n  if \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-10_20-03-27",
+            "content": "@@ -87,17 +87,16 @@\n    c := \n-(\n m - (a +\n@@ -98,21 +98,37 @@\n  (a + b)\n-)\n %0A   \n+  fmt.Println(c);\n  if c %3E \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-10_20-04-04",
+            "content": "@@ -87,16 +87,17 @@\n    c := \n+(\n m - (a +\n@@ -99,16 +99,41 @@\n  (a + b)\n+)%0A    if c %3E a && c %3E b %7B\n %0A       \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-10_20-04-39",
+            "content": "@@ -126,16 +126,23 @@\n (c)%0A    \n+%7D else \n if a %3E b\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-10_20-04-56",
+            "content": "@@ -133,62 +133,8 @@\n  if \n-c %3E a && c %3E b %7B%0A        fmt.Println(c)%0A    %7D else if \n a %3E \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-10_20-05-43",
+            "content": "@@ -99,16 +99,39 @@\n (a + b)%0A\n+        fmt.Println(c)%0A\n     if c\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-10_20-06-44",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var m, a, b int\n    fmt.Scan(&m, &a, &b)\n    c := m - (a + b)\n    if c > a && c > b {\n        fmt.Println(c)\n    } else if a > b && a > m {\n        fmt.Println(a)\n    } else if b > a && b > m {\n        fmt.Println(b)\n    \n    }\n    \n}\n",
+            "lines": "16"
+        }
+    ]
+}

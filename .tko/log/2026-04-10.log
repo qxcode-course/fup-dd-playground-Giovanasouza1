@@ -1,2 +1,28 @@
 2026-04-10 19:09:07, MOVE, v:1, k:fup@monica, mode:PICK
 2026-04-10 19:13:22, MOVE, v:1, k:fup@monica, mode:BACK
+2026-04-10 19:46:13, MOVE, v:1, k:fup@monica, mode:PICK
+2026-04-10 19:46:16, EXEC, v:1, k:fup@monica, mode:FULL, size:9, fail:COMP
+2026-04-10 19:46:37, EXEC, v:1, k:fup@monica, mode:FULL, rate:0, size:8
+2026-04-10 19:48:04, EXEC, v:1, k:fup@monica, mode:FULL, rate:0, size:8
+2026-04-10 19:48:27, EXEC, v:1, k:fup@monica, mode:FULL, rate:0, size:8
+2026-04-10 19:49:09, EXEC, v:1, k:fup@monica, mode:FULL, rate:62, size:8
+2026-04-10 19:55:10, EXEC, v:1, k:fup@monica, mode:FULL, rate:62, size:16
+2026-04-10 19:55:21, EXEC, v:1, k:fup@monica, mode:FULL, rate:62, size:16
+2026-04-10 19:55:35, EXEC, v:1, k:fup@monica, mode:FULL, rate:0, size:16
+2026-04-10 19:56:04, EXEC, v:1, k:fup@monica, mode:FULL, rate:62, size:15
+2026-04-10 19:59:07, EXEC, v:1, k:fup@monica, mode:FULL, rate:62, size:16
+2026-04-10 20:01:27, EXEC, v:1, k:fup@monica, mode:FULL, rate:62, size:16
+2026-04-10 20:02:14, EXEC, v:1, k:fup@monica, mode:FULL, rate:0, size:16
+2026-04-10 20:02:42, MOVE, v:1, k:fup@monica, mode:PICK
+2026-04-10 20:02:45, EXEC, v:1, k:fup@monica, mode:FULL, rate:62, size:16
+2026-04-10 20:03:20, EXEC, v:1, k:fup@monica, mode:FULL, size:16, fail:COMP
+2026-04-10 20:03:27, EXEC, v:1, k:fup@monica, mode:FULL, rate:0, size:16
+2026-04-10 20:04:03, MOVE, v:1, k:fup@monica, mode:PICK
+2026-04-10 20:04:04, EXEC, v:1, k:fup@monica, mode:FULL, rate:62, size:16
+2026-04-10 20:04:39, EXEC, v:1, k:fup@monica, mode:FULL, size:15, fail:COMP
+2026-04-10 20:04:57, EXEC, v:1, k:fup@monica, mode:FULL, rate:62, size:15
+2026-04-10 20:05:43, EXEC, v:1, k:fup@monica, mode:FULL, rate:0, size:17
+2026-04-10 20:06:42, MOVE, v:1, k:fup@monica, mode:PICK
+2026-04-10 20:06:44, EXEC, v:1, k:fup@monica, mode:FULL, rate:62, size:16
+2026-04-10 20:11:02, MOVE, v:1, k:fup@monica, mode:BACK
+2026-04-10 20:11:10, MOVE, v:1, k:fup@drone, mode:DOWN
