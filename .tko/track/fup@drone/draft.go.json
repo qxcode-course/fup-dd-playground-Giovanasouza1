@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-11_16-15-58",
+            "content": "@@ -208,65 +208,14 @@\n lse \n-if a %3E h && a %3E l %7C%7C b %3E h && b %3E l %7C%7C c %3E h && c %3E l %7B%7D%0A\n+%7B%0A    \n     \n@@ -231,9 +231,16 @@\n ln(%22N%22)%0A\n-%7D\n+    %7D%0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-11_16-19-04",
+            "content": "@@ -255,24 +255,25 @@\n h && c %3E l %7B\n+%7D\n %0A    fmt.Pri\n@@ -281,11 +281,10 @@\n tln(%22N%22)\n-%7D\n %0A%7D\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-11_16-19-41",
+            "content": "@@ -82,11 +82,14 @@\n fmt.\n-Sca\n+Printl\n n(&a\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-11_16-21-20",
+            "content": "@@ -165,28 +165,24 @@\n %7C%7C c %3C= l %7B%0A\n-    \n     fmt.Prin\n@@ -190,16 +190,16 @@\n ln(%22S%22)%0A\n+\n     %7D el\n@@ -253,28 +253,24 @@\n  && c %3E l %7B%0A\n-    \n     fmt.Prin\n@@ -281,104 +281,7 @@\n %22N%22)\n-%0A    %7D else if a %3E h && a %3C l && b %3E h && b %3E h && c %3E h && c %3C l %7B%0A        fmt.Println(%22N%22)%0A    \n %7D%0A%7D\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-11_16-27-44",
+            "content": "@@ -319,83 +319,28 @@\n %3C l \n-%7C%7C a %3C h \n && \n-a %3E l && b %3C h && b %3E l %7C%7C  b %3E h && b %3C l && c %3C h && c %3E l %7C%7C\n+b %3E h && b %3E h &&\n  c %3E\n@@ -339,33 +339,33 @@\n h && c %3E h && c \n-%3E\n+%3C\n  l %7B%0A        fm%0A\n@@ -363,16 +363,30 @@\n       fm\n+t.Println(%22N%22)\n %0A    %7D%0A%7D\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-11_16-35-00",
+            "content": "@@ -414,34 +414,20 @@\n %7B%0A        fm\n-t.Println(%22N%22)\n %0A    %7D%0A%7D\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-11_16-35-19",
+            "content": "@@ -193,16 +193,48 @@\n tln(%22S%22)\n+%0A    %7D else if a %3E h && a %3E l %7C%7C\n  b %3E h &\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-11_16-37-34",
+            "content": "@@ -119,34 +119,54 @@\n  %3C= \n-l && b %3C= h %7C%7C a\n+h %7C%7C a %3C= l %7C%7C b %3C= h %7C%7C b %3C= l %7C%7C c\n  %3C= h \n-&& b\n+%7C%7C c\n  %3C= \n@@ -197,57 +197,39 @@\n %22S%22)\n-%0A    %7D else if c %3C= l\n+ b %3E h\n  && b \n-%3C= h\n+%3E l\n  %7C%7C c \n-%3C=\n+%3E\n  h && \n-b %3C=\n+c %3E\n  l %7B\n@@ -242,33 +242,33 @@\n    fmt.Println(%22\n-S\n+N\n %22)%0A    %7D else if\n@@ -274,80 +274,111 @@\n f a \n-%3C=\n+%3E h && a %3C l %7C%7C a %3C h && a %3E\n  l && \n-c\n+b\n  %3C\n-=\n  h \n-%7C%7C a %3C=\n+&& b %3E l %7C%7C  b %3E\n  h && \n-c\n+b\n  %3C\n-=\n  l \n-%7B%0A        fmt.Println(%22S%22)%0A    %7D else\n+&& c %3C h && c %3E l %7C%7C c %3E h && c %3E l\n  %7B%0A \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-11_16-56-53",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b ,c int\n    var h, l int\n    fmt.Scan(&a, &b, &c, &h, &l)\n    if a <= l && b <= h || a <= h && b <= l {\n        fmt.Println(\"S\")\n    } else if c <= l && b <= h || c <= h && b <= l {\n        fmt.Println(\"S\")\n    } else if a <= l && c <= h || a <= h && c <= l {\n        fmt.Println(\"S\")\n    } else {\n        fmt.Println(\"N\")\n    }\n}",
+            "lines": "16"
+        }
+    ]
+}

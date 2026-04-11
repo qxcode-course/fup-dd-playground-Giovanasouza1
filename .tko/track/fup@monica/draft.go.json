@@ -97,8 +97,53 @@
         },
         {
             "label": "2026-04-10_20-06-44",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var m, a, b int\n    fmt.Scan(&m, &a, &b)\n    c := m - (a + b)\n    if c > a && c > b {\n        fmt.Println(c)\n    } else if a > b && a > m {\n        fmt.Println(a)\n    } else if b > a && b > m {\n        fmt.Println(b)\n    \n    }\n    \n}\n",
+            "content": "@@ -179,17 +179,8 @@\n %3E m \n-&& a %3E c \n %7B%0A  \n@@ -233,16 +233,8 @@\n %3E m \n-&& b %3E c\n %7B%0A  \n",
             "lines": "16"
+        },
+        {
+            "label": "2026-04-11_16-05-00",
+            "content": "@@ -86,45 +86,46 @@\n     \n-if c %3E a &&\n+c := m - (a + b)%0A    if\n  c %3E \n-b\n+a\n  && c \n-:= m - (a +\n+%3E\n  b\n-)\n  %7B%0A \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-11_17-00-01",
+            "content": "@@ -86,47 +86,45 @@\n     \n-c := m - (a + b)%0A%0A    if\n+if c %3E a &&\n  c %3E \n-a\n+b\n  && c \n-%3E\n+:= m - (a +\n  b\n+)\n  %7B%0A \n@@ -180,16 +180,18 @@\n m && a %3E\n+ c\n  %7B%0A     \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-11_17-03-16",
+            "content": "@@ -99,16 +99,17 @@\n (a + b)%0A\n+%0A\n     if c\n@@ -182,18 +182,16 @@\n m && a %3E\n- c\n  %7B%0A     \n@@ -245,17 +245,16 @@\n && b %3E c\n- \n %7B%0A      \n@@ -270,16 +270,21 @@\n ntln(b)%0A\n+    %0A\n     %7D%0A  \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-11_17-08-58",
+            "content": "@@ -86,52 +86,48 @@\n     \n-if c %3E a && c %3E b %7B%0A \n+c := m - (a + b)%0A\n     \n-   c := m - (a + b)\n+if c %3E a && c %3E b %7B\n %0A   \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-11_17-11-54",
+            "content": "@@ -86,48 +86,52 @@\n     \n-c := m - (a + b)%0A    if c %3E a && c %3E b %7B\n+if c %3E a && c %3E b %7B%0A        c := m - (a + b)\n %0A   \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-11_17-13-04",
+            "content": "@@ -127,32 +127,8 @@\n b %7B%0A\n-        c = m - (a + b)%0A\n     \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-11_17-14-54",
+            "content": "@@ -214,32 +214,8 @@\n c %7B%0A\n-        c = m - (a + b)%0A\n     \n@@ -277,32 +277,8 @@\n c %7B%0A\n-        c = m - (a + b)%0A\n     \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-11_17-15-23",
+            "content": "@@ -125,17 +125,33 @@\n %3E b \n-&& c %3C m%7B\n+%7B%0A        c = m - (a + b)\n %0A   \n@@ -206,24 +206,48 @@\n  && a %3E c %7B%0A\n+        c = m - (a + b)%0A\n         fmt.\n@@ -293,24 +293,48 @@\n  && b %3E c %7B%0A\n+        c = m - (a + b)%0A\n         fmt.\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-11_17-17-32",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var m, a, b int\n    fmt.Scan(&m, &a, &b)\n    c := m - (a + b)\n    if c > a && c > b && c < m{\n        fmt.Println(c)\n    } else if a > b && a > m && a > c {\n        fmt.Println(a)\n    } else if b > a && b > m && b > c {\n        fmt.Println(b)\n    }\n    \n}\n",
+            "lines": "15"
         }
     ]
 }

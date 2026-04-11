@@ -1,0 +1,64 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-11_17-58-14",
+            "content": "@@ -91,51 +91,19 @@\n )   \n-%0A    x := b + g + m%0A    if x %3E c %7B%0A \n+ %0A    %0A\n     \n-   \n fmt.\n@@ -114,20 +114,23 @@\n tln(\n-x / c)%0A%0A    %7D\n+%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-04-11_18-25-26",
+            "content": "@@ -148,16 +148,11 @@\n n(x \n-%25\n+/\n  c\n- != 0\n )%0A%0A \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-11_18-28-34",
+            "content": "@@ -158,53 +158,8 @@\n  0)%0A\n-    %7D else if x == c %7B%0A        fmt.Println(c)\n %0A   \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-11_18-29-35",
+            "content": "@@ -201,9 +201,9 @@\n tln(\n-1\n+c\n )%0A  \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-11_18-29-51",
+            "content": "@@ -204,53 +204,8 @@\n (1)%0A\n-    %7D else if x %3C c %7B%0A        fmt.Println(1)%0A\n     \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-11_18-30-40",
+            "content": "@@ -147,16 +147,21 @@\n ln(x %25 c\n+ != 0\n )%0A    %7D \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-11_18-31-08",
+            "content": "@@ -146,20 +146,11 @@\n tln(\n-(\n x \n-+ c - 1)/\n+%25\n  c)%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-11_18-43-16",
+            "content": "@@ -149,16 +149,19 @@\n ((x \n-/ c) + 1\n++ c - 1)/ c\n )%0A  \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-11_18-45-33",
+            "content": "@@ -124,21 +124,8 @@\n %3E c \n-&& x %25 c %3E 0 \n %7B%0A  \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-11_18-46-50",
+            "content": "@@ -127,15 +127,13 @@\n  && \n-(\n x %25 c\n-)\n  %3E 0\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-11_18-47-08",
+            "content": "@@ -265,74 +265,8 @@\n (1)%0A\n-    %7D else if x %3E c && (x %25 c ) == 0 %7B%0A        fmt.Println(x / c)%0A\n     \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-11_18-49-02",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var c, b, g, m int\n    fmt.Scan(&c, &b, &g, &m)   \n    x := b + g + m\n    if x > c && (x % c) > 0 {\n        fmt.Println((x / c) + 1)\n    } else if x == c {\n        fmt.Println(1)\n    } else if x < c {\n        fmt.Println(1)\n    } else if x > c && (x % c ) == 0 {\n        fmt.Println(x / c)\n    }\n}\n",
+            "lines": "16"
+        }
+    ]
+}

@@ -4,13 +4,12 @@ func main() {
     var m, a, b int
     fmt.Scan(&m, &a, &b)
     c := m - (a + b)
-    if c > a && c > b {
+    if c > a && c > b && c < m {
         fmt.Println(c)
-    } else if a > b && a > m {
+    } else if a > b && a > m && a > c {
         fmt.Println(a)
-    } else if b > a && b > m {
+    } else if b > a && b > m && b > c {
         fmt.Println(b)
-    
     }
     
 }
