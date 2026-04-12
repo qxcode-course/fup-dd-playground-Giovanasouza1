@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-12_17-15-00",
+            "content": "@@ -111,58 +111,8 @@\n = 2%0A\n-    const LAGARTO int = 3%0A    const SPOCK int = 4%0A\n %0A%0A  \n@@ -191,38 +191,16 @@\n tesoura)\n-, 3(lagarto), 4(spock)\n :%22)%0A    \n@@ -278,30 +278,8 @@\n ura)\n-, 3(lagarto), 4(spock)\n :%22)%0A\n@@ -329,425 +329,7 @@\n og2)\n-%0A%0A    if jog1 == jog2 %7B%0A        fmt.Println(empate)%0A    %7D else if (jog1 == 0 && jog2 == 3) %7C%7C (jog1 == 0 && jog2 == 2) %7C%7C (jog1 == 1 && jog2 == 4) %7C%7C (jog1 == 1 && jog2 == 0) %7C%7C (jog1 == 2 && jog2 == 3) %7C%7C (jog1 == 2 && jog2 == 1) %7C%7C (jog1 == 3 && jog2 == 1) %7C%7C (jog1 == 3 && jog2 == 4) %7C%7C (jog1 == 4 && jog2 == 0) %7C%7C (jog1 == 4 && jog2 == 2)%7B%0A        fmt.Println(%22jog1%22)%0A    %7D else %7B%0A        fmt.Println(%22jog2%22)%0A    %7D\n %0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-12_17-36-21",
+            "content": "@@ -467,16 +467,14 @@\n tln(\n-%22\n empate\n-%22\n )%0A  \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-12_17-37-18",
+            "content": "@@ -186,200 +186,8 @@\n int%0A\n-    var vit1, vit 2%0A    fmt.Scan(&vit1, &vit2)%0A    for %7B%0A        if vit1 %3E 2 %7C%7C vit2 %3E 22 )%7B%0A             break%0A        %7D%0A    %7D%0A%0A%0A    fmt.Println(%22Placar vit1: %22, vit1, %22Placar vit2: %22, vit2)%0A\n     \n@@ -794,36 +794,10 @@\n jog1\n- ganhou!%22)%0A        vit1 += 1\n+%22)\n %0A   \n@@ -835,36 +835,10 @@\n jog2\n- ganhou!%22)%0A        vit2 += 1\n+%22)\n %0A   \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-12_17-48-40",
+            "content": "@@ -199,21 +199,18 @@\n it1, vit\n+ \n 2\n- int\n %0A    fmt\n@@ -270,17 +270,19 @@\n vit2 %3E 2\n- \n+2 )\n %7B%0A      \n@@ -293,16 +293,24 @@\n    break\n+%0A       \n  %7D%0A    %7D\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-04-12_17-53-26",
+            "content": "@@ -260,17 +260,17 @@\n  vit1 %3E \n-3\n+2\n  %7C%7C vit2\n@@ -272,17 +272,17 @@\n  vit2 %3E \n-3\n+2\n  %7B%0A     \n@@ -301,16 +301,17 @@\n k %7D%0A    \n+%7D\n %0A%0A%0A    f\n@@ -1079,10 +1079,8 @@\n     %7D%0A%7D%0A\n-%7D%0A\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-04-12_17-57-45",
+            "content": "@@ -262,18 +262,18 @@\n it1 %3E 3 \n-&&\n+%7C%7C\n  vit2 %3E \n@@ -304,16 +304,78 @@\n %0A    %0A%0A%0A\n+    fmt.Println(%22Placar vit1: %22, vit1, %22Placar vit2: %22, vit2)%0A\n     fmt.\n@@ -607,70 +607,8 @@\n og2)\n-%0A    fmt.Println(%22Placar vit1: %22, vit1, %22Placar vit2: %22, vit2)\n %0A%0A  \n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-04-12_18-08-04",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    const PEDRA int = 0\n    const PAPEL int = 1\n    const TESOURA int = 2\n    const LAGARTO int = 3\n    const SPOCK int = 4\n\n\n    var jog1, jog2 int\n    var vit1, vit2 int\n    fmt.Scan(&vit1, &vit2)\n    for {\n        if vit1 > 3 && vit2 > 3 {\n             break }\n    \n\n\n    fmt.Println(\"Jog1: digite 0(pedra), 1(papel, 2(tesoura), 3(lagarto), 4(spock):\")\n    fmt.Scan(&jog1)\n    fmt.Println(\"Jog2: digite 0(pedra), 1(papel, 2(tesoura), 3(lagarto), 4(spock):\")\n    fmt.Scan(&jog2)\n    fmt.Println(jog1, jog2)\n    fmt.Println(\"Placar vit1: \", vit1, \"Placar vit2: \", vit2)\n\n    if jog1 == jog2 {\n        fmt.Println(\"empate\")\n    } else if (jog1 == 0 && jog2 == 3) || (jog1 == 0 && jog2 == 2) || (jog1 == 1 && jog2 == 4) || (jog1 == 1 && jog2 == 0) || (jog1 == 2 && jog2 == 3) || (jog1 == 2 && jog2 == 1) || (jog1 == 3 && jog2 == 1) || (jog1 == 3 && jog2 == 4) || (jog1 == 4 && jog2 == 0) || (jog1 == 4 && jog2 == 2){\n        fmt.Println(\"jog1 ganhou!\")\n        vit1 += 1\n    } else {\n        fmt.Println(\"jog2 ganhou!\")\n        vit2 += 1\n    }\n}\n}\n",
+            "lines": "37"
+        }
+    ]
+}
