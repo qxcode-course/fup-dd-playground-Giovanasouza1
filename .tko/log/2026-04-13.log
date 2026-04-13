@@ -1,0 +1,40 @@
+2026-04-13 12:11:06, SELF, v:1, k:fup@pr_jokenpo, self:1, guided:1
+2026-04-13 12:11:13, MOVE, v:1, k:fup@pr_chute_a, mode:DOWN
+2026-04-13 12:11:35, MOVE, v:1, k:fup@pr_chute_a, mode:PICK
+2026-04-13 12:11:13, MOVE, v:1, k:fup@pr_chute_a, mode:EDIT
+2026-04-13 12:17:25, MOVE, v:1, k:fup@pr_chute_a, mode:BACK
+2026-04-13 12:19:53, MOVE, v:1, k:fup@pr_jokenpo, mode:PICK
+2026-04-13 12:20:00, EXEC, v:1, k:fup@pr_jokenpo, mode:LOCK, rate:0, size:42
+2026-04-13 12:20:03, EXEC, v:1, k:fup@pr_jokenpo, mode:FREE
+2026-04-13 12:20:03, MOVE, v:1, k:fup@pr_jokenpo, mode:EDIT
+2026-04-13 12:23:21, MOVE, v:1, k:fup@pr_jokenpo, mode:EDIT
+2026-04-13 12:26:05, MOVE, v:1, k:fup@pr_jokenpo, mode:PICK
+2026-04-13 12:26:07, EXEC, v:1, k:fup@pr_jokenpo, mode:FREE, size:41
+2026-04-13 12:27:58, MOVE, v:1, k:fup@pr_jokenpo, mode:PICK
+2026-04-13 12:28:00, EXEC, v:1, k:fup@pr_jokenpo, mode:FREE, size:41
+2026-04-13 12:29:08, MOVE, v:1, k:fup@pr_jokenpo, mode:PICK
+2026-04-13 12:29:09, EXEC, v:1, k:fup@pr_jokenpo, mode:FREE, size:41
+2026-04-13 12:30:46, MOVE, v:1, k:fup@pr_jokenpo, mode:PICK
+2026-04-13 12:30:48, EXEC, v:1, k:fup@pr_jokenpo, mode:FREE, size:41
+2026-04-13 12:35:06, MOVE, v:1, k:fup@pr_jokenpo, mode:EDIT
+2026-04-13 12:34:59, MOVE, v:1, k:fup@pr_jokenpo, mode:EDIT
+2026-04-13 12:40:45, MOVE, v:1, k:fup@pr_jokenpo, mode:EDIT
+2026-04-13 12:44:26, MOVE, v:1, k:fup@pr_jokenpo, mode:PICK
+2026-04-13 12:44:59, EXEC, v:1, k:fup@pr_jokenpo, mode:FREE, size:40
+2026-04-13 12:46:20, MOVE, v:1, k:fup@pr_jokenpo, mode:PICK
+2026-04-13 12:46:28, EXEC, v:1, k:fup@pr_jokenpo, mode:FREE, size:40
+2026-04-13 12:46:29, MOVE, v:1, k:fup@pr_jokenpo, mode:EDIT
+2026-04-13 12:50:40, MOVE, v:1, k:fup@pr_jokenpo, mode:EDIT
+2026-04-13 12:53:51, MOVE, v:1, k:fup@pr_jokenpo, mode:EDIT
+2026-04-13 13:02:38, MOVE, v:1, k:fup@pr_jokenpo, mode:EDIT
+2026-04-13 13:10:12, MOVE, v:1, k:fup@pr_jokenpo, mode:PICK
+2026-04-13 13:10:16, EXEC, v:1, k:fup@pr_jokenpo, mode:FREE, size:41
+2026-04-13 13:12:39, MOVE, v:1, k:fup@pr_chute_a, mode:PICK
+2026-04-13 13:17:13, MOVE, v:1, k:fup@pr_chute_a, mode:EDIT
+2026-04-13 13:19:39, MOVE, v:1, k:fup@pr_chute_a, mode:EDIT
+2026-04-13 13:26:03, MOVE, v:1, k:fup@pr_chute_a, mode:EDIT
+2026-04-13 13:30:59, MOVE, v:1, k:fup@pr_chute_a, mode:EDIT
+2026-04-13 13:37:13, MOVE, v:1, k:fup@pr_chute_a, mode:EDIT
+2026-04-13 13:40:10, MOVE, v:1, k:fup@pr_chute_a, mode:EDIT
+2026-04-13 13:46:56, EXEC, v:1, k:fup@pr_chute_a, mode:FREE, size:19
+2026-04-13 13:43:04, MOVE, v:1, k:fup@pr_chute_a, mode:EDIT

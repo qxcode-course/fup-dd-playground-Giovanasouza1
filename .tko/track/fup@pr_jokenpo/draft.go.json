@@ -32,8 +32,48 @@
         },
         {
             "label": "2026-04-12_18-08-04",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    const PEDRA int = 0\n    const PAPEL int = 1\n    const TESOURA int = 2\n    const LAGARTO int = 3\n    const SPOCK int = 4\n\n\n    var jog1, jog2 int\n    var vit1, vit2 int\n    fmt.Scan(&vit1, &vit2)\n    for {\n        if vit1 > 3 && vit2 > 3 {\n             break }\n    \n\n\n    fmt.Println(\"Jog1: digite 0(pedra), 1(papel, 2(tesoura), 3(lagarto), 4(spock):\")\n    fmt.Scan(&jog1)\n    fmt.Println(\"Jog2: digite 0(pedra), 1(papel, 2(tesoura), 3(lagarto), 4(spock):\")\n    fmt.Scan(&jog2)\n    fmt.Println(jog1, jog2)\n    fmt.Println(\"Placar vit1: \", vit1, \"Placar vit2: \", vit2)\n\n    if jog1 == jog2 {\n        fmt.Println(\"empate\")\n    } else if (jog1 == 0 && jog2 == 3) || (jog1 == 0 && jog2 == 2) || (jog1 == 1 && jog2 == 4) || (jog1 == 1 && jog2 == 0) || (jog1 == 2 && jog2 == 3) || (jog1 == 2 && jog2 == 1) || (jog1 == 3 && jog2 == 1) || (jog1 == 3 && jog2 == 4) || (jog1 == 4 && jog2 == 0) || (jog1 == 4 && jog2 == 2){\n        fmt.Println(\"jog1 ganhou!\")\n        vit1 += 1\n    } else {\n        fmt.Println(\"jog2 ganhou!\")\n        vit2 += 1\n    }\n}\n}\n",
+            "content": "@@ -313,24 +313,26 @@\n    fmt.Print\n+ln\n (%22Jog1: digi\n@@ -422,16 +422,18 @@\n mt.Print\n+ln\n (%22Jog2: \n@@ -527,16 +527,18 @@\n mt.Print\n+ln\n (jog1, j\n@@ -555,16 +555,18 @@\n mt.Print\n+ln\n (%22Placar\n@@ -1080,119 +1080,8 @@\n   %7D%0A\n-%7D ; %0Aif vit1 %3E vit2 %7B%0A    fmt.Println(%22Jog1 ganhou o jogo!!%22)%0A%7D else %7B%0A    fmt.Println(%22jog2 ganhou o jogo!!%22)%0A\n %7D%0A%7D%0A\n",
             "lines": "37"
+        },
+        {
+            "label": "2026-04-13_12-20-00",
+            "content": "@@ -349,17 +349,16 @@\n  1(papel\n-)\n , 2(teso\n@@ -510,16 +510,42 @@\n (&jog2)%0A\n+    fmt.Print(jog1, jog2)%0A\n     fmt.\n@@ -563,16 +563,17 @@\n ar vit1:\n+ \n %22, vit1,\n@@ -586,16 +586,17 @@\n ar vit2:\n+ \n %22, vit2)\n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-04-13_12-26-07",
+            "content": "@@ -538,17 +538,16 @@\n ar vit1:\n- \n %22, vit1,\n@@ -548,18 +548,16 @@\n  vit1, %22\n-  \n Placar v\n@@ -560,17 +560,16 @@\n ar vit2:\n- \n %22, vit2)\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-04-13_12-28-00",
+            "content": "@@ -935,16 +935,18 @@\n mt.Print\n+ln\n (%22jog1 g\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-04-13_12-29-09",
+            "content": "@@ -524,18 +524,16 @@\n mt.Print\n-ln\n (%22Placar\n@@ -935,22 +935,18 @@\n mt.Print\n-ln(%22  \n+(%22\n jog1 gan\n@@ -1004,18 +1004,16 @@\n rintln(%22\n-  \n jog2 gan\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-04-13_12-30-48",
+            "content": "@@ -260,17 +260,17 @@\n  vit1 %3E \n-2\n+3\n  && vit2\n@@ -272,17 +272,17 @@\n  vit2 %3E \n-2\n+3\n  %7B%0A     \n@@ -301,20 +301,16 @@\n k %7D%0A    \n-    \n %0A%0A%0A    f\n@@ -445,33 +445,32 @@\n (pedra), 1(papel\n-)\n , 2(tesoura), 3(\n@@ -510,16 +510,80 @@\n n(&jog2)\n+%0A    fmt.Println(%22Placar vit1: %22, vit1, %22  Placar vit2: %22, vit2)\n %0A%0A    if\n@@ -941,58 +941,14 @@\n rint\n-(%22Placar vit1: %22, vit1, %22  Placar vit2: %22, vit2, %22\n+ln(%22  \n jog1\n@@ -1010,58 +1010,14 @@\n rint\n-(%22Placar vit1: %22, vit1, %22  Placar vit2: %22, vit2, %22\n+ln(%22  \n jog2\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-04-13_12-44-59",
+            "content": "@@ -870,34 +870,32 @@\n        fmt.Print\n-ln\n (%22Placar vit1: %22\n@@ -991,18 +991,16 @@\n mt.Print\n-ln\n (%22Placar\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-04-13_12-46-28",
+            "content": "@@ -297,16 +297,26 @@\n break %7D%0A\n+        %0A%0A\n %0A    fmt\n@@ -865,26 +865,8 @@\n 2)%7B%0A\n-        vit1 += 1%0A\n     \n@@ -894,16 +894,17 @@\n ar vit1:\n+ \n %22, vit1,\n@@ -905,16 +905,17 @@\n  vit1, %22\n+ \n  Placar \n@@ -923,38 +923,18 @@\n it2:\n+ \n %22, vit2\n+,\n  \n-)%0A        fmt.Println(\n %22jog\n@@ -949,21 +949,8 @@\n !%22)%0A\n-    %7D else %7B%0A\n     \n@@ -960,15 +960,28 @@\n  vit\n-2\n+1\n  += 1%0A\n+    %7D else %7B%0A\n     \n@@ -1046,32 +1046,11 @@\n vit2\n-)%0A        fmt.Println(%22 \n+, %22\n jog2\n@@ -1068,16 +1068,25 @@\n         \n+vit2 += 1\n %0A    %7D%0A%7D\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-04-13_13-10-16",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    const PEDRA int = 0\n    const PAPEL int = 1\n    const TESOURA int = 2\n    const LAGARTO int = 3\n    const SPOCK int = 4\n\n\n    var jog1, jog2 int\n    var vit1, vit2 int\n    fmt.Scan(&vit1, &vit2)\n    for {\n        if vit1 > 2 && vit2 > 2 {\n             break }\n\n    fmt.Print(\"Jog1: digite 0(pedra), 1(papel), 2(tesoura), 3(lagarto), 4(spock):\")\n    fmt.Scan(&jog1)\n    fmt.Print(\"Jog2: digite 0(pedra), 1(papel), 2(tesoura), 3(lagarto), 4(spock):\")\n    fmt.Scan(&jog2)\n\n    if jog1 == jog2 {\n        fmt.Println(\"empate\")\n    } else if (jog1 == 0 && jog2 == 3) || (jog1 == 0 && jog2 == 2) || (jog1 == 1 && jog2 == 4) || (jog1 == 1 && jog2 == 0) || (jog1 == 2 && jog2 == 3) || (jog1 == 2 && jog2 == 1) || (jog1 == 3 && jog2 == 1) || (jog1 == 3 && jog2 == 4) || (jog1 == 4 && jog2 == 0) || (jog1 == 4 && jog2 == 2){\n        vit1 += 1\n        fmt.Println(\"Placar vit1:\", vit1, \" Placar vit2:\", vit2 )\n        fmt.Println(\"jog1 ganhou!\")\n    } else {\n        vit2 += 1\n        fmt.Println(\"Placar vit1: \", vit1, \"  Placar vit2: \", vit2)\n        fmt.Println(\" jog2 ganhou!\")\n        \n    }\n} ; \nif vit1 > vit2 {\n    fmt.Println(\"Jog1 ganhou o jogo!!\")\n} else {\n    fmt.Println(\"jog2 ganhou o jogo!!\")\n}\n}\n",
+            "lines": "41"
         }
     ]
 }
