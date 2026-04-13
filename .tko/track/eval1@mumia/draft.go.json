@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-13_17-28-16",
+            "content": "@@ -121,23 +121,17 @@\n Println(\n-a, %22eh \n+%22\n crianca%22\n@@ -186,23 +186,17 @@\n Println(\n-a, %22eh \n+%22\n jovem%22)%0A\n@@ -249,23 +249,17 @@\n Println(\n-a, %22eh \n+%22\n adulto%22)\n@@ -315,23 +315,17 @@\n Println(\n-a, %22eh \n+%22\n idoso%22)%0A\n@@ -361,15 +361,9 @@\n tln(\n-a, %22eh \n+%22\n mumi\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-13_17-29-39",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a string\n    var b int\n    fmt.Scan(&a, &b)\n    if b < 12 {\n        fmt.Println(a, \"eh crianca\")\n    } else if b >= 12 && b < 18 {\n        fmt.Println(a, \"eh jovem\")\n    } else if b >= 18 && b < 65 {\n        fmt.Println(a, \"eh adulto\")\n    } else if b >= 65 && b < 1000 {\n        fmt.Println(a, \"eh idoso\")\n    } else {\n        fmt.Println(a, \"eh mumia\")\n    }\n\n}\n",
+            "lines": "19"
+        }
+    ]
+}

@@ -28,7 +28,7 @@ func main() {
         fmt.Println("jog1 ganhou!")
     } else {
         vit2 += 1
-        fmt.Println("Placar vit1: ", vit1, "  Placar vit2: ", vit2)
+        fmt.Println("Placar vit1:", vit1, "  Placar vit2:", vit2)
         fmt.Println(" jog2 ganhou!")
         
     }
