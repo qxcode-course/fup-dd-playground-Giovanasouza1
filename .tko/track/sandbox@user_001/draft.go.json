@@ -1,0 +1,74 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-14_16-53-38",
+            "content": "@@ -51,56 +51,8 @@\n sta \n-%5B%5Dint = %5B%5Dint%7B1, 2, 3, 4, 5, 6, 7%7D%0A    var nome \n %5B%5Dst\n@@ -113,12 +113,10 @@\n ome%5B\n-4\n+0\n %5D)%0A\n-%0A%0A\n %7D%0A\n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-04-14_16-57-21",
+            "content": "@@ -41,22 +41,21 @@\n     var \n-idades\n+lista\n  %5B%5Dint =\n@@ -59,23 +59,88 @@\n t = \n-make(%5B%5Dint, 10)\n+%5B%5Dint%7B1, 2, 3, 4, 5, 6, 7%7D%0A    var nome %5B%5Dstring = %5B%5Dstring%7B%22uva%22, %22ovo%22, %22eva%22%7D\n %0A   \n@@ -156,14 +156,15 @@\n tln(\n-idades\n+nome%5B4%5D\n )%0A%0A%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-14_16-59-01",
+            "content": "@@ -37,43 +37,8 @@\n ) %7B%0A\n-    var qtd int%0A    fmt.Scan(&qtd)%0A\n     \n@@ -72,11 +72,10 @@\n nt, \n-qtd\n+10\n )%0A  \n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-04-14_17-00-28",
+            "content": "@@ -107,10 +107,11 @@\n nt, \n-10\n+qtd\n )%0A  \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-14_17-00-55",
+            "content": "@@ -103,19 +103,18 @@\n (%5B%5Dint, \n-qtd\n+10\n )%0A    fm\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-14_17-01-18",
+            "content": "@@ -32,27 +32,24 @@\n main() %7B%0A   \n- //\n  var qtd int\n@@ -48,27 +48,24 @@\n  qtd int%0A   \n- //\n  fmt.Scan(&q\n@@ -71,19 +71,16 @@\n qtd)%0A   \n- //\n  var ida\n@@ -115,11 +115,8 @@\n %0A   \n- //\n  fmt\n@@ -137,153 +137,7 @@\n s)%0A%0A\n-       arr := %5B%5Dint%7B9, 8, 4, 5, 6, 2, 3%7D%0A       fmt.Println(%22%5B %22)%0A       for i := 0; i %3C len(arr); i++ %7B%0A        fmt.Printf(%22%25d%22, arr%5Bi%5D)%0A       %7D\n %0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-14_17-08-50",
+            "content": "@@ -202,16 +202,18 @@\n mt.Print\n+ln\n (%22%5B %22)%0A \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-14_17-09-21",
+            "content": "@@ -294,30 +294,6 @@\n   %7D%0A\n-       fmt.Print(%22%5D%5Cn%22)%0A\n %7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-14_17-10-31",
+            "content": "@@ -272,12 +272,10 @@\n tf(%22\n- \n %25d\n- \n %22, a\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-14_17-12-45",
+            "content": "@@ -149,18 +149,18 @@\n s)%0A%0A    \n-//\n+  \n  arr := \n@@ -186,26 +186,26 @@\n , 2, 3%7D%0A    \n-//\n+  \n  fmt.Print(%22\n@@ -213,18 +213,18 @@\n  %22)%0A    \n-//\n+  \n  for i :\n@@ -248,26 +248,27 @@\n ; i++ %7B%0A    \n-//\n+   \n  fmt.Printf(\n@@ -291,168 +291,16 @@\n     \n-// %7D%0A    // fmt.Print(%22%5D%5Cn%22)%0A%0A    arr := %5B%5Dint%7B9, 8, 4, 5, 6, 2, 3%7D%0A    fmt.Print(%22%5B %22)%0A    for _, valor := range arr %7B%0A        fmt.Printf(%22%25d %22, valor)%0A    %7D %0A\n+   %7D%0A   \n     \n@@ -316,11 +316,10 @@\n (%22%5D%5Cn%22)%0A\n-%0A\n %7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-14_17-15-43",
+            "content": "@@ -337,26 +337,27 @@\n int%7B\n-20, 1\n 9, \n-1\n 8, \n-17, 16\n+4, 5, 6, 2, 3\n %7D%0A  \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-14_17-16-02",
+            "content": "@@ -320,171 +320,8 @@\n %22)%0A%0A\n-    //arr := %5B%5Dint%7B20, 19, 18, 17, 16%7D%0A    //fmt.Print(%22%5B %22)%0A    //for _, valor := range arr %7B%0A        //fmt.Printf(%22%25d %22, valor)%0A    //%7D %0A    //fmt.Print(%22%5D%5Cn%22)%0A%0A\n     \n@@ -429,10 +429,8 @@\n tf(%22\n- ,\n %25d %22\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-14_17-20-27",
+            "content": "@@ -544,17 +544,17 @@\n     for \n-i\n+_\n , valor \n@@ -576,55 +576,8 @@\n     \n-    if i != 0 %7B%0A        fmt.Print(%22, %22)%0A    %7D %0A\n     \n@@ -588,18 +588,21 @@\n Printf(%22\n+ ,\n %25d\n+ \n %22, valor\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-04-14_17-23-51",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    // var qtd int\n    // fmt.Scan(&qtd)\n    // var idades []int = make([]int, qtd)\n    // fmt.Println(idades)\n\n    // arr := []int{9, 8, 4, 5, 6, 2, 3}\n    // fmt.Print(\"[ \")\n    // for i := 0; i < len(arr); i++ {\n    // fmt.Printf(\" %d \", arr[i])\n    // }\n    // fmt.Print(\"]\\n\")\n\n    //arr := []int{20, 19, 18, 17, 16}\n    //fmt.Print(\"[ \")\n    //for _, valor := range arr {\n        //fmt.Printf(\"%d \", valor)\n    //} \n    //fmt.Print(\"]\\n\")\n\n    arr := []int{20, 19, 18, 17, 16}\n    fmt.Print(\"[ \")\n    for i, valor := range arr {\n        if i != 0 {\n        fmt.Print(\", \")\n    } \n    fmt.Printf(\"%d\", valor)\n    } \n    fmt.Print(\"]\\n\")\n\n}\n",
+            "lines": "33"
+        }
+    ]
+}
