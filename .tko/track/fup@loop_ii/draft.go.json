@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-18_00-35-23",
+            "content": "@@ -118,16 +118,18 @@\n mt.Print\n+ln\n (a)%0A    \n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-18_00-35-37",
+            "content": "@@ -120,18 +120,16 @@\n .Print(a\n-, \n )%0A    %7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-18_00-41-06",
+            "content": "@@ -120,17 +120,16 @@\n .Print(a\n- \n , )%0A    \n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-18_00-41-12",
+            "content": "@@ -119,18 +119,18 @@\n t.Print(\n- \n a\n+ \n , )%0A    \n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-18_00-41-22",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    fmt.Scan(&a, &b)\n    for a := a; a <= b; a++ {\n        fmt.Print( a, )\n    }\n}\n",
+            "lines": "9"
+        }
+    ]
+}

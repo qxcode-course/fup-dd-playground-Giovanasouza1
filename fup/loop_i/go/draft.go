@@ -1,5 +1,9 @@
 package main
 import "fmt"
 func main() {
-    fmt.Println("Hello, World!")
+    var a, b int
+    fmt.Scan(&a, &b)
+    for a := a ; a < b; a++ {
+        fmt.Println(a)
+    }   
 }
