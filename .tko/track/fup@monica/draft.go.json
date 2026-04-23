@@ -142,7 +142,17 @@
         },
         {
             "label": "2026-04-11_17-17-32",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var m, a, b int\n    fmt.Scan(&m, &a, &b)\n    c := m - (a + b)\n    if c > a && c > b && c < m{\n        fmt.Println(c)\n    } else if a > b && a > m && a > c {\n        fmt.Println(a)\n    } else if b > a && b > m && b > c {\n        fmt.Println(b)\n    }\n    \n}\n",
+            "content": "@@ -129,17 +129,16 @@\n && c %3C m\n- \n %7B%0A      \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-23_12-18-05",
+            "content": "@@ -186,18 +186,18 @@\n a %3E \n-c\n+m\n  && a \n-%3C m\n+%3E c\n  %7B%0A \n@@ -249,18 +249,18 @@\n b %3E \n-c\n+m\n  && b \n-%3C m\n+%3E c\n  %7B%0A \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-23_12-29-56",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var m, a, b int\n    fmt.Scan(&m, &a, &b)\n    c := m - (a + b)\n    if c > a && c > b && c < m {\n        fmt.Println(c)\n    } else if a > b && a > c && a < m {\n        fmt.Println(a)\n    } else if b > a && b > c && b < m {\n        fmt.Println(b)\n    }\n    \n}\n",
             "lines": "15"
         }
     ]

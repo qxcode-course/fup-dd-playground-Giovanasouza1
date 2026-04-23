@@ -17,8 +17,13 @@
         },
         {
             "label": "2026-04-11_17-51-52",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var c, a int\n    fmt.Scan(&c, &a)\n    if \n}\n",
+            "content": "@@ -17,23 +17,13 @@\n ort \n-(\n %22fmt%22\n-, %22math%22)\n %0Afun\n@@ -79,76 +79,10 @@\n     \n-x := a / c%0A    if a %25 c %3E 0 %7B%0A        fmt.Println(math.Ceil(x))%0A    %7D\n+if \n %0A%7D%0A\n",
             "lines": "7"
+        },
+        {
+            "label": "2026-04-23_12-57-20",
+            "content": "package main\nimport (\"fmt\", \"math\")\nfunc main() {\n    var c, a int\n    fmt.Scan(&c, &a)\n    x := a / c\n    if a % c > 0 {\n        fmt.Println(math.Ceil(x))\n    }\n}\n",
+            "lines": "10"
         }
     ]
 }

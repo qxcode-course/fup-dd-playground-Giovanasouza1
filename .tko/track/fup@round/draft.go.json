@@ -7,8 +7,13 @@
         },
         {
             "label": "2026-04-08_14-38-18",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n1, carac float64\n    fmt.Scan(&carac, &n1)\n    if carac \n}\n",
+            "content": "@@ -17,23 +17,13 @@\n ort \n-(\n %22fmt%22\n-; %22math%22)\n %0Afun\n@@ -43,16 +43,23 @@\n   var n1\n+, carac\n  float64\n@@ -63,29 +63,8 @@\n t64%0A\n-    var carac string%0A\n     \n@@ -102,186 +102,7 @@\n rac \n-== %22r%22 %7B%0A        fmt.Println(math.Round(n1))%0A    %7D else if carac == %22f%22 %7B%0A        fmt.Println(math.Floor(n1))%0A    %7D else if carac == %22c%22 %7B%0A        fmt.Println(math.Ceil(n1))%0A    %7D\n %0A%7D%0A\n",
             "lines": "7"
+        },
+        {
+            "label": "2026-04-23_12-17-11",
+            "content": "package main\nimport (\"fmt\"; \"math\")\nfunc main() {\n    var n1 float64\n    var carac string\n    fmt.Scan(&carac, &n1)\n    if carac == \"r\" {\n        fmt.Println(math.Round(n1))\n    } else if carac == \"f\" {\n        fmt.Println(math.Floor(n1))\n    } else if carac == \"c\" {\n        fmt.Println(math.Ceil(n1))\n    }\n}\n",
+            "lines": "14"
         }
     ]
 }

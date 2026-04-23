@@ -1,7 +1,10 @@
 package main
-import "fmt"
+import ("fmt"; "math")
 func main() {
-    var c, a int
+    var c, a float64
     fmt.Scan(&c, &a)
-    if 
+    resto := a % c
+    if a % c > 0 {
+        fmt.Println(math.Ceil(resto))
+    }
 }

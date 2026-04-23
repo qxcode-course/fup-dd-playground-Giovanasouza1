@@ -6,9 +6,9 @@ func main() {
     c := m - (a + b)
     if c > a && c > b && c < m {
         fmt.Println(c)
-    } else if a > b && a > m && a > c {
+    } else if a > b && a > c && a < m {
         fmt.Println(a)
-    } else if b > a && b > m && b > c {
+    } else if b > a && b > c && b < m {
         fmt.Println(b)
     }
     
