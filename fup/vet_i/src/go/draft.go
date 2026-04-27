@@ -1,3 +1,4 @@
+
 package main
 import "fmt"
     func main() {
@@ -8,6 +9,6 @@ import "fmt"
         fmt.Scan(&arr[i])
     }
     for _, valor := range arr {
-    fmt.Printf(valor) }
+    fmt.Println(valor) }
 
     }

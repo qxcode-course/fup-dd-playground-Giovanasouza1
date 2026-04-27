@@ -22,8 +22,43 @@
         },
         {
             "label": "2026-04-23_12-57-20",
-            "content": "package main\nimport (\"fmt\", \"math\")\nfunc main() {\n    var c, a int\n    fmt.Scan(&c, &a)\n    x := a / c\n    if a % c > 0 {\n        fmt.Println(math.Ceil(x))\n    }\n}\n",
+            "content": "@@ -23,9 +23,9 @@\n fmt%22\n-;\n+,\n  %22ma\n@@ -60,15 +60,11 @@\n , a \n-float64\n+int\n %0A   \n@@ -89,23 +89,17 @@\n     \n-viagens\n+x\n  := a / \n (c -\n@@ -98,39 +98,67 @@\n a / \n-(c - 1)%0A    fmt.Println(viagens)\n+c%0A    if a %25 c %3E 0 %7B%0A        fmt.Println(math.Ceil(x))%0A    %7D\n %0A%7D%0A\n",
             "lines": "10"
+        },
+        {
+            "label": "2026-04-27_16-49-38",
+            "content": "@@ -17,13 +17,23 @@\n ort \n+(\n %22fmt%22\n+; %22math%22)\n %0Afun\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-04-27_16-49-55",
+            "content": "@@ -122,14 +122,8 @@\n tln(\n-%22%25d%22, \n viag\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-04-27_16-50-23",
+            "content": "@@ -119,17 +119,14 @@\n rint\n-f(%22%25.2f%5Cn\n+ln(%22%25d\n %22, v\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-04-27_16-52-25",
+            "content": "@@ -120,17 +120,17 @@\n intf(%22%25.\n-1\n+2\n f%5Cn%22, vi\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-04-27_16-52-39",
+            "content": "@@ -124,9 +124,9 @@\n (%22%25.\n-0\n+1\n f%5Cn%22\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-04-27_16-52-45",
+            "content": "@@ -17,23 +17,13 @@\n ort \n-(\n %22fmt%22\n-; %22math%22)\n %0Afun\n@@ -119,29 +119,28 @@\n rint\n-ln(math.Ceil(\n+f(%22%25.0f%5Cn%22, \n viagens)\n )%0A%7D%0A\n@@ -135,12 +135,11 @@\n viagens)\n-)\n %0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-04-27_16-55-30",
+            "content": "package main\nimport (\"fmt\"; \"math\")\nfunc main() {\n    var c, a float64\n    fmt.Scan(&c, &a)\n    viagens := a / (c - 1)\n    fmt.Println(math.Ceil(viagens))\n}\n",
+            "lines": "8"
         }
     ]
 }

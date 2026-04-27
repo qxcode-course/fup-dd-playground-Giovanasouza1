@@ -12,6 +12,16 @@
         },
         {
             "label": "2026-04-23_12-17-11",
+            "content": "@@ -1,9 +1,8 @@\n-t\n package \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-27_17-00-01",
+            "content": "@@ -1,8 +1,9 @@\n+t\n package \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-27_17-00-05",
             "content": "package main\nimport (\"fmt\"; \"math\")\nfunc main() {\n    var n1 float64\n    var carac string\n    fmt.Scan(&carac, &n1)\n    if carac == \"r\" {\n        fmt.Println(math.Round(n1))\n    } else if carac == \"f\" {\n        fmt.Println(math.Floor(n1))\n    } else if carac == \"c\" {\n        fmt.Println(math.Ceil(n1))\n    }\n}\n",
             "lines": "14"
         }

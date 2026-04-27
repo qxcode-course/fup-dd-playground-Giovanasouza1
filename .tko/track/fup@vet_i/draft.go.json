@@ -82,8 +82,18 @@
         },
         {
             "label": "2026-04-14_18-09-59",
-            "content": "package main\nimport \"fmt\"\n    func main() {\n    var n int\n    fmt.Scan(&n)\n    var arr []int = make([]int, n)\n    for i := range arr {\n        fmt.Scan(&arr[i])\n    }\n}\n",
+            "content": "@@ -164,67 +164,6 @@\n   %7D%0A\n-    for _, valor := range arr %7B%0A    fmt.Printf(valor) %7D%0A%0A    \n %7D%0A\n",
             "lines": "10"
+        },
+        {
+            "label": "2026-04-27_16-57-18",
+            "content": "@@ -209,10 +209,9 @@\n rint\n-ln\n+f\n (val\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-27_17-04-30",
+            "content": "package main\nimport \"fmt\"\n    func main() {\n    var n int\n    fmt.Scan(&n)\n    var arr []int = make([]int, n)\n    for i := range arr {\n        fmt.Scan(&arr[i])\n    }\n    for _, valor := range arr {\n    fmt.Println(valor) }\n\n    }\n",
+            "lines": "13"
         }
     ]
 }
