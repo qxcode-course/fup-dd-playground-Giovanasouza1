@@ -1,0 +1,59 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-28_17-17-56",
+            "content": "@@ -53,32 +53,18 @@\n , y,\n+ c,\n  s int%0A\n-    var c string%0A\n     \n@@ -108,69 +108,9 @@\n  == \n-%22R%22 %7C%7C c == %22L%22 %7C%7C c == %22U%22 %7C%7C c == %22D%22 %7B%0A        if c == %22R%22\n+R\n  %7B%0A \n@@ -132,229 +132,52 @@\n tln(\n-(\n x + s)\n-, y)%0A        %7D else if c == %22L%22 %7B%0A            fmt.Println((x - s), y)%0A        %7D else if c == %22U%22 %7B%0A            fmt.Println(x, (y + s))%0A        %7D else if c == %22D%22 %7B%0A            fmt.Println(x, (y - s))%0A        %7D%0A    %7D\n+%0A    %7D%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-28_17-27-50",
+            "content": "@@ -110,153 +110,8 @@\n &s)%0A\n-    conta1 := (x + s) - 10%0A    conta2 := (x + s)%0A    if x + s %3E 10 %7B%0A        fmt.Println(conta1)%0A    %7D else %7B%0A        fmt.Println(conta2)%0A    %7D%0A%0A\n     \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-28_17-33-49",
+            "content": "@@ -106,16 +106,161 @@\n &c, &s)%0A\n+    conta1 := (x + s) - 10%0A    conta2 := (x + s)%0A    if x + s %3E 10 %7B%0A        fmt.Println(conta1)%0A    %7D else %7B%0A        fmt.Println(conta2)%0A    %7D%0A%0A\n     if c\n@@ -567,153 +567,8 @@\n    %7D\n-%0A%0A    conta1 := (x + s) - 10%0A    conta2 := (x + s)%0A    if x + s %3E 10 %7B%0A        fmt.Println(conta1)%0A    %7D else %7B%0A        fmt.Println(conta2)%0A    %7D\n %0A   \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-28_17-35-11",
+            "content": "@@ -420,16 +420,65 @@\n      %7D%0A%0A\n+    conta1 := (x + s) - 10%0A    conta2 := (x + s)%0A\n     if x\n@@ -509,28 +509,22 @@\n Println(\n-(x + s) - 10\n+conta1\n )%0A    %7D \n@@ -550,23 +550,22 @@\n Println(\n-(x + s)\n+conta2\n )%0A    %7D%0A\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-28_17-36-34",
+            "content": "@@ -194,312 +194,96 @@\n     \n-    if x + s %3E 10 %7B%0A                fmt.Println((x + s) - 10)%0A            %7D else %7B%0A                fmt.Println((x + s))%0A            %7D%0A        %7D else if c == %22L%22 %7B%0A            if x + s %3E 10 %7B%0A                fmt.Println((x + s) - 10)%0A            %7D else %7B%0A                fmt.Println((x + s))%0A            %7D\n+fmt.Println((x + s), y)%0A        %7D else if c == %22L%22 %7B%0A            fmt.Println((x - s), y)\n %0A   \n@@ -312,40 +312,8 @@\n %22 %7B%0A\n-            if y + s %3E 10 %7B%0A    \n     \n@@ -328,36 +328,34 @@\n fmt.Println(\n+x, \n (y + s)\n- - 10\n )%0A          \n@@ -352,33 +352,37 @@\n         \n- \n-   \n %7D else \n-%7B%0A    \n+if c == %22D%22 %7B%0A\n         \n@@ -389,36 +389,39 @@\n     fmt.Println(\n+x, \n (y \n-+\n+-\n  s))%0A           \n@@ -421,59 +421,19 @@\n     \n-   \n- \n %7D%0A\n-        %7D else if c == %22D%22 %7B%0A        \n+%0A\n     if \n-y\n+x\n  + s\n@@ -444,32 +444,24 @@\n 0 %7B%0A        \n-       \n- \n fmt.Println(\n@@ -457,25 +457,25 @@\n mt.Println((\n-y\n+x\n  + s) - 10)%0A\n@@ -474,24 +474,16 @@\n ) - 10)%0A\n-        \n     %7D el\n@@ -487,24 +487,16 @@\n  else %7B%0A\n-        \n         \n@@ -512,37 +512,26 @@\n ln((\n-y\n+x\n  + s))%0A\n-        \n     %7D%0A\n-    \n     %7D%0A\n+%7D\n %0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-28_17-47-04",
+            "content": "@@ -239,17 +239,16 @@\n rintln((\n-(\n x + s) -\n@@ -251,20 +251,16 @@\n s) - 10)\n-, y)\n %0A       \n@@ -308,19 +308,16 @@\n ((x + s)\n-, y\n )%0A      \n@@ -374,14 +374,15 @@\n f x \n-- s %3C \n++ s %3E 1\n 0 %7B%0A\n@@ -417,13 +417,17 @@\n (x +\n+ s) -\n  10)\n-)\n %0A   \n@@ -485,248 +485,8 @@\n s))%0A\n-           %0A           %0A           %0A           %0A           %0A           %0A           %0A           %0A           %0A           %0A           %0A           %0A           %0A           %0A           %0A           %0A           %0A           %0A           %0A           %0A\n     \n@@ -847,14 +847,9 @@\n       %7D%0A\n-    %7D\n %0A\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-04-28_17-58-54",
+            "content": "@@ -421,24 +421,15 @@\n ln((\n-(\n x + 10)\n- - s), y\n )%0A  \n@@ -482,16 +482,253 @@\n ((x \n-- s), y)\n++ s))%0A           %0A           %0A           %0A           %0A           %0A           %0A           %0A           %0A           %0A           %0A           %0A           %0A           %0A           %0A           %0A           %0A           %0A           %0A           %0A           \n %0A   \n@@ -784,22 +784,23 @@\n    if y \n-- s %3C \n++ s %3E 1\n 0 %7B%0A    \n@@ -826,26 +826,21 @@\n ntln\n-(x, \n ((y + \n-10\n+s\n ) - \n-s)\n+10\n )%0A  \n@@ -890,15 +890,12 @@\n tln(\n-x, \n (y \n--\n++\n  s))\n@@ -993,20 +993,16 @@\n .Println\n-(x, \n ((y + s)\n@@ -1003,25 +1003,24 @@\n y + s) - 10)\n-)\n %0A           \n@@ -1057,19 +1057,16 @@\n Println(\n-x, \n (y + s))\n@@ -1095,10 +1095,9 @@\n  %7D%0A    %7D\n- \n %0A\n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-04-28_18-07-57",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -33,17 +33,20 @@\n ain() %7B%0A\n-%09\n+    \n var n, x\n@@ -56,17 +56,20 @@\n , s int%0A\n-%09\n+    \n var c st\n@@ -73,17 +73,20 @@\n  string%0A\n-%09\n+    \n fmt.Scan\n@@ -106,17 +106,20 @@\n &c, &s)%0A\n-%09\n+    \n if c == \n@@ -160,18 +160,24 @@\n = %22D%22 %7B%0A\n-%09%09\n+        \n if c == \n@@ -186,16 +186,27 @@\n %22 %7B%0A\n-%09%09%09\n+            \n if x\n-+\n+ + \n s %3E \n@@ -202,36 +202,48 @@\n if x + s %3E 10 %7B%0A\n-%09%09%09%09\n+                \n fmt.Println(((x \n@@ -257,32 +257,53 @@\n 10), y)%0A\n-%09%09%09%7D else %7B%0A%09%09%09%09\n+            %7D else %7B%0A                \n fmt.Prin\n@@ -310,39 +310,54 @@\n tln((x + s), y)%0A\n-%09%09%09%7D%0A%09%09\n+            %7D%0A        \n %7D else if c == %22\n@@ -365,24 +365,35 @@\n %22 %7B%0A\n-%09%09%09\n+            \n if x\n--\n+ - \n s %3C 0 %7B%0A\n %09%09%09%09\n@@ -380,36 +380,48 @@\n  if x - s %3C 0 %7B%0A\n-%09%09%09%09\n+                \n fmt.Println(((x \n@@ -435,32 +435,53 @@\n  s), y)%0A\n-%09%09%09%7D else %7B%0A%09%09%09%09\n+            %7D else %7B%0A                \n fmt.Prin\n@@ -496,23 +496,38 @@\n  s), y)%0A\n-%09%09%09%7D%0A%09%09\n+            %7D%0A        \n %7D else i\n@@ -543,24 +543,35 @@\n %22 %7B%0A\n-%09%09%09\n+            \n if y\n--\n+ - \n s %3C 0 %7B%0A\n %09%09%09%09\n@@ -562,28 +562,40 @@\n y - s %3C 0 %7B%0A\n-%09%09%09%09\n+                \n fmt.Println(\n@@ -613,32 +613,53 @@\n ) - s))%0A\n-%09%09%09%7D else %7B%0A%09%09%09%09\n+            %7D else %7B%0A                \n fmt.Prin\n@@ -674,23 +674,38 @@\n y - s))%0A\n-%09%09%09%7D%0A%09%09\n+            %7D%0A        \n %7D else i\n@@ -721,16 +721,27 @@\n %22 %7B%0A\n-%09%09%09\n+            \n if y\n-+\n+ + \n s %3E \n@@ -745,20 +745,32 @@\n  %3E 10 %7B%0A\n-%09%09%09%09\n+                \n fmt.Prin\n@@ -796,58 +796,96 @@\n 0))%0A\n-%09%09%09%7D else %7B%0A%09%09%09%09fmt.Println(x, (y + s))%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D%0A%7D\n+            %7D else %7B%0A                fmt.Println(x, (y + s))%0A            %7D%0A        %7D%0A    %7D \n %0A\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-04-28_18-10-32",
+            "content": "@@ -174,25 +174,26 @@\n %09%09%09if x+s %3E \n-n\n+10\n  %7B%0A%09%09%09%09fmt.P\n@@ -210,17 +210,18 @@\n  + s) - \n-n\n+10\n ), y)%0A%09%09\n@@ -324,17 +324,18 @@\n n(((x + \n-n\n+10\n ) - s), \n@@ -446,17 +446,18 @@\n , ((y + \n-n\n+10\n ) - s))%0A\n@@ -536,17 +536,18 @@\n f y+s %3E \n-n\n+10\n  %7B%0A%09%09%09%09f\n@@ -571,17 +571,18 @@\n  + s) - \n-n\n+10\n ))%0A%09%09%09%7D \n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-04-28_18-11-17",
+            "content": "@@ -98,17 +98,16 @@\n  &c, &s)\n-t\n %0A%09if c =\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-04-28_18-19-51",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n, x, y, s int\n\tvar c string\n\tfmt.Scan(&n, &x, &y, &c, &s)t\n\tif c == \"R\" || c == \"L\" || c == \"U\" || c == \"D\" {\n\t\tif c == \"R\" {\n\t\t\tif x+s > n {\n\t\t\t\tfmt.Println(((x + s) - n), y)\n\t\t\t} else {\n\t\t\t\tfmt.Println((x + s), y)\n\t\t\t}\n\t\t} else if c == \"L\" {\n\t\t\tif x-s < 0 {\n\t\t\t\tfmt.Println(((x + n) - s), y)\n\t\t\t} else {\n\t\t\t\tfmt.Println((x - s), y)\n\t\t\t}\n\t\t} else if c == \"U\" {\n\t\t\tif y-s < 0 {\n\t\t\t\tfmt.Println(x, ((y + n) - s))\n\t\t\t} else {\n\t\t\t\tfmt.Println(x, (y - s))\n\t\t\t}\n\t\t} else if c == \"D\" {\n\t\t\tif y+s > n {\n\t\t\t\tfmt.Println(x, ((y + s) - n))\n\t\t\t} else {\n\t\t\t\tfmt.Println(x, (y + s))\n\t\t\t}\n\t\t}\n\t}\n}\n",
+            "lines": "36"
+        }
+    ]
+}
