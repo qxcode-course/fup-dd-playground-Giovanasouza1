@@ -1,0 +1,79 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-01_14-24-41",
+            "content": "@@ -171,17 +171,16 @@\n intf(%22%25d\n- \n %22, i)%0A  \n@@ -197,28 +197,10 @@\n    %7D\n-%0A\n    \n- fmt.Println(%22%5D%22)\n %0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-01_14-25-19",
+            "content": "@@ -110,16 +110,17 @@\n = a; i %3C\n+=\n  b; i++ \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-01_14-25-55",
+            "content": "@@ -112,17 +112,16 @@\n a; i %3C b\n- \n ; i++ %7B%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-01_14-26-50",
+            "content": "@@ -135,17 +135,8 @@\n   if\n- i %3C 0 &&\n  i %25\n@@ -142,16 +142,18 @@\n %25 2 == 1\n+ %7B\n %0A       \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-01_14-31-06",
+            "content": "@@ -151,18 +151,16 @@\n %25 2 == 1\n- %7B\n %0A       \n@@ -198,28 +198,20 @@\n    %7D\n-%0A        %7D %0A \n+ %0A    %7D%0A\n     \n-   \n fmt.\n@@ -227,11 +227,6 @@\n %5D%22)%0A\n-    \n %7D%0A\n-%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-01_14-32-22",
+            "content": "@@ -131,16 +131,25 @@\n       if\n+ i %3C 0 &&\n  i %25 2 =\n@@ -200,20 +200,28 @@\n    %7D\n+%0A        %7D\n  %0A  \n-  %7D%0A\n     \n+  \n fmt.\n@@ -233,10 +233,15 @@\n ln(%22%5D%22)%0A\n+    \n %7D%0A\n+%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-01_14-37-31",
+            "content": "@@ -145,9 +145,9 @@\n  == \n-0\n+1\n  %7B%0A \n@@ -161,64 +161,28 @@\n     \n-continue%0A        %7D else if i %25 2 == 1%7B%0A            break\n+fmt.Printf(%22%25d %22, i)\n %0A   \n@@ -183,24 +183,25 @@\n i)%0A        %7D\n+ \n %0A    %7D%0A    f\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-01_14-40-37",
+            "content": "@@ -218,40 +218,8 @@\n eak%0A\n-            fmt.Printf(%22%25d%22, i)%0A\n     \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-01_14-41-42",
+            "content": "@@ -196,16 +196,34 @@\n 2 == 1%7B%0A\n+            break%0A\n         \n@@ -259,14 +259,8 @@\n    %7D\n-;break\n %0A   \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-01_14-42-04",
+            "content": "@@ -211,25 +211,8 @@\n     \n- break%0A        %7D;\n  fmt\n@@ -230,24 +230,51 @@\n %22, i\n-, %22%5D%22\n )%0A    \n-%7D%0A\n     \n+%7D;break%0A    %7D%0A    fmt.Println(%22%5D%22)\n %0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-01_14-44-38",
+            "content": "@@ -112,16 +112,17 @@\n a; i %3C b\n+ \n ; i++ %7B%0A\n@@ -145,9 +145,9 @@\n  == \n-1\n+0\n  %7B%0A \n@@ -161,49 +161,75 @@\n     \n-fmt.Printf(%22%25d %22, i)%0A        %7D \n+continue%0A        %7D else if i %25 2 == 1%7B%0A            break\n %0A    \n-%7D%0A\n    \n+ %7D;\n  fmt\n@@ -238,14 +238,33 @@\n rint\n-ln(%22%5D%22)\n+f(%22%25d%22, i, %22%5D%22)%0A    %7D%0A    \n %0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-01_14-51-45",
+            "content": "@@ -143,60 +143,8 @@\n 2 ==\n- 0 %7B%0A            continue%0A        %7D else if i %25 2 ==\n  1 %7B\n@@ -170,16 +170,17 @@\n intf(%22%25d\n+ \n %22, i)%0A  \n@@ -190,50 +190,9 @@\n    %7D\n-; if a == b %7B %0A            break%0A        %7D\n+ \n %0A   \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-01_14-55-39",
+            "content": "@@ -110,17 +110,16 @@\n = a; i %3C\n-=\n  b; i++ \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-01_14-55-53",
+            "content": "@@ -239,26 +239,21 @@\n       %7D;\n- else\n  if \n-i\n+a\n  == b %7B \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-01_15-02-18",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    fmt.Scan(&a, &b)\n    fmt.Print(\"[ \")\n    for i := a; i <= b; i++ {\n        if i % 2 == 0 {\n            continue\n        } else if i % 2 == 1 {\n            fmt.Printf(\"%d\", i)\n        }; else if i == b { \n            break\n        }\n    }\n    fmt.Println(\"]\")\n}\n",
+            "lines": "17"
+        }
+    ]
+}

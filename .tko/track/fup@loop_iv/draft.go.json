@@ -1,0 +1,84 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-01_13-09-48",
+            "content": "@@ -84,16 +84,18 @@\n mt.Print\n+ln\n (%22%5B %22)%0A \n@@ -136,16 +136,18 @@\n mt.Print\n+ln\n (i, %22 %5D%22\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-05-01_13-12-19",
+            "content": "@@ -138,35 +138,16 @@\n rint\n-f(%22%25d%22, i)%0A%7D fmt.Print(\n+(i, \n %22 %5D%22)%0A%7D%0A\n@@ -146,8 +146,10 @@\n %22 %5D%22)%0A%7D%0A\n+%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-05-01_13-14-05",
+            "content": "@@ -147,17 +147,16 @@\n %22, i)%0A%7D \n-%0A\n fmt.Prin\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-05-01_13-14-14",
+            "content": "@@ -110,16 +110,17 @@\n = a; i %3C\n+=\n  b; i++ \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-05-01_13-14-47",
+            "content": "@@ -119,10 +119,10 @@\n b; i\n---\n+++\n  %7B%0A \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-05-01_13-18-38",
+            "content": "@@ -120,20 +120,16 @@\n ; i-- %7B%0A\n-    \n     fmt.\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-05-01_13-19-07",
+            "content": "@@ -151,20 +151,16 @@\n , i)%0A%7D %0A\n-    \n fmt.Prin\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-05-01_13-26-52",
+            "content": "@@ -137,17 +137,24 @@\n mt.Print\n-(\n+f(%22%25d%22, \n i)%0A%7D %0A  \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-05-01_13-27-07",
+            "content": "@@ -99,138 +99,23 @@\n     \n-if a %3C b %7B%0A      ; for i := a; i %3C= b; i++ %7B%0A        fmt.Printf(%22%25d%22, i)%0A      %7D %0A    %7D else if a %3E b %7B%0A        ; for i := a; i %3E=\n+for i := a; i %3C\n  b; \n@@ -120,20 +120,16 @@\n ; i-- %7B%0A\n-    \n         \n@@ -141,34 +141,14 @@\n rint\n-f(%22%25d%22, i)%0A        %7D%0A    %7D\n+(i)%0A%7D \n %0A   \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-05-01_13-41-16",
+            "content": "@@ -166,11 +166,8 @@\n (%22%25d\n- tt\n %22, i\n@@ -261,17 +261,16 @@\n intf(%22%25d\n- \n %22, i)%0A  \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-01_13-41-48",
+            "content": "@@ -302,14 +302,15 @@\n .Print(%22\n+ \n %5D%22)%0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-01_13-42-01",
+            "content": "@@ -129,16 +129,17 @@\n = a; i %3C\n+=\n  b; i++ \n@@ -227,16 +227,17 @@\n = a; i %3E\n+=\n  b; i-- \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-01_13-42-27",
+            "content": "@@ -302,10 +302,8 @@\n rint\n-ln\n (%22%5D%22\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-01_13-42-52",
+            "content": "@@ -154,32 +154,34 @@\n  fmt.Printf(%22%25d \n+tt\n %22, i)%0A      %7D %0A \n@@ -302,15 +302,14 @@\n rintln(%22\n- \n %5D%22)%0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-01_13-43-28",
+            "content": "@@ -300,14 +300,15 @@\n rintln(%22\n+ \n %5D%22)%0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-01_13-43-36",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    fmt.Scan(&a, &b)\n    fmt.Print(\"[ \")\n    if a < b {\n      ; for i := a; i < b; i++ {\n        fmt.Printf(\"%d \", i)\n      } \n    } else if a > b {\n        ; for i := a; i > b; i-- {\n            fmt.Printf(\"%d \", i)\n        }\n    }\n    fmt.Println(\"]\")\n}\n",
+            "lines": "17"
+        }
+    ]
+}
