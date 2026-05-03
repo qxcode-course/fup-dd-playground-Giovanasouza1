@@ -67,7 +67,52 @@
         },
         {
             "label": "2026-05-03_12-52-08",
-            "content": "package main\n\nimport (\"fmt\"; \"math\")\n\nfunc main() {\n\tvar n, x, y, s int\n\tvar c string\n\tfmt.Scan(&n, &x, &y, &s, &c)\n\tif c == \"R\" {\n\t\tfmt.Println(\"x\" + \"s\")\n\t}\n\n\n}\n\n",
+            "content": "@@ -121,17 +121,16 @@\n c == %22R%22\n- \n  %7B%0A%09%09fmt\n@@ -142,13 +142,17 @@\n tln(\n-x + s\n+%22x%22 + %22s%22\n )%0A%09%7D\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-03_17-49-23",
+            "content": "@@ -18,13 +18,23 @@\n ort \n+(\n %22fmt%22\n+; %22math%22)\n %0A%0Afu\n@@ -149,11 +149,13 @@\n + s)%0A%09%7D%0A\n+%0A%0A\n %7D%0A%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-03_17-49-48",
+            "content": "@@ -126,17 +126,18 @@\n mt.Print\n-f\n+ln\n (x + s)%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-03_17-50-01",
+            "content": "@@ -126,16 +126,17 @@\n mt.Print\n+f\n (x + s)%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-03_17-50-07",
+            "content": "@@ -133,11 +133,11 @@\n t(x \n-%25 n\n++ s\n )%0A%09%7D\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-03_17-51-28",
+            "content": "@@ -130,18 +130,10 @@\n rint\n-ln((x + s)\n+(x\n  %25 n\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-03_17-53-03",
+            "content": "@@ -148,58 +148,8 @@\n )%0A%09%7D\n- else if c == %22U%22 %7B%0A%09%09fmt.Println((x - s) %25 n)%0A%09%7D \n %0A%7D%0A%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-03_17-55-43",
+            "content": "@@ -188,12 +188,8 @@\n  - s\n- + n\n ) %25 \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-03_18-04-29",
+            "content": "@@ -130,17 +130,16 @@\n rintln((\n-(\n x + s) %25\n@@ -137,28 +137,24 @@\n (x + s) %25 n)\n-, y)\n %0A%09%7D else if \n@@ -179,17 +179,16 @@\n rintln((\n-(\n x - s + \n@@ -198,12 +198,8 @@\n %25 n)\n-, y)\n %0A%09%7D \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-03_18-08-34",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n, x, y, s int\n\tvar c string\n\tfmt.Scan(&n, &x, &y, &s, &c)\n\tif c == \"R\"  {\n\t\tfmt.Println(((x + s) % n), y)\n\t} else if c == \"U\" {\n\t\tfmt.Println(((x - s + n) % n), y)\n\t} \n}\n\n",
             "lines": "15"
         }
     ]
