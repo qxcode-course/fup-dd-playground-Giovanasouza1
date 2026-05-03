@@ -52,8 +52,23 @@
         },
         {
             "label": "2026-04-28_18-19-51",
-            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n, x, y, s int\n\tvar c string\n\tfmt.Scan(&n, &x, &y, &c, &s)t\n\tif c == \"R\" || c == \"L\" || c == \"U\" || c == \"D\" {\n\t\tif c == \"R\" {\n\t\t\tif x+s > n {\n\t\t\t\tfmt.Println(((x + s) - n), y)\n\t\t\t} else {\n\t\t\t\tfmt.Println((x + s), y)\n\t\t\t}\n\t\t} else if c == \"L\" {\n\t\t\tif x-s < 0 {\n\t\t\t\tfmt.Println(((x + n) - s), y)\n\t\t\t} else {\n\t\t\t\tfmt.Println((x - s), y)\n\t\t\t}\n\t\t} else if c == \"U\" {\n\t\t\tif y-s < 0 {\n\t\t\t\tfmt.Println(x, ((y + n) - s))\n\t\t\t} else {\n\t\t\t\tfmt.Println(x, (y - s))\n\t\t\t}\n\t\t} else if c == \"D\" {\n\t\t\tif y+s > n {\n\t\t\t\tfmt.Println(x, ((y + s) - n))\n\t\t\t} else {\n\t\t\t\tfmt.Println(x, (y + s))\n\t\t\t}\n\t\t}\n\t}\n}\n",
+            "content": "@@ -18,23 +18,13 @@\n ort \n-(\n %22fmt%22\n-; %22math%22)\n %0A%0Afu\n@@ -96,25 +96,537 @@\n y, &\n-s, &c)%0A%09if c == %0A%0A%7D%0A\n+c, &s)t%0A%09if c == %22R%22 %7C%7C c == %22L%22 %7C%7C c == %22U%22 %7C%7C c == %22D%22 %7B%0A%09%09if c == %22R%22 %7B%0A%09%09%09if x+s %3E n %7B%0A%09%09%09%09fmt.Println(((x + s) - n), y)%0A%09%09%09%7D else %7B%0A%09%09%09%09fmt.Println((x + s), y)%0A%09%09%09%7D%0A%09%09%7D else if c == %22L%22 %7B%0A%09%09%09if x-s %3C 0 %7B%0A%09%09%09%09fmt.Println(((x + n) - s), y)%0A%09%09%09%7D else %7B%0A%09%09%09%09fmt.Println((x - s), y)%0A%09%09%09%7D%0A%09%09%7D else if c == %22U%22 %7B%0A%09%09%09if y-s %3C 0 %7B%0A%09%09%09%09fmt.Println(x, ((y + n) - s))%0A%09%09%09%7D else %7B%0A%09%09%09%09fmt.Println(x, (y - s))%0A%09%09%09%7D%0A%09%09%7D else if c == %22D%22 %7B%0A%09%09%09if y+s %3E n %7B%0A%09%09%09%09fmt.Println(x, ((y + s) - n))%0A%09%09%09%7D else %7B%0A%09%09%09%09fmt.Println(x, (y + s))%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D%0A%7D\n %0A\n",
             "lines": "36"
+        },
+        {
+            "label": "2026-05-03_12-44-02",
+            "content": "@@ -109,13 +109,22 @@\n &s, &c)%0A\n+%09if c == \n %0A%0A%7D%0A%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-03_12-44-22",
+            "content": "@@ -113,51 +113,8 @@\n &c)%0A\n-%09if c == %22R%22 %7B%0A%09%09fmt.Println(%22x%22 + %22s%22)%0A%09%7D%0A\n %0A%0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-03_12-52-08",
+            "content": "package main\n\nimport (\"fmt\"; \"math\")\n\nfunc main() {\n\tvar n, x, y, s int\n\tvar c string\n\tfmt.Scan(&n, &x, &y, &s, &c)\n\tif c == \"R\" {\n\t\tfmt.Println(\"x\" + \"s\")\n\t}\n\n\n}\n\n",
+            "lines": "15"
         }
     ]
 }

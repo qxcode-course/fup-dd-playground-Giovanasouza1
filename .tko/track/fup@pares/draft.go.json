@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-03_12-14-24",
+            "content": "@@ -75,21 +75,8 @@\n &b)%0A\n-    acc := 0%0A\n     \n@@ -122,141 +122,31 @@\n     \n-if a %3E b %7B%0A            fmt.Println(%22invalido%22)%0A        %7D else if i %25 2 == 0 %7B%0A            acc += 1%0A        %7D%0A        fmt.Println(acc)\n+fmt.Println(i + i)%0A    \n %0A   \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-03_14-45-22",
+            "content": "@@ -257,16 +257,18 @@\n mt.Print\n+ln\n (acc)%0A  \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-03_14-45-55",
+            "content": "@@ -107,16 +107,25 @@\n  i %3C= b \n+%7C%7C i %3E= b\n ; i++%7B%0A \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-03_14-47-53",
+            "content": "@@ -71,16 +71,59 @@\n &a, &b)%0A\n+    acc := 0%0A    for i := a; i %3C= b ; i++%7B%0A\n         \n@@ -181,93 +181,14 @@\n     \n-    renurn%0A        %7D %0A        acc := 0%0A        for i := a; i %3C= b ; i++%7B%0A            \n+%7D else\n  if \n@@ -200,20 +200,16 @@\n  == 0 %7B%0A\n-    \n         \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-03_14-53-24",
+            "content": "@@ -140,17 +140,17 @@\n       re\n-t\n+n\n urn%0A    \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-03_14-55-32",
+            "content": "@@ -259,17 +259,17 @@\n  acc += \n-i\n+1\n %0A       \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-03_14-55-51",
+            "content": "@@ -275,15 +275,12 @@\n   %7D%0A\n-%0A\n     \n-%7D%0A\n     \n@@ -294,16 +294,23 @@\n nt(acc)%0A\n+    %7D%0A%0A\n     %0A%0A%7D%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-03_14-56-32",
+            "content": "@@ -291,18 +291,16 @@\n mt.Print\n-ln\n (acc)%0A  \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-03_14-56-39",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    fmt.Scan(&a, &b)\n        if a > b {\n            fmt.Println(\"invalido\")\n            return\n        } \n        acc := 0\n        for i := a; i <= b ; i++{\n             if i % 2 == 0 {\n                acc += i\n        }\n\n    }\n    fmt.Println(acc)\n    \n\n}\n",
+            "lines": "20"
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-03_15-06-24",
+            "content": "@@ -89,17 +89,17 @@\n := a; i \n-=\n+%3E\n = b; i +\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-05-03_15-07-00",
+            "content": "@@ -75,23 +75,8 @@\n &b)%0A\n-    v := a * b%0A\n     \n@@ -92,17 +92,17 @@\n a; i == \n-v\n+b\n ; i += 2\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-05-03_15-09-18",
+            "content": "@@ -136,16 +136,18 @@\n mt.Print\n+ln\n (i)%0A    \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-05-03_15-09-30",
+            "content": "@@ -108,9 +108,10 @@\n ; i \n-%3E\n+==\n  v; \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-05-03_15-09-50",
+            "content": "@@ -108,10 +108,9 @@\n ; i \n-%3C=\n+%3E\n  v; \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-05-03_15-13-14",
+            "content": "@@ -140,10 +140,8 @@\n rint\n-ln\n (i)%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-05-03_15-13-22",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    fmt.Scan(&a, &b)\n    v := a * b\n    for i := a; i <= v; i += 2 {\n        fmt.Println(i)\n    }\n}\n",
+            "lines": "10"
+        }
+    ]
+}

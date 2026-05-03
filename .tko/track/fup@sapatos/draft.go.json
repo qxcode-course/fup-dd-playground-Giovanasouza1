@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-03_14-24-56",
+            "content": "@@ -170,17 +170,16 @@\n = a; i %3C\n-=\n  b; i++ \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-03_14-31-58",
+            "content": "package main\nimport \"fmt\"\nfunc main(){\n    var a, b int\n    fmt.Scan(&a, &b)\n    acc := 0\n    if a > b {\n        fmt.Println(\"invalido\")\n        return\n    }\n    for i := a; i <= b; i++ {\n        if i % 2 == 0 && i % 3 ==0 {\n            acc += i\n        }\n    }\n    fmt.Println(acc)\n}\n",
+            "lines": "17"
+        }
+    ]
+}
