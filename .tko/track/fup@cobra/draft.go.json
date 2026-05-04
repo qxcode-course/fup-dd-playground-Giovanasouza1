@@ -112,8 +112,78 @@
         },
         {
             "label": "2026-05-03_18-08-34",
-            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n, x, y, s int\n\tvar c string\n\tfmt.Scan(&n, &x, &y, &s, &c)\n\tif c == \"R\"  {\n\t\tfmt.Println(((x + s) % n), y)\n\t} else if c == \"U\" {\n\t\tfmt.Println(((x - s + n) % n), y)\n\t} \n}\n\n",
+            "content": "@@ -183,22 +183,19 @@\n Println(\n-x, \n ((\n-y\n+x\n  - s + n\n@@ -204,120 +204,16 @@\n %25 n)\n+, y\n )%0A%09%7D \n-else if c == %22L%22 %7B%0A%09%09fmt.Println(((x + s) %25 n), y)%0A%09%7D else if c == %22D%22 %7B%0A%09%09fmt.Println(x, ((y + s) %25 n))%0A%09%7D\n %0A%7D%0A%0A\n",
             "lines": "15"
+        },
+        {
+            "label": "2026-05-04_17-38-23",
+            "content": "@@ -245,23 +245,19 @@\n tln(((x \n-- s \n + \n-n\n+s\n ) %25 n), \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-04_17-42-14",
+            "content": "@@ -51,35 +51,16 @@\n x, y\n+, s\n  int%0A\n-%09fmt.Scan(&n, &x, &y)%0A\n %09var\n@@ -84,34 +84,25 @@\n an(&\n-c)%0A%09var s int%0A%09fmt.Scan(&s\n+n, &x, &y, &s, &c\n )%0A%09i\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-04_17-45-11",
+            "content": "@@ -277,15 +277,15 @@\n ((x \n-+ n - s\n+- s + n\n ) %25 \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-04_17-52-27",
+            "content": "@@ -275,15 +275,13 @@\n n(((\n-(\n x + n\n-)\n  - s\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-04_17-52-53",
+            "content": "@@ -276,20 +276,18 @@\n ((((\n-n%25s) + x - n\n+x + n) - s\n ) %25 \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-04_17-55-03",
+            "content": "@@ -276,11 +276,11 @@\n ((((\n-s%25n\n+n%25s\n ) + \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-04_17-55-45",
+            "content": "@@ -276,11 +276,11 @@\n ((((\n-n%25s\n+s%25n\n ) + \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-04_17-56-33",
+            "content": "@@ -139,16 +139,17 @@\n c == %22R%22\n+ \n  %7B%0A%09%09fmt\n@@ -275,15 +275,19 @@\n n(((\n-x - s +\n+(n%25s) + x -\n  n) \n@@ -354,8 +354,9 @@\n ))%0A%09%7D%0A%7D%0A\n+%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-04_17-57-34",
+            "content": "@@ -294,84 +294,8 @@\n  y)%0A\n-%09%09if ((x - s + n) %25 n) %3C 0 %7B%0A%09%09%09%09fmt.Println((((x - s + n) %25 n))*-1, y)%0A%09%09%7D%0A\n %09%7D e\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-04_17-59-55",
+            "content": "@@ -357,13 +357,12 @@\n %25 n)\n+)\n *\n- \n -1\n-)\n , y)\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-04_18-00-26",
+            "content": "@@ -254,16 +254,52 @@\n = %22L%22 %7B%0A\n+%09%09fmt.Println(((x - s + n) %25 n), y)%0A\n %09%09if ((x\n@@ -354,16 +354,17 @@\n n) %25 n)*\n+ \n -1), y)%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-04_18-00-40",
+            "content": "@@ -330,57 +330,8 @@\n  y)%0A\n-%09%09%7D else %7B%0A%09%09%09fmt.Println(((x - s + n) %25 n), y)t%0A\n %09%09%7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-04_18-01-54",
+            "content": "@@ -369,24 +369,25 @@\n  n) %25 n), y)\n+t\n %0A%09%09%7D%0A%09%7D else\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-04_18-02-01",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n, x, y int\n\tfmt.Scan(&n, &x, &y)\n\tvar c string\n\tfmt.Scan(&c)\n\tvar s int\n\tfmt.Scan(&s)\n\tif c == \"R\" {\n\t\tfmt.Println(((x + s) % n), y)\n\t} else if c == \"U\" {\n\t\tfmt.Println(x, ((y - s + n) % n))\n\t} else if c == \"L\" {\n\t\tif ((x - s + n) % n) < 0 {\n\t\t\t\tfmt.Println((((x - s + n) % n)*-1), y)\n\t\t} else {\n\t\t\tfmt.Println(((x - s + n) % n), y)\n\t\t}\n\t} else if c == \"D\" {\n\t\tfmt.Println(x, ((y + s) % n))\n\t}\n}\n",
+            "lines": "25"
         }
     ]
 }

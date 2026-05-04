@@ -7,9 +7,9 @@ func main() {
     for i := a; i <= b; i++ {
         if i % 2 == 0 {
             continue
-        } else if i % 2 == 1 {
-            fmt.Printf("%d", i)
-        }; else if i == b { 
+        } else if i % 2 != 0 {
+            fmt.Printf("%d ", i)
+        } else if i == b { 
             break
         }
     }
