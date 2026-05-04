@@ -32,8 +32,53 @@
         },
         {
             "label": "2026-05-03_15-13-22",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    fmt.Scan(&a, &b)\n    v := a * b\n    for i := a; i <= v; i += 2 {\n        fmt.Println(i)\n    }\n}\n",
+            "content": "@@ -79,21 +79,16 @@\n     \n-quantidade :=\n+v := a *\n  b%0A \n@@ -111,18 +111,9 @@\n  %3C= \n-quantidade\n+v\n ; i \n",
             "lines": "10"
+        },
+        {
+            "label": "2026-05-04_12-23-35",
+            "content": "@@ -110,16 +110,17 @@\n = a; i %3C\n+=\n  quantid\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-05-04_12-25-53",
+            "content": "@@ -110,17 +110,16 @@\n = a; i %3C\n-=\n  quantid\n@@ -149,16 +149,18 @@\n mt.Print\n+ln\n (i)%0A    \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-05-04_12-26-22",
+            "content": "@@ -71,16 +71,36 @@\n &a, &b)%0A\n+    quantidade := b%0A\n     for \n@@ -112,17 +112,26 @@\n a; i %3C= \n-b\n+quantidade\n ; i += 2\n@@ -154,10 +154,8 @@\n rint\n-ln\n (i)%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-05-04_12-27-26",
+            "content": "@@ -121,16 +121,18 @@\n mt.Print\n+ln\n (i)%0A    \n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-05-04_12-27-39",
+            "content": "@@ -125,10 +125,8 @@\n rint\n-ln\n (i)%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-05-04_12-27-47",
+            "content": "@@ -90,16 +90,17 @@\n = a; i %3C\n+=\n  b; i +=\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-05-04_12-31-20",
+            "content": "@@ -97,17 +97,19 @@\n %3C b; i +\n-+\n+= 2\n  %7B%0A     \n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-05-04_12-32-46",
+            "content": "@@ -125,15 +125,9 @@\n tln(\n-a + i*2\n+i\n )%0A  \n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-05-04_12-35-31",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    fmt.Scan(&a, &b)\n    for i := a; i < b; i ++ {\n        fmt.Println(a + i*2)\n    }\n}\n",
+            "lines": "9"
         }
     ]
 }
