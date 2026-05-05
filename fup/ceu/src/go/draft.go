@@ -4,10 +4,19 @@ func main() {
     var n int
     fmt.Scan(&n)
     fmt.Print("[ ")
-    ceu := 10
-    for i := 0; i <= ceu; i++ {
-        fmt.Println(i )
-        
+    for i := 0 ; i < 10; i++ {
+        if n != i {
+            fmt.Print(i," " )
+     }
+     /*
+      if n != 10 && i == 9{
+        fmt.Print("ceu ")
+     } 
+        */
     }
-    fmt.Println(" ]")
+    
+     if n != 10 {
+        fmt.Print("ceu ")
+     } 
+    fmt.Println("]")
 }

@@ -2,8 +2,38 @@
     "patches": [
         {
             "label": "2026-04-11_18-14-34",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -41,150 +41,35 @@\n     \n-var n, d, a int%0A    fmt.Scan(&n, &d, &a)%0A    if d == a %7B%0A        fmt.Println(0)%0A    %7D else if d %3C a %7C%7C d %3E a %7B%0A        fmt.Println(d - a)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-05-05_17-06-27",
+            "content": "@@ -132,60 +132,23 @@\n lse \n-d %3E a %7B%0A        fmt.Println(d - a)%0A    %7D else if d %3C\n+if d %3C a %7C%7C d %3E\n  a %7B\n@@ -172,13 +172,13 @@\n tln(\n-a - d\n+d - a\n )%0A  \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-05-05_17-09-13",
+            "content": "@@ -128,19 +128,16 @@\n  %7D else \n-if \n d %3E a %7B%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-05_17-09-34",
+            "content": "@@ -212,20 +212,14 @@\n tln(\n-(\n a - d)\n-- n )\n %0A   \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-05_17-10-48",
+            "content": "@@ -209,21 +209,21 @@\n rintln((\n-d - a\n+a - d\n )- n )%0A \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-05_17-11-10",
+            "content": "@@ -219,9 +219,9 @@\n - a)\n-+\n+-\n  n )\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-05_17-11-45",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n, d, a int\n    fmt.Scan(&n, &d, &a)\n    if d == a {\n        fmt.Println(0)\n    } else if d > a {\n        fmt.Println(d - a)\n    } else if d < a {\n        fmt.Println((d - a)+ n )\n    }\n}\n",
+            "lines": "13"
         }
     ]
 }

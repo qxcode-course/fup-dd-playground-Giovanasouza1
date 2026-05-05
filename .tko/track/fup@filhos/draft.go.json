@@ -102,8 +102,38 @@
         },
         {
             "label": "2026-05-04_18-14-02",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    fmt.Scan(&a, &b)\n    for i := a; i < b; i += 2 {\n        fmt.Println(i)\n    }\n}\n",
+            "content": "@@ -75,27 +75,8 @@\n &b)%0A\n-    idade := b * 2%0A\n     \n@@ -95,13 +95,9 @@\n i %3C \n-idade\n+b\n ; i \n",
             "lines": "9"
+        },
+        {
+            "label": "2026-05-05_17-24-08",
+            "content": "@@ -109,17 +109,16 @@\n = a; i %3C\n-=\n  idade; \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-05-05_17-24-17",
+            "content": "@@ -87,12 +87,8 @@\n e :=\n- a +\n  b *\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-05-05_17-26-11",
+            "content": "@@ -113,16 +113,17 @@\n = a; i %3C\n+=\n  idade; \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-05-05_17-26-28",
+            "content": "@@ -88,19 +88,17 @@\n  := \n-(\n+a + \n b * 2\n-) - a\n %0A   \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-05-05_17-27-07",
+            "content": "@@ -92,17 +92,17 @@\n (b * 2) \n-+\n+-\n  a%0A    f\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-05-05_17-27-13",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    fmt.Scan(&a, &b)\n    idade := (b * 2) + a\n    for i := a; i < idade; i += 2 {\n        fmt.Println(i)\n    }\n}\n",
+            "lines": "10"
         }
     ]
 }
