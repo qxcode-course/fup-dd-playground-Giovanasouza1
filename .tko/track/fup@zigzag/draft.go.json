@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-07_10-54-23",
+            "content": "@@ -303,124 +303,8 @@\n g%22)%0A\n-        %7D else if i %25 3 != 0 %7B%0A            fmt.Println(i)%0A        %7D else if i %25 5 != 0 %7B%0A            fmt.Println(i)%0A\n     \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-07_10-56-08",
+            "content": "@@ -152,17 +152,17 @@\n intln(%22z\n-i\n+a\n g%22) %0A   \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-07_10-56-26",
+            "content": "@@ -419,80 +419,8 @@\n (i)%0A\n-        %7D else if i %25 3 != 0 && i %25 5 != 0 %7B%0A            fmt.Println(i)%0A\n     \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-07_10-58-08",
+            "content": "@@ -425,16 +425,87 @@\n       %7D \n+else if i %25 3 != 0 && i %25 5 != 0 %7B%0A            fmt.Println(i)%0A        %7D\n %0A    %7D%0A%7D\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-07_10-58-34",
+            "content": "@@ -128,21 +128,8 @@\n = 0 \n-&& i %25 5 != 0\n %7B%0A  \n@@ -191,21 +191,8 @@\n = 0 \n-&& i %25 3 != 0\n %7B%0A  \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-07_11-00-59",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, z int\n    fmt.Scan(&a, &z)\n    for i := a; i <= z; i ++ {\n        if i % 3 == 0 && i % 5 != 0{\n            fmt.Println(\"zig\") \n        } else if i % 5 == 0 && i % 3 != 0{\n            fmt.Println(\"zag\")\n        } else if i % 3 == 0 && i % 5 == 0 {\n            fmt.Println(\"zigzag\")\n        } else if i % 3 != 0 {\n            fmt.Println(i)\n        } else if i % 5 != 0 {\n            fmt.Println(i)\n        } \n    }\n}\n",
+            "lines": "19"
+        }
+    ]
+}
