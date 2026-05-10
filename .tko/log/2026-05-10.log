@@ -1,0 +1,8 @@
+2026-05-10 19:37:07, MOVE, v:1, k:fup@colorido, mode:PICK
+2026-05-10 19:37:51, EXEC, v:1, k:fup@colorido, mode:FULL, rate:0
+2026-05-10 19:37:51, MOVE, v:1, k:fup@colorido, mode:EDIT
+2026-05-10 19:45:05, EXEC, v:1, k:fup@colorido, mode:FULL, size:26, fail:COMP
+2026-05-10 19:46:10, EXEC, v:1, k:fup@colorido, mode:FULL, size:21, fail:COMP
+2026-05-10 19:46:35, MOVE, v:1, k:fup@colorido, mode:EDIT
+2026-05-10 19:46:46, EXEC, v:1, k:fup@colorido, mode:FULL, size:22, fail:COMP
+2026-05-10 19:47:39, MOVE, v:1, k:fup@colorido, mode:BACK

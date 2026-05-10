@@ -22,6 +22,7 @@ sources:
   quests: null
   tasks: null
 expanded:
+- fup@for1
 - fup@for2
 flags:
   inbox: all
@@ -31,4 +32,4 @@ flags:
   show_time: 'true'
 lang: go
 selected: fup@colorido
-selected_index: 8
+selected_index: 18
