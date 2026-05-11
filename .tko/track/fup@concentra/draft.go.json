@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-11_15-03-39",
+            "content": "@@ -140,16 +140,18 @@\n mt.Print\n+ln\n (i, %22 %22)\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-05-11_15-03-54",
+            "content": "@@ -84,16 +84,18 @@\n mt.Print\n+ln\n (%22%5B %22)%0A \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-05-11_15-04-02",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    fmt.Scan(&a, &b)\n    fmt.Print(\"[ \")\n    for i := a; i <= 10; i++{\n        fmt.Print(i, \" \")\n    }\n}\n",
+            "lines": "10"
+        }
+    ]
+}
