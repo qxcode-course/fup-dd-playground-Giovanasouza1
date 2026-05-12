@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-12_17-26-32",
+            "content": "@@ -89,16 +89,20 @@\n &D)%0A\n+    \n %0A    if \n P %3E \n@@ -101,22 +101,22 @@\n  if \n-P %3E H\n+p %3E h\n  && \n-P %3E F\n+p %3E f\n  %7B%0A \n@@ -145,11 +145,52 @@\n )%0A    %7D \n+else if %0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-05-12_17-27-08",
+            "content": "@@ -112,17 +112,8 @@\n %3E F \n-&& D %3E 0 \n %7B%0A  \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-05-12_17-27-51",
+            "content": "@@ -154,44 +154,7 @@\n   %7D \n-else %7B%0A        fmt.Println(%22N%22)%0A    %7D\n %0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-05-12_17-28-15",
+            "content": "@@ -92,16 +92,34 @@\n %0A%0A    if\n+ P %3E H && P %3E F &&\n  D %3E 0 %7B\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-12_17-28-42",
+            "content": "@@ -141,16 +141,8 @@\n lse \n-if D %3C 0\n %7B%0A  \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-12_17-31-03",
+            "content": "@@ -103,12 +103,8 @@\n %3E 0 \n-&&  \n %7B%0A  \n@@ -149,18 +149,8 @@\n  %3C 0\n- && f %3C p \n %7B%0A  \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-12_17-34-23",
+            "content": "@@ -99,16 +99,20 @@\n f D %3E 0 \n+&&  \n %7B%0A      \n@@ -157,13 +157,13 @@\n  && \n-F %3C P\n+f %3C p\n  %7B%0A \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-12_17-34-37",
+            "content": "@@ -159,16 +159,8 @@\n %3C P \n-&& F %3C H\n %7B%0A  \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-12_17-35-51",
+            "content": "@@ -155,17 +155,24 @@\n & F %3C P \n- \n+&& F %3C H\n %7B%0A      \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-12_17-37-09",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var H, P, F, D int\n    fmt.Scan(&H, &P, &F, &D)\n\n    if D > 0 {\n        fmt.Println(\"S\")\n    } else if D < 0 && F < P  {\n        fmt.Println(\"N\")\n    }\n}\n",
+            "lines": "12"
+        }
+    ]
+}
