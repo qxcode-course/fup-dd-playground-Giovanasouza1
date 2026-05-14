@@ -1,10 +1,17 @@
 package main
 import "fmt"
 func main() {
-    var a, b int
-    fmt.Scan(&a, &b)
+    var menor, maior int
+    fmt.Scan(&menor, &maior)
     fmt.Print("[ ")
-    for i := a; i <= 10; i++{
-        fmt.Print(i, " ")
+    a := menor
+    b := maior
+    for a <= b {
+        fmt.Print(a, " ")
+        fmt.Print(b, " ")
+        a++
+        b--
     }
-}
+    for a
+
+    }

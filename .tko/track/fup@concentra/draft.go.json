@@ -12,8 +12,28 @@
         },
         {
             "label": "2026-05-11_15-04-02",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    fmt.Scan(&a, &b)\n    fmt.Print(\"[ \")\n    for i := a; i <= 10; i++{\n        fmt.Print(i, \" \")\n    }\n}\n",
+            "content": "@@ -103,25 +103,25 @@\n for \n-a\n+i\n  := a; \n-a\n+i\n  %3C= 10; \n a++%7B\n@@ -116,17 +116,17 @@\n  %3C= 10; \n-a\n+i\n ++%7B%0A    \n@@ -143,70 +143,9 @@\n int(\n-a, %22 %22)%0A    %7D%0A    for b := b; b %3E= 1; b--%7B%0A        fmt.Print(b\n+i\n , %22 \n",
             "lines": "10"
+        },
+        {
+            "label": "2026-05-14_12-43-45",
+            "content": "@@ -45,20 +45,12 @@\n var \n-menor, maior\n+a, b\n  int\n@@ -68,21 +68,13 @@\n an(&\n-menor, &maior\n+a, &b\n )%0A  \n@@ -99,33 +99,65 @@\n     \n+for \n a := \n-menor%0A    b := maior\n+a; a %3C= 10; a++%7B%0A        fmt.Print(a, %22 %22)%0A    %7D\n %0A   \n@@ -165,27 +165,27 @@\n for \n-i\n+b\n  := \n-a; i\n+b; b\n  %3E= \n-b; i++\n+1; b--\n %7B%0A  \n@@ -194,33 +194,30 @@\n     \n-a++%0A        b--\n+fmt.Print(b, %22 %22)\n %0A    %7D%0A\n-%0A    \n %7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-14_12-56-29",
+            "content": "@@ -149,67 +149,28 @@\n for \n-a %3C= b%7B%0A        fmt.Print(a, %22 %22)%0A        fmt.Print(b, %22 %22)\n+i := a; i %3E= b; i++%7B\n %0A   \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-14_13-02-51",
+            "content": "@@ -148,19 +148,19 @@\n  for a %3C\n+=\n  b\n- \n %7B%0A      \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-14_13-05-57",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var menor, maior int\n    fmt.Scan(&menor, &maior)\n    fmt.Print(\"[ \")\n    a := menor\n    b := maior\n    for a < b {\n        fmt.Print(a, \" \")\n        fmt.Print(b, \" \")\n        a++\n        b--\n    }\n\n    }\n",
+            "lines": "16"
         }
     ]
 }

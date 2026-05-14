@@ -23,3 +23,54 @@
 2026-05-14 12:00:02, MOVE, v:1, k:fup@colorido, mode:EDIT
 2026-05-14 12:00:31, EXEC, v:1, k:fup@colorido, mode:FULL, rate:0, size:36
 2026-05-14 12:00:38, MOVE, v:1, k:fup@colorido, mode:BACK
+2026-05-14 12:05:55, MOVE, v:1, k:fup@colorido, mode:PICK
+2026-05-14 12:05:57, EXEC, v:1, k:fup@colorido, mode:FULL, rate:0, size:30
+2026-05-14 12:05:56, MOVE, v:1, k:fup@colorido, mode:EDIT
+2026-05-14 12:12:48, EXEC, v:1, k:fup@colorido, mode:FULL, rate:0, size:37
+2026-05-14 12:13:14, EXEC, v:1, k:fup@colorido, mode:FULL, rate:0, size:37
+2026-05-14 12:13:37, EXEC, v:1, k:fup@colorido, mode:FULL, rate:0, size:40
+2026-05-14 12:15:50, MOVE, v:1, k:fup@colorido, mode:EDIT
+2026-05-14 12:13:36, MOVE, v:1, k:fup@colorido, mode:EDIT
+2026-05-14 12:18:07, EXEC, v:1, k:fup@colorido, mode:FULL, rate:0, size:41
+2026-05-14 12:18:24, EXEC, v:1, k:fup@colorido, mode:FULL, rate:66, size:41
+2026-05-14 12:20:06, EXEC, v:1, k:fup@colorido, mode:FULL, rate:66, size:41
+2026-05-14 12:20:53, MOVE, v:1, k:fup@colorido, mode:EDIT
+2026-05-14 12:20:06, MOVE, v:1, k:fup@colorido, mode:EDIT
+2026-05-14 12:21:35, EXEC, v:1, k:fup@colorido, mode:FULL, rate:66, size:41
+2026-05-14 12:25:53, MOVE, v:1, k:fup@colorido, mode:EDIT
+2026-05-14 12:21:35, MOVE, v:1, k:fup@colorido, mode:EDIT
+2026-05-14 12:26:11, EXEC, v:1, k:fup@colorido, mode:FULL, size:49, fail:COMP
+2026-05-14 12:26:19, EXEC, v:1, k:fup@colorido, mode:FULL, rate:0, size:49
+2026-05-14 12:27:28, EXEC, v:1, k:fup@colorido, mode:FULL, rate:0, size:49
+2026-05-14 12:28:34, EXEC, v:1, k:fup@colorido, mode:FULL, rate:83, size:49
+2026-05-14 12:30:54, MOVE, v:1, k:fup@colorido, mode:EDIT
+2026-05-14 12:28:34, MOVE, v:1, k:fup@colorido, mode:EDIT
+2026-05-14 12:31:19, EXEC, v:1, k:fup@colorido, mode:FULL, size:52, fail:COMP
+2026-05-14 12:32:14, EXEC, v:1, k:fup@colorido, mode:FULL, rate:83, size:54
+2026-05-14 12:32:20, EXEC, v:1, k:fup@colorido, mode:FULL, rate:100, size:54
+2026-05-14 12:33:35, MOVE, v:1, k:fup@colorido, mode:BACK
+2026-05-14 12:34:10, SELF, v:1, k:fup@colorido, self:1, rate:100, friend:Hanna, vinicius, concept:1, debug:1
+2026-05-14 12:32:19, MOVE, v:1, k:fup@colorido, mode:EDIT
+2026-05-14 12:32:20, MOVE, v:1, k:fup@colorido, mode:EDIT
+2026-05-14 12:36:20, MOVE, v:1, k:fup@concentra, mode:PICK
+2026-05-14 12:36:54, MOVE, v:1, k:fup@concentra, mode:BACK
+2026-05-14 12:36:56, MOVE, v:1, k:fup@concentra, mode:PICK
+2026-05-14 12:37:47, MOVE, v:1, k:fup@concentra, mode:BACK
+2026-05-14 12:37:49, MOVE, v:1, k:fup@colorido, mode:PICK
+2026-05-14 12:37:50, EXEC, v:1, k:fup@colorido, mode:FULL, rate:100
+2026-05-14 12:38:49, MOVE, v:1, k:fup@colorido, mode:BACK
+2026-05-14 12:37:50, MOVE, v:1, k:fup@colorido, mode:EDIT
+2026-05-14 12:43:44, MOVE, v:1, k:fup@concentra, mode:PICK
+2026-05-14 12:43:45, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:13
+2026-05-14 12:44:41, MOVE, v:1, k:fup@concentra, mode:EDIT
+2026-05-14 12:43:45, MOVE, v:1, k:fup@concentra, mode:EDIT
+2026-05-14 12:50:53, MOVE, v:1, k:fup@concentra, mode:EDIT
+2026-05-14 12:55:51, MOVE, v:1, k:fup@concentra, mode:EDIT
+2026-05-14 12:56:29, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:14
+2026-05-14 12:59:40, MOVE, v:1, k:fup@concentra, mode:EDIT
+2026-05-14 12:56:29, MOVE, v:1, k:fup@concentra, mode:EDIT
+2026-05-14 13:02:51, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:16
+2026-05-14 13:03:10, MOVE, v:1, k:fup@concentra, mode:EDIT
+2026-05-14 13:02:51, MOVE, v:1, k:fup@concentra, mode:EDIT
+2026-05-14 13:05:57, EXEC, v:1, k:fup@concentra, mode:FULL, rate:0, size:16
+2026-05-14 13:07:15, MOVE, v:1, k:fup@concentra, mode:BACK
