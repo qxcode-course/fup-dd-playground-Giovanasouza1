@@ -6,10 +6,9 @@ func main() {
     fmt.Scan(&N, &lado)
     fmt.Print("[ ")
     for i := 0; i <= 9; i++{ 
-        if i == N{
-    break
-        } 
-
+        if i == N {
+        continue
+    }
     if lado == "d" {
        if i % 2 == 0 {
         fmt.Print(i, "d", " ")
@@ -22,15 +21,15 @@ func main() {
         } else {
          fmt.Print(i, "d", " ")
         }
-
+    }
+for i := N; i <= 9; i++{ 
+    if N % 2 == 0 {
+        fmt.Print("e")
+    } else {
+        fmt.Print("d")
+    }
 }
-for i := N + 1; i <= 9; i++{
-    if i % 2 == 0 {
-        fmt.Print(i, "e", " ")
-       } else {
-        fmt.Print(i, "d", " ")
-       }}
-}
+    }
 fmt.Print("ceu ]")
     }
 

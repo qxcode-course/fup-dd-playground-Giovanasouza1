@@ -4,11 +4,14 @@ import "fmt"
     func main() {
     var n int
     fmt.Scan(&n)
-    var arr []int = make([]int, n)
-    for i := range arr {
-        fmt.Scan(&arr[i])
-    }
-    for _, valor := range arr {
-    fmt.Println(valor) }
+        
+    var numeros int
 
+    for _; i <= n; i++ {
+        var valor int
+        fmt.Scan(&valor)
+        numeros = append(numeros, valor)
     }
+    fmt.Println(numeros)
+    }
+    
