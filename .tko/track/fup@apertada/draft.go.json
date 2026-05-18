@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-18_17-01-49",
+            "content": "@@ -228,29 +228,6 @@\n %7D%0A%7D%0A\n-fmt.Println(arr%5Bimin%5D)%0A\n %7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-18_17-02-27",
+            "content": "package main\nimport \n\"fmt\"\nfunc main() {\n    arr := make([]int, 5)\n    for i := range arr {\n        fmt.Scan(&arr[i])\n}\nfmt.Println(arr)\nimin := 0\nfor i := 0; i < len(arr); i++{\n    if arr[i] < arr[imin] {\n        imin = i\n    }\n}\nfmt.Println(arr[imin])\n}\n",
+            "lines": "17"
+        }
+    ]
+}

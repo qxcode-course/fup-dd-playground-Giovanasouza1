@@ -47,8 +47,38 @@
         },
         {
             "label": "2026-05-12_17-37-09",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var H, P, F, D int\n    fmt.Scan(&H, &P, &F, &D)\n\n    if D > 0 {\n        fmt.Println(\"S\")\n    } else if D < 0 && F < P  {\n        fmt.Println(\"N\")\n    }\n}\n",
+            "content": "@@ -97,27 +97,69 @@\n  if \n-P %3E H && P %3E F && D\n+D %3E 0 %7B%0A        fmt.Println(%22S%22)%0A    %7D else if D %3C 0 && F %3C P\n   %7B%0A\n@@ -175,18 +175,21 @@\n mt.Print\n+ln\n (%22\n+N\n %22)%0A    %7D\n",
             "lines": "12"
+        },
+        {
+            "label": "2026-05-18_17-15-25",
+            "content": "@@ -89,116 +89,39 @@\n &D)%0A\n-    for %7B%0A   \n+%0A\n     \n- \n if \n-F == H %7B%0A            fmt.Println(%22S%22)%0A            break%0A        %7D else if F == P %7B%0A    \n+P %3E H && P %3E F && D  %7B%0A\n     \n@@ -137,44 +137,13 @@\n rint\n-ln\n (%22\n-N\n %22)%0A\n-            break%0A        %7D%0A\n     \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-05-18_17-44-29",
+            "content": "@@ -249,107 +249,13 @@\n    %7D\n- \n %0A    \n-    if D == -1 %7B%0A            F--%0A        %7D else %7B%0A            F++%0A        %7D%0A        %7D%0A    %7D%0A    \n+%7D%0A%7D\n %0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-18_17-51-21",
+            "content": "@@ -99,56 +99,8 @@\n r %7B%0A\n-        if F == 16%7B%0A            F = 0%0A        %7D%0A\n     \n@@ -327,17 +327,16 @@\n       %7D%0A\n-%0A\n         \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-18_17-55-10",
+            "content": "@@ -137,63 +137,8 @@\n = 0%0A\n-        %7D else if F %3C 0 %7B%0A            F = 15%0A        %7D%0A\n     \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-18_17-58-53",
+            "content": "@@ -184,24 +184,34 @@\n 5%0A        %7D%0A\n+        %7D%0A\n         if F\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-18_17-59-24",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var H, P, F, D int\n    fmt.Scan(&H, &P, &F, &D)\n    for {\n        if F == 16{\n            F = 0\n        } else if F < 0 {\n            F = 15\n        }\n        if F == H {\n            fmt.Println(\"S\")\n            break\n        } else if F == P {\n            fmt.Println(\"N\")\n            break\n        } \n        if D == -1 {\n            F--\n        } else {\n            F++\n        }\n\n        }\n    }\n    \n",
+            "lines": "27"
         }
     ]
 }
