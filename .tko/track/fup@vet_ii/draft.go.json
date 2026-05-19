@@ -2,8 +2,133 @@
     "patches": [
         {
             "label": "2026-04-27_17-03-54",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -41,228 +41,34 @@\n     \n-var n int%0A    fmt.Scan(&n)%0A    fmt.Print(%22%5B%22)%0A    numeros := make(%5B%5Dint, n)%0A    for i := 0; i %3C n; i++ %7B%0A        fmt.Scan(&numeros%5Bi%5D)%0A    %7D%0A    for i := 0; i %3C n; i++ %7B%0A        fmt.Print(i, %22 %22)%0A    %7D%0A    fmt.Println(%22%5D\n+fmt.Println(%22Hello, World!\n %22)%0A%7D\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-05-19_19-22-03",
+            "content": "@@ -130,9 +130,9 @@\n  := \n-1\n+0\n ; i \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-19_19-22-26",
+            "content": "@@ -80,17 +80,16 @@\n Print(%22%5B\n- \n %22)%0A    n\n@@ -183,33 +183,33 @@\n  %7D%0A    for i := \n-1\n+0\n ; i %3C n; i++ %7B%0A \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-19_19-22-41",
+            "content": "@@ -125,33 +125,32 @@\n  for i := 1; i %3C\n-=\n  n; i++ %7B%0A      \n@@ -198,17 +198,16 @@\n = 1; i %3C\n-=\n  n; i++ \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-19_19-22-56",
+            "content": "@@ -119,33 +119,33 @@\n n)%0A    for i := \n-0\n+1\n ; i %3C= n; i++ %7B%0A\n@@ -197,9 +197,9 @@\n  := \n-0\n+1\n ; i \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-19_19-25-25",
+            "content": "@@ -88,68 +88,8 @@\n  %22)%0A\n-    if n == 0 %7B%0A        fmt.Print(%5B%5D)%7D%0A        return%0A    %7D%0A\n     \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-19_19-30-32",
+            "content": "@@ -122,12 +122,10 @@\n int(\n-%22\n %5B%5D\n-%22\n )%7D%0A \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-19_19-30-55",
+            "content": "@@ -68,39 +68,8 @@\n &n)%0A\n-    numeros := make(%5B%5Dint, n)%0A%0A\n     \n@@ -142,24 +142,54 @@\n eturn%0A    %7D%0A\n+    numeros := make(%5B%5Dint, n)%0A\n     for i :=\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-19_19-31-17",
+            "content": "@@ -171,16 +171,22 @@\n  return%0A\n+    %7D%0A\n     for \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-19_19-31-32",
+            "content": "@@ -99,28 +99,8 @@\n n)%0A%0A\n-    if n == 0 %7B%0A    \n     \n@@ -115,38 +115,32 @@\n t(%22%5B\n-%5D\n+ \n %22)%0A    \n-    return%0A    %7D\n+if n == 0 %7B\n %0A    \n-%0A\n     \n@@ -151,24 +151,35 @@\n Print(%22%5B\n- \n+%5D\n %22)\n+%7D\n %0A    \n+    return\n %0A    for\n@@ -182,32 +182,33 @@\n  for i := 0; i %3C\n+=\n  n; i++ %7B%0A      \n@@ -256,16 +256,17 @@\n = 0; i %3C\n+=\n  n; i++ \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-19_19-34-49",
+            "content": "@@ -191,33 +191,33 @@\n   %0A    for i := \n-1\n+0\n ; i %3C n; i++ %7B%0A \n@@ -268,9 +268,9 @@\n  := \n-1\n+0\n ; i \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-19_19-35-01",
+            "content": "@@ -197,33 +197,32 @@\n  for i := 1; i %3C\n-=\n  n; i++ %7B%0A      \n@@ -270,17 +270,16 @@\n = 1; i %3C\n-=\n  n; i++ \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-19_19-35-12",
+            "content": "@@ -128,18 +128,16 @@\n mt.Print\n-ln\n (%22%5B%5D%22)%0A \n@@ -299,18 +299,16 @@\n mt.Print\n-ln\n (i, %22 %22)\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-19_19-36-06",
+            "content": "@@ -193,33 +193,33 @@\n   %0A    for i := \n-0\n+1\n ; i %3C= n; i++ %7B%0A\n@@ -267,17 +267,17 @@\n or i := \n-0\n+1\n ; i %3C= n\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-19_19-36-25",
+            "content": "@@ -304,26 +304,17 @@\n Println(\n-numeros%5Bi%5D\n+i\n , %22 %22)%0A \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-19_19-37-42",
+            "content": "@@ -301,16 +301,18 @@\n mt.Print\n+ln\n (numeros\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-19_19-38-01",
+            "content": "@@ -202,36 +202,32 @@\n r i := 0; i %3C= n\n- + 1\n ; i++ %7B%0A        \n@@ -280,12 +280,8 @@\n %3C= n\n- + 1\n ; i+\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-19_19-39-07",
+            "content": "@@ -207,18 +207,23 @@\n = 0; i %3C\n+=\n  n\n+ + 1\n ; i++ %7B%0A\n@@ -280,16 +280,20 @@\n ; i %3C= n\n+ + 1\n ; i++ %7B%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-19_19-41-04",
+            "content": "@@ -149,13 +149,14 @@\n     \n-B\n re\n-ak\n+turn\n %0A   \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-19_19-41-36",
+            "content": "@@ -149,14 +149,13 @@\n     \n+B\n re\n-turn\n+ak\n %0A   \n@@ -263,32 +263,33 @@\n  for i := 0; i %3C\n+=\n  n; i++ %7B%0A      \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-19_19-43-13",
+            "content": "@@ -336,16 +336,18 @@\n mt.Print\n+ln\n (%22%5D%22)%0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-19_19-43-27",
+            "content": "@@ -336,18 +336,16 @@\n mt.Print\n-ln\n (%22%5D%22)%0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-19_19-43-39",
+            "content": "@@ -302,32 +302,37 @@\n Print(numeros%5Bi%5D\n+, %22 %22\n )%0A    %7D%0A    fmt.\n@@ -340,11 +340,12 @@\n rint\n+ln\n (%22\n- \n %5D%22)%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-19_19-43-55",
+            "content": "@@ -314,13 +314,8 @@\n s%5Bi%5D\n-, %22 %22\n )%0A  \n@@ -331,18 +331,17 @@\n mt.Print\n-ln\n (%22\n+ \n %5D%22)%0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-19_19-44-04",
+            "content": "@@ -133,17 +133,16 @@\n intln(%22%5B\n- \n %5D%22)%0A    \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-19_19-44-17",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n    numeros := make([]int, n)\n\n    if n == 0 {\n        fmt.Println(\"[ ]\")\n        return\n    }\n    \n    fmt.Print(\"[ \")\n    \n    for i := 0; i < n; i++ {\n        fmt.Scan(&numeros[i])\n    }\n    for i := 0; i < n; i++ {\n        fmt.Print(numeros[i], \" \")\n    }\n    fmt.Println(\"]\")\n}\n",
+            "lines": "22"
         }
     ]
 }

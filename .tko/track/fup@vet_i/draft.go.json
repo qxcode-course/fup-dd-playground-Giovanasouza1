@@ -117,8 +117,53 @@
         },
         {
             "label": "2026-05-13_13-36-50",
-            "content": "\npackage main\nimport \"fmt\"\n    func main() {\n    var n int\n    fmt.Scan(&n)\n        \n    var numeros int\n\n    for i := 1; i <= n; i++ {\n        var valor int\n        fmt.Scan(&valor)\n        numeros = append(numeros, valor)\n    }\n    fmt.Println(numeros)\n    }\n    \n",
+            "content": "@@ -1,8 +1,9 @@\n+%0A\n package \n@@ -38,20 +38,16 @@\n ain() %7B%0A\n-    \n     var \n@@ -52,20 +52,16 @@\n r n int%0A\n-    \n     fmt.\n@@ -77,50 +77,33 @@\n     \n-numeros := make(%5B%5Dint, n)%0A    fmt.Scan(&n)\n+    %0A    var numeros int%0A\n %0A   \n@@ -116,14 +116,15 @@\n  := \n-0\n+1\n ; i %3C\n+=\n  n; \n@@ -141,34 +141,126 @@\n     \n-fmt.Scan(&numeros%5Bi%5D)%0A    %7D%0A%7D\n+var valor int%0A        fmt.Scan(&valor)%0A        numeros = append(numeros, valor)%0A    %7D%0A    fmt.Println(numeros)%0A    %7D%0A    \n %0A\n",
             "lines": "17"
+        },
+        {
+            "label": "2026-05-19_19-06-34",
+            "content": "@@ -106,16 +106,33 @@\n int, n)%0A\n+    fmt.Scan(&n)%0A\n     for \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-05-19_19-07-15",
+            "content": "@@ -175,31 +175,6 @@\n   %7D%0A\n-    fmt.Println(numeros)%0A\n %7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-05-19_19-08-42",
+            "content": "@@ -184,16 +184,18 @@\n mt.Print\n+ln\n (numeros\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-05-19_19-09-09",
+            "content": "@@ -151,14 +151,14 @@\n fmt.\n-Print(\n+Scan(&\n nume\n@@ -171,10 +171,33 @@\n )%0A    %7D%0A\n+    fmt.Print(numeros)%0A\n %7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-05-19_19-10-51",
+            "content": "@@ -139,73 +139,8 @@\n + %7B%0A\n-        fmt.Scan(&numeros%5Bi%5D)%0A    %7D%0A    for i := 0; i %3C n; i++ %7B%0A\n     \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-05-19_19-12-46",
+            "content": "@@ -221,10 +221,8 @@\n rint\n-ln\n (num\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-19_19-13-00",
+            "content": "@@ -242,50 +242,6 @@\n   %7D%0A\n-    if n == 0 %7B%0A        fmt.Print(%22%22)%0A    %7D%0A\n %7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-19_19-13-27",
+            "content": "@@ -271,18 +271,16 @@\n mt.Print\n-ln\n (%22%22)%0A   \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-19_19-13-36",
+            "content": "package main\nimport \"fmt\"\n    func main() {\n        var n int\n        fmt.Scan(&n)\n    numeros := make([]int, n)\n    for i := 0; i < n; i++ {\n        fmt.Scan(&numeros[i])\n    }\n    for i := 0; i < n; i++ {\n        fmt.Println(numeros[i])\n    }\n    if n == 0 {\n        fmt.Println(\"\")\n    }\n}\n",
+            "lines": "16"
         }
     ]
 }

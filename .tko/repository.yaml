@@ -19,7 +19,7 @@ sources:
   writeable: false
   quests: null
 expanded:
-- fup@for2
+- fup@list
 flags:
   inbox: all
   panel: skills
@@ -27,5 +27,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@spok
-selected_index: 12
+selected: fup@parkour
+selected_index: 27

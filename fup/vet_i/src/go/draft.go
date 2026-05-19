@@ -1,17 +1,16 @@
-
 package main
 import "fmt"
     func main() {
-    var n int
-    fmt.Scan(&n)
-        
-    var numeros int
-
-    for _; i <= n; i++ {
-        var valor int
-        fmt.Scan(&valor)
-        numeros = append(numeros, valor)
+        var n int
+        fmt.Scan(&n)
+    numeros := make([]int, n)
+    for i := 0; i < n; i++ {
+        fmt.Scan(&numeros[i])
     }
-    fmt.Println(numeros)
+    for i := 0; i < n; i++ {
+        fmt.Println(numeros[i])
     }
-    
+    if n == 0 {
+        fmt.Println("")
+    }
+}
