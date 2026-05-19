@@ -1,21 +1,22 @@
 package main
 import "fmt"
 func main() {
-    var C, M int
+    var C, M, x int
     fmt.Scan(&C)
     for {
         fmt.Scan(&M)
-        if M == 0 {
-            fmt.Print("vazio")
+        x = M + x
+        if x == 0 {
+            fmt.Println("vazio")
             
-        } else if M < C {
-            fmt.Print("ainda cabe")
+        } else if x < C {
+            fmt.Println("ainda cabe")
         
-        } else if M > C {
-            fmt.Print("lotado")
+        } else if x >= C && x < 2 * C {
+            fmt.Println("lotado")
             
-        } else if M == 2 * C {
-            fmt.Print("hora de partir")
+        } else if x >= 2 * C {
+            fmt.Println("hora de partir")
             break
         }
     }
