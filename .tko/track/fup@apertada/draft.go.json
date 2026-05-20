@@ -7,8 +7,183 @@
         },
         {
             "label": "2026-05-18_17-02-27",
-            "content": "package main\nimport \n\"fmt\"\nfunc main() {\n    arr := make([]int, 5)\n    for i := range arr {\n        fmt.Scan(&arr[i])\n}\nfmt.Println(arr)\nimin := 0\nfor i := 0; i < len(arr); i++{\n    if arr[i] < arr[imin] {\n        imin = i\n    }\n}\nfmt.Println(arr[imin])\n}\n",
+            "content": "@@ -38,9 +38,219 @@\n ) %7B%0A    \n+arr := make(%5B%5Dint, 5)%0A    for i := range arr %7B%0A        fmt.Scan(&arr%5Bi%5D)%0A%7D%0Afmt.Println(arr)%0Aimin := 0%0Afor i := 0; i %3C len(arr); i++%7B%0A    if arr%5Bi%5D %3C arr%5Bimin%5D %7B%0A        imin = i%0A    %7D%0A%7D%0Afmt.Println(arr%5Bimin%5D)%0A%7D\n %0A\n",
             "lines": "17"
+        },
+        {
+            "label": "2026-05-20_11-58-17",
+            "content": "@@ -42,119 +42,5 @@\n     \n-var n int%0A    fmt.Scan(&n)%0A    numeros := make(%5B5%5Dint, n)%0A%0A    for i := 1; i %3C 30; i++ %7B%0A        fmt.Print()%0A    %7D\n %0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-20_12-28-39",
+            "content": "@@ -139,95 +139,19 @@\n     \n-if i %3C numeros %7B%0A            fmt.Print(i)%0A        %7D else %7B%0A            return%0A        %7D\n+fmt.Print()\n %0A   \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-05-20_12-31-38",
+            "content": "@@ -229,10 +229,8 @@\n %7D%0A    %7D%0A\n-%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-20_12-31-45",
+            "content": "@@ -88,9 +88,11 @@\n make\n-%5B\n+(%5B5\n %5Dint\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-20_12-33-37",
+            "content": "@@ -84,17 +84,16 @@\n  := make\n-(\n %5B%5Dint, n\n@@ -100,33 +100,33 @@\n )%0A%0A    for i := \n-0\n+1\n ; i %3C 30; i++ %7B%0A\n@@ -137,87 +137,16 @@\n     \n-fmt.Scan(&numeros%5Bi%5D)%0A        %7D%0A%0A    for i := 0; i %3C 30; i++ %7B%0A        \n if i %3C n\n  %7B%0A \n@@ -141,16 +141,22 @@\n if i %3C n\n+umeros\n  %7B%0A     \n@@ -176,18 +176,9 @@\n int(\n-numeros%5Bi%5D\n+i\n )%0A  \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-20_12-36-29",
+            "content": "@@ -108,33 +108,34 @@\n for i := 0; i %3C \n-n\n+30\n ; i++ %7B%0A        \n@@ -187,17 +187,18 @@\n  0; i %3C \n-n\n+30\n ; i++ %7B%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-20_12-37-16",
+            "content": "@@ -199,26 +199,8 @@\n + %7B%0A\n-        menor = 3%0A\n     \n@@ -210,13 +210,13 @@\n  if \n-3 %3C i\n+i %3C n\n  %7B%0A \n@@ -233,31 +233,62 @@\n  fmt\n-,p\n+.P\n rint\n-ln(%223%22)%0A        %7D\n+(numeros%5Bi%5D)%0A        %7D else %7B%0A            return\n %0A   \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-20_12-43-20",
+            "content": "@@ -98,32 +98,8 @@\n , n)\n-%0A    menor := numeros%5B0%5D\n %0A%0A  \n@@ -207,85 +207,34 @@\n     \n-if numeros%5B0%5D %3C numeros%5Bi%5D %7B%0A            fmt.Print(numeros%5B0%5D)%0A        %7D else\n+menor = 3%0A        if 3 %3C i\n  %7B%0A \n@@ -251,25 +251,20 @@\n  fmt\n-.P\n+,p\n rint\n-(numeros%5Bi%5D\n+ln(%223%22\n )%0A  \n@@ -281,14 +281,16 @@\n       %7D%0A\n-\n     %7D%0A\n+%7D%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-20_12-49-52",
+            "content": "@@ -230,21 +230,26 @@\n      if \n-menor\n+numeros%5B0%5D\n  %3C numer\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-20_12-50-06",
+            "content": "@@ -318,16 +318,29 @@\n     \n-continue\n+fmt.Print(numeros%5Bi%5D)\n %0A   \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-20_12-53-32",
+            "content": "@@ -94,16 +94,40 @@\n %5Dint, n)\n+%0A    menor := numeros%5B0%5D\n %0A%0A    fo\n@@ -192,38 +192,8 @@\n    %7D\n-%0A          menor := numeros%5B0%5D\n %0A%0A  \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-20_12-54-11",
+            "content": "@@ -324,29 +324,16 @@\n     \n-fmt.Print(numeros%5Bi%5D)\n+continue\n %0A   \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-20_12-54-30",
+            "content": "@@ -235,16 +235,24 @@\n       if\n+ menor %3C\n  numeros\n@@ -258,16 +258,8 @@\n s%5Bi%5D\n- %3C menor\n  %7B%0A \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-20_12-56-36",
+            "content": "@@ -270,34 +270,32 @@\n        fmt.Print\n-ln\n (numeros%5B0%5D)%0A   \n@@ -333,10 +333,8 @@\n rint\n-ln\n (num\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-20_12-57-04",
+            "content": "@@ -281,33 +281,33 @@\n Println(numeros%5B\n-i\n+0\n %5D)%0A        %7D els\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-20_12-59-04",
+            "content": "@@ -334,21 +334,26 @@\n Println(\n-menor\n+numeros%5Bi%5D\n )%0A      \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-20_13-00-57",
+            "content": "@@ -273,55 +273,30 @@\n     \n-menor := numeros%5Bi%5D%0A            fmt.Print(menor\n+fmt.Println(numeros%5Bi%5D\n )%0A  \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-20_13-02-46",
+            "content": "@@ -275,16 +275,17 @@\n   menor \n+:\n = numero\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-20_13-04-12",
+            "content": "@@ -291,28 +291,66 @@\n s%5Bi%5D\n-%7D%0A        %7D%0A\n+%0A            fmt.Print(menor)%0A        %7D else %7B%0A   \n         \n fmt.\n@@ -337,32 +337,33 @@\n se %7B%0A           \n+ \n fmt.Print(menor)\n@@ -351,26 +351,28 @@\n    fmt.Print\n+ln\n (menor)%0A\n     %7D%0A\n@@ -361,18 +361,38 @@\n ntln(menor)%0A\n+        %7D%0A        %7D%0A\n     %7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-20_13-06-27",
+            "content": "@@ -287,25 +287,16 @@\n meros%5Bi%5D\n-%0A        \n %7D%0A      \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-20_13-16-24",
+            "content": "@@ -165,17 +165,18 @@\n       %7D%0A\n-%0A\n+  \n         \n@@ -329,10 +329,8 @@\n rint\n-ln\n (men\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-20_13-17-09",
+            "content": "@@ -291,34 +291,8 @@\n %5Bi%5D%0A\n-        %7D else%7B%0A%0A        %0A\n     \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-20_13-18-22",
+            "content": "@@ -307,39 +307,8 @@\n se%7B%0A\n-            menor = numeros %5B0%5D\n %0A   \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-20_13-18-53",
+            "content": "@@ -305,30 +305,8 @@\n else\n- if numeros%5Bi%5D = menor\n %7B%0A  \n@@ -322,17 +322,16 @@\n  menor =\n-=\n  numeros\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-20_13-20-02",
+            "content": "@@ -317,17 +317,16 @@\n ros%5Bi%5D =\n-=\n  menor%7B%0A\n@@ -336,32 +336,33 @@\n          menor =\n+=\n  numeros %5B0%5D%0A   \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-20_13-20-50",
+            "content": "@@ -320,26 +320,57 @@\n %5Bi%5D == menor\n- \n %7B\n+%0A            menor = numeros %5B0%5D\n %0A        %0A  \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-20_13-22-17",
+            "content": "@@ -98,54 +98,8 @@\n , n)\n-%0A    if n == 0 %7B%0A        fmt.Print(%22%5B%5D%22)%0A    %7D\n %0A%0A  \n@@ -287,16 +287,65 @@\n eros%5Bi%5D%0A\n+        %7D else if numeros%5Bi%5D == menor %7B%0A        %0A\n         \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-20_13-26-11",
+            "content": "@@ -139,23 +139,8 @@\n %5D%22)%0A\n-        return%0A\n     \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-20_13-26-23",
+            "content": "@@ -94,16 +94,77 @@\n %5Dint, n)\n+%0A    if n == 0 %7B%0A        fmt.Print(%22%5B%5D%22)%0A        return%0A    %7D\n %0A%0A    fo\n@@ -385,16 +385,18 @@\n mt.Print\n+ln\n (menor)%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-20_13-30-08",
+            "content": "@@ -212,9 +212,9 @@\n  := \n-1\n+0\n ; i \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-20_13-30-22",
+            "content": "@@ -200,33 +200,33 @@\n %5D%0A%0A    for i := \n-0\n+1\n ; i %3C n; i++ %7B%0A \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-20_13-31-04",
+            "content": "@@ -92,17 +92,17 @@\n (%5B%5Dint, \n-5\n+n\n )%0A%0A    f\n@@ -108,33 +108,33 @@\n for i := 0; i %3C \n-5\n+n\n ; i++ %7B%0A        \n@@ -219,9 +219,9 @@\n i %3C \n-5\n+n\n ; i+\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-20_13-37-04",
+            "content": "@@ -34,16 +34,47 @@\n ain() %7B%0A\n+    var n int%0A    fmt.Scan(&n)%0A\n     nume\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-20_13-41-53",
+            "content": "@@ -297,10 +297,8 @@\n rint\n-ln\n (men\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-20_13-42-04",
+            "content": "package main\nimport \n\"fmt\"\nfunc main() {\n    numeros := make([]int, 5)\n\n    for i := 0; i < 5; i++ {\n        fmt.Scan(&numeros[i])\n        }\n\n        menor := numeros[0]\n\n    for i := 0; i < 5; i++ {\n        if numeros[i] < menor {\n            menor = numeros[i]\n        }\n        }\n        fmt.Println(menor)\n    }\n",
+            "lines": "19"
         }
     ]
 }

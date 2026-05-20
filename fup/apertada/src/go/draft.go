@@ -2,17 +2,18 @@ package main
 import 
 "fmt"
 func main() {
-    arr := make([]int, 5)
-    for i := range arr {
-        fmt.Scan(&arr[i])
-}
-fmt.Println(arr)
-imin := 0
-for i := 0; i < len(arr); i++{
-    if arr[i] < arr[imin] {
-        imin = i
+    numeros := make([]int, 5)
+
+    for i := 0; i < 5; i++ {
+        fmt.Scan(&numeros[i])
+        }
+
+        menor := numeros[0]
+
+    for i := 0; i < 5; i++ {
+        if numeros[i] < menor {
+            menor = numeros[i]
+        }
+        }
+        fmt.Println(menor)
     }
-}
-imin :=
-fmt.Println(arr[imin])
-}
