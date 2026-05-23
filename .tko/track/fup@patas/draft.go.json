@@ -2,8 +2,128 @@
     "patches": [
         {
             "label": "2026-05-23_18-37-28",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var B, C, Q int\n    var tipo string\n    \n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -81,475 +81,40 @@\n     \n-fmt.Scan(&B, &C, &Q)%0A    tipo := make(%5B%5Dstring, Q)%0A%0A    for i := 0; i %3C Q; i++ %7B%0A        fmt.Scan(&tipo%5Bi%5D)%0A    %7D%0A%0A    Patas := 0%0A%0A    for i := 0; i %3C Q; i++ %7B%0A    if i == %22v%22 %7B%0A        Patas+= 4%0A    %7D else if i == %22g%22 %7B%0A        Patas+= 2%0A    %7D else if i == %22c%22%0A        Patas+= 4%0A    %7D%0A    fmt.Print(Patas)%0A%0A    ChuteB := Patas - B%0A    ChuteC := Patas - B%0A%0A    if ChuteB %3C ChuteC %7B%0A        fmt.Println(%22Chico Bento%22)%0A    %7D else %7B%0A        fmt.Println(%22Cebolinha%22)%0A    %7D\n+%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
             "lines": "8"
+        },
+        {
+            "label": "2026-05-23_20-12-00",
+            "content": "@@ -53,16 +53,36 @@\n , Q int%0A\n+    var tipo string%0A\n     fmt.\n@@ -240,31 +240,25 @@\n ++ %7B%0A    if \n-tipo%5Bi%5D\n+i\n  == %22v%22 %7B%0A  \n@@ -283,31 +283,25 @@\n   %7D else if \n-tipo%5Bi%5D\n+i\n  == %22g%22 %7B%0A  \n@@ -334,23 +334,16 @@\n  if \n-tipo%5Bi%5D\n+i\n  == %22c%22\n-%7B\n %0A   \n@@ -363,22 +363,16 @@\n 4%0A    %7D%0A\n-    %7D%0A\n     fmt.\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-05-23_20-17-10",
+            "content": "@@ -481,16 +481,18 @@\n mt.Print\n+ln\n (%22Chico \n@@ -529,16 +529,18 @@\n mt.Print\n+ln\n (%22Ceboli\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-05-23_20-17-39",
+            "content": "@@ -495,18 +495,16 @@\n o Bento%22\n-%5Cn\n )%0A    %7D \n@@ -543,10 +543,8 @@\n nha%22\n-%5Cn\n )%0A  \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-05-23_20-17-52",
+            "content": "@@ -385,10 +385,8 @@\n rint\n-ln\n (Pat\n@@ -495,16 +495,18 @@\n o Bento%22\n+%5Cn\n )%0A    %7D \n@@ -541,16 +541,18 @@\n bolinha%22\n+%5Cn\n )%0A    %7D%0A\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-05-23_20-18-10",
+            "content": "@@ -483,18 +483,16 @@\n mt.Print\n-ln\n (%22Chico \n@@ -529,18 +529,16 @@\n mt.Print\n-ln\n (%22Ceboli\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-05-23_20-18-20",
+            "content": "@@ -381,16 +381,18 @@\n mt.Print\n+ln\n (Patas)%0A\n@@ -483,16 +483,18 @@\n mt.Print\n+ln\n (%22Chico \n@@ -531,16 +531,18 @@\n mt.Print\n+ln\n (%22Ceboli\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-05-23_20-18-31",
+            "content": "@@ -385,10 +385,8 @@\n rint\n-ln\n (Pat\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-05-23_20-18-43",
+            "content": "@@ -483,18 +483,16 @@\n mt.Print\n-ln\n (%22Chico \n@@ -529,18 +529,16 @@\n mt.Print\n-ln\n (%22Ceboli\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-05-23_20-19-08",
+            "content": "@@ -438,17 +438,17 @@\n Patas - \n-C\n+B\n %0A%0A    if\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-05-23_20-19-53",
+            "content": "@@ -461,126 +461,13 @@\n B %3C \n-0 %7B%0A        multiB := ChuteB * -1%0A    %7D else if ChuteC %3C 0 %7B%0A        multiC := ChuteC %3C 0%0A    %7D%0A%0A    if multiB %3C multi\n+Chute\n C %7B%0A\n@@ -553,12 +553,10 @@\n )%0A    %7D%0A\n-%0A%0A\n %7D%0A\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-05-23_20-30-22",
+            "content": "@@ -445,61 +445,8 @@\n  C%0A%0A\n-    multiB := ChuteB * -1%0A    multiC := ChuteC * -1%0A%0A\n     \n@@ -476,16 +476,17 @@\n  multiB \n+:\n = ChuteB\n@@ -533,16 +533,17 @@\n  multiC \n+:\n = ChuteC\n@@ -543,20 +543,19 @@\n  ChuteC \n-* -1\n+%3C 0\n %0A    %7D%0A%0A\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-05-23_20-35-05",
+            "content": "@@ -681,27 +681,8 @@\n lse \n-if multiB %3E multiC \n %7B%0A  \n@@ -721,71 +721,8 @@\n    %7D\n- else if multiB == multiC %7B%0A        fmt.Println(%22Empate%22)%0A    %7D\n %0A%0A%0A%7D\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-05-23_20-35-58",
+            "content": "@@ -785,17 +785,17 @@\n rintln(%22\n-e\n+E\n mpate%22)%0A\n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-05-23_20-39-52",
+            "content": "@@ -441,16 +441,69 @@\n as - C%0A%0A\n+    multiB := ChuteB * -1%0A    multiC := ChuteC * -1%0A%0A\n     if C\n@@ -521,21 +521,22 @@\n %0A       \n-Chute\n+ multi\n B = Chut\n@@ -578,21 +578,21 @@\n         \n-Chute\n+multi\n C = Chut\n@@ -617,23 +617,23 @@\n  if \n-ChuteB %3C ChuteB\n+multiB %3C multiC\n  %7B%0A \n@@ -684,23 +684,23 @@\n  if \n-ChuteB %3E ChuteB\n+multiB %3E multiC\n  %7B%0A \n@@ -749,24 +749,24 @@\n  if \n-ChuteB == ChuteB\n+multiB == multiC\n  %7B%0A \n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-05-23_20-43-30",
+            "content": "@@ -636,25 +636,25 @@\n uteB %3E Chute\n-C\n+B\n  %7B%0A        f\n@@ -706,17 +706,17 @@\n == Chute\n-C\n+B\n  %7B%0A     \n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-05-23_20-44-42",
+            "content": "@@ -569,25 +569,25 @@\n uteB %3C Chute\n-C\n+B\n  %7B%0A        f\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-05-23_20-44-52",
+            "content": "@@ -554,107 +554,8 @@\n    %7D\n- else if ChuteB %3C 0 && ChuteC %3C 0 %7B%0A        ChuteB = ChuteB * -1%0A        ChuteC = ChuteC * -1%0A    %7D\n %0A%0A  \n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-05-23_20-46-51",
+            "content": "@@ -356,25 +356,26 @@\n tas+= 4%0A    \n+%7D\n %0A\n-\n     %7D%0A    fm\n@@ -549,16 +549,110 @@\n  -1%0A    \n+%7D else if ChuteB %3C 0 && ChuteC %3C 0 %7B%0A        ChuteB = ChuteB * -1%0A        ChuteC = ChuteC * -1\n %0A    %7D%0A%0A\n@@ -849,165 +849,8 @@\n   %7D%0A\n-    if ChuteB %3C 0 && ChuteC %3C 0 %7B%0A        if ChuteB %3E ChuteC %7B%0A            fmt.Print(ChuteB)%0A        %7D else %7B%0A             fmt.Print(ChuteC)%0A        %7D%0A%7D%0A    %7D\n+%0A\n %0A%7D%0A\n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-05-23_20-51-21",
+            "content": "@@ -390,21 +390,16 @@\n (Patas)%0A\n-    %7D\n %0A    Chu\n@@ -750,12 +750,169 @@\n )%0A    %7D%0A\n-%0A\n+    if ChuteB %3C 0 && ChuteC %3C 0 %7B%0A        if ChuteB %3E ChuteC %7B%0A            fmt.Print(ChuteB)%0A        %7D else %7B%0A             fmt.Print(ChuteC)%0A        %7D%0A%7D%0A    %7D\n %0A%7D%0A\n",
+            "lines": "50"
+        },
+        {
+            "label": "2026-05-23_20-52-54",
+            "content": "@@ -367,27 +367,16 @@\n  %0A    %7D%0A\n-    %0A    %7D%0A\n     fmt.\n@@ -390,16 +390,22 @@\n (Patas)%0A\n+    %7D%0A\n     Chut\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-05-23_20-53-42",
+            "content": "@@ -401,17 +401,16 @@\n (Patas)%0A\n-%0A\n     Chut\n@@ -472,21 +472,8 @@\n %3C 0 \n-&& ChuteC %3E 0\n %7B%0A  \n@@ -527,21 +527,8 @@\n %3C 0 \n-&& ChuteB %3E 0\n %7B%0A  \n@@ -562,176 +562,8 @@\n     \n-%7D else if ChuteC %3C 0 && ChuteB %3C 0 %7B%0A        if ChuteC %3C ChuteB %7B%0A            fmt.Println(%22Cebolinha%22)%0A        %7D else %7B%0A            fmt.Println(%22Chico Bento%22)%0A        %7D\n %0A   \n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-05-23_20-57-11",
+            "content": "@@ -673,34 +673,32 @@\n t.Println(%22C\n-hico Bento\n+ebolinha\n %22)%0A        %7D\n@@ -727,32 +727,34 @@\n t.Println(%22C\n-ebolinha\n+hico Bento\n %22)%0A        %7D\n",
+            "lines": "51"
+        },
+        {
+            "label": "2026-05-23_20-57-57",
+            "content": "@@ -855,35 +855,8 @@\n teC \n-&& ChuteB %3E 0 && ChuteC %3E 0\n %7B%0A  \n@@ -917,17 +917,16 @@\n  ChuteC \n- \n %7B%0A      \n",
+            "lines": "51"
+        },
+        {
+            "label": "2026-05-23_20-59-20",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var B, C, Q int\n    fmt.Scan(&B, &C, &Q)\n    tipo := make([]string, Q)\n\n    for i := 0; i < Q; i++ {\n        fmt.Scan(&tipo[i])\n    }\n\n    Patas := 0\n\n    for i := 0; i < Q; i++ {\n    if tipo[i] == \"v\" {\n        Patas+= 4\n    } else if tipo[i] == \"g\" {\n        Patas+= 2\n    } else if tipo[i] == \"c\"{\n        Patas+= 4\n    \n    }\n    \n    }\n    fmt.Println(Patas)\n\n    ChuteB := Patas - B\n    ChuteC := Patas - C\n\n    if ChuteB < 0 && ChuteC > 0{\n       ChuteB = ChuteB * -1\n    } else if ChuteC < 0 && ChuteB > 0{\n        ChuteC = ChuteC * -1\n    } else if ChuteC < 0 && ChuteB < 0 {\n        if ChuteC < ChuteB {\n            fmt.Println(\"Chico Bento\")\n        } else {\n            fmt.Println(\"Cebolinha\")\n        }\n    }\n\n    if ChuteB < ChuteC {\n        fmt.Println(\"Chico Bento\")\n    } else if ChuteB > ChuteC && ChuteB > 0 && ChuteC > 0{\n        fmt.Println(\"Cebolinha\")\n    } else if ChuteB == ChuteC  {\n        fmt.Println(\"empate\")\n    }\n\n\n}\n",
+            "lines": "51"
         }
     ]
 }
