@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-23_17-45-16",
+            "content": "@@ -33,16 +33,29 @@\n ain() %7B%0A\n+  var D int %0A\n   var X \n@@ -80,17 +80,17 @@\n (%5B%5Dint, \n-X\n+x\n )%0A%0A  for\n@@ -94,33 +94,33 @@\n for i := 0; i %3C \n-X\n+D\n ; i++ %7B%0A    fmt.\n@@ -156,17 +156,17 @@\n  0; i %3C \n-X\n+D\n ; i++ %7B%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-23_17-46-19",
+            "content": "@@ -43,29 +43,14 @@\n var \n-D\n+X\n  int%0A\n-  fmt.Scan(&D)%0A\n   Kc\n@@ -71,34 +71,9 @@\n nt, \n-D)%0A  Dias := make(%5B%5Dint, D\n+X\n )%0A%0A \n@@ -80,35 +80,34 @@\n  for i := 0; i %3C\n-= D\n+ X\n ; i++ %7B%0A    fmt.\n@@ -116,12 +116,12 @@\n an(&\n-Dias\n+Kcal\n %5Bi%5D)\n@@ -129,11 +129,8 @@\n   %7D%0A\n-  %0A\n   fo\n@@ -146,11 +146,10 @@\n  i %3C\n-= D\n+ X\n ; i+\n@@ -160,19 +160,22 @@\n     fmt.\n-Sca\n+Printl\n n(Kcal%5Bi\n@@ -181,11 +181,10 @@\n i%5D)%0A  %7D%0A\n-%0A\n %7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-23_18-12-37",
+            "content": "@@ -87,16 +87,39 @@\n t, D)%0A  \n+Dias := make(%5B%5Dint, D)%0A\n %0A  for i\n@@ -120,35 +120,35 @@\n  for i := 0; i %3C\n+=\n  D\n- \n ; i++ %7B%0A    fmt.\n@@ -157,23 +157,23 @@\n an(&\n-Kcal\n+Dias\n %5Bi%5D)%0A  \n+%7D\n %0A  \n-%7D\n %0A  f\n@@ -186,19 +186,19 @@\n = 0; i %3C\n+=\n  D\n- \n ; i++ %7B%0A\n@@ -205,44 +205,29 @@\n     \n-soma := 0%0A    soma = soma + kcal%5Bi%5D%0A%7D\n+fmt.Scan(Kcal%5Bi%5D)%0A  %7D%0A\n %0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-23_18-24-57",
+            "content": "@@ -150,20 +150,8 @@\n   %7D%0A\n-  soma := 0%0A\n   fo\n@@ -187,12 +187,32 @@\n oma \n-+= K\n+:= 0%0A    soma = soma + k\n cal%5B\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-23_18-28-11",
+            "content": "@@ -212,47 +212,6 @@\n %5D%0A%7D%0A\n-media := soma / D %7B%0A  fmt.Print(media)%0A%7D%0A\n %7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-23_18-30-31",
+            "content": "@@ -243,18 +243,9 @@\n rint\n-f(%22%25.1f%22, \n+(\n medi\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-23_18-34-14",
+            "content": "@@ -226,17 +226,20 @@\n oma / D \n-%0A\n+%7B%0A  \n fmt.Prin\n@@ -258,8 +258,10 @@\n edia)%0A%7D%0A\n+%7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-23_18-34-57",
+            "content": "@@ -221,24 +221,16 @@\n  := \n-float64(\n soma / D\n )%0Afm\n@@ -225,17 +225,17 @@\n soma / D\n-)\n+ \n %0Afmt.Pri\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-23_18-36-15",
+            "content": "@@ -255,10 +255,8 @@\n %25.1f\n-%5Cn\n %22, m\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-23_18-36-29",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n  var D int\n  fmt.Scan(&D)\n  Kcal := make([]int, D)\n  \n  for i := 0; i < D ; i++ {\n    fmt.Scan(&Kcal[i])\n  \n  }\n  soma := 0\n  for i := 0; i < D ; i++ {\n    soma += Kcal[i]\n}\nmedia := float64(soma / D)\nfmt.Printf(\"%.1f\\n\", media)\n}\n",
+            "lines": "18"
+        }
+    ]
+}

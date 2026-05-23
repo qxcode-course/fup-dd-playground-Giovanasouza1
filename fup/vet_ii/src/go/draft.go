@@ -12,6 +12,7 @@ func main() {
     
     fmt.Print("[ ")
     
+    
     for i := 0; i < n; i++ {
         fmt.Scan(&numeros[i])
     }
