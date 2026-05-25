@@ -1,0 +1,149 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-25_11-53-26",
+            "content": "@@ -23,16 +23,34 @@\n %0A%09%22fmt%22%0A\n+%09%22text/tabwriter%22%0A\n )%0Afunc m\n",
+            "lines": "54"
+        },
+        {
+            "label": "2026-05-25_11-53-36",
+            "content": "@@ -301,17 +301,16 @@\n i == L %7B\n- \n %0A       \n@@ -428,32 +428,36 @@\n n(%22l%22)%0A%0A    for \n+for \n i := 0; i %3C D; i\n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-05-25_11-54-52",
+            "content": "@@ -471,17 +471,17 @@\n t.Scan(&\n-T\n+t\n urno%5Bi%5D)\n@@ -554,17 +554,17 @@\n    if i \n-=\n+:\n = m %7B%0A  \n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-05-25_11-55-20",
+            "content": "@@ -453,21 +453,18 @@\n i %3C D; i\n- += 2\n+++\n %7B%0A    fm\n@@ -540,13 +540,10 @@\n D; i\n- += 2\n+++\n  %7B%0A \n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-05-25_11-58-00",
+            "content": "@@ -235,19 +235,17 @@\n  %3C D; i+\n-= 2\n++\n %7B%0A      \n@@ -455,17 +455,19 @@\n %3C D; i +\n-+\n+= 2\n %7B%0A    fm\n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-05-25_11-58-45",
+            "content": "@@ -239,11 +239,32 @@\n ; i+\n-+%7B \n+= 2%7B%0A        if i == C %7B\n %0A   \n@@ -275,17 +275,17 @@\n      C +\n-+\n+=\n %0A       \n@@ -295,24 +295,17 @@\n else if \n-Sabor%5Bi%5D\n+i\n  == L %7B \n@@ -320,17 +320,17 @@\n      L +\n-+\n+=\n %0A       \n@@ -404,18 +404,16 @@\n if L %3E C\n- %7B\n %0A       \n@@ -433,63 +433,8 @@\n %22l%22)\n- %0A    %7D else if C %3E L %7B%0A        fmt.Println(%22c%22) %0A    %7D\n %0A%0A  \n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-05-25_12-02-41",
+            "content": "@@ -584,17 +584,19 @@\n %3C D; i +\n-+\n+= 2\n  %7B%0A     \n@@ -601,24 +601,17 @@\n      if \n-Turno%5Bi%5D\n+i\n  == m %7B%0A\n@@ -625,17 +625,17 @@\n      m +\n-+\n+=\n %0A       \n@@ -659,17 +659,17 @@\n      t +\n-+\n+=\n %0A       \n",
+            "lines": "55"
+        },
+        {
+            "label": "2026-05-25_12-03-20",
+            "content": "@@ -218,90 +218,32 @@\n     \n-sabor 0 = C%0A    sabor 1 = L%0A%0A    for i := 0; i %3C D; i++%7B %0A        if Sabor%5Bi%5D == 0\n+for i := 0; i %3C D; i++%7B \n %0A   \n",
+            "lines": "55"
+        },
+        {
+            "label": "2026-05-25_12-06-31",
+            "content": "@@ -344,17 +344,17 @@\n r%5Bi%5D == \n-1\n+L\n  %7B %0A    \n@@ -620,41 +620,8 @@\n 0 %0A%0A\n-    turno 0 = m%0A    turno 1 = t%0A%0A\n     \n@@ -669,17 +669,17 @@\n o%5Bi%5D == \n-0\n+m\n  %7B%0A     \n",
+            "lines": "59"
+        },
+        {
+            "label": "2026-05-25_12-07-44",
+            "content": "@@ -377,16 +377,22 @@\n      %7D %0A\n+    %7D%0A\n     if L\n",
+            "lines": "62"
+        },
+        {
+            "label": "2026-05-25_12-08-22",
+            "content": "@@ -210,16 +210,48 @@\n  := 0 %0A%0A\n+    sabor 0 = C%0A    sabor 1 = L%0A\n %0A    for\n@@ -288,34 +288,32 @@\n if Sabor%5Bi%5D == 0\n- %7B\n %0A            C +\n@@ -606,24 +606,57 @@\n    t := 0 %0A%0A\n+    turno 0 = m%0A    turno 1 = t%0A%0A\n     for i :=\n",
+            "lines": "61"
+        },
+        {
+            "label": "2026-05-25_12-09-44",
+            "content": "@@ -852,10 +852,8 @@\n     %7D%0A%7D%0A\n-%7D%0A\n",
+            "lines": "56"
+        },
+        {
+            "label": "2026-05-25_12-09-54",
+            "content": "@@ -234,24 +234,25 @@\n  i %3C D; i++%7B\n+ \n %0A        if \n@@ -346,17 +346,16 @@\n       %7D \n-%7D\n %0A    if \n",
+            "lines": "57"
+        },
+        {
+            "label": "2026-05-25_12-11-37",
+            "content": "@@ -852,8 +852,10 @@\n     %7D%0A%7D%0A\n+%7D%0A\n",
+            "lines": "57"
+        },
+        {
+            "label": "2026-05-25_12-11-46",
+            "content": "@@ -190,17 +190,17 @@\n  %7D%0A%0A    \n-l\n+L\n  := 0%0A  \n@@ -201,17 +201,17 @@\n = 0%0A    \n-c\n+C\n  := 0 %0A%0A\n@@ -258,25 +258,25 @@\n Sabor%5Bi%5D == \n-c\n+0\n  %7B%0A         \n@@ -313,17 +313,17 @@\n r%5Bi%5D == \n-l\n+1\n  %7B %0A    \n@@ -330,17 +330,17 @@\n         \n-l\n+L\n  ++%0A    \n@@ -358,14 +358,14 @@\n  if \n-l\n+L\n  == \n-c\n+C\n  %7B%0A \n@@ -411,13 +411,13 @@\n  if \n-l %3E c\n+L %3E C\n  %7B%0A \n@@ -459,13 +459,13 @@\n  if \n-c %3E l\n+C %3E L\n  %7B%0A \n@@ -633,17 +633,17 @@\n o%5Bi%5D == \n-m\n+0\n  %7B%0A     \n",
+            "lines": "56"
+        },
+        {
+            "label": "2026-05-25_12-18-17",
+            "content": "@@ -278,17 +278,17 @@\n         \n-c\n+C\n  ++%0A    \n",
+            "lines": "56"
+        },
+        {
+            "label": "2026-05-25_12-18-30",
+            "content": "@@ -122,14 +122,11 @@\n e(%5B%5D\n-str\n in\n-g\n+t\n , D)\n",
+            "lines": "56"
+        },
+        {
+            "label": "2026-05-25_12-19-02",
+            "content": "@@ -636,19 +636,17 @@\n o%5Bi%5D == \n-%22m%22\n+m\n  %7B%0A     \n",
+            "lines": "56"
+        },
+        {
+            "label": "2026-05-25_12-20-15",
+            "content": "@@ -86,30 +86,27 @@\n r := make(%5B%5D\n-str\n in\n-g\n+t\n , D)%0A    Tur\n@@ -265,19 +265,17 @@\n r%5Bi%5D == \n-%22c%22\n+c\n  %7B%0A     \n@@ -316,19 +316,17 @@\n r%5Bi%5D == \n-%22l%22\n+l\n  %7B %0A    \n",
+            "lines": "56"
+        },
+        {
+            "label": "2026-05-25_12-22-49",
+            "content": "@@ -187,19 +187,8 @@\n r%5Bi%5D\n-, &Turno%5Bi%5D\n )%0A  \n@@ -502,24 +502,84 @@\n c%22) %0A    %7D%0A%0A\n+    for i := 0; i %3C D; i ++%7B%0A    fmt.Scan(&Turno%5Bi%5D)%0A    %7D%0A%0A\n     m := 0%0A \n",
+            "lines": "56"
+        },
+        {
+            "label": "2026-05-25_12-23-54",
+            "content": "@@ -401,16 +401,18 @@\n mt.Print\n+ln\n (%22empate\n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-05-25_12-24-22",
+            "content": "@@ -401,18 +401,16 @@\n mt.Print\n-ln\n (%22empate\n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-05-25_12-24-36",
+            "content": "@@ -393,32 +393,34 @@\n        fmt.Print\n+ln\n (%22empate%22)%0A    %7D\n@@ -701,16 +701,17 @@\n mt.Print\n+f\n (%22empate\n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-05-25_12-25-19",
+            "content": "@@ -393,34 +393,32 @@\n        fmt.Print\n-ln\n (%22empate%22)%0A    %7D\n@@ -699,18 +699,16 @@\n mt.Print\n-ln\n (%22empate\n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-05-25_12-25-37",
+            "content": "@@ -636,26 +636,8 @@\n lse \n-if Turno%5Bi%5D == %22t%22\n %7B%0A  \n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-05-25_12-26-25",
+            "content": "@@ -775,17 +775,17 @@\n rintln(%22\n-m\n+t\n %22)%0A    %7D\n@@ -814,28 +814,28 @@\n    fmt.Println(%22\n-t\n+m\n %22)%0A    %7D%0A%7D%0A\n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-05-25_12-28-20",
+            "content": "@@ -689,25 +689,8 @@\n   %7D%0A\n-fmt.Println(m, t)\n %0A   \n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-05-25_12-33-29",
+            "content": "@@ -681,24 +681,41 @@\n     %7D%0A    %7D%0A\n+fmt.Println(m, t)\n %0A    if m ==\n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-05-25_12-35-53",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n)\nfunc main() {\n    var D int\n    fmt.Scan(&D)\n    Sabor := make([]string, D)\n    Turno := make([]string, D)\n\n    for i := 0; i < D; i++{\n    fmt.Scan(&Sabor[i], &Turno[i])\n    }\n\n    l := 0\n    c := 0 \n\n\n    for i := 0; i < D; i++{\n        if Sabor[i] == \"c\" {\n            c ++\n        } else if Sabor[i] == \"l\" { \n            l ++\n        } }\n    if l == c {\n        fmt.Println(\"empate\")\n    } else if l > c {\n        fmt.Println(\"l\") \n    } else if c > l {\n        fmt.Println(\"c\") \n    }\n\n    m := 0\n    t := 0 \n\n    for i := 0; i < D; i ++ {\n        if Turno[i] == \"m\" {\n            m ++\n        } else if Turno[i] == \"t\"{\n            t ++\n        }\n    }\n\n    if m == t {\n        fmt.Println(\"empate\")\n    } else if m < t {\n        fmt.Println(\"m\")\n    } else if t < m {\n        fmt.Println(\"t\")\n    }\n}\n",
+            "lines": "52"
+        }
+    ]
+}
