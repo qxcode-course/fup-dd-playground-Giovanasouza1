@@ -1,0 +1,119 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-25_16-55-17",
+            "content": "@@ -46,322 +46,12 @@\n var \n-N, M int%0A    primeiro := make(%5B%5Dint, N)%0A    segundo := make(%5B%5Dint, M)%0A%0A    for i := 0; i %3C N; i++ %7B%0A     fmt.Scan(&primeiro%5Bi%5D, &segundo%5Bi%5D)%0A    %7D%0A    %0A    for i := 0; i %3C N; i++ %7B%0A        if primeiro%5Bi%5D == segundo%5Bi%5D %7B%0A            fmt.Println(%22sim%22)%0A        %7D else %7B%0A            fmt.Println(%22n%C3%A3o%22)%0A        %7D%0A    %7D%0A%7D%0A\n+%0A    %0A%7D\n %0A\n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-05-25_17-13-36",
+            "content": "@@ -189,16 +189,20 @@\n )%0A    %7D%0A\n+    \n %0A    for\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-25_17-14-16",
+            "content": "@@ -55,29 +55,8 @@\n int%0A\n-    fmt.Scan(&N, &M)%0A\n     \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-25_17-23-39",
+            "content": "@@ -193,64 +193,10 @@\n o%5Bi%5D\n-)%0A    %7D%0A    %0A    for i := 0; i %3C N; i++ %7B%0A     fmt.Scan(\n+, \n &seg\n@@ -206,24 +206,25 @@\n o%5Bi%5D)%0A    %7D%0A\n+%0A\n     for i :=\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-25_17-25-17",
+            "content": "@@ -284,17 +284,17 @@\n  0; i %3C \n-M\n+N\n ; i++ %7B%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-25_17-25-44",
+            "content": "@@ -214,33 +214,33 @@\n for i := 0; i %3C \n-M\n+N\n ; i++ %7B%0A     fmt\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-25_17-26-09",
+            "content": "@@ -214,17 +214,17 @@\n for \n-j\n+i\n  := 0; \n-j\n+i\n  %3C M\n@@ -331,9 +331,9 @@\n ndo%5B\n-j\n+i\n %5D %7B%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-25_17-31-34",
+            "content": "@@ -225,17 +225,17 @@\n  j %3C M; \n-j\n+i\n ++ %7B%0A   \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-25_17-32-06",
+            "content": "@@ -414,22 +414,8 @@\n %C3%A3o%22)\n-%0A%0A            \n %0A   \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-25_18-09-58",
+            "content": "@@ -254,17 +254,17 @@\n segundo%5B\n-j\n+i\n %5D)%0A    %7D\n@@ -412,16 +412,28 @@\n %22n%C3%A3o%22)%0A%0A\n+            \n %0A       \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-05-25_18-10-31",
+            "content": "@@ -327,17 +327,17 @@\n segundo%5B\n-i\n+j\n %5D %7B%0A    \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-05-25_18-10-48",
+            "content": "@@ -297,41 +297,8 @@\n + %7B%0A\n-        for j := 0; j %3C M; j++ %7B%0A\n     \n@@ -415,18 +415,14 @@\n o%22)%0A\n-    \n+%0A%0A\n     \n-%7D%0A\n     \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-05-25_18-12-06",
+            "content": "@@ -439,17 +439,17 @@\n intln(%22n\n-a\n+%C3%A3\n o%22)%0A    \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-05-25_18-13-01",
+            "content": "@@ -268,25 +268,8 @@\n   %7D%0A\n-    lista1 := 0 %0A\n     \n@@ -276,33 +276,33 @@\n for i := 0; i %3C \n-N\n+M\n ; i++ %7B%0A        \n@@ -314,13 +314,9 @@\n  := \n-i + 1\n+0\n ; j \n@@ -360,17 +360,17 @@\n segundo%5B\n-j\n+i\n %5D %7B%0A    \n@@ -381,16 +381,26 @@\n     \n-lista1++\n+fmt.Println(%22sim%22)\n %0A   \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-05-25_18-18-08",
+            "content": "@@ -319,33 +319,37 @@\n        for j := \n-0\n+i + 1\n ; j %3C M; j++ %7B%0A \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-25_18-18-16",
+            "content": "@@ -413,16 +413,53 @@\n       %7D \n+else %7B%0A            fmt.Println(%22nao%22)\n %0A       \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-25_18-18-29",
+            "content": "@@ -414,16 +414,25 @@\n      %7D %0A\n+        %7D\n %0A    %7D%0A \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-05-25_18-18-36",
+            "content": "@@ -430,103 +430,8 @@\n    %7D\n-%0A%0A    if lista1 == N %7B%0A        fmt.Println(%22sim%22)%0A    %7D else %7B%0A        fmt.Println(%22nao%22)%0A    %7D\n %0A%7D%0A%0A\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-05-25_18-19-52",
+            "content": "@@ -407,29 +407,8 @@\n 1++%0A\n-            continue%0A\n     \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-25_18-20-48",
+            "content": "@@ -407,40 +407,8 @@\n 1++%0A\n-            fmt.Println(lista1)%0A\n     \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-05-25_18-22-13",
+            "content": "@@ -1,8 +1,9 @@\n+ \n package \n@@ -7,17 +7,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -20,17 +20,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -34,17 +34,20 @@\n ain() %7B%0A\n-%09\n+    \n var N, M\n@@ -51,17 +51,20 @@\n , M int%0A\n-%09\n+    \n fmt.Scan\n@@ -72,17 +72,20 @@\n &N, &M)%0A\n-%09\n+    \n primeiro\n@@ -103,17 +103,20 @@\n int, N)%0A\n-%09\n+    \n segundo \n@@ -134,17 +134,20 @@\n nt, M)%0A%0A\n-%09\n+    \n for i :=\n@@ -159,26 +159,29 @@\n  %3C N; i++ %7B%0A\n-%09%09\n+     \n fmt.Scan(&pr\n@@ -191,21 +191,31 @@\n iro%5Bi%5D)%0A\n-%09%7D%0A%0A%09\n+    %7D%0A    %0A    \n for j :=\n@@ -231,18 +231,21 @@\n ; j++ %7B%0A\n-%09%09\n+     \n fmt.Scan\n@@ -258,20 +258,26 @@\n ndo%5Bj%5D)%0A\n-%09%7D%0A%09\n+    %7D%0A    \n lista1 :\n@@ -279,18 +279,22 @@\n ta1 := 0\n-%0A%09\n+ %0A    \n for i :=\n@@ -310,18 +310,24 @@\n ; i++ %7B%0A\n-%09%09\n+        \n for j :=\n@@ -343,19 +343,24 @@\n ; j++ %7B%0A\n-%09%09%09\n+        \n if prime\n@@ -370,9 +370,9 @@\n %5Bi%5D \n-!\n+=\n = se\n@@ -386,48 +386,111 @@\n %5D %7B%0A\n-%09%09%09%09lista1++%0A%09%09%09%09continue%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D%0A%0A%09\n+            lista1++%0A            fmt.Println(lista1)%0A            continue%0A        %7D %0A%0A    %7D%0A    %7D%0A%0A    \n if l\n@@ -502,18 +502,24 @@\n  == N %7B%0A\n-%09%09\n+        \n fmt.Prin\n@@ -529,17 +529,20 @@\n (%22sim%22)%0A\n-%09\n+    \n %7D else %7B\n@@ -546,10 +546,16 @@\n e %7B%0A\n-%09%09\n+        \n fmt.\n@@ -573,9 +573,13 @@\n o%22)%0A\n-%09\n+    \n %7D%0A%7D%0A\n+%0A\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-05-25_18-25-35",
+            "content": "@@ -304,68 +304,69 @@\n %0A%09%09%09\n-fmt.Println(primeiro%5Bi%5D)%0A            fmt.Println(segundo%5Bj%5D)\n+if primeiro%5Bi%5D != segundo%5Bj%5D %7B%0A%09%09%09%09lista1++%0A%09%09%09%09continue%0A%09%09%09%7D\n %0A%09%09%7D\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-05-25_18-27-12",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar N, M int\n\tfmt.Scan(&N, &M)\n\tprimeiro := make([]int, N)\n\tsegundo := make([]int, M)\n\n\tfor i := 0; i < N; i++ {\n\t\tfmt.Scan(&primeiro[i])\n\t}\n\n\tfor j := 0; j < M; j++ {\n\t\tfmt.Scan(&segundo[j])\n\t}\n\tlista1 := 0\n\tfor i := 0; i < N; i++ {\n\t\tfor j := 0; j < M; j++ {\n\t\t\tfmt.Println(primeiro[i])\n            fmt.Println(segundo[j])\n\t\t}\n\t}\n\n\tif lista1 == N {\n\t\tfmt.Println(\"sim\")\n\t} else {\n\t\tfmt.Println(\"nao\")\n\t}\n}\n",
+            "lines": "31"
+        }
+    ]
+}

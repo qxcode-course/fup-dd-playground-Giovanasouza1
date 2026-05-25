@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-25_17-32-32",
+            "content": "@@ -41,332 +41,35 @@\n     \n-var N, M, L int%0A    fmt.Scan(&N)%0A%0A    tamanho := make(%5B%5Dint, M)%0A    pe := make(%5B%5Dstring, L)%0A%0A    for i := 0; i %3C M; i++ %7B%0A        fmt.Scan(&tamanho)%0A    %7D%0A    for i := 0; i %3C L; i++ %7B%0A        fmt.Scan(&pe)%0A    %7D%0A    %0A    for i := 0; i %3C M; i++ %7B%0A        if tamanho%5Bi%5D == tamanho%5Bi%5D && pe%5Bi%5D == pe%5Bi%5D %7B%0A            botas++%0A%7D%0A%7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-25_17-52-20",
+            "content": "@@ -258,23 +258,8 @@\n    %0A\n-    botas := 0%0A\n     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-25_17-53-07",
+            "content": "@@ -338,78 +338,10 @@\n %5Bi%5D \n- %7B%0A            botas++%0A%7D%0A    %7D%0A    for i := 0; i %3C L; i++ %7B%0A        if\n+&&\n  pe%5B\n@@ -351,17 +351,16 @@\n == pe%5Bi%5D\n- \n  %7B%0A     \n@@ -378,14 +378,10 @@\n s++%0A%7D%0A%7D%0A\n-    \n %7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-25_17-54-36",
+            "content": "@@ -184,19 +184,16 @@\n &tamanho\n-%5Bi%5D\n )%0A    %7D%0A\n@@ -241,19 +241,16 @@\n Scan(&pe\n-%5Bi%5D\n )%0A    %7D%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-25_17-55-24",
+            "content": "@@ -72,16 +72,8 @@\n n(&N\n-, &M, &L\n )%0A%0A \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-25_17-55-54",
+            "content": "@@ -211,32 +211,32 @@\n     for \n-p\n+i\n  := 0; \n-p\n+i\n  %3C L; \n-p\n+i\n ++ %7B%0A   \n@@ -253,17 +253,17 @@\n can(&pe%5B\n-p\n+i\n %5D)%0A    %7D\n@@ -391,24 +391,24 @@\n for \n-p\n+i\n  := 0; \n-p\n+i\n  %3C L; \n-p\n+i\n ++ %7B\n@@ -426,17 +426,17 @@\n  pe%5B\n-p\n+i\n %5D == pe%5B\n p%5D  \n@@ -431,17 +431,17 @@\n %5D == pe%5B\n-p\n+i\n %5D  %7B%0A   \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-25_17-57-18",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var N, M, L int\n    fmt.Scan(&N, &M, &L)\n\n    tamanho := make([]int, M)\n    pe := make([]string, L)\n\n    for i := 0; i < M; i++ {\n        fmt.Scan(&tamanho[i])\n    }\n    for p := 0; p < L; p++ {\n        fmt.Scan(&pe[p])\n    }\n    \n    botas := 0\n    for i := 0; i < M; i++ {\n        if tamanho[i] == tamanho[i]  {\n            botas++\n}\n    }\n    for p := 0; p < L; p++ {\n        if pe[p] == pe[p]  {\n            botas++\n}\n}\n    }\n",
+            "lines": "28"
+        }
+    ]
+}

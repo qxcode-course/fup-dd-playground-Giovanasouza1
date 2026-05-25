@@ -1,7 +1,5 @@
 package main
 import "fmt"
 func main() {
-    var L, R, D int
-    if 
     fmt.Println("Hello, World!")
 }
