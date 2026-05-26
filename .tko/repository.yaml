@@ -19,9 +19,7 @@ sources:
   writeable: false
   quests: null
 expanded:
-- fup@if_extra
 - fup@list
-- fup@for_extra
 flags:
   inbox: all
   panel: skills
@@ -29,5 +27,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@batraquios
-selected_index: 47
+selected: fup@baruel
+selected_index: 18

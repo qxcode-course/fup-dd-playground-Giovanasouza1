@@ -112,8 +112,18 @@
         },
         {
             "label": "2026-05-25_18-27-12",
-            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar N, M int\n\tfmt.Scan(&N, &M)\n\tprimeiro := make([]int, N)\n\tsegundo := make([]int, M)\n\n\tfor i := 0; i < N; i++ {\n\t\tfmt.Scan(&primeiro[i])\n\t}\n\n\tfor j := 0; j < M; j++ {\n\t\tfmt.Scan(&segundo[j])\n\t}\n\tlista1 := 0\n\tfor i := 0; i < N; i++ {\n\t\tfor j := 0; j < M; j++ {\n\t\t\tfmt.Println(primeiro[i])\n            fmt.Println(segundo[j])\n\t\t}\n\t}\n\n\tif lista1 == N {\n\t\tfmt.Println(\"sim\")\n\t} else {\n\t\tfmt.Println(\"nao\")\n\t}\n}\n",
+            "content": "@@ -61,16 +61,20 @@\n .Scan(&N\n+, &M\n )%0A%09prime\n@@ -95,20 +95,45 @@\n int, N)%0A\n-    \n+%09segundo := make(%5B%5Dint, M)%0A%0A%09\n for i :=\n@@ -181,41 +181,8 @@\n %0A%09%7D%0A\n-    %0A%09segundo := make(%5B%5Dint, M)%0A%0A\n %0A%09fo\n@@ -325,19 +325,28 @@\n iro%5Bi%5D)%0A\n-%09%09%09\n+            \n fmt.Prin\n",
             "lines": "31"
+        },
+        {
+            "label": "2026-05-26_01-08-20",
+            "content": "@@ -41,16 +41,19 @@\n %7B%0A%09var N\n+, M\n  int%0A%09fm\n@@ -156,31 +156,8 @@\n     \n-var M int%0A%09fmt.Scan(&M)\n %0A%09se\n@@ -180,16 +180,18 @@\n int, M)%0A\n+%0A%0A\n %09for j :\n@@ -235,18 +235,16 @@\n %5Bj%5D)%0A%09%7D%0A\n-%0A%0A\n %09lista1 \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-26_01-10-19",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar N int\n\tfmt.Scan(&N)\n\tprimeiro := make([]int, N)\n    for i := 0; i < N; i++ {\n\t\tfmt.Scan(&primeiro[i])\n\t}\n    var M int\n\tfmt.Scan(&M)\n\tsegundo := make([]int, M)\n\tfor j := 0; j < M; j++ {\n\t\tfmt.Scan(&segundo[j])\n\t}\n\n\n\tlista1 := 0\n\tfor i := 0; i < N; i++ {\n\t\tfor j := 0; j < M; j++ {\n\t\t\tfmt.Println(primeiro[i])\n\t\t\tfmt.Println(segundo[j])\n\t\t}\n\t}\n\n\tif lista1 == N {\n\t\tfmt.Println(\"sim\")\n\t} else {\n\t\tfmt.Println(\"nao\")\n\t}\n}\n",
+            "lines": "33"
         }
     ]
 }
