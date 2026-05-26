@@ -1,0 +1,114 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-26_10-36-30",
+            "content": "@@ -518,13 +518,9 @@\n  := \n-s + 1\n+0\n ; x \n@@ -528,16 +528,17 @@\n  tbaruel\n+ \n ; x++ %7B%0A\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-26_10-42-21",
+            "content": "@@ -216,22 +216,25 @@\n %5B%5Dint, t\n-baruel\n+sequencia\n )%0A%0A    f\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-26_10-43-24",
+            "content": "@@ -216,25 +216,22 @@\n %5B%5Dint, t\n-sequencia\n+baruel\n )%0A%0A    f\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-26_10-45-40",
+            "content": "@@ -56,16 +56,28 @@\n  tbaruel\n+, tsequencia\n  int%0A   \n@@ -99,24 +99,37 @@\n um, &tbaruel\n+, &tsequencia\n )%0A%0A    album\n@@ -216,22 +216,25 @@\n %5B%5Dint, t\n-baruel\n+sequencia\n )%0A%0A    f\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-26_10-45-55",
+            "content": "@@ -102,41 +102,248 @@\n     \n-sequencia := make(%5B%5Dint, tbaruel)\n+album := make(%5B%5Dint, talbum)%0A    baruel:= make(%5B%5Dint, tbaruel)%0A    sequencia := make(%5B%5Dint, tbaruel)%0A%0A    for a := 0; a %3C talbum; a++ %7B%0A        fmt.Scan(&album%5Ba%5D)%0A    %7D%0A%0A    for b := 0; b %3C tbaruel; b++ %7B%0A        fmt.Scan(&baruel%5Bb%5D)%0A    %7D\n %0A%0A  \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-26_10-46-46",
+            "content": "@@ -60,11 +60,8 @@\n ruel\n-, x\n  int\n@@ -74,16 +74,25 @@\n mt.Scan(\n+&talbum, \n &tbaruel\n@@ -135,41 +135,8 @@\n uel)\n-%0A    album := make(%5B%5Dint, talbum)\n %0A%0A  \n@@ -212,79 +212,8 @@\n  %7D%0A%0A\n-%0A    for i := 0; i %3C talbum ; i++ %7B%0A        fmt.Scan(&album%5Bi%5D)%0A    %7D%0A%0A\n     \n@@ -381,360 +381,8 @@\n a++%0A\n-                fmt.Println(repitida)%0A        %7D else %7B%0A            fmt.Println(%22N%22)%0A        %7D%0A        %7D%0A    %7D%0A    repete := 0%0A    for i := 0; i %3C talbum ; i++ %7B%0A        for a := i + 1; a %3C talbum; a++ %7B%0A            if album%5Bi%5D == album%5Ba%5D%7B%0A                repete++%0A                fmt.Println(repete)%0A             %7D else %7B%0A            fmt.Println(%22N%22)%0A\n     \n@@ -403,10 +403,14 @@\n %7D%0A    %7D%0A\n+    \n %7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-26_10-56-12",
+            "content": "@@ -56,16 +56,19 @@\n  tbaruel\n+, x\n  int%0A   \n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-05-26_10-56-26",
+            "content": "@@ -78,16 +78,8 @@\n can(\n-&album, \n &tba\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-05-26_10-57-27",
+            "content": "@@ -75,17 +75,16 @@\n t.Scan(&\n-t\n album, &\n@@ -353,13 +353,15 @@\n s %3C \n-s - 1\n+tbaruel\n  ; s\n@@ -787,32 +787,68 @@\n )%0A             %7D\n+ else %7B%0A            fmt.Println(%22N%22)\n %0A        %7D%0A     \n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-05-26_11-04-59",
+            "content": "@@ -801,28 +801,30 @@\n %7D%0A        %7D%0A        %7D%0A    %7D%0A\n+%7D%0A\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-05-26_11-06-05",
+            "content": "@@ -242,16 +242,86 @@\n     %7D%0A%0A%0A\n+    for i := 0; i %3C talbum ; i++ %7B%0A        fmt.Scan(&album%5Bi%5D)%0A    %7D%0A%0A\n     repi\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-05-26_11-06-54",
+            "content": "@@ -127,24 +127,57 @@\n nt, tbaruel)\n+%0A    album := make(%5B%5Dint, talbum)\n %0A%0A    for s \n@@ -434,21 +434,23 @@\n mt.Print\n+ln\n (rep\n-e\n+i\n tida)%0A  \n@@ -460,37 +460,20 @@\n    %7D\n-%0A    %7D%0A    if repetida == 0%7B%0A\n+ else %7B%0A    \n     \n@@ -493,16 +493,30 @@\n ln(%22N%22)%0A\n+        %7D%0A    \n     %7D%0A  \n@@ -519,17 +519,16 @@\n %7D%0A    %7D%0A\n-%0A\n     repe\n@@ -739,73 +739,8 @@\n   %7D%0A\n-        %7D%0A        if repete == 0 %7B%0A            fmt.Println(%22N%22)%0A%0A\n     \n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-05-26_11-10-59",
+            "content": "@@ -135,41 +135,8 @@\n uel)\n-%0A    album := make(%5B%5Dint, talbum)\n %0A%0A  \n@@ -212,86 +212,16 @@\n  %7D%0A%0A\n-    for a := 0; a %3C tbaruel ; a++ %7B%0A        fmt.Scan(&album%5Ba%5D)%0A    %7D%0A\n %0A    rep\n etid\n@@ -212,25 +212,25 @@\n  %7D%0A%0A%0A    rep\n-e\n+i\n tida := 0%0A  \n@@ -364,25 +364,25 @@\n          rep\n-e\n+i\n tida++%0A     \n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-05-26_11-13-04",
+            "content": "@@ -350,23 +350,17 @@\n  0; s %3C \n-tbaruel\n+s\n  - 1 ; s\n@@ -479,16 +479,52 @@\n etida++%0A\n+                fmt.Print(repetida)%0A\n         \n@@ -750,16 +750,47 @@\n e++%0A    \n+            fmt.Println(repete)\n %0A       \n@@ -872,16 +872,16 @@\n n(%22N%22)%0A%0A\n+\n         \n@@ -886,64 +886,8 @@\n   %7D%0A\n-        fmt.Print(repetida)%0A        fmt.Println(repete)%0A\n     \n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-05-26_11-15-04",
+            "content": "@@ -497,30 +497,24 @@\n     %7D%0A    %7D%0A\n-    %7D%0A\n     if repet\n@@ -549,24 +549,30 @@\n n(%22N%22)%0A    %7D\n+%0A    %7D\n %0A%0A    repete\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-05-26_11-15-36",
+            "content": "@@ -295,16 +295,17 @@\n t.Scan(&\n+a\n lbum%5Ba%5D)\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-05-26_11-17-22",
+            "content": "@@ -295,17 +295,16 @@\n t.Scan(&\n-a\n lbum%5Ba%5D)\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-05-26_11-17-28",
+            "content": "@@ -834,26 +834,24 @@\n    fmt.Print\n-ln\n (repetida)%0A \n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-05-26_11-18-28",
+            "content": "@@ -362,32 +362,75 @@\n uel - 1 ; s++ %7B%0A\n+        for x := s + 1; x %3C tbaruel; x++ %7B%0A\n             if s\n@@ -454,21 +454,17 @@\n quencia%5B\n-s + 1\n+x\n %5D%7B%0A     \n@@ -495,24 +495,25 @@\n       %7D%0A    \n+%7D\n %0A    %7D%0A    i\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-05-26_11-20-08",
+            "content": "@@ -438,28 +438,17 @@\n     \n-fmt.Println(\n+ \n repetida\n )%0A  \n@@ -443,17 +443,18 @@\n repetida\n-)\n+++\n %0A       \n@@ -671,28 +671,16 @@\n     \n- fmt.Println(\n repete\n-)\n+++\n %0A   \n@@ -789,23 +789,64 @@\n         \n-%0A       \n+fmt.Println(repetida)%0A        fmt.Println(repete)\n %0A    %7D%0A\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-05-26_11-23-53",
+            "content": "@@ -312,24 +312,37 @@\n %0A    %7D%0A%0A    \n+repetida := 0\n %0A    for s :\n@@ -426,33 +426,32 @@\n %0A               \n- \n fmt.Println(repe\n@@ -488,41 +488,21 @@\n  if \n-sequencia%5Bs%5D != sequencia%5Bs + 1%5D \n+repetida == 0\n %7B%0A  \n@@ -531,16 +531,31 @@\n %0A    %7D%0A%0A\n+    repete := 0\n %0A    for\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-05-26_11-26-00",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var talbum, tbaruel int\n    fmt.Scan(&talbum, &tbaruel)\n\n    sequencia := make([]int, tbaruel)\n    album := make([]int, talbum)\n\n    for s := 0; s < tbaruel ; s++ {\n        fmt.Scan(&sequencia[s])\n    }\n\n    for a := 0; a < tbaruel ; a++ {\n        fmt.Scan(&album[a])\n    }\n\n    \n    for s := 0; s < tbaruel - 1 ; s++ {\n            if sequencia[s] == sequencia[s + 1]{\n                fmt.Println(repetida)\n        }\n    \n    }\n    if sequencia[s] != sequencia[s + 1] {\n        fmt.Println(\"N\")\n    }\n\n\n    for i := 0; i < talbum ; i++ {\n        for a := i + 1; a < talbum; a++ {\n            if album[i] == album[a]{\n                 fmt.Println(repete)\n    \n             }\n        }\n        }\n        if repete == 0 {\n            fmt.Println(\"N\")\n\n        }\n        \n       \n    }\n",
+            "lines": "44"
+        }
+    ]
+}

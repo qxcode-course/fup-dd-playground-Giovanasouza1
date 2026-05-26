@@ -20,8 +20,10 @@ func main() {
 	lista1 := 0
 	for i := 0; i < N; i++ {
 		for j := 0; j < M; j++ {
-			fmt.Println(primeiro[i])
-			fmt.Println(segundo[j])
+			if primeiro[i] == segundo[j] {
+				lista1++
+				break
+			}
 		}
 	}
 

@@ -20,3 +20,68 @@
 2026-05-26 01:25:16, MOVE, v:1, k:fup@baruel, mode:EDIT
 2026-05-26 01:30:12, MOVE, v:1, k:fup@baruel, mode:EDIT
 2026-05-26 01:34:26, MOVE, v:1, k:fup@baruel, mode:BACK
+2026-05-26 10:20:44, MOVE, v:1, k:fup@cobra, mode:PICK
+2026-05-26 10:20:56, SELF, v:1, k:fup@cobra, self:1, rate:100, friend:Hanna
+2026-05-26 10:20:57, MOVE, v:1, k:fup@cobra, mode:BACK
+2026-05-26 10:21:13, SELF, v:1, k:fup@round, self:1, rate:100, code:1
+2026-05-26 10:21:23, SELF, v:1, k:fup@round, self:1, rate:100
+2026-05-26 10:21:23, MOVE, v:1, k:fup@round, mode:PICK
+2026-05-26 10:21:24, MOVE, v:1, k:fup@round, mode:BACK
+2026-05-26 10:22:17, SELF, v:1, k:fup@pares, self:1, rate:100, concept:1
+2026-05-26 10:22:17, MOVE, v:1, k:fup@pares, mode:PICK
+2026-05-26 10:22:18, MOVE, v:1, k:fup@pares, mode:BACK
+2026-05-26 10:22:50, MOVE, v:1, k:fup@batraquios, mode:PICK
+2026-05-26 10:23:18, EXEC, v:1, k:fup@batraquios, mode:FULL, rate:0
+2026-05-26 10:20:48, MOVE, v:1, k:fup@cobra, mode:EDIT
+2026-05-26 10:23:18, MOVE, v:1, k:fup@batraquios, mode:EDIT
+2026-05-26 10:25:48, EXEC, v:1, k:fup@batraquios, mode:FULL, size:35, fail:COMP
+2026-05-26 10:26:36, EXEC, v:1, k:fup@batraquios, mode:FULL, rate:100, size:35
+2026-05-26 10:26:38, MOVE, v:1, k:fup@batraquios, mode:BACK
+2026-05-26 10:26:58, SELF, v:1, k:fup@batraquios, self:1, rate:100, friend:Hanna, concept:1
+2026-05-26 10:27:47, MOVE, v:1, k:fup@baruel, mode:PICK
+2026-05-26 10:26:17, MOVE, v:1, k:fup@batraquios, mode:EDIT
+2026-05-26 10:26:36, MOVE, v:1, k:fup@batraquios, mode:EDIT
+2026-05-26 10:28:49, MOVE, v:1, k:fup@baruel, mode:EDIT
+2026-05-26 10:32:06, MOVE, v:1, k:fup@baruel, mode:EDIT
+2026-05-26 10:36:30, EXEC, v:1, k:fup@baruel, mode:FULL, rate:0, size:31
+2026-05-26 10:39:08, MOVE, v:1, k:fup@baruel, mode:EDIT
+2026-05-26 10:36:30, MOVE, v:1, k:fup@baruel, mode:EDIT
+2026-05-26 10:42:21, EXEC, v:1, k:fup@baruel, mode:FULL, rate:0, size:31
+2026-05-26 10:43:24, EXEC, v:1, k:fup@baruel, mode:FULL, rate:0, size:31
+2026-05-26 10:43:20, MOVE, v:1, k:fup@baruel, mode:EDIT
+2026-05-26 10:43:24, MOVE, v:1, k:fup@baruel, mode:EDIT
+2026-05-26 10:45:40, EXEC, v:1, k:fup@baruel, mode:FULL, rate:0, size:31
+2026-05-26 10:45:54, MOVE, v:1, k:fup@baruel, mode:PICK
+2026-05-26 10:45:55, EXEC, v:1, k:fup@baruel, mode:FULL, rate:0, size:31
+2026-05-26 10:46:46, EXEC, v:1, k:fup@baruel, mode:FULL, rate:0, size:21
+2026-05-26 10:46:46, MOVE, v:1, k:fup@baruel, mode:EDIT
+2026-05-26 10:50:51, MOVE, v:1, k:fup@baruel, mode:EDIT
+2026-05-26 10:55:43, MOVE, v:1, k:fup@baruel, mode:EDIT
+2026-05-26 10:56:12, EXEC, v:1, k:fup@baruel, mode:FULL, size:41, fail:COMP
+2026-05-26 10:56:26, EXEC, v:1, k:fup@baruel, mode:FULL, rate:0, size:41
+2026-05-26 10:57:27, EXEC, v:1, k:fup@baruel, mode:FULL, size:41, fail:COMP
+2026-05-26 10:58:58, MOVE, v:1, k:fup@baruel, mode:EDIT
+2026-05-26 10:56:26, MOVE, v:1, k:fup@baruel, mode:EDIT
+2026-05-26 11:04:59, EXEC, v:1, k:fup@baruel, mode:FULL, size:40, fail:COMP
+2026-05-26 11:05:54, MOVE, v:1, k:fup@baruel, mode:EDIT
+2026-05-26 11:06:05, EXEC, v:1, k:fup@baruel, mode:FULL, rate:0, size:39
+2026-05-26 11:06:54, EXEC, v:1, k:fup@baruel, mode:FULL, rate:0, size:35
+2026-05-26 11:06:54, MOVE, v:1, k:fup@baruel, mode:EDIT
+2026-05-26 11:10:51, MOVE, v:1, k:fup@baruel, mode:EDIT
+2026-05-26 11:10:59, EXEC, v:1, k:fup@baruel, mode:FULL, size:40, fail:COMP
+2026-05-26 11:13:04, EXEC, v:1, k:fup@baruel, mode:FULL, rate:0, size:44
+2026-05-26 11:15:04, EXEC, v:1, k:fup@baruel, mode:FULL, rate:0, size:45
+2026-05-26 11:15:36, EXEC, v:1, k:fup@baruel, mode:FULL, rate:0, size:45
+2026-05-26 11:15:36, MOVE, v:1, k:fup@baruel, mode:EDIT
+2026-05-26 11:15:36, MOVE, v:1, k:fup@baruel, mode:EDIT
+2026-05-26 11:17:22, EXEC, v:1, k:fup@baruel, mode:FULL, size:45, fail:COMP
+2026-05-26 11:17:28, EXEC, v:1, k:fup@baruel, mode:FULL, rate:0, size:45
+2026-05-26 11:18:28, EXEC, v:1, k:fup@baruel, mode:FULL, rate:0, size:45
+2026-05-26 11:20:08, EXEC, v:1, k:fup@baruel, mode:FULL, rate:0, size:44
+2026-05-26 11:20:08, MOVE, v:1, k:fup@baruel, mode:EDIT
+2026-05-26 11:20:08, MOVE, v:1, k:fup@baruel, mode:EDIT
+2026-05-26 11:23:53, EXEC, v:1, k:fup@baruel, mode:FULL, rate:0, size:44
+2026-05-26 11:25:53, MOVE, v:1, k:fup@baruel, mode:EDIT
+2026-05-26 11:23:53, MOVE, v:1, k:fup@baruel, mode:EDIT
+2026-05-26 11:26:00, EXEC, v:1, k:fup@baruel, mode:FULL, size:44, fail:COMP
+2026-05-26 11:27:37, MOVE, v:1, k:fup@baruel, mode:BACK

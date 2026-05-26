@@ -122,8 +122,18 @@
         },
         {
             "label": "2026-05-26_01-10-19",
-            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar N int\n\tfmt.Scan(&N)\n\tprimeiro := make([]int, N)\n    for i := 0; i < N; i++ {\n\t\tfmt.Scan(&primeiro[i])\n\t}\n    var M int\n\tfmt.Scan(&M)\n\tsegundo := make([]int, M)\n\tfor j := 0; j < M; j++ {\n\t\tfmt.Scan(&segundo[j])\n\t}\n\n\n\tlista1 := 0\n\tfor i := 0; i < N; i++ {\n\t\tfor j := 0; j < M; j++ {\n\t\t\tfmt.Println(primeiro[i])\n\t\t\tfmt.Println(segundo[j])\n\t\t}\n\t}\n\n\tif lista1 == N {\n\t\tfmt.Println(\"sim\")\n\t} else {\n\t\tfmt.Println(\"nao\")\n\t}\n}\n",
+            "content": "@@ -324,19 +324,16 @@\n ++ %7B%0A%09%09%09\n-if \n fmt.Prin\n@@ -348,20 +348,20 @@\n eiro%5Bi%5D)\n- == \n+%0A%09%09%09\n fmt.Prin\n@@ -379,38 +379,8 @@\n %5Bj%5D)\n- %7B%0A%09%09%09%09lista1++%0A%09%09%09%09break%0A%09%09%09%7D\n %0A%09%09%7D\n",
             "lines": "33"
+        },
+        {
+            "label": "2026-05-26_10-25-48",
+            "content": "@@ -327,16 +327,28 @@\n %7B%0A%09%09%09if \n+fmt.Println(\n primeiro\n@@ -350,20 +350,33 @@\n meiro%5Bi%5D\n+)\n  == \n+fmt.Println(\n segundo%5B\n@@ -377,16 +377,17 @@\n gundo%5Bj%5D\n+)\n  %7B%0A%09%09%09%09l\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-05-26_10-26-36",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar N int\n\tfmt.Scan(&N)\n\tprimeiro := make([]int, N)\n    for i := 0; i < N; i++ {\n\t\tfmt.Scan(&primeiro[i])\n\t}\n    var M int\n\tfmt.Scan(&M)\n\tsegundo := make([]int, M)\n\tfor j := 0; j < M; j++ {\n\t\tfmt.Scan(&segundo[j])\n\t}\n\n\n\tlista1 := 0\n\tfor i := 0; i < N; i++ {\n\t\tfor j := 0; j < M; j++ {\n\t\t\tif primeiro[i] == segundo[j] {\n\t\t\t\tlista1++\n\t\t\t\tbreak\n\t\t\t}\n\t\t}\n\t}\n\n\tif lista1 == N {\n\t\tfmt.Println(\"sim\")\n\t} else {\n\t\tfmt.Println(\"nao\")\n\t}\n}\n",
+            "lines": "35"
         }
     ]
 }
