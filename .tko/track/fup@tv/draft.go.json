@@ -57,8 +57,13 @@
         },
         {
             "label": "2026-04-06_17-07-06",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tvar valor float64\n\tvar parcelas int\n\tfmt.Scan(&valor, &parcelas)\n\tvalo *= (1 + 0.05 + (parcela - 1))\n\n}",
+            "content": "@@ -104,17 +104,16 @@\n s)%0A%09valo\n-r\n  *= (1 +\n@@ -132,64 +132,13 @@\n cela\n-s\n  - 1))\n-%0A%09cada := valor / float64(parcelas)%0A%09fmt.Printf()\n %0A%0A%7D\n-%0A\n",
             "lines": "9"
+        },
+        {
+            "label": "2026-05-29_13-28-38",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tvar valor float64\n\tvar parcelas int\n\tfmt.Scan(&valor, &parcelas)\n\tvalor *= (1 + 0.05 + (parcelas - 1))\n\tcada := valor / float64(parcelas)\n\tfmt.Printf()\n\n}\n",
+            "lines": "11"
         }
     ]
 }

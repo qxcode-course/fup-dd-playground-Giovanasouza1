@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-29_11-33-45",
+            "content": "@@ -259,75 +259,8 @@\n 3%22)%0A\n-    %7D else if a == b && b == c %7B%0A        fmt.Println(%22empate%22)%0A    \n %7D%0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-29_11-34-43",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b, c int\n    fmt.Scan(&a, &b, &c)\n\n    if a != b && a != c {\n        fmt.Println(\"jog1\")\n    } else if b != a && b != c {\n        fmt.Println(\"jog2\")\n    } else if c != a && c != b {\n        fmt.Println(\"jog3\")\n    } else if a == b && b == c {\n        fmt.Println(\"empate\")\n    }\n}\n",
+            "lines": "16"
+        }
+    ]
+}

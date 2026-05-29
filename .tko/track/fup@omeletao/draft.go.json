@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-29_13-16-33",
+            "content": "@@ -201,10 +201,8 @@\n ln(b)%0A%7D%0A\n-%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-29_13-16-38",
+            "content": "@@ -203,132 +203,8 @@\n (b)%0A\n-    %7D else if c %3E  a && c %3E b && c %3E d %7B%0A    fmt.Println(c)%0A    %7D else if d %3E a  && d %3E c && d %3E b %7B%0A    fmt.Println(b)%0A    \n %7D%0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-29_13-18-04",
+            "content": "@@ -291,17 +291,17 @@\n d %3E \n-b\n+c\n  && d %3E \n c %7B%0A\n@@ -296,17 +296,17 @@\n  && d %3E \n-c\n+b\n  %7B%0A    f\n@@ -316,17 +316,17 @@\n Println(\n-d\n+b\n )%0A    %7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-29_13-19-10",
+            "content": "@@ -328,81 +328,7 @@\n    %7D\n- else if a == b && b == c && c== d %7B%0A        fmt.Println(a)%0A    %7D else if \n %0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-29_13-19-58",
+            "content": "@@ -390,11 +390,19 @@\n )%0A    %7D \n+else if \n %0A%7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-29_13-20-05",
+            "content": "@@ -394,61 +394,7 @@\n   %7D \n-else if a == b %3E c == d %7B%0A        fmt.Println(a)%0A    %7D\n %0A%7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-29_13-20-36",
+            "content": "@@ -409,18 +409,17 @@\n = b \n-&&\n+%3E\n  c == d \n && a\n@@ -414,24 +414,16 @@\n  c == d \n-&& a %3E c\n %7B%0A      \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-29_13-21-22",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b, c, d int\n    fmt.Scan(&a, &b, &c, &d)\n\n\n    if a > b && a > c && a > d {\n    fmt.Println(a)\n    } else if b >  a && b > c && b > d {\n    fmt.Println(b)\n    } else if c >  a && c > b && c > d {\n    fmt.Println(c)\n    } else if d > a  && d > b && d > c {\n    fmt.Println(d)\n    } else if a == b && b == c && c== d {\n        fmt.Println(a)\n    } else if a == b && c == d && a > c{\n        fmt.Println(a)\n    }\n}\n",
+            "lines": "21"
+        }
+    ]
+}

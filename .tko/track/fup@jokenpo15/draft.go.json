@@ -1,0 +1,109 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-29_12-27-13",
+            "content": "@@ -137,78 +137,8 @@\n 1%22)%0A\n-    %7D else if b %3E a && b %3E a + 7 %7B%0A         fmt.Println(%22Jogador 2%22)%0A%0A\n     \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-05-29_12-28-03",
+            "content": "@@ -207,63 +207,8 @@\n %22)%0A%0A\n-    %7D else if b %3C a %7B%0A        fmt.Println(%22Jogador 1%22)%0A\n     \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-29_12-30-02",
+            "content": "@@ -254,17 +254,17 @@\n Jogador \n-2\n+1\n %22)%0A    %7D\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-29_12-30-10",
+            "content": "@@ -262,62 +262,8 @@\n 2%22)%0A\n-    %7D else if b == a %7B%0A        fmt.Println(%22empate%22)%0A%0A\n     \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-29_12-30-33",
+            "content": "@@ -306,9 +306,9 @@\n ln(%22\n-E\n+e\n mpat\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-29_12-30-41",
+            "content": "@@ -194,32 +194,33 @@\n ln(%22Jogador 2%22)%0A\n+%0A\n     %7D else if b \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-29_12-31-11",
+            "content": "@@ -245,33 +245,33 @@\n rintln(%22Jogador \n-1\n+2\n %22)%0A    %7D else if\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-29_12-31-20",
+            "content": "@@ -221,19 +221,16 @@\n if b %3C a\n- &&\n  %7B%0A     \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-29_12-32-04",
+            "content": "@@ -221,16 +221,19 @@\n if b %3C a\n+ &&\n  %7B%0A     \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-29_12-32-42",
+            "content": "@@ -226,21 +226,8 @@\n %3C a \n-&& b %3E a + 13\n %7B%0A  \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-29_12-33-28",
+            "content": "@@ -222,16 +222,29 @@\n f b %3C a \n+&& b %3E a + 13\n %7B%0A      \n@@ -266,16 +266,17 @@\n Jogador \n+1\n %22)%0A    %7D\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-29_12-33-59",
+            "content": "@@ -245,33 +245,32 @@\n rintln(%22Jogador \n-2\n %22)%0A    %7D else if\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-29_12-34-11",
+            "content": "@@ -226,21 +226,8 @@\n %3C a \n-&& a %3E 7 + b \n %7B%0A  \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-29_12-34-56",
+            "content": "@@ -328,78 +328,8 @@\n %22)%0A%0A\n-    %7D else if b %3C a && a %3C 7 + b %7B%0A        fmt.Println(%22Jogador 2%22)%0A%0A%0A\n     \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-29_12-35-52",
+            "content": "@@ -388,17 +388,17 @@\n Jogador \n-1\n+2\n %22)%0A%0A%0A   \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-29_12-36-30",
+            "content": "@@ -80,51 +80,101 @@\n     \n-d\n if \n-:= (b -\n+b %3E a && b %3C\n  a + \n-15) %25 15%0A    if dif == 0\n+7 %7B%0A        fmt.Println(%22Jogador 1%22)%0A    %7D else if b %3E a && b %3E a + 7\n  %7B%0A\n+ \n     \n@@ -194,38 +194,54 @@\n ln(%22\n-Empate%22)%0A    %7D%0A    if dif %3C= 7\n+Jogador 2%22)%0A    %7D else if b %3C a && a %3E 7 + b %7B\n %0A   \n@@ -258,33 +258,33 @@\n rintln(%22Jogador \n-1\n+2\n %22)%0A    %7D else %7B%0A\n@@ -281,16 +281,92 @@\n  %7D else \n+if b == a %7B%0A        fmt.Println(%22Empate%22)%0A%0A    %7D else if b %3C a && a %3C 7 + b \n %7B%0A      \n@@ -384,24 +384,26 @@\n ln(%22Jogador \n-2\n+1\n %22)%0A\n+%0A%0A\n     %7D%0A%7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-29_13-00-10",
+            "content": "@@ -170,18 +170,16 @@\n dif %3C= 7\n- %7B\n %0A       \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-29_13-00-20",
+            "content": "@@ -175,19 +175,8 @@\n = 7 \n-&& dif %3E 0 \n %7B%0A  \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-29_13-00-57",
+            "content": "@@ -232,29 +232,8 @@\n lse \n-if dif %3E 7 && dif %3C 0\n %7B%0A  \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-29_13-01-42",
+            "content": "@@ -246,17 +246,17 @@\n  && dif \n-%3E\n+%3C\n  0%7B%0A    \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-29_13-01-48",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    fmt.Scan(&a, &b)\n\n    dif := (b - a + 15) % 15\n    if dif == 0 {\n        fmt.Println(\"Empate\")\n    }\n    if dif <= 7 && dif > 0 {\n        fmt.Println(\"Jogador 1\")\n    } else if dif > 7 && dif > 0{\n        fmt.Println(\"Jogador 2\")\n    }\n}\n",
+            "lines": "16"
+        }
+    ]
+}

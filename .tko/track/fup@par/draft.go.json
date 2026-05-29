@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-29_11-36-49",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a int\n    fmt.Scan(&a)\n\n    if a % 2 != 0 {\n        fmt.Println(\"IMPAR\")\n    } else {\n        fmt.Println(\"PAR\")\n    }\n}\n",
+            "lines": "12"
+        }
+    ]
+}

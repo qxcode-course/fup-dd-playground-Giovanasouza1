@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-29_13-12-46",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var resp1, resp2, resp3, resp4 string\n    fmt.Scan(&resp1, &resp2, &resp3, &resp4)\n\n    acertou := 0\n    if resp1 == \"d\" {\n        acertou++\n    } \n\n    if resp2 == \"a\" {\n        acertou++\n    }\n\n    if resp3 == \"c\" {\n        acertou++\n    }\n\n    if resp4 == \"d\" {\n        acertou++\n    }\n    \n    \n    if acertou == 0 {\n        fmt.Println(\"Nunca assistiu\")\n    } else if acertou == 1 {\n        fmt.Println(\"Ja ouviu falar\")\n    } else if acertou == 2 {\n        fmt.Println(\"Interessado no assunto\")\n    } else if acertou == 3 {\n        fmt.Println(\"Fa\")\n    } else if acertou == 4 {\n        fmt.Println(\"Super Fa\")\n    }\n}\n",
+            "lines": "36"
+        }
+    ]
+}
