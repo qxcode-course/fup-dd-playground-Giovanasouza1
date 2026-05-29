@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-28_20-23-10",
+            "content": "@@ -59,12 +59,13 @@\n fmt.\n-Scan\n+Print\n (&a)\n@@ -97,16 +97,18 @@\n mt.Print\n+ln\n (%22positi\n@@ -152,16 +152,18 @@\n mt.Print\n+ln\n (%22nulo%22)\n@@ -202,16 +202,18 @@\n mt.Print\n+ln\n (%22negati\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-28_20-24-59",
+            "content": "@@ -96,18 +96,16 @@\n mt.Print\n-ln\n (%22positi\n@@ -105,24 +105,24 @@\n %22positivo%22)%0A\n+\n     %7D else i\n@@ -149,18 +149,16 @@\n mt.Print\n-ln\n (%22nulo%22)\n@@ -176,24 +176,24 @@\n  if a %3C 0 %7B%0A\n+\n         fmt.\n@@ -201,10 +201,8 @@\n rint\n-ln\n (%22ne\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-28_20-25-12",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a int\n    fmt.Scan(&a)\n    if a > 0 {\n        fmt.Println(\"positivo\")\n    } else if a == 0 {\n        fmt.Println(\"nulo\")\n    } else if a < 0 {\n        fmt.Println(\"negativo\")\n    }\n}\n",
+            "lines": "13"
+        }
+    ]
+}

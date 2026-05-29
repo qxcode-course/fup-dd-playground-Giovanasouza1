@@ -1,0 +1,59 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-29_00-07-48",
+            "content": "@@ -576,28 +576,8 @@\n tln(\n-%22%2502d %2502d %2502d%5Cn%22, \n hora\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-29_00-09-22",
+            "content": "@@ -376,35 +376,16 @@\n Println(\n-%22%2502d %2502d %2502d%5Cn%22,\n horas, m\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-29_00-09-39",
+            "content": "@@ -368,32 +368,33 @@\n %0A   fmt.Println(\n+%22\n %2502d %2502d %2502d%5Cn\n@@ -385,34 +385,34 @@\n %2502d %2502d %2502d%5Cn\n+%22\n ,\n- \n horas, min, seg)\n@@ -591,16 +591,17 @@\n Println(\n+%22\n %2502d %2502\n@@ -608,16 +608,17 @@\n d %2502d%5Cn\n+%22\n , horas,\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-29_00-09-52",
+            "content": "@@ -368,33 +368,32 @@\n %0A   fmt.Println(\n-%22\n %2502d %2502d %2502d%5Cn\n@@ -384,33 +384,32 @@\n %2502d %2502d %2502d%5Cn\n-%22\n , horas, min, se\n@@ -590,17 +590,16 @@\n Println(\n-%22\n %2502d %2502\n@@ -606,17 +606,16 @@\n d %2502d%5Cn\n-%22\n , horas,\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-29_00-10-18",
+            "content": "@@ -365,33 +365,34 @@\n   %0A%0A   fmt.Print\n-f\n+ln\n (%22%2502d %2502d %2502d\n@@ -589,17 +589,18 @@\n mt.Print\n-f\n+ln\n (%22%2502d %25\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-29_00-10-58",
+            "content": "@@ -52,23 +52,19 @@\n  m1, s1 \n-float64\n+int\n %0A    var\n@@ -79,15 +79,11 @@\n  s2 \n-float64\n+int\n %0A   \n@@ -465,32 +465,36 @@\n 3600) - tempod%0A%0A\n+    \n     horas := tot\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-29_00-11-32",
+            "content": "@@ -52,19 +52,23 @@\n  m1, s1 \n-int\n+float64\n %0A    var\n@@ -79,19 +79,23 @@\n  m2, s2 \n-int\n+float64\n %0A    fmt\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-29_00-12-07",
+            "content": "@@ -206,32 +206,27 @@\n + s2%0A%0A  \n-total :=\n+ if\n  tempoa \n - tempod\n@@ -221,57 +221,19 @@\n poa \n--\n+%3E=\n  tempod\n-%0A%0Aif total %3C 0 %7B%0A    total += 24 * 3600%0A%7D\n+ %7B\n %0A   \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-29_00-43-53",
+            "content": "@@ -668,8 +668,10 @@\n  seg)%0A%7D%0A\n+%7D%0A\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-05-29_00-44-02",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -79,17 +79,16 @@\n  s2 int%0A\n-%0A\n     fmt.\n@@ -122,18 +122,21 @@\n 2, &s2)%0A\n-%0A\n  \n+   %0A\n    tempo\n@@ -142,17 +142,19 @@\n od := h1\n-*\n+ * \n 3600 + m\n@@ -154,17 +154,19 @@\n 600 + m1\n-*\n+ * \n 60 + s1%0A\n@@ -168,17 +168,16 @@\n + s1%0A   \n- \n tempoa :\n@@ -180,17 +180,19 @@\n oa := h2\n-*\n+ * \n 3600 + m\n@@ -192,17 +192,19 @@\n 600 + m2\n-*\n+ * \n 60 + s2%0A\n@@ -210,52 +210,267 @@\n %0A%0A  \n-  total := tempoa - tempod%0A%0A    if total %3C 0\n+total := tempoa - tempod%0A%0Aif total %3C 0 %7B%0A    total += 24 * 3600%0A%7D%0A    total := tempoa - tempod%0A%0A    horas := total / 3600%0A    resto := total %25 3600%0A%0A    min := resto / 60%0A    seg := resto %25 60%0A   %0A%0A   fmt.Printf(%22%2502d %2502d %2502d%5Cn%22, horas, min, seg)%0A    %7D else\n  %7B%0A \n@@ -486,26 +486,40 @@\n tal \n-+= 24 * 3600%0A    %7D\n+:= (tempoa + 24 * 3600) - tempod\n %0A%0A  \n@@ -613,17 +613,17 @@\n to %25 60%0A\n-%0A\n+ \n     fmt.\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-05-29_00-44-33",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    var h1, m1, s1 int\n    var h2, m2, s2 int\n\n    fmt.Scan(&h1, &m1, &s1, &h2, &m2, &s2)\n\n    tempod := h1*3600 + m1*60 + s1\n    tempoa := h2*3600 + m2*60 + s2\n\n    total := tempoa - tempod\n\n    if total < 0 {\n        total += 24 * 3600\n    }\n\n    horas := total / 3600\n    resto := total % 3600\n\n    min := resto / 60\n    seg := resto % 60\n\n    fmt.Printf(\"%02d %02d %02d\\n\", horas, min, seg)\n}\n",
+            "lines": "27"
+        }
+    ]
+}

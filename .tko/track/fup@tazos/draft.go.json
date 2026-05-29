@@ -1,0 +1,209 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-28_11-59-25",
+            "content": "@@ -294,92 +294,13 @@\n    %7D\n- else %7B%0A            fmt.Println(vetores)%0A        %7D%0A    %7D%0A    fmt.Println(repetidos)%0A%0A\n+%0A    %7D\n %0A%7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-28_12-01-40",
+            "content": "@@ -1,392 +1,41 @@\n-package main%0Aimport %22fmt%22%0Afunc main() %7B%0A    var v int %0A    fmt.Scan(&v)%0A%0A    vetores := make(%5B%5Dint, v)%0A%0A    for i := 0; i %3C v; i++ %7B%0A        fmt.Scan(&vetores%5Bi%5D)%0A    %7D%0A    %0A    repetidos := 0%0A    for i := 0; i %3C v - 1; i++ %7B%0A        if vetores%5Bi%5D == vetores%5Bi + 1%5D %7B%0A            repetidos++%0A        %7D else %7B%0A            fmt.Println(vetores%5Bi%5D)%0A        %7D%0A    %7D%0A    fmt.Println(repetidos)%0A%0A%0A%7D\n+@@ -211,12 +211,8 @@%0A  %253C v%0A- - 1%0A ; i+\n %0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2026-05-28_12-03-22",
+            "content": "@@ -100,27 +100,8 @@\n  v)%0A\n-    fmt.Print(%22%5B %22)\n %0A   \n@@ -385,29 +385,8 @@\n os)%0A\n-    fmt.Println(%22 %5D%22)\n %0A%0A%7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-28_12-04-20",
+            "content": "@@ -186,16 +186,35 @@\n  %7D%0A    %0A\n+    repetidos := 0%0A\n     for \n@@ -230,32 +230,32 @@\n  %3C v - 1; i++ %7B%0A\n-\n         if vetor\n@@ -296,35 +296,19 @@\n     \n-fmt.Println(vetores%5Bi + 1%5D)\n+repetidos++\n %0A   \n@@ -373,16 +373,42 @@\n %7D%0A    %7D%0A\n+    fmt.Println(repetidos)\n %0A    fmt\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-28_12-08-12",
+            "content": "@@ -254,17 +254,17 @@\n tores%5Bi \n--\n++\n  1%5D %7B%0A  \n@@ -295,17 +295,17 @@\n tores%5Bi \n--\n++\n  1%5D)%0A   \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-28_12-13-37",
+            "content": "@@ -245,9 +245,9 @@\n %5Bi%5D \n-!\n+=\n = ve\n@@ -286,32 +286,36 @@\n rintln(vetores%5Bi\n+ - 1\n %5D)%0A        %7D els\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-28_12-17-34",
+            "content": "@@ -293,24 +293,77 @@\n vetores%5Bi%5D)%0A\n+        %7D else %7B%0A            fmt.Println(vetores%5Bi%5D)%0A\n         %7D%0A  \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-28_12-17-59",
+            "content": "@@ -141,10 +141,8 @@\n  %3C v\n--1\n ; i+\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-28_12-19-58",
+            "content": "@@ -129,32 +129,34 @@\n or i := 0; i %3C v\n+-1\n ; i++ %7B%0A        \n@@ -209,16 +209,20 @@\n 0; i %3C v\n+ - 1\n ; i++ %7B%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-28_12-20-15",
+            "content": "@@ -133,26 +133,24 @@\n  := 0; i %3C v\n--1\n ; i++ %7B%0A    \n@@ -203,18 +203,16 @@\n  := \n-1\n+0\n ; i %3C v\n--1\n ; i+\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-28_12-22-30",
+            "content": "@@ -193,33 +193,33 @@\n   %0A    for i := \n-0\n+1\n ; i %3C v-1; i++ %7B\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-28_12-22-42",
+            "content": "@@ -64,21 +64,16 @@\n Scan(&v)\n-%0A    \n %0A%0A    ve\n@@ -116,17 +116,16 @@\n t(%22%5B %22)%0A\n-%0A\n     for \n@@ -241,17 +241,17 @@\n ores%5Bi%5D \n-=\n+!\n = vetore\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-28_12-25-25",
+            "content": "@@ -65,16 +65,20 @@\n can(&v)%0A\n+    \n %0A%0A    ve\n@@ -260,17 +260,17 @@\n tores%5Bi \n-+\n+-\n  1%5D %7B%0A  \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-28_12-26-17",
+            "content": "@@ -329,16 +329,18 @@\n mt.Print\n+ln\n (%22 %5D%22)%0A%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-28_12-26-27",
+            "content": "@@ -329,18 +329,16 @@\n mt.Print\n-ln\n (%22 %5D%22)%0A%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-28_12-26-39",
+            "content": "@@ -284,16 +284,18 @@\n mt.Print\n+ln\n (vetores\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-28_12-26-55",
+            "content": "@@ -194,27 +194,8 @@\n    %0A\n-    repetidos := 0%0A\n     \n@@ -284,18 +284,16 @@\n mt.Print\n-ln\n (vetores\n@@ -299,40 +299,10 @@\n s%5Bi%5D\n-, %22 %22\n )%0A\n-           repetidos = 1%0A\n     \n@@ -315,83 +315,11 @@\n     \n- \n-   %7D%0A    if repetidos == 0 %7B%0A        fmt.Print(vetores%5Bi%5D, %22 %22)%0A    %7D%0A    \n+%7D%0A%0A\n     \n@@ -336,14 +336,11 @@\n n(%22 %5D%22)%0A\n-    \n+%0A\n %7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-28_12-34-16",
+            "content": "@@ -358,24 +358,30 @@\n       %7D%0A    \n+    %7D%0A\n     if repet\n@@ -427,26 +427,16 @@\n %5D, %22 %22)%0A\n-        %7D%0A\n     %7D%0A  \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-05-28_12-34-49",
+            "content": "@@ -295,32 +295,34 @@\n        fmt.Print\n+ln\n (vetores%5Bi%5D, %22 %22\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-05-28_12-35-01",
+            "content": "@@ -456,16 +456,17 @@\n rintln(%22\n+ \n %5D%22)%0A    \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-05-28_12-35-14",
+            "content": "@@ -356,26 +356,24 @@\n       %7D%0A    \n-%7D%0A\n     if repet\n@@ -388,43 +388,8 @@\n 0 %7B%0A\n-        for i := 0; i %3C v-1; i++ %7B%0A\n     \n@@ -421,32 +421,38 @@\n  %22 %22)%0A        %7D%0A\n+    %7D%0A\n         fmt.Prin\n@@ -464,12 +464,10 @@\n %5D%22)%0A\n+\n     %7D%0A\n-%7D%0A\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-05-28_12-36-28",
+            "content": "@@ -483,16 +483,18 @@\n mt.Print\n+ln\n (%22%5D%22)%0A  \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-28_12-36-45",
+            "content": "@@ -466,26 +466,24 @@\n       %7D%0A    \n-%7D%0A\n     fmt.Prin\n@@ -487,14 +487,18 @@\n rint\n-ln\n (%22%5D%22)%0A\n+    %7D%0A\n %7D%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-28_12-37-04",
+            "content": "@@ -411,16 +411,18 @@\n 0; i %3C v\n+-1\n ; i++ %7B%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-28_12-38-28",
+            "content": "@@ -131,32 +131,34 @@\n or i := 0; i %3C v\n+-1\n ; i++ %7B%0A        \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-28_12-39-04",
+            "content": "@@ -211,26 +211,8 @@\n = 0%0A\n-    contador := 0%0A\n     \n@@ -224,32 +224,34 @@\n  := 0; i %3C v\n+-1\n ; i++ %7B%0A\n         for \n@@ -242,39 +242,8 @@\n + %7B%0A\n-        for i := 0; i %3C v; i++%0A\n     \n@@ -296,20 +296,35 @@\n     \n-contador++%0A \n+fmt.Print(vetores%5Bi%5D, %22 %22)%0A\n     \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-28_12-45-25",
+            "content": "@@ -276,34 +276,32 @@\n := 0; i %3C v; i++\n- %7B\n %0A        if veto\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-28_12-45-34",
+            "content": "@@ -502,18 +502,16 @@\n %7D%0A    %7D%0A\n-%7D%0A\n     fmt.\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-28_12-45-48",
+            "content": "@@ -270,24 +270,24 @@\n for \n-j\n+i\n  := 0; \n-j\n+i\n  %3C v; \n-j\n+i\n ++ %7B\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-28_12-52-06",
+            "content": "@@ -203,24 +203,42 @@\n etidos := 0%0A\n+    contador := 0%0A\n     for i :=\n@@ -258,30 +258,8 @@\n + %7B%0A\n-        contador := 0%0A\n     \n@@ -345,44 +345,44 @@\n     \n-repetidos = 1%0A            contador++\n+contador++%0A            repetidos = 1\n %0A   \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-28_13-38-06",
+            "content": "@@ -324,17 +324,21 @@\n vetores%5B\n-j\n+i + 1\n %5D %7B%0A    \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-28_13-39-34",
+            "content": "@@ -392,34 +392,8 @@\n   %7D%0A\n-    fmt.Println(contador)%0A\n     \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-28_13-41-33",
+            "content": "@@ -384,24 +384,50 @@\n +%0A        %7D%0A\n+    fmt.Println(contador)%0A\n     %7D%0A    if\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-28_13-47-29",
+            "content": "@@ -402,73 +402,27 @@\n     \n-fmt.Print(contador)%0A    if repetidos == 0 %7B%0A        contador := 0\n+if repetidos == 0 %7B\n %0A   \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-28_13-51-41",
+            "content": "@@ -330,36 +330,8 @@\n s%5Bj%5D\n- && vetores%5Bi%5D != vetores%5Bj%5D\n  %7B%0A \n@@ -418,17 +418,16 @@\n ntador)%0A\n-%0A\n     if r\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-05-28_13-54-53",
+            "content": "@@ -10,40 +10,21 @@\n ain%0A\n-%0A\n import \n-(%0A%09\n %22fmt%22%0A\n-%09%22go/format%22%0A)%0A\n func\n@@ -248,21 +248,22 @@\n     \n-existe\n+contador\n  := 0%0A\n-%0A\n     \n@@ -274,24 +274,24 @@\n for \n-k\n+j\n  := 0; \n-k %3C i; k\n+j %3C v; j\n ++ %7B\n@@ -291,36 +291,32 @@\n ; j++ %7B%0A        \n-    \n if vetores%5Bi%5D ==\n@@ -328,179 +328,66 @@\n res%5B\n-k%5D  %7B%0A            existe = 1%0A        %7D%0A    %7D%0A%0A        if existe == 0 %7B%0A            contador := 0%0A        for j := 0; j %3C v; j++ %7B%0A            if vetores%5Bi%5D == vetores%5Bj%5D %7B\n+j%5D && vetores%5Bi%5D != vetores%5Bj%5D %7B%0A            repetidos = 1\n %0A   \n@@ -505,32 +505,32 @@\n     for \n-j\n+i\n  := 0; \n-j\n+i\n  %3C v; \n-j\n+i\n ++ %7B%0A   \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-05-28_14-12-17",
+            "content": "@@ -737,10 +737,8 @@\n (%22%5D%22)%0A%7D%0A\n-%7D%0A\n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-05-28_14-12-23",
+            "content": "@@ -10,21 +10,40 @@\n ain%0A\n+%0A\n import \n+(%0A%09\n %22fmt%22%0A\n+%09%22go/format%22%0A)%0A\n func\n@@ -215,21 +215,17 @@\n     \n-%0A    contador\n+repetidos\n  := \n@@ -267,118 +267,316 @@\n     \n-if vetores%5Bi%5D == vetores%5Bi + 1%5D %7B%0A            contador++%0A        %7D else %7B%0A            fmt.Println(vetores%5Bi%5D, \n+existe := 0%0A%0A        for k := 0; k %3C i; k++ %7B%0A            if vetores%5Bi%5D == vetores%5Bk%5D  %7B%0A            existe = 1%0A        %7D%0A    %7D%0A%0A        if existe == 0 %7B%0A            contador := 0%0A        for j := 0; j %3C v; j++ %7B%0A            if vetores%5Bi%5D == vetores%5Bj%5D %7B%0A            contador++%0A        %7D%0A    %7D%0A    fmt.Print(\n cont\n@@ -581,20 +581,41 @@\n ntador)%0A\n+%0A\n     \n+if repetidos == 0 %7B%0A\n         \n@@ -627,20 +627,50 @@\n dor \n+:\n = \n-1%0A    %7D%0A%7D%0A\n+0%0A        for j := 0; j %3C v; j++ %7B%0A    \n     \n@@ -682,10 +682,8 @@\n rint\n-ln\n (vet\n@@ -692,28 +692,55 @@\n es%5Bi\n- + 1%5D, contador, \n+%5D, %22 %22)%0A        %7D%0A    %7D%0A%7D%0A    fmt.Println(\n %22%5D%22)%0A%7D%0A\n+%7D%0A\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-05-28_14-22-49",
+            "content": "@@ -425,17 +425,17 @@\n vetores%5B\n-v\n+i\n  + 1%5D, c\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-05-28_14-23-14",
+            "content": "@@ -358,10 +358,20 @@\n res%5B\n-v%5D\n+i%5D, contador\n )%0A  \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-05-28_14-55-03",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var v int \n    fmt.Scan(&v)\n\n\n    vetores := make([]int, v)\n    fmt.Print(\"[ \")\n\n    for i := 0; i < v; i++ {\n        fmt.Scan(&vetores[i])\n    }\n    \n    \n    contador := 0\n    for i := 0; i < v; i++ {\n        if vetores[i] == vetores[i + 1] {\n            contador++\n        } else {\n            fmt.Println(vetores[v])\n            contador = 1\n    }\n}\n    fmt.Println(vetores[v + 1], contador, \"]\")\n}\n",
+            "lines": "26"
+        }
+    ]
+}

@@ -107,8 +107,118 @@
         },
         {
             "label": "2026-05-26_11-26-00",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var talbum, tbaruel int\n    fmt.Scan(&talbum, &tbaruel)\n\n    sequencia := make([]int, tbaruel)\n    album := make([]int, talbum)\n\n    for s := 0; s < tbaruel ; s++ {\n        fmt.Scan(&sequencia[s])\n    }\n\n    for a := 0; a < tbaruel ; a++ {\n        fmt.Scan(&album[a])\n    }\n\n    \n    for s := 0; s < tbaruel - 1 ; s++ {\n            if sequencia[s] == sequencia[s + 1]{\n                fmt.Println(repetida)\n        }\n    \n    }\n    if sequencia[s] != sequencia[s + 1] {\n        fmt.Println(\"N\")\n    }\n\n\n    for i := 0; i < talbum ; i++ {\n        for a := i + 1; a < talbum; a++ {\n            if album[i] == album[a]{\n                 fmt.Println(repete)\n    \n             }\n        }\n        }\n        if repete == 0 {\n            fmt.Println(\"N\")\n\n        }\n        \n       \n    }\n",
+            "content": "@@ -459,17 +459,16 @@\n  %7D%0A    %0A\n-%0A\n     %7D%0A  \n@@ -691,24 +691,30 @@\n repete)%0A    \n+%0A     \n         %7D%0A  \n@@ -729,19 +729,18 @@\n     \n-%7D%0A\n+ \n    \n+%7D\n %0A    \n-%0A\n     \n@@ -756,32 +756,36 @@\n  == 0 %7B%0A        \n+    \n fmt.Println(%22N%22)\n@@ -785,20 +785,42 @@\n ln(%22N%22)%0A\n+%0A        %7D%0A        %0A   \n     \n-%7D\n %0A    %7D%0A\n",
             "lines": "44"
+        },
+        {
+            "label": "2026-05-26_17-10-18",
+            "content": "@@ -320,21 +320,8 @@\n     \n-repetida := 0\n %0A   \n@@ -544,23 +544,8 @@\n  %7D%0A%0A\n-    repete := 0\n %0A   \n@@ -722,24 +722,28 @@\n %7D%0A    %7D%0A   %0A\n+    \n %0A    if repe\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-05-26_17-11-51",
+            "content": "@@ -254,37 +254,38 @@\n or a := 0; a %3C t\n-album\n+baruel\n  ; a++ %7B%0A       \n@@ -487,133 +487,46 @@\n     \n-for a := 0; a %3C talbum ; a++ %7B%0A        for s := 0; s %3C tbaruel - 1 ; s++ %7B%0A            if sequencia%5Bs%5D != album%5Ba%5D %7B%0A        \n+if sequencia%5Bs%5D != sequencia%5Bs + 1%5D %7B%0A\n     \n@@ -546,34 +546,16 @@\n ln(%22N%22)%0A\n-            %7D%0A    \n     %7D%0A%0A \n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-05-26_17-17-04",
+            "content": "@@ -917,10 +917,8 @@\n %7D%0A    %7D%0A\n-%7D%0A\n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-05-26_17-17-11",
+            "content": "@@ -648,32 +648,204 @@\n     %7D%0A        %7D%0A\n+%0A    repete := 0%0A    for i := 0; i %3C talbum ; i++ %7B%0A        for a := i + 1; a %3C talbum; a++ %7B%0A            if album%5Bi%5D == album%5Ba%5D%7B%0A                 fmt.Println(repete)%0A    \n         %7D%0A    %7D%0A\n@@ -838,19 +838,89 @@\n       %7D%0A    \n+   \n+ \n %7D%0A    \n+%7D%0A   %0A%0A    if repete == 0 %7B%0A        fmt.Println(%22N%22)%0A    %7D%0A    %7D%0A%7D\n %0A\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-05-26_17-18-35",
+            "content": "@@ -478,28 +478,24 @@\n %0A%0A    %7D%0A\n-    \n     for \n s := 0; \n@@ -490,35 +490,30 @@\n for \n-s\n+a\n  := 0; \n-s\n+a\n  %3C t\n-baruel - 1 ; s\n+album ; a\n ++ %7B\n@@ -525,38 +525,39 @@\n     \n-    \n for \n-a\n+s\n  := 0; \n-a\n+s\n  %3C t\n-album ; a\n+baruel - 1 ; s\n ++ %7B\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-05-26_17-20-15",
+            "content": "@@ -349,32 +349,36 @@\n  0; s %3C tbaruel \n+- 1 \n ; s++ %7B%0A        \n@@ -502,32 +502,36 @@\n  0; s %3C tbaruel \n+- 1 \n ; s++ %7B%0A        \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-05-26_17-21-37",
+            "content": "@@ -315,27 +315,24 @@\n  %7D%0A%0A    \n-tem\n repetida\n s := 0%0A%0A\n@@ -327,16 +327,14 @@\n tida\n-s\n  := 0%0A\n-%0A\n     \n@@ -365,32 +365,36 @@\n ; s++ %7B%0A        \n+    \n if sequencia%5Bs%5D \n@@ -410,15 +410,20 @@\n cia%5B\n-i-\n+s + \n 1%5D\n- \n %7B%0A\n+    \n     \n@@ -443,155 +443,42 @@\n rint\n-(sequencia%5Bi%5D, %22 %22)%0A            temrepetida := true%0A        %7D%0A    %7D%0A    if temrepetida := false %7B%0A        fmt.Print(%22N%22)%0A    %7D%0A%0A    fmt.Println()%0A%0A\n+ln(repetida)%0A        %7D%0A    %0A%0A    %7D\n %0A   \n@@ -670,121 +670,8 @@\n   %7D%0A\n-%0A%0A        temfaltado := 0 %0A             for a := 0; a %3C talbum ; a++ %7B%0A                if sequencia%5Ba%0A%0A        %7D%0A\n     \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-05-26_17-42-29",
+            "content": "@@ -478,18 +478,18 @@\n repetida\n-s\n  \n+:\n = true%0A \n@@ -525,11 +525,10 @@\n tida\n-s =\n+ :\n = fa\n@@ -795,29 +795,26 @@\n mfaltado := \n-false\n+0 \n %0A           \n@@ -866,367 +866,41 @@\n     \n-encontrou := false%0A            for s := 0; s %3C tbaruel ; s++ %7B%0A                if sequencia%5Bs%5D == s %7B%0A                    encontrou = true%0A                %7D%0A        %7D%0A        if econtrou == false %7B%0A            fmt.Print(s, %22 %22)%0A            temfaltado = true      %0A         %7D%0A         if temfaltado == false %7B%0A             fmt.Print(%22N%22)%0A    %7D%0A    %0A             %7D\n+if sequencia%5Ba%0A%0A        %7D%0A    %7D%0A    \n %0A\n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-05-26_17-48-40",
+            "content": "@@ -407,17 +407,17 @@\n quencia%5B\n-s\n+i\n -1%5D %7B%0A  \n@@ -446,17 +446,17 @@\n quencia%5B\n-s\n+i\n %5D, %22 %22)%0A\n@@ -480,18 +480,22 @@\n petidas \n-++\n+= true\n %0A       \n@@ -526,17 +526,21 @@\n idas == \n-0\n+false\n  %7B%0A     \n@@ -1045,17 +1045,16 @@\n     if e\n-n\n controu \n@@ -1086,17 +1086,17 @@\n t.Print(\n-a\n+s\n , %22 %22)%0A \n@@ -1215,20 +1215,22 @@\n %7D%0A    %0A     \n-%7D%0A\n+    \n     %7D%0A\n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-05-26_17-51-51",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -42,19 +42,29 @@\n    var t\n-ota\n+album, tbarue\n l int%0A  \n@@ -80,66 +80,73 @@\n n(&t\n-ota\n+album, &tbarue\n l)%0A\n+%0A\n     \n-var tam int%0A    fmt.Scan(&tam)%0A%0A    vetor_normal\n+sequencia := make(%5B%5Dint, tbaruel)%0A    album\n  := \n@@ -151,32 +151,35 @@\n = make(%5B%5Dint, ta\n+lbu\n m)%0A%0A    for i :=\n@@ -178,26 +178,31 @@\n for \n-i\n+s\n  := 0; \n-i\n+s\n  %3C t\n-am; i\n+baruel ; s\n ++ %7B\n@@ -220,30 +220,27 @@\n t.Scan(&\n-vetor_normal%5Bi\n+sequencia%5Bs\n %5D)%0A    %7D\n@@ -249,90 +249,95 @@\n     \n-anteri\n+f\n or \n+a \n := \n-vetor_normal%5B0%5D%0A    count := 0%0A    vetor_\n+0; a %3C talbum ; a++ %7B%0A        fmt.Scan(&album%5Ba%5D)%0A    %7D%0A%0A    tem\n repetid\n-o\n+a\n s := \n-make(%5B%5Dint, tam)\n+0\n %0A%0A  \n@@ -346,26 +346,31 @@\n for \n-i\n+s\n  := \n-1; i\n+0; s\n  %3C t\n-am; i\n+baruel ; s\n ++ %7B\n@@ -385,108 +385,107 @@\n  if \n-vetor_normal%5Bi%5D == anterior %7B%0A            vetor_repetidos%5Bcount%5D = vetor_normal%5Bi%5D%0A            count\n+sequencia%5Bs%5D == sequencia%5Bs-1%5D %7B%0A            fmt.Print(sequencia%5Bs%5D, %22 %22)%0A            temrepetidas \n ++%0A \n@@ -496,144 +496,104 @@\n    %7D\n- else %7B%0A  \n+%0A\n     \n+%7D%0A\n     \n-  anterior = vetor_normal%5Bi%5D%0A        %7D%0A    %7D%0A%0A    vetor_faltantes := make(%5B%5Dint, tam)%0A    contar_indice := 0%0A%0A\n+if temrepetidas == 0 %7B%0A        fmt.Print(%22N%22)%0A    %7D%0A%0A    fmt.Println()%0A%0A%0A    \n     for \n i :=\n@@ -592,29 +592,31 @@\n for \n-i\n+s\n  := \n-1; i\n+0; s\n  %3C\n-=\n  t\n-otal; i\n+baruel ; s\n ++ %7B\n@@ -624,28 +624,8 @@\n     \n-    encontrado := 0%0A\n     \n@@ -636,26 +636,30 @@\n for \n-j\n+a\n  := 0; \n-j\n+a\n  %3C ta\n-m; j\n+lbum ; a\n ++ %7B\n@@ -678,28 +678,32 @@\n  if \n-vetor_normal%5Bj%5D == i\n+sequencia%5Bs%5D != album%5Ba%5D\n  %7B%0A \n@@ -721,173 +721,211 @@\n     \n-encontrado = 1%0A                break%0A            %7D%0A        %7D%0A%0A        if encontrado == 0 %7B%0A            vetor_faltantes%5Bcontar_indice%5D = i%0A            contar_indice++\n+fmt.Println(%22N%22)%0A            %7D%0A        %7D%0A        %7D%0A%0A%0A        temfaltado := false%0A             for a := 0; a %3C talbum ; a++ %7B%0A                encontrou := false%0A            for s := 0; s %3C tbaruel ; s++ %7B\n %0A   \n@@ -933,141 +933,144 @@\n     \n-%7D%0A\n     \n-%7D%0A%0A\n     \n-fmt.Print(%22%5B %22)%0A    for i := 0; i %3C \n+if sequencia%5Bs%5D == s %7B%0A                    en\n co\n-u\n nt\n-; i++ %7B%0A        fmt.Print(vetor_repetidos%5Bi%5D, %22 %22)%0A    %7D%0A    fmt.Println(%22%5D%22)%0A%0A\n+rou = true%0A                %7D%0A        %7D%0A        if encontrou == false %7B%0A        \n     \n@@ -1083,18 +1083,20 @@\n int(\n+a, \n %22\n-%5B\n  %22)%0A    \n for \n@@ -1095,94 +1095,94 @@\n     \n-for i := 0; i %3C contar_indice; i++ %7B%0A        fmt.Print(vetor_faltantes%5Bi%5D, %22 %22)%0A    %7D%0A\n+        temfaltado = true      %0A         %7D%0A         if temfaltado == false %7B%0A         \n     \n@@ -1194,15 +1194,34 @@\n rint\n-ln\n (%22\n-%5D%22)%0A%0A\n+N%22)%0A    %7D%0A    %0A     %7D%0A    \n %7D%0A\n",
+            "lines": "59"
+        },
+        {
+            "label": "2026-05-26_18-10-16",
+            "content": "@@ -1023,17 +1023,57 @@\n )%0A    %7D%0A\n-%0A\n+    fmt.Println(%22%5D%22)%0A%0A    fmt.Print(%22%5B %22)\n %0A    for\n@@ -1155,12 +1155,32 @@\n )%0A    %7D%0A\n+    fmt.Println(%22%5D%22)\n %0A%0A%7D%0A\n",
+            "lines": "60"
+        },
+        {
+            "label": "2026-05-26_18-12-02",
+            "content": "@@ -917,24 +917,44 @@\n    %7D%0A    %7D%0A%0A\n+    fmt.Print(%22%5B %22)%0A\n     for i :=\n",
+            "lines": "59"
+        },
+        {
+            "label": "2026-05-26_18-12-14",
+            "content": "@@ -1067,10 +1067,8 @@\n rint\n-ln\n (vet\n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-05-26_18-12-37",
+            "content": "@@ -1059,24 +1059,26 @@\n    fmt.Print\n+ln\n (vetor_falta\n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-05-26_18-12-51",
+            "content": "@@ -1007,26 +1007,8 @@\n   %7D%0A\n-    fmt.Fprintln()\n %0A%0A  \n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-05-26_18-13-34",
+            "content": "@@ -1007,25 +1007,26 @@\n   %7D%0A    fmt.\n-P\n+Fp\n rintln()%0A%0A  \n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-05-26_18-13-44",
+            "content": "@@ -1067,104 +1067,8 @@\n + %7B%0A\n-        if (i == contar_indice-1)%7B%0A            fmt.Print(vetor_faltantes%5Bi%5D)%0A        %7Delse%7B%0A    \n     \n@@ -1110,27 +1110,8 @@\n  %22)%0A\n-        %7D%0A        %0A\n     \n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-05-26_18-14-36",
+            "content": "@@ -958,95 +958,8 @@\n + %7B%0A\n-        if(i == count-1)%7B%0A            fmt.Print(vetor_repetidos%5Bi%5D)%0A        %7Delse%7B%0A    \n     \n@@ -993,34 +993,24 @@\n os%5Bi%5D, %22 %22)%0A\n-        %7D%0A\n     %7D%0A    fm\n",
+            "lines": "63"
+        },
+        {
+            "label": "2026-05-26_18-15-06",
+            "content": "@@ -1325,30 +1325,11 @@\n %0A    %7D%0A%0A\n-    fmt.Println()%0A%0A\n %0A%7D%0A\n",
+            "lines": "67"
+        },
+        {
+            "label": "2026-05-26_18-15-16",
+            "content": "@@ -1327,61 +1327,8 @@\n    %7D\n-%0A    for i := 0; i %3C contar_indice; i++ %7B%0A        if \n %0A%0A  \n",
+            "lines": "69"
+        },
+        {
+            "label": "2026-05-28_11-41-27",
+            "content": "@@ -1104,55 +1104,8 @@\n   %7D%0A\n-%0A    if count == 0 %7B%0A    fmt.Print(%22N%22)%0A    %7D%0A%0A\n     \n@@ -1328,18 +1328,31 @@\n   %7D%0A    \n-i\n f\n+or i := 0; i %3C\n  contar_\n@@ -1361,36 +1361,27 @@\n dice\n- == 0\n+; i++\n  %7B%0A    \n-fmt.Print(%22N%22)%0A%7D\n+    if \n %0A%0A  \n",
+            "lines": "71"
+        },
+        {
+            "label": "2026-05-28_11-45-33",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    var total int\n    fmt.Scan(&total)\n    var tam int\n    fmt.Scan(&tam)\n\n    vetor_normal := make([]int, tam)\n\n    for i := 0; i < tam; i++ {\n        fmt.Scan(&vetor_normal[i])\n    }\n\n    anterior := vetor_normal[0]\n    count := 0\n    vetor_repetidos := make([]int, tam)\n\n    for i := 1; i < tam; i++ {\n        if vetor_normal[i] == anterior {\n            vetor_repetidos[count] = vetor_normal[i]\n            count++\n        } else {\n            anterior = vetor_normal[i]\n        }\n    }\n\n    vetor_faltantes := make([]int, tam)\n    contar_indice := 0\n\n    for i := 1; i <= total; i++ {\n        encontrado := 0\n        for j := 0; j < tam; j++ {\n            if vetor_normal[j] == i {\n                encontrado = 1\n                break\n            }\n        }\n\n        if encontrado == 0 {\n            vetor_faltantes[contar_indice] = i\n            contar_indice++\n        }\n    }\n\n    for i := 0; i < count; i++ {\n        if(i == count-1){\n            fmt.Print(vetor_repetidos[i])\n        }else{\n            fmt.Print(vetor_repetidos[i], \" \")\n        }\n    }\n\n    if count == 0 {\n    fmt.Print(\"N\")\n    }\n\n    fmt.Println()\n\n    for i := 0; i < contar_indice; i++ {\n        if (i == contar_indice-1){\n            fmt.Print(vetor_faltantes[i])\n        }else{\n            fmt.Print(vetor_faltantes[i], \" \")\n        }\n        \n    }\n    if contar_indice == 0 {\n    fmt.Print(\"N\")\n}\n\n    fmt.Println()\n\n\n}\n",
+            "lines": "77"
         }
     ]
 }

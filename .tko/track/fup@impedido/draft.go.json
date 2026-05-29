@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-28_20-17-55",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var L, R, D int\n    fmt.Scan(&L, &R, &D)\n    if R > 50 && L < R && R > D {\n        fmt.Println(\"S\")\n    } else {\n        fmt.Println(\"N\")\n    }\n}\n",
+            "lines": "11"
+        }
+    ]
+}

@@ -1,0 +1,114 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-28_20-33-37",
+            "content": "@@ -155,25 +155,25 @@\n v - b %3C v - \n-a\n+b\n  %7B%0A        f\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-28_20-33-56",
+            "content": "@@ -105,31 +105,8 @@\n b %7B%0A\n-        if v - a %3E 0 %7B%0A\n     \n@@ -129,34 +129,24 @@\n %22primeiro%22)%0A\n-        %7D%0A\n     %7D else i\n@@ -167,31 +167,8 @@\n a %7B%0A\n-        if v - b %3E 0 %7B%0A\n     \n@@ -198,18 +198,8 @@\n o%22)%0A\n-        %7D%0A\n     \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-28_20-36-17",
+            "content": "@@ -324,149 +324,7 @@\n ) %0A%7D\n-%0A%0Aif v - b %3C 0 && v - a %3C 0 %7B%0A    if v - b %3E v - a %7B%0A    fmt.Println(%22segundo%22)%0A%7D else if v - b %3C v - a %7B%0A        fmt.Println(%22Primeiro%22)%0A%0A%7D%0A%7D\n %0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-28_20-39-51",
+            "content": "@@ -141,16 +141,18 @@\n mt.Print\n+ln\n (%22primei\n@@ -152,24 +152,24 @@\n %22primeiro%22)%0A\n-\n         %7D%0A  \n@@ -236,16 +236,18 @@\n mt.Print\n+ln\n (%22Segund\n@@ -304,16 +304,18 @@\n mt.Print\n+ln\n (%22empate\n@@ -386,16 +386,18 @@\n mt.Print\n+ln\n (%22segund\n@@ -418,32 +418,32 @@\n v - b %3C v - a %7B%0A\n-\n         fmt.Prin\n@@ -443,16 +443,18 @@\n mt.Print\n+ln\n (%22Primei\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-05-28_20-40-08",
+            "content": "@@ -380,18 +380,16 @@\n mt.Print\n-ln\n (%22segund\n@@ -439,10 +439,8 @@\n rint\n-ln\n (%22Pr\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-05-28_20-40-32",
+            "content": "@@ -141,18 +141,16 @@\n mt.Print\n-ln\n (%22primei\n@@ -234,18 +234,16 @@\n mt.Print\n-ln\n (%22Segund\n@@ -300,18 +300,16 @@\n mt.Print\n-ln\n (%22empate\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-05-28_20-40-48",
+            "content": "@@ -232,33 +232,33 @@\n    fmt.Println(%22\n-s\n+S\n egundo%22)%0A       \n@@ -439,33 +439,33 @@\n    fmt.Println(%22\n-p\n+P\n rimeiro%22)%0A%0A%7D%0A%7D%0A%7D\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-05-28_20-41-53",
+            "content": "@@ -315,16 +315,17 @@\n %22empate%22\n+ \n ) %0A%7D%0A%0Aif\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-05-28_20-42-04",
+            "content": "@@ -283,36 +283,32 @@\n  - b == v - a %7B%0A\n-    \n     fmt.Println(\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-05-28_20-43-45",
+            "content": "@@ -86,72 +86,24 @@\n     \n-primeiro := v - a%0A    segundo := v - b%0A    if primeiro %3C segundo\n+if v - a %3C v - b\n  %7B%0A \n@@ -112,24 +112,21 @@\n      if \n-primeiro\n+v - a\n  %3E 0 %7B%0A \n@@ -180,34 +180,29 @@\n else if \n-segundo %3C primeiro\n+v - b %3C v - a\n  %7B%0A     \n@@ -207,23 +207,21 @@\n      if \n-segundo\n+v - b\n  %3E 0 %7B%0A \n@@ -278,27 +278,22 @@\n  if \n-segundo == primeiro\n+v - b == v - a\n  %7B%0A \n@@ -332,23 +332,21 @@\n %0Aif \n-segundo\n+v - b\n  %3C 0 && \n prim\n@@ -341,24 +341,21 @@\n  %3C 0 && \n-primeiro\n+v - a\n  %3C 0 %7B%0A \n@@ -364,26 +364,21 @@\n  if \n-segundo %3E primeiro\n+v - b %3E v - a\n  %7B%0A \n@@ -417,26 +417,22 @@\n  if \n-segundo %3C primeiro\n+v - b %3C v - a \n %7B%0A  \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-05-28_20-51-16",
+            "content": "@@ -141,32 +141,58 @@\n iro %3C segundo %7B%0A\n+        if primeiro %3E 0 %7B%0A\n         fmt.Prin\n@@ -203,24 +203,34 @@\n %22primeiro%22)%0A\n+        %7D%0A\n     %7D else i\n@@ -235,120 +235,283 @@\n  if \n-primeiro %3E segundo %7B%0A                fmt.Println(%22segundo%22)%0A    %7D else if primeiro == segundo %7B%0A                \n+segundo %3C primeiro %7B%0A        if segundo %3E 0 %7B%0A        fmt.Println(%22segundo%22)%0A        %7D%0A    %7D else if segundo == primeiro %7B%0A        fmt.Println(%22empate%22) %0A%7D%0A%0Aif segundo %3C 0 && primeiro %3C 0 %7B%0A    if segundo %3E primeiro %7B%0A    fmt.Println(%22segundo%22)%0A%7D else if segundo %3C primeiro%7B%0A\n     \n@@ -531,22 +531,22 @@\n ln(%22\n-empate%22)%0A%0A    \n+primeiro%22)%0A%0A%7D%0A\n %7D%0A%7D%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-28_20-57-48",
+            "content": "@@ -125,47 +125,8 @@\n - b%0A\n-%0A%0A    if primeiro %3E 0 && segundo %3E 0 %7B%0A\n     \n@@ -350,360 +350,4 @@\n %7D%0A%7D%0A\n-%0Aif primeiro %3C 0 && segundo %3C 0 %7B%0A    if primeiro %3E segundo %7B%0A        fmt.Print(%22primeiro%22)%0A    %7D else if primeiro %3C segundo %7B%0A        fmt.Print(%22segundo%22)%0A    %7D else if primeiro == segundo %7B%0A        fmt.Println(%22empate%22)%0A    %7D%0A%7D%0A%0Aif primeiro %3C 0 && segundo %3E 0 %7B%0Afmt.Print(%22segundo%22)%0A%7D else if primeiro %3E 0 && segundo %3C 0 %7B%0A    fmt.Print(%22primeiro%22) %0A%7D%0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-28_21-05-09",
+            "content": "@@ -197,32 +197,34 @@\n        fmt.Print\n+ln\n (%22primeiro%22)%0A   \n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-05-28_22-37-41",
+            "content": "@@ -721,18 +721,16 @@\n mt.Print\n-ln\n (%22primei\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-05-28_22-38-05",
+            "content": "@@ -454,34 +454,32 @@\n        fmt.Print\n-ln\n (%22primeiro%22)%0A   \n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-05-28_22-38-14",
+            "content": "@@ -521,34 +521,32 @@\n        fmt.Print\n-ln\n (%22segundo%22)%0A    \n@@ -650,34 +650,32 @@\n  %3E 0 %7B%0Afmt.Print\n-ln\n (%22segundo%22)%0A%7D el\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-05-28_22-38-32",
+            "content": "@@ -160,20 +160,16 @@\n o %3E 0 %7B%0A\n-    \n     if p\n@@ -214,28 +214,24 @@\n %22primeiro%22)%0A\n-    \n     %7D else i\n@@ -292,20 +292,16 @@\n gundo%22)%0A\n-    \n     %7D el\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-05-28_22-39-29",
+            "content": "@@ -192,36 +192,32 @@\n gundo %7B%0A        \n-    \n fmt.Print(%22prime\n@@ -218,24 +218,24 @@\n %22primeiro%22)%0A\n+\n         %7D el\n@@ -253,32 +253,36 @@\n iro %3E segundo %7B%0A\n+    \n             fmt.\n@@ -296,24 +296,24 @@\n (%22segundo%22)%0A\n-\n         %7D el\n@@ -332,32 +332,44 @@\n ro == segundo %7B%0A\n+            \n             fmt.\n@@ -760,75 +760,7 @@\n ) %0A%7D\n- else if primeiro == segundo %7B%0A    fmt.Println(%22empate%22)%0A    %7D%0A%0A    \n %0A%7D%0A\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-05-28_22-44-03",
+            "content": "@@ -121,8 +121,702 @@\n = v - b%0A\n+%0A%0A    if primeiro %3E 0 && segundo %3E 0 %7B%0A        if primeiro %3C segundo %7B%0A            fmt.Print(%22primeiro%22)%0A        %7D else if primeiro %3E segundo %7B%0A            fmt.Println(%22segundo%22)%0A        %7D else if primeiro == segundo %7B%0A            fmt.Println(%22empate%22)%0A%0A    %7D%0A%7D%0A%0Aif primeiro %3C 0 && segundo %3C 0 %7B%0A    if primeiro %3E segundo %7B%0A        fmt.Println(%22primeiro%22)%0A    %7D else if primeiro %3C segundo %7B%0A        fmt.Println(%22segundo%22)%0A    %7D else if primeiro == segundo %7B%0A        fmt.Println(%22empate%22)%0A    %7D%0A%7D%0A%0Aif primeiro %3C 0 && segundo %3E 0 %7B%0Afmt.Println(%22segundo%22)%0A%7D else if primeiro %3E 0 && segundo %3C 0 %7B%0A    fmt.Println(%22primeiro%22) %0A%7D else if primeiro == segundo %7B%0A    fmt.Println(%22empate%22)%0A    %7D%0A%0A    %0A%7D%0A\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-05-28_22-46-54",
+            "content": "@@ -125,890 +125,4 @@\n - b%0A\n-%0A%0A    if primeiro %3E 0 && segundo %3E 0 %7B%0A        if primeiro %3C segundo %7B%0A            fmt.Print(%22primeiro%22)%0A        %7D else if primeiro %3E segundo %7B%0A            fmt.Println(%22segundo%22)%0A        %7D else if primeiro == segundo %7B%0A            fmt.Println(%22empate%22)%0A%0A    %7D%0A%7D%0A%0Aif primeiro %3C 0 && segundo %3C 0 %7B%0A    if primeiro %3E segundo %7B%0A        fmt.Println(%22primeiro%22)%0A    %7D else if primeiro %3C segundo %7B%0A        fmt.Println(%22segundo%22)%0A    %7D else if primeiro == segundo %7B%0A        fmt.Println(%22empate%22)%0A    %7D%0A%7D%0A%0Aif primeiro %3C 0 && segundo %3E 0 %7B%0A    fmt.Println(%22segundo%22)%0A%7D else if primeiro %3E 0 && segundo %3C 0 %7B%0A    fmt.Println(%22primeiro%22) %0A%7D else if primeiro == segundo %7B%0A    fmt.Println(%22empate%22)%0A    %7D%0Aif primeiro %3E 0 && segundo %3C 0 %7B%0A    fmt.Println(%22segundo%22)%0A%7D else if primeiro %3C 0 && segundo %3E 0 %7B%0A    fmt.Println(%22primeiro%22) %0A%7D else if primeiro == segundo %7B%0A    fmt.Println(%22empate%22)%0A    %0A%7D%0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-05-28_22-56-18",
+            "content": "@@ -122,16 +122,21 @@\n  v - b%0A%0A\n+%0A    \n if prime\n@@ -139,17 +139,32 @@\n rimeiro \n-%3C\n+%3E 0 && segundo %3E\n  0 %7B%0A   \n@@ -160,24 +160,31 @@\n o %3E 0 %7B%0A    \n+   \n+ if \n primeiro = p\n@@ -184,95 +184,543 @@\n iro \n-= primeiro * -1%0A%7D%0A%0Aif segundo %3C 0 %7B%0A    segundo = segundo * -1%0A%7D%0A%0Aif segundo %3E primeiro\n+%3C segundo %7B%0A            fmt.Print(%22primeiro%22)%0A        %7D else if primeiro %3E segundo %7B%0A            fmt.Println(%22segundo%22)%0A        %7D else if primeiro == segundo %7B%0A            fmt.Println(%22empate%22)%0A%0A    %7D%0A%7D%0A%0Aif primeiro %3C 0 && segundo %3C 0 %7B%0A    if primeiro %3E segundo %7B%0A        fmt.Println(%22primeiro%22)%0A    %7D else if primeiro %3C segundo %7B%0A        fmt.Println(%22segundo%22)%0A    %7D else if primeiro == segundo %7B%0A        fmt.Println(%22empate%22)%0A    %7D%0A%7D%0A%0Aif primeiro %3C 0 && segundo %3E 0 %7B%0A    fmt.Println(%22segundo%22)%0A%7D else if primeiro %3E 0 && segundo %3C 0\n  %7B%0A \n@@ -745,16 +745,17 @@\n imeiro%22)\n+ \n %0A%7D else \n@@ -761,84 +761,219 @@\n  if \n-segundo %3C primeiro %7B%0A    fmt.Println(%22segundo%22)%0A%7D else if segundo == primeir\n+primeiro == segundo %7B%0A    fmt.Println(%22empate%22)%0A    %7D%0Aif primeiro %3E 0 && segundo %3C 0 %7B%0A    fmt.Println(%22segundo%22)%0A%7D else if primeiro %3C 0 && segundo %3E 0 %7B%0A    fmt.Println(%22primeiro%22) %0A%7D else if primeiro == segund\n o %7B%0A\n@@ -998,12 +998,17 @@\n mpate%22)%0A\n+    %0A\n %7D%0A%7D%0A\n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-05-28_23-01-41",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var v, a, b int\n    fmt.Scan(&v, &a, &b)\n    primeiro := v - a\n    segundo := v - b\n\nif primeiro < 0 {\n    primeiro = primeiro * -1\n}\n\nif segundo < 0 {\n    segundo = segundo * -1\n}\n\nif segundo > primeiro {\n    fmt.Println(\"primeiro\")\n} else if segundo < primeiro {\n    fmt.Println(\"segundo\")\n} else if segundo == primeiro {\n    fmt.Println(\"empate\")\n}\n}\n",
+            "lines": "24"
+        }
+    ]
+}

@@ -1,0 +1,94 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-28_22-56-10",
+            "content": "@@ -41,415 +41,35 @@\n     \n-var chute, valor float64%0A    var escolha string%0A    fmt.Scan(&chute, &valor, &escolha)%0A    %0A    if escolha == %22M%22 && chute %3E valor%7B%0A       fmt.Println(%22primeiro%22)%0A    %7D else if escolha == %22M%22 && chute %3C valor %7B%0A        fmt.Println(%22segundo%22)%0A    %7D else if escolha == %22m%22 && chute %3E valor %7B%0A        fmt.Println(%22primeiro%22)%0A    %7D else if escolha == %22m%22 && chute %3C valor %7B%0A        fmt.Println(%22segundo%22)%0A%0A%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-28_23-13-37",
+            "content": "@@ -140,24 +140,164 @@\n  if \n-chute %3E valor &&\n+escolha == %22M%22 && chute %3E valor%7B%0A       fmt.Println(%22primeiro%22)%0A    %7D else if escolha == %22M%22 && chute %3C valor %7B%0A        fmt.Println(%22segundo%22)%0A    %7D else if\n  esc\n@@ -305,18 +305,35 @@\n lha == %22\n-M%22\n+m%22 && chute %3E valor\n  %7B%0A     \n@@ -364,16 +364,89 @@\n %22)%0A    %7D\n+ else if escolha == %22m%22 && chute %3C valor %7B%0A        fmt.Println(%22segundo%22)\n %0A%0A%0A    %7D\n@@ -446,8 +446,10 @@\n %0A%0A    %7D%0A\n+%7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-28_23-16-18",
+            "content": "@@ -187,17 +187,18 @@\n mt.Print\n-f\n+ln\n (%22primei\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-28_23-16-45",
+            "content": "@@ -210,241 +210,13 @@\n    %7D\n- else if chute %3E valor && escolha == %22m%22%7B%0A        fmt.Printf(%22segundo%22)%0A    %7D else if chute %3C valor && escolha == %22M%22 %7B%0A        fmt.Printf(%22segundo%22)%0A    %7D else if chute %3C valor && escolha == %22m%22 %7B%0A        fmt.Printf(%22primeiro%22)%0A    %7D%0A\n+%0A%0A%0A    \n %7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-28_23-19-36",
+            "content": "@@ -179,34 +179,33 @@\n        fmt.Print\n-ln\n+f\n (%22primeiro%22)%0A   \n@@ -257,34 +257,33 @@\n        fmt.Print\n-ln\n+f\n (%22segundo%22)%0A    \n@@ -343,18 +343,17 @@\n mt.Print\n-ln\n+f\n (%22segund\n@@ -425,10 +425,9 @@\n rint\n-ln\n+f\n (%22pr\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-28_23-19-56",
+            "content": "@@ -127,29 +127,8 @@\n lha)\n-%0A%0A    if escolha for \n %0A   \n@@ -443,71 +443,8 @@\n o%22)%0A\n-    %7D else if chute == valor %7B%0A        fmt.Println(%22primeiro%22)%0A\n     \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-28_23-23-12",
+            "content": "@@ -125,16 +125,36 @@\n colha)%0A%0A\n+    if escolha for %0A\n     %0A   \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-28_23-23-19",
+            "content": "@@ -128,42 +128,8 @@\n ha)%0A\n-fmt.Println(chute, valor, escolha)\n %0A   \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-28_23-23-37",
+            "content": "@@ -116,23 +116,10 @@\n alor\n-)%0A    fmt.Scan(\n+, \n &esc\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-28_23-24-36",
+            "content": "@@ -137,16 +137,50 @@\n scolha)%0A\n+fmt.Println(chute, valor, escolha)\n %0A    %0A  \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-28_23-24-44",
+            "content": "@@ -201,16 +201,18 @@\n mt.Print\n+ln\n (%22primei\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-28_23-26-44",
+            "content": "@@ -278,16 +278,18 @@\n mt.Print\n+ln\n (%22segund\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-28_23-26-50",
+            "content": "@@ -347,32 +347,34 @@\n        fmt.Print\n+ln\n (%22segundo%22)%0A    \n@@ -426,32 +426,34 @@\n        fmt.Print\n+ln\n (%22primeiro%22)%0A   \n@@ -489,32 +489,34 @@\n        fmt.Print\n+ln\n (%22primeiro%22)%0A   \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-28_23-27-00",
+            "content": "@@ -193,33 +193,32 @@\n        fmt.Print\n-f\n (%22primeiro%22)%0A   \n@@ -206,32 +206,32 @@\n int(%22primeiro%22)%0A\n+\n     %7D else if ch\n@@ -270,33 +270,32 @@\n        fmt.Print\n-f\n (%22segundo%22)%0A    \n@@ -355,17 +355,16 @@\n mt.Print\n-f\n (%22segund\n@@ -424,33 +424,32 @@\n        fmt.Print\n-f\n (%22primeiro%22)%0A   \n@@ -476,16 +476,16 @@\n valor %7B%0A\n+\n         \n@@ -493,17 +493,16 @@\n mt.Print\n-f\n (%22primei\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-28_23-27-15",
+            "content": "@@ -63,10 +63,10 @@\n loat\n-32\n+64\n %0A   \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-28_23-27-38",
+            "content": "@@ -112,18 +112,31 @@\n , &valor\n-, \n+)%0A    fmt.Scan(\n &escolha\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-28_23-29-06",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -85,17 +85,16 @@\n  string%0A\n-%0A\n     fmt.\n@@ -125,16 +125,21 @@\n colha)%0A%0A\n+    %0A\n     if c\n@@ -180,34 +180,33 @@\n        fmt.Print\n-ln\n+f\n (%22primeiro%22)%0A   \n@@ -239,33 +239,32 @@\n & escolha == %22m%22\n- \n %7B%0A        fmt.Pr\n@@ -258,34 +258,33 @@\n        fmt.Print\n-ln\n+f\n (%22segundo%22)%0A    \n@@ -336,34 +336,33 @@\n        fmt.Print\n-ln\n+f\n (%22segundo%22)%0A    \n@@ -414,34 +414,33 @@\n        fmt.Print\n-ln\n+f\n (%22primeiro%22)%0A   \n@@ -464,34 +464,16 @@\n == valor\n- && escolha == %22M%22\n  %7B%0A     \n@@ -484,18 +484,17 @@\n mt.Print\n-ln\n+f\n (%22primei\n@@ -502,88 +502,8 @@\n o%22)%0A\n-    %7D else if chute == valor && escolha == %22m%22 %7B%0A        fmt.Println(%22segundo%22)%0A\n     \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-28_23-30-29",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    var chute, valor float32\n    var escolha string\n\n    fmt.Scan(&chute, &valor, &escolha)\n\n    if chute > valor && escolha == \"M\" {\n        fmt.Println(\"primeiro\")\n    } else if chute > valor && escolha == \"m\" {\n        fmt.Println(\"segundo\")\n    } else if chute < valor && escolha == \"M\" {\n        fmt.Println(\"segundo\")\n    } else if chute < valor && escolha == \"m\" {\n        fmt.Println(\"primeiro\")\n    } else if chute == valor && escolha == \"M\" {\n        fmt.Println(\"primeiro\")\n    } else if chute == valor && escolha == \"m\" {\n        fmt.Println(\"segundo\")\n    }\n}\n",
+            "lines": "24"
+        }
+    ]
+}
