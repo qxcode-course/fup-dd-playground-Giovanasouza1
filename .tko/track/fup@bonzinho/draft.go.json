@@ -1,0 +1,69 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-01_17-21-58",
+            "content": "@@ -52,11 +52,8 @@\n b, c\n-, x\n  flo\n@@ -65,582 +65,40 @@\n     \n-fmt.Scan(&a, &b, &c, &x)%0A%0A    if a %3E b && a %3E c && b %3E c %7B%0A        soma := a + b%0A    %7D else if a %3E b && a %3E c && b %3C c %7B%0A        soma := a + c%0A    %7D else if b %3E a && b %3E c && a %3E c %7B%0A        soma := b + a%0A    %7D else if b %3E a && b %3E c && a %3C c %7B%0A         soma := b + a%0A    %7D else if c %3E a && c %3E b && b %3C a %7B%0A        soma := c + a%0A    %7D else if c %3E a && c %3E b && b %3E a %7B%0A        soma := c + b%0A    %7D%0A%0A    MEDIA := (soma + x) / 3%0A%0A    if MEDIA %3E= 7 %7B%0A        fmt.Printf(%22Aprovado com%22, %22%25.2f%5Cn%22, MEDIA)%0A    %7D else%7B%0A        fmt.Println(%22Final com nota%22, %22%25.2f%5Cn%22, MEDIA)%0A    %7D%0A    \n+%0A    fmt.Println(%22Hello, World!%22)%0A%7D\n %0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-06-01_17-34-08",
+            "content": "@@ -637,10 +637,13 @@\n )%0A    %7D%0A\n-%7D\n+    \n %0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-01_17-34-12",
+            "content": "@@ -93,23 +93,9 @@\n &x)%0A\n-    soma:= 0.0\n %0A\n+\n     \n@@ -127,34 +127,41 @@\n c %7B%0A        soma\n-++\n+ := a + b\n %0A    %7D else if a\n@@ -189,34 +189,41 @@\n c %7B%0A        soma\n-++\n+ := a + c\n %0A    %7D else if b\n@@ -251,34 +251,41 @@\n c %7B%0A        soma\n-++\n+ := b + a\n %0A    %7D else if b\n@@ -314,34 +314,41 @@\n  %7B%0A         soma\n-++\n+ := b + a\n %0A    %7D else if c\n@@ -380,26 +380,33 @@\n         soma\n-++\n+ := c + a\n %0A    %7D else \n@@ -450,10 +450,17 @@\n soma\n-++\n+ := c + b\n %0A   \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-01_17-36-03",
+            "content": "@@ -516,17 +516,20 @@\n vado com\n- \n+%22, %22\n %25.2f%5Cn%22,\n@@ -583,17 +583,20 @@\n com nota\n- \n+%22, %22\n %25.2f%5Cn%22,\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-01_17-36-49",
+            "content": "@@ -97,62 +97,232 @@\n     \n-menor := a%0A%0A    if b %3C a && b %3C c %7B%0A        menor := b\n+soma:= 0.0%0A    if a %3E b && a %3E c && b %3E c %7B%0A        soma++%0A    %7D else if a %3E b && a %3E c && b %3C c %7B%0A        soma++%0A    %7D else if b %3E a && b %3E c && a %3E c %7B%0A        soma++%0A    %7D else if b %3E a && b %3E c && a %3C c %7B%0A         soma++\n %0A   \n@@ -338,17 +338,17 @@\n f c \n-%3C\n+%3E\n  a && c \n %3C b \n@@ -347,39 +347,100 @@\n & c \n-%3C b %7B%0A        menor := c\n+%3E b && b %3C a %7B%0A        soma++%0A    %7D else if c %3E a && c %3E b && b %3E a %7B%0A        soma++\n %0A    %7D%0A\n+%0A\n     \n@@ -453,27 +453,12 @@\n := (\n-(a + b + c) - menor\n+soma\n  + x\n@@ -519,16 +519,17 @@\n o com %25.\n+2\n f%5Cn%22, ME\n@@ -587,9 +587,9 @@\n a %25.\n-1\n+2\n f%5Cn%22\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-01_17-41-16",
+            "content": "@@ -143,16 +143,17 @@\n   menor \n+:\n = b%0A    \n@@ -193,16 +193,17 @@\n   menor \n+:\n = c%0A    \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-01_17-41-32",
+            "content": "@@ -301,17 +301,16 @@\n o com %25.\n-1\n f%5Cn%22, ME\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-01_17-41-37",
+            "content": "@@ -354,24 +354,29 @@\n (%22Final com \n+nota \n %25.1f%5Cn%22, MED\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-01_17-42-03",
+            "content": "@@ -361,19 +361,18 @@\n  com\n-%22, %22\n+ \n %25.1f%5Cn%22\n+, \n MEDI\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-01_17-42-58",
+            "content": "@@ -353,34 +353,35 @@\n n(%22Final com\n- \n+%22, %22\n %25.1f%5Cn%22\n-, \n MEDIA)%0A    %7D\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-01_17-43-34",
+            "content": "@@ -344,17 +344,18 @@\n mt.Print\n-f\n+ln\n (%22Final \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-01_17-43-43",
+            "content": "@@ -200,57 +200,8 @@\n = c%0A\n-    %7D else if b == c && b %3C a%7B%0A        menor = b%0A\n     \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-01_17-46-14",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b, c, x float64\n    fmt.Scan(&a, &b, &c, &x)\n    menor := a\n\n    if b < a && b < c {\n        menor = b\n    } else if c < a && c < b {\n        menor = c\n    } else if b == c && b < a{\n        menor = b\n    }\n    MEDIA := ((a + b + c) - menor + x) / 3\n\n    if MEDIA >= 7 {\n        fmt.Printf(\"Aprovado com %.1f\\n\", MEDIA)\n    } else{\n        fmt.Printf(\"Final com %.1f\\n\", MEDIA)\n    }\n}\n",
+            "lines": "22"
+        }
+    ]
+}

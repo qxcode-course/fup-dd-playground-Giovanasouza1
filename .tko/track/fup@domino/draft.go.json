@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-01_17-57-05",
+            "content": "@@ -78,16 +78,17 @@\n e%C3%A7as := \n+(\n (N + 1) \n@@ -96,16 +96,17 @@\n  (N + 2)\n+)\n / 2%0A%0A   \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-06-01_17-57-17",
+            "content": "@@ -71,17 +71,17 @@\n %0A%0A    pe\n-c\n+%C3%A7\n as := (N\n@@ -118,15 +118,15 @@\n intln(pe\n-c\n+%C3%A7\n as)%0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-06-01_17-57-57",
+            "content": "@@ -78,17 +78,16 @@\n ecas := \n-(\n (N + 1) \n@@ -95,17 +95,16 @@\n  (N + 2)\n-)\n / 2%0A%0A   \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-06-01_17-58-09",
+            "content": "@@ -91,9 +91,9 @@\n  1) \n-*\n++\n  (N \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-06-01_18-00-03",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var N int\n    fmt.Scan(&N)\n\n    pecas := ((N + 1) * (N + 2))/ 2\n\n    fmt.Println(pecas)\n}\n",
+            "lines": "10"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-01_18-10-07",
+            "content": "@@ -91,17 +91,21 @@\n saque, &\n-F\n+forca\n )%0A    %0A \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-01_18-10-16",
+            "content": "@@ -98,60 +98,25 @@\n &F)%0A\n-%0A\n     \n-poder := 0\n %0A    \n-if \n saque\n- == %22b%22 %7B%0A        poder \n+b :\n = ((\n@@ -142,183 +142,102 @@\n     \n-%7D else if saque == %22c%22 %7B%0A        poder = ((F * 18) - 80) / 10%0A    %7D%0A   %0A    if poder %3C 150 %7B%0A        fmt.Println(%22Fraco, nem passou%22)%0A    %7D else if poder %3E= 150 && poder %3C 180\n+saquec := ((F * 18) - 80) / 10%0A    if saque == %22b%22 %7B%0A        saqueb%0A    %7D else if saque == %22c%22\n  %7B%0A \n@@ -247,212 +247,124 @@\n     \n- \n+saquec%0A\n     \n+%7D%0A\n    \n-fmt.Println(%22Perfeito%22)%0A    %7D else if poder %3E= 180 && poder %3C 210 %7B%0A                fmt.Println(%22Satisfeito%22)%0A    %7D else if poder %3E 210 %7B%0A                fmt.Println(%22Muito forte, bola fora%22)%0A    %7D\n+%0A    if poder %3C 150 %7B%0A        fmt.Println(%22Fraco, nem passou%22)%0A    %7D%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-01_18-16-13",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var saque string\n    var F int\n    fmt.Scan(& saque, &F)\n\n    poder := 0\n    if saque == \"b\" {\n        poder = ((F * 20) - 80) / 10\n    } else if saque == \"c\" {\n        poder = ((F * 18) - 80) / 10\n    }\n   \n    if poder < 150 {\n        fmt.Println(\"Fraco, nem passou\")\n    } else if poder >= 150 && poder < 180 {\n                fmt.Println(\"Perfeito\")\n    } else if poder >= 180 && poder < 210 {\n                fmt.Println(\"Satisfeito\")\n    } else if poder > 210 {\n                fmt.Println(\"Muito forte, bola fora\")\n    }\n}\n",
+            "lines": "24"
+        }
+    ]
+}
