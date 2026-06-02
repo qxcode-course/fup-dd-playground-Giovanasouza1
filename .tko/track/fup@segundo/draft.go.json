@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-02_14-45-10",
+            "content": "@@ -65,11 +65,14 @@\n fmt.\n-Sca\n+Printl\n n(&h\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-02_14-45-38",
+            "content": "@@ -212,19 +212,17 @@\n tempo / \n-360\n+6\n 0%0A   z :\n@@ -235,11 +235,9 @@\n o %25 \n-360\n+6\n 0%0A  \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-02_14-46-19",
+            "content": "@@ -225,17 +225,16 @@\n    z := \n-(\n tempo %25 \n@@ -241,14 +241,8 @@\n 3600\n-) / 60\n %0A   \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-02_14-47-51",
+            "content": "@@ -282,17 +282,18 @@\n mt.Print\n-f\n+ln\n (%22%2502d %25\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-02_14-49-49",
+            "content": "@@ -154,17 +154,17 @@\n min + s%0A\n- \n+%0A\n    total\n@@ -168,20 +168,16 @@\n tal += 1\n-%0A   \n %0A%0A   tem\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-02_14-50-22",
+            "content": "@@ -263,17 +263,19 @@\n undo := \n-z\n+min\n  %25 60%0A%0A \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-02_14-50-55",
+            "content": "@@ -172,16 +172,20 @@\n += 1%0A   \n+%0A%0A  \n  tempo :\n@@ -185,17 +185,16 @@\n tempo :=\n- \n total %25 \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-02_14-52-10",
+            "content": "@@ -260,21 +260,17 @@\n undo := \n-tempo\n+z\n  %25 60%0A%0A \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-02_14-56-00",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var h, m, s int\n    fmt.Scan(&h, &m, &s)\n\n    hora := h * 60 * 60\n    min := m * 60\n    \n    total := hora + min + s\n    total += 1\n    tempo := total % 86400\n\n   y := tempo / 3600\n   z := (tempo % 3600) / 60\n   segundo := tempo % 60\n\n    fmt.Printf(\"%02d %02d %02d\\n\", y, z, segundo)\n}\n",
+            "lines": "19"
+        }
+    ]
+}

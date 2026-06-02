@@ -2,8 +2,108 @@
     "patches": [
         {
             "label": "2026-05-29_12-33-52",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -41,129 +41,35 @@\n     \n-var a int%0A    fmt.Scan(&a)%0A%0A    if a %3C 0 %7B%0A        fmt.Println(360 - a)%0A    %7D else %7B%0A        fmt.Println(0 + a)%0A    %7D%0A    \n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-06-02_12-20-27",
+            "content": "@@ -78,12 +78,10 @@\n f a \n-%3E 36\n+%3C \n 0 %7B%0A\n@@ -104,9 +104,15 @@\n tln(\n-1\n+360 - a\n )%0A  \n@@ -146,14 +146,11 @@\n tln(\n- 36\n 0 \n--\n++\n  a)%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-06-02_12-21-53",
+            "content": "@@ -120,19 +120,8 @@\n lse \n-if a %3C 360 \n %7B%0A  \n@@ -152,54 +152,8 @@\n  a)%0A\n-    %7D else if a == 0 %7B%0A        fmt.Println(0)%0A\n     \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-06-02_12-22-28",
+            "content": "@@ -184,20 +184,8 @@\n = 0 \n-%7C%7C a == 360 \n %7B%0A  \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-06-02_12-23-00",
+            "content": "@@ -182,56 +182,20 @@\n  == \n-360 %7B%0A        fmt.Println(0)%0A    %7D else if\n+0 %7C%7C\n  a == \n+36\n 0 %7B%0A\n@@ -214,18 +214,16 @@\n Println(\n-36\n 0)%0A    %7D\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-06-02_12-23-38",
+            "content": "@@ -182,20 +182,56 @@\n  == \n-0 %7C%7C\n+360 %7B%0A        fmt.Println(0)%0A    %7D else if\n  a == \n-36\n 0 %7B%0A\n@@ -242,32 +242,34 @@\n     fmt.Println(\n+36\n 0)%0A    %7D%0A    %0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-02_12-24-01",
+            "content": "@@ -106,15 +106,9 @@\n tln(\n-a - 360\n+1\n )%0A  \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-06-02_12-24-32",
+            "content": "@@ -188,56 +188,20 @@\n  == \n-360 %7B%0A        fmt.Println(0)%0A    %7D else if\n+0 %7C%7C\n  a == \n+36\n 0 %7B%0A\n@@ -220,18 +220,16 @@\n Println(\n-36\n 0)%0A    %7D\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-06-02_12-25-08",
+            "content": "@@ -248,32 +248,34 @@\n     fmt.Println(\n+36\n 0)%0A    %7D%0A    %0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-02_12-25-20",
+            "content": "@@ -78,16 +78,65 @@\n f a \n-%25 360\n+%3E 360 %7B%0A        fmt.Println(a - 360)%0A    %7D else if a\n  %3C \n+36\n 0 %7B%0A\n@@ -155,16 +155,17 @@\n Println(\n+ \n 360 - a)\n@@ -176,16 +176,28 @@\n  %7D else \n+if a == 360 \n %7B%0A      \n@@ -210,17 +210,63 @@\n Println(\n-a\n+0)%0A    %7D else if a == 0 %7B%0A        fmt.Println(0\n )%0A    %7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-02_12-31-45",
+            "content": "@@ -149,22 +149,16 @@\n rintln(a\n- %25 360\n )%0A    %7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-06-02_12-33-32",
+            "content": "@@ -74,16 +74,22 @@\n    if a \n+%25 360 \n %3C 0 %7B%0A  \n@@ -162,17 +162,16 @@\n 0)%0A    %7D\n- \n %0A    %0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-06-02_12-34-16",
+            "content": "@@ -124,17 +124,8 @@\n lse \n-if a %3E 0 \n %7B%0A  \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-06-02_12-34-59",
+            "content": "@@ -170,53 +170,8 @@\n   %7D \n-else if a == 0 %7B%0A        fmt.Println(0)%0A    %7D\n %0A   \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-06-02_12-35-21",
+            "content": "@@ -108,9 +108,9 @@\n 360 \n-+\n+-\n  a)%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-06-02_12-35-51",
+            "content": "@@ -104,24 +104,15 @@\n tln(\n-(a %25 \n 360\n-)\n  + \n-360 \n+a\n )%0A  \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-06-02_12-41-38",
+            "content": "@@ -219,69 +219,8 @@\n (0)%0A\n-    %7D else if a == 360 %7C%7C a == -360 %7B%0A        fmt.Println(0)%0A\n     \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-06-02_12-42-18",
+            "content": "@@ -247,17 +247,16 @@\n %7C a == -\n- \n 360 %7B%0A  \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-02_12-42-31",
+            "content": "@@ -233,16 +233,28 @@\n  if a ==\n+ 360 %7C%7C a ==\n  - 360 %7B\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-02_12-42-50",
+            "content": "@@ -82,21 +82,8 @@\n %3C 0 \n-&& a != -360 \n %7B%0A  \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-02_12-44-06",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a int\n    fmt.Scan(&a)\n\n    if a < 0 && a != -360 {\n        fmt.Println((a % 360) + 360 )\n    } else if a > 0 {\n        fmt.Println(a % 360)\n    } else if a == 0 {\n        fmt.Println(0)\n    } else if a == - 360 {\n        fmt.Println(0)\n    }\n    \n}\n",
+            "lines": "17"
         }
     ]
 }

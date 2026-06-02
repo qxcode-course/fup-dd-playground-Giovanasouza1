@@ -1,18 +1,32 @@
 package main
 import "fmt"
 func main() {
-    var h, M, D int
+    var x, M, D int
     var S string
-    fmt.Scan(&h, &M, &S, &D)
+    fmt.Scan(&x)
+    fmt.Scan(&M)
+    fmt.Scan(&S)
+    fmt.Scan(&D)
 
-    MIN := D * 10
-    MINu := h * 60 + M
+    comeco := x * 60 + M
+    distancia := D * 10
+
+    var total int
     if S == "H" {
-        soma := MINu + MIN 
-        if soma > 60 {
-            if soma % 720
-        }
-        
+      total =  comeco + distancia
+    } else {
+       total = comeco - distancia
     }
-    fmt.Println("Hello, World!")
+
+   posicao := total % 720 
+   if posicao < 0 {
+    posicao += 720
+   } 
+
+   hora := posicao / 60
+   min := posicao % 60
+   fmt.Printf("%02d %02d\n", hora, min)
+
+   
+
 }

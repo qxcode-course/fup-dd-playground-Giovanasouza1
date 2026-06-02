@@ -27,7 +27,7 @@ func main() {
         }
     }
 
-    vetor_faltantes := make([]int, tam)
+    vetor_faltantes := make([]int, total)
     contar_indice := 0
 
     for i := 1; i <= total; i++ {
@@ -45,33 +45,14 @@ func main() {
         }
     }
 
+   
     for i := 0; i < count; i++ {
-        if(i == count-1){
-            fmt.Print(vetor_repetidos[i])
-        }else{
-            fmt.Print(vetor_repetidos[i], " ")
-        }
+        fmt.Print(vetor_repetidos[i], " ")
     }
-
-    if count == 0 {
-    fmt.Print("N")
-    }
-
-    fmt.Println()
-
+    
     for i := 0; i < contar_indice; i++ {
-        if (i == contar_indice-1){
-            fmt.Print(vetor_faltantes[i])
-        }else{
-            fmt.Print(vetor_faltantes[i], " ")
-        }
-        
+        fmt.Print(vetor_faltantes[i], " ")
     }
-    if contar_indice == 0 {
-    fmt.Print("N")
-}
-
-    fmt.Println()
-
+    
 
 }

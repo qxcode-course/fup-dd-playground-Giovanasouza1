@@ -217,8 +217,63 @@
         },
         {
             "label": "2026-05-28_11-45-33",
-            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    var total int\n    fmt.Scan(&total)\n    var tam int\n    fmt.Scan(&tam)\n\n    vetor_normal := make([]int, tam)\n\n    for i := 0; i < tam; i++ {\n        fmt.Scan(&vetor_normal[i])\n    }\n\n    anterior := vetor_normal[0]\n    count := 0\n    vetor_repetidos := make([]int, tam)\n\n    for i := 1; i < tam; i++ {\n        if vetor_normal[i] == anterior {\n            vetor_repetidos[count] = vetor_normal[i]\n            count++\n        } else {\n            anterior = vetor_normal[i]\n        }\n    }\n\n    vetor_faltantes := make([]int, tam)\n    contar_indice := 0\n\n    for i := 1; i <= total; i++ {\n        encontrado := 0\n        for j := 0; j < tam; j++ {\n            if vetor_normal[j] == i {\n                encontrado = 1\n                break\n            }\n        }\n\n        if encontrado == 0 {\n            vetor_faltantes[contar_indice] = i\n            contar_indice++\n        }\n    }\n\n    for i := 0; i < count; i++ {\n        if(i == count-1){\n            fmt.Print(vetor_repetidos[i])\n        }else{\n            fmt.Print(vetor_repetidos[i], \" \")\n        }\n    }\n\n    if count == 0 {\n    fmt.Print(\"N\")\n    }\n\n    fmt.Println()\n\n    for i := 0; i < contar_indice; i++ {\n        if (i == contar_indice-1){\n            fmt.Print(vetor_faltantes[i])\n        }else{\n            fmt.Print(vetor_faltantes[i], \" \")\n        }\n        \n    }\n    if contar_indice == 0 {\n    fmt.Print(\"N\")\n}\n\n    fmt.Println()\n\n\n}\n",
+            "content": "@@ -563,20 +563,18 @@\n %5B%5Dint, t\n-otal\n+am\n )%0A    co\n@@ -921,36 +921,16 @@\n %0A    %7D%0A%0A\n-    fmt.Print(%22%5B %22)%0A\n     for \n@@ -946,32 +946,119 @@\n  %3C count; i++ %7B%0A\n+        if(i == count-1)%7B%0A            fmt.Print(vetor_repetidos%5Bi%5D)%0A        %7Delse%7B%0A    \n         fmt.Prin\n@@ -1076,38 +1076,69 @@\n etidos%5Bi%5D, %22 %22)%0A\n+    \n     %7D%0A\n+    %7D%0A%0A    if count == 0 %7B%0A\n     fmt.Println(\n@@ -1134,23 +1134,27 @@\n mt.Print\n-ln\n (%22\n-%5D\n+N\n %22)\n+%0A    %7D\n %0A%0A    fm\n@@ -1164,14 +1164,13 @@\n rint\n-(%22%5B %22)\n+ln()%0A\n %0A   \n@@ -1199,32 +1199,128 @@\n r_indice; i++ %7B%0A\n+        if (i == contar_indice-1)%7B%0A            fmt.Print(vetor_faltantes%5Bi%5D)%0A        %7Delse%7B%0A    \n         fmt.Prin\n@@ -1346,26 +1346,73 @@\n %5D, %22 %22)%0A    \n+  \n+  \n %7D%0A\n+        %0A    %7D%0A    if contar_indice == 0 %7B%0A\n     fmt.Prin\n@@ -1416,15 +1416,35 @@\n rint\n-ln\n (%22\n-%5D\n+N\n %22)%0A\n+%7D%0A%0A    fmt.Println()%0A%0A\n %0A%7D%0A\n",
             "lines": "77"
+        },
+        {
+            "label": "2026-06-02_14-28-32",
+            "content": "@@ -1029,16 +1029,53 @@\n   %7D%0A    \n+fmt.Println(%22%5D%22)%0A%0A    fmt.Print(%22%5B %22)\n %0A    for\n@@ -1161,12 +1161,28 @@\n   %7D%0A    \n+fmt.Println(%22%5D%22)\n %0A%0A%7D%0A\n",
+            "lines": "60"
+        },
+        {
+            "label": "2026-06-02_14-29-11",
+            "content": "@@ -923,16 +923,35 @@\n %0A    %7D%0A%0A\n+    fmt.Print(%22%5B %22)\n %0A    for\n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-06-02_14-29-32",
+            "content": "@@ -927,27 +927,8 @@\n  %7D%0A%0A\n-    fmt.Print(%22%5B %22)\n %0A   \n@@ -1109,24 +1109,8 @@\n     \n-fmt.Println(%22%5D%22)\n %0A%0A%7D%0A\n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-06-02_14-29-47",
+            "content": "@@ -926,16 +926,32 @@\n   %7D%0A%0A   \n+ fmt.Print(%22%5B %22)\n %0A    for\n@@ -1124,12 +1124,28 @@\n   %7D%0A    \n+fmt.Println(%22%5D%22)\n %0A%0A%7D%0A\n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-06-02_14-30-03",
+            "content": "@@ -1076,10 +1076,8 @@\n rint\n-ln\n (vet\n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-06-02_14-30-10",
+            "content": "@@ -1093,16 +1093,21 @@\n antes%5Bi%5D\n+, %22 %22\n )%0A    %7D%0A\n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-06-02_14-30-21",
+            "content": "@@ -1068,24 +1068,26 @@\n    fmt.Print\n+ln\n (vetor_falta\n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-06-02_14-30-29",
+            "content": "@@ -992,24 +992,29 @@\n repetidos%5Bi%5D\n+, %22 %22\n )%0A    %7D%0A    \n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-06-02_14-30-43",
+            "content": "@@ -992,29 +992,24 @@\n repetidos%5Bi%5D\n-, %22 %22\n )%0A    %7D%0A    \n@@ -1071,10 +1071,8 @@\n rint\n-ln\n (vet\n@@ -1090,13 +1090,8 @@\n s%5Bi%5D\n-, %22 %22\n )%0A  \n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-06-02_14-31-09",
+            "content": "@@ -1068,24 +1068,26 @@\n    fmt.Print\n+ln\n (vetor_falta\n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-06-02_14-31-24",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    var total int\n    fmt.Scan(&total)\n    var tam int\n    fmt.Scan(&tam)\n\n    vetor_normal := make([]int, tam)\n\n    for i := 0; i < tam; i++ {\n        fmt.Scan(&vetor_normal[i])\n    }\n\n    anterior := vetor_normal[0]\n    count := 0\n    vetor_repetidos := make([]int, tam)\n\n    for i := 1; i < tam; i++ {\n        if vetor_normal[i] == anterior {\n            vetor_repetidos[count] = vetor_normal[i]\n            count++\n        } else {\n            anterior = vetor_normal[i]\n        }\n    }\n\n    vetor_faltantes := make([]int, total)\n    contar_indice := 0\n\n    for i := 1; i <= total; i++ {\n        encontrado := 0\n        for j := 0; j < tam; j++ {\n            if vetor_normal[j] == i {\n                encontrado = 1\n                break\n            }\n        }\n\n        if encontrado == 0 {\n            vetor_faltantes[contar_indice] = i\n            contar_indice++\n        }\n    }\n\n   \n    for i := 0; i < count; i++ {\n        fmt.Print(vetor_repetidos[i], \" \")\n    }\n    \n    for i := 0; i < contar_indice; i++ {\n        fmt.Print(vetor_faltantes[i], \" \")\n    }\n    \n\n}\n",
+            "lines": "58"
         }
     ]
 }

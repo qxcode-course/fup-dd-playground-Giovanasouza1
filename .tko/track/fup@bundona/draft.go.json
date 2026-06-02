@@ -1,0 +1,114 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-02_12-58-19",
+            "content": "@@ -127,129 +127,48 @@\n + M%0A\n-    Distancia := (min * 6) / 10%0A%0A    if S == %22H%22 %7B%0A        min++ %0A%7D else if S == %22A%22 %7B%0A    min--%0A%7D%0A%0Afmt.Println(Distancia\n+%0A    if %0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-06-02_13-03-25",
+            "content": "@@ -232,16 +232,18 @@\n mt.Print\n+ln\n (Distanc\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-02_13-03-47",
+            "content": "@@ -104,22 +104,19 @@\n D)%0A%0A    \n-come%C3%A7o\n+min\n  := h * \n@@ -122,16 +122,17 @@\n  60 \n+ \n + M%0A    \n dist\n@@ -131,21 +131,21 @@\n     \n-dist%C3%A2\n+Dista\n ncia := \n D * \n@@ -144,29 +144,23 @@\n  := \n-D * 10%0A    total := 0\n+(min * 6) / 10%0A\n %0A   \n@@ -184,209 +184,70 @@\n     \n-total =  come%C3%A7o + dist%C3%A2ncia%0A    %7D else if S == %22A%22 %7B%0A       total = come%C3%A7o - dist%C3%A2ncia%0A    %7D%0A%0A   posi%C3%A7%C3%A3o := total %25 720 %0A%0A   hora := posi%C3%A7%C3%A3o / 24%0A   min := hora / 60%0A   fmt.Printf(2f%5Cn, hora, 2f%5Cn, min\n+  min++ %0A%7D else if S == %22A%22 %7B%0A    min--%0A%7D%0A%0Afmt.Print(Distancia\n )%0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-02_13-50-48",
+            "content": "@@ -372,28 +372,25 @@\n ntf(\n-%22%2502d:%2502d\n+2f\n %5Cn\n-%22\n , hora,\n+ 2f%5Cn,\n  min\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-02_13-52-27",
+            "content": "@@ -373,17 +373,17 @@\n tf(%22%2502d\n- \n+:\n %2502d%5Cn%22,\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-02_13-52-43",
+            "content": "@@ -331,18 +331,18 @@\n si%C3%A7%C3%A3o / \n-60\n+24\n %0A   min \n@@ -349,17 +349,17 @@\n := hora \n-%25\n+/\n  60%0A   f\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-02_13-53-36",
+            "content": "@@ -344,23 +344,20 @@\n  min := \n-posi%C3%A7%C3%A3o\n+hora\n  %25 60%0A  \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-02_13-56-48",
+            "content": "@@ -312,52 +312,8 @@\n 720 \n-%0A   if posi%C3%A7%C3%A3o %3C 0 %7B%0A    posi%C3%A7%C3%A3o += 720%0A   %7D\n %0A%0A  \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-02_14-03-30",
+            "content": "@@ -354,16 +354,40 @@\n 0%0A   %7D%0A%0A\n+   hora := posi%C3%A7%C3%A3o / 60%0A\n    min :\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-02_14-08-02",
+            "content": "@@ -406,23 +406,20 @@\n 02d%5Cn%22, \n-posi%C3%A7%C3%A3o\n+hora\n , min)%0A%7D\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-02_14-08-18",
+            "content": "@@ -356,66 +356,9 @@\n    %7D\n- else if posi%C3%A7%C3%A3o == 1 %7B%0A    %0A   %7D%0A%0A   hora := posi%C3%A7%C3%A3o / 60\n+%0A\n %0A   \n@@ -410,12 +410,15 @@\n n%22, \n-hora\n+posi%C3%A7%C3%A3o\n , mi\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-02_14-09-34",
+            "content": "@@ -157,21 +157,18 @@\n     \n-var \n total \n-int\n+:= 0\n %0A   \n@@ -348,24 +348,57 @@\n  += 720%0A   %7D\n+ else if posi%C3%A7%C3%A3o == 1 %7B%0A    %0A   %7D\n %0A%0A   hora :=\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-02_14-12-34",
+            "content": "@@ -108,17 +108,17 @@\n     come\n-c\n+%C3%A7\n o := h *\n@@ -129,25 +129,25 @@\n + M%0A    dist\n-a\n+%C3%A2\n ncia := D * \n@@ -149,17 +149,16 @@\n  D * 10%0A\n-%0A\n     var \n@@ -208,17 +208,17 @@\n come\n-c\n+%C3%A7\n o + dist\n anci\n@@ -209,25 +209,25 @@\n ome%C3%A7o + dist\n-a\n+%C3%A2\n ncia%0A    %7D e\n@@ -267,17 +267,17 @@\n come\n-c\n+%C3%A7\n o - dist\n anci\n@@ -272,17 +272,17 @@\n o - dist\n-a\n+%C3%A2\n ncia%0A   \n@@ -292,18 +292,18 @@\n %0A   posi\n-ca\n+%C3%A7%C3%A3\n o := tot\n@@ -322,18 +322,18 @@\n  if posi\n-ca\n+%C3%A7%C3%A3\n o %3C 0 %7B%0A\n@@ -340,18 +340,18 @@\n     posi\n-ca\n+%C3%A7%C3%A3\n o += 720\n@@ -372,18 +372,18 @@\n  := posi\n-ca\n+%C3%A7%C3%A3\n o / 60%0A \n@@ -395,18 +395,18 @@\n  := posi\n-ca\n+%C3%A7%C3%A3\n o %25 60%0A \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-02_14-14-05",
+            "content": "@@ -317,12 +317,8 @@\n 20 %0A\n-   %0A\n    i\n@@ -360,32 +360,8 @@\n    %7D\n- else %7B%0A    posicao%0A   %7D\n %0A%0A  \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-02_14-15-34",
+            "content": "@@ -230,19 +230,31 @@\n   %7D else\n+ if S == %22A%22\n  %7B%0A\n-\n        t\n@@ -313,16 +313,20 @@\n  %25 720 %0A\n+   %0A\n    if po\n@@ -356,21 +356,44 @@\n  += 720%0A\n-\n    %7D \n+else %7B%0A    posicao%0A   %7D\n %0A%0A   hor\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-02_14-17-07",
+            "content": "@@ -437,63 +437,7 @@\n min)\n-%0A%0A   fmt.Println(%22S =%22, S)%0Afmt.Println(%22total =%22, total)\n %0A%7D%0A\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-02_14-18-08",
+            "content": "@@ -460,11 +460,40 @@\n  =%22, S)%0A\n+fmt.Println(%22total =%22, total)\n %0A%7D%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-02_14-20-26",
+            "content": "@@ -438,12 +438,33 @@\n in)%0A%0A   \n+fmt.Println(%22S =%22, S)\n %0A%0A%7D%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-02_14-20-38",
+            "content": "@@ -41,17 +41,17 @@\n     var \n-x\n+h\n , M, D i\n@@ -84,17 +84,17 @@\n t.Scan(&\n-x\n+h\n , &M, &S\n@@ -118,9 +118,9 @@\n  := \n-x\n+h\n  * 6\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-02_14-21-52",
+            "content": "@@ -442,37 +442,8 @@\n %0A   \n-fmt.Println(%22S =%22, %5B%5Dbyte(S))\n %0A%0A%7D%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-02_14-22-22",
+            "content": "@@ -89,57 +89,18 @@\n n(&x\n-)%0A    fmt.Scan(&M)%0A    fmt.Scan(&S)%0A    fmt.Scan(\n+, &M, &S, \n &D)%0A\n@@ -438,12 +438,41 @@\n in)%0A%0A   \n+fmt.Println(%22S =%22, %5B%5Dbyte(S))\n %0A%0A%7D%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-02_14-23-17",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var x, M, D int\n    var S string\n    fmt.Scan(&x)\n    fmt.Scan(&M)\n    fmt.Scan(&S)\n    fmt.Scan(&D)\n\n    comeco := x * 60 + M\n    distancia := D * 10\n\n    var total int\n    if S == \"H\" {\n      total =  comeco + distancia\n    } else {\n       total = comeco - distancia\n    }\n\n   posicao := total % 720 \n   if posicao < 0 {\n    posicao += 720\n   } \n\n   hora := posicao / 60\n   min := posicao % 60\n   fmt.Printf(\"%02d %02d\\n\", hora, min)\n\n   \n\n}\n",
+            "lines": "32"
+        }
+    ]
+}

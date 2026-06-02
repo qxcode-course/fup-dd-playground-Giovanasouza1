@@ -107,8 +107,28 @@
         },
         {
             "label": "2026-06-01_17-47-42",
-            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    var chute, valor float64\n    var escolha string\n\n    fmt.Scan(&chute, &valor, &escolha)\n\n    if chute == valor {\n        fmt.Println(\"primeiro\")\n    } else if chute > valor && escolha == \"m\" {\n        fmt.Println(\"segundo\")\n    } else if chute < valor && escolha == \"M\" {\n        fmt.Println(\"segundo\")\n    }\n}\n",
+            "content": "@@ -114,23 +114,23 @@\n e, &\n-escolha, &valor\n+valor, &escolha\n )%0A%0A \n",
             "lines": "18"
+        },
+        {
+            "label": "2026-06-02_12-47-25",
+            "content": "@@ -351,155 +351,7 @@\n    %7D\n- else chute %3E valor && escolha == %22M%22 %7B%0A        fmt.Println(%22primeiro%22)%0A    %7D else if chute %3C valor && escolha == %22m%22 %7B%0A        fmt.Println(%22menor%22)\n %0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-02_12-49-13",
+            "content": "@@ -345,35 +345,32 @@\n do%22)%0A    %7D else \n-if \n chute %3E valor &&\n@@ -497,10 +497,9 @@\n enor%22)%0A%7D\n-%7D\n %0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-02_12-49-27",
+            "content": "@@ -491,22 +491,19 @@\n rintln(%22\n-primeiro\n+menor\n %22)%0A%7D%7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-02_12-49-57",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    var chute, valor float64\n    var escolha string\n\n    fmt.Scan(&chute, &escolha, &valor)\n\n    if chute == valor {\n        fmt.Println(\"primeiro\")\n    } else if chute > valor && escolha == \"m\" {\n        fmt.Println(\"segundo\")\n    } else if chute < valor && escolha == \"M\" {\n        fmt.Println(\"segundo\")\n    } else if chute > valor && escolha == \"M\" {\n        fmt.Println(\"primeiro\")\n    } else if chute < valor && escolha == \"m\" {\n        fmt.Println(\"primeiro\")\n}}\n",
+            "lines": "21"
         }
     ]
 }
