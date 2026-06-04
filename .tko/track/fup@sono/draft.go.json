@@ -52,7 +52,12 @@
         },
         {
             "label": "2026-05-29_00-44-33",
-            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    var h1, m1, s1 int\n    var h2, m2, s2 int\n\n    fmt.Scan(&h1, &m1, &s1, &h2, &m2, &s2)\n\n    tempod := h1*3600 + m1*60 + s1\n    tempoa := h2*3600 + m2*60 + s2\n\n    total := tempoa - tempod\n\n    if total < 0 {\n        total += 24 * 3600\n    }\n\n    horas := total / 3600\n    resto := total % 3600\n\n    min := resto / 60\n    seg := resto % 60\n\n    fmt.Printf(\"%02d %02d %02d\\n\", horas, min, seg)\n}\n",
+            "content": "@@ -98,31 +98,9 @@\n Scan\n-f(%22%25d %25d %25d%5Cn%25d %25d %25d%22,\n+(\n &h1,\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-02_20-56-30",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    var h1, m1, s1 int\n    var h2, m2, s2 int\n\n    fmt.Scanf(\"%d %d %d\\n%d %d %d\",&h1, &m1, &s1, &h2, &m2, &s2)\n\n    tempod := h1*3600 + m1*60 + s1\n    tempoa := h2*3600 + m2*60 + s2\n\n    total := tempoa - tempod\n\n    if total < 0 {\n        total += 24 * 3600\n    }\n\n    horas := total / 3600\n    resto := total % 3600\n\n    min := resto / 60\n    seg := resto % 60\n\n    fmt.Printf(\"%02d %02d %02d\\n\", horas, min, seg)\n}\n",
             "lines": "27"
         }
     ]

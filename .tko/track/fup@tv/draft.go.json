@@ -62,8 +62,68 @@
         },
         {
             "label": "2026-05-29_13-28-38",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tvar valor float64\n\tvar parcelas int\n\tfmt.Scan(&valor, &parcelas)\n\tvalor *= (1 + 0.05 + (parcelas - 1))\n\tcada := valor / float64(parcelas)\n\tfmt.Printf()\n\n}\n",
+            "content": "@@ -106,16 +106,17 @@\n %0A%09valor \n+*\n = (1 + 0\n",
             "lines": "11"
+        },
+        {
+            "label": "2026-06-02_21-03-33",
+            "content": "@@ -103,498 +103,79 @@\n as)%0A\n-%0A%09if parcelas == 2 %7B%0A%09%09valor = valor * 1.05%0A%09%7D else if parcelas == 1 %7B%0A%09%09valor == valor%0A%09%7D else if parcelas == 3 %7B%0A%09%09valor = valor * 1.1 %0A%09%7D else if parcelas == 4 %7B%0A%09%09valor = valor * 1.5 %0A%09%7D else if parcelas == 5 %7B%0A%09%09valor = valor * 1.2%0A%09%7D else if parcelas == 6 %7B%0A%09%09valor = valor * 1.25%0A%09%7Delse if parcelas == 7 %7B%0A%09%09valor = valor * 1.30%0A%09%7D else if parcelas == 8 %7B%0A%09%09valor = valor * 1.35%0A%09%7D else if parcelas == 9 %7B%0A%09%09valor = valor * 1.40%0A%09%7D else if parcelas == 10 %7B%0A%09%09valor = valor * 1.45%0A%09%7D%0A\n+%09valor = (1 + 0.05 + (parcelas - 1))%0A%09cada := valor / float64(parcelas)\n %0A%09fm\n@@ -185,19 +185,11 @@\n rint\n-ln(valor)%0A%09\n+f()%0A%0A\n %7D%0A\n-%09%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-06-02_21-13-16",
+            "content": "@@ -175,24 +175,25 @@\n  %7B%0A%09%09valor =\n+=\n  valor%0A%09%7D el\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-02_21-13-21",
+            "content": "@@ -603,44 +603,16 @@\n rint\n+ln\n (valor\n- / parcelas, valor * parcelast\n )%0A%09%7D\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-02_21-18-03",
+            "content": "@@ -1,649 +1,101 @@\n-package main%0Aimport %22fmt%22%0Afunc main() %7B%0A%09var valor float64%0A%09var parcelas int%0A%09fmt.Scan(&valor, &parcelas)%0A%0A%09if parcelas == 2 %7B%0A%09%09valor = valor * 1.05%0A%09%7D else if parcelas == 1 %7B%0A%09%09valor = valor%0A%09%7D else if parcelas == 3 %7B%0A%09%09valor = valor * 1.1 %0A%09%7D else if parcelas == 4 %7B%0A%09%09valor = valor * 1.5 %0A%09%7D else if parcelas == 5 %7B%0A%09%09valor = valor * 1.2%0A%09%7D else if parcelas == 6 %7B%0A%09%09valor = valor * 1.25%0A%09%7Delse if parcelas == 7 %7B%0A%09%09valor = valor * 1.30%0A%09%7D else if parcelas == 8 %7B%0A%09%09valor = valor * 1.35%0A%09%7D else if parcelas == 9 %7B%0A%09%09valor = valor * 1.40%0A%09%7D else if parcelas == 10 %7B%0A%09%09valor = valor * 1.45%0A%09%7D%0A%0A%09fmt.Printf(valor / parcelas, valor * parcelas)%0A%09%7D%0A%09\n+@@ -599,17 +599,16 @@%0A mt.Print%0A-f%0A (valor /%0A@@ -634,15 +634,16 @@%0A parcelas%0A+t%0A )%250A%2509%257D%250A%2509%250A\n %0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-06-02_21-18-22",
+            "content": "@@ -47,15 +47,8 @@\n alor\n-, juros\n  flo\n@@ -100,18 +100,16 @@\n celas)%0A%0A\n-%09%0A\n %09if parc\n@@ -122,23 +122,31 @@\n = 2 %7B%0A%09%09\n-juros =\n+valor = valor *\n  1.05%0A%09%7D\n@@ -176,17 +176,21 @@\n %7B%0A%09%09\n-juros = 0\n+valor = valor\n %0A%09%7D \n@@ -215,27 +215,36 @@\n = 3 %7B%0A%09%09\n-juros =\n+valor = valor *\n  1.1\n+ \n %0A%09%7D else\n@@ -269,19 +269,26 @@\n %7B%0A%09%09\n-juros =\n+valor = valor *\n  1.\n-1\n 5 %0A%09\n@@ -311,31 +311,39 @@\n as == 5 %7B%0A%09%09\n-juros =\n+valor = valor *\n  1.2%0A%09%7D else\n@@ -364,23 +364,31 @@\n = 6 %7B%0A%09%09\n-juros =\n+valor = valor *\n  1.25%0A%09%7D\n@@ -409,31 +409,39 @@\n as == 7 %7B%0A%09%09\n-juros =\n+valor = valor *\n  1.30%0A%09%7D els\n@@ -463,23 +463,31 @@\n = 8 %7B%0A%09%09\n-juros =\n+valor = valor *\n  1.35%0A%09%7D\n@@ -509,31 +509,39 @@\n as == 9 %7B%0A%09%09\n-juros =\n+valor = valor *\n  1.40%0A%09%7D els\n@@ -568,119 +568,79 @@\n %7B%0A%09%09\n-juros = 1.45%0A%09%7D%0A%0A%09OPERA%C3%87AO1 := valor * juros%0A%09OPERA%C3%87AO2 := OPERA%C3%87%C3%83O1 / parcelas%0A%09fmt.Print(OPERA%C3%87AO2, OPERACAO1\n+valor = valor * 1.45%0A%09%7D%0A%0A%09fmt.Printf(valor / parcelas, valor * parcelas\n )%0A%09%7D\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-04_20-46-24",
+            "content": "@@ -531,17 +531,17 @@\n OPERA%C3%87AO\n-2\n+1\n  := valo\n@@ -555,25 +555,25 @@\n os%0A%09OPERA%C3%87AO\n-1\n+2\n  := OPERA%C3%87%C3%83O\n@@ -583,16 +583,17 @@\n  parcela\n+s\n %0A%09fmt.Pr\n@@ -604,17 +604,17 @@\n OPERA%C3%87AO\n-1\n+2\n , OPERAC\n@@ -615,16 +615,16 @@\n OPERACAO\n-2\n+1\n )%0A%09%7D%0A%09%0A\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-06-04_20-47-00",
+            "content": "@@ -181,17 +181,17 @@\n juros = \n-1\n+0\n %0A%09%7D else\n@@ -570,17 +570,17 @@\n = OPERA%C3%87\n-A\n+%C3%83\n O1 / par\n@@ -583,17 +583,16 @@\n  parcela\n-s\n %0A%09fmt.Pr\n@@ -594,17 +594,16 @@\n mt.Print\n-f\n (OPERA%C3%87A\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-06-04_20-49-47",
+            "content": "@@ -576,28 +576,20 @@\n A%C3%87AO\n-2\n+1\n  / \n-float64(\n parcelas\n )%0A%09f\n@@ -584,17 +584,16 @@\n parcelas\n-)\n %0A%09fmt.Pr\n@@ -601,24 +601,8 @@\n ntf(\n-%22%2502F %2502df%5Cn%22, \n OPER\n@@ -613,17 +613,17 @@\n 1, OPERA\n-%C3%87\n+C\n AO2)%0A%09%7D%0A\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-06-04_20-55-56",
+            "content": "@@ -612,14 +612,14 @@\n f(%22%25\n-.\n+0\n 2F %25\n-.\n+0\n 2df%5C\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-06-04_20-56-26",
+            "content": "@@ -599,32 +599,37 @@\n s)%0A%09fmt.Printf(%22\n+%25.2F \n %25.2df%5Cn%22, OPERA%C3%87\n@@ -635,31 +635,8 @@\n %C3%87AO1\n-)%0A%09fmt.Printf(%22%25.2df%5Cn%22\n , OP\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-06-04_20-57-32",
+            "content": "@@ -602,32 +602,33 @@\n %09fmt.Printf(%22%25.2\n+d\n f%5Cn%22, OPERA%C3%87AO1)\n@@ -644,16 +644,17 @@\n ntf(%22%25.2\n+d\n f%5Cn%22, OP\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-06-04_20-57-49",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tvar valor, juros float64\n\tvar parcelas int\n\tfmt.Scan(&valor, &parcelas)\n\n\t\n\tif parcelas == 2 {\n\t\tjuros = 1.05\n\t} else if parcelas == 1 {\n\t\tjuros = 1\n\t} else if parcelas == 3 {\n\t\tjuros = 1.1\n\t} else if parcelas == 4 {\n\t\tjuros = 1.15 \n\t} else if parcelas == 5 {\n\t\tjuros = 1.2\n\t} else if parcelas == 6 {\n\t\tjuros = 1.25\n\t}else if parcelas == 7 {\n\t\tjuros = 1.30\n\t} else if parcelas == 8 {\n\t\tjuros = 1.35\n\t} else if parcelas == 9 {\n\t\tjuros = 1.40\n\t} else if parcelas == 10 {\n\t\tjuros = 1.45\n\t}\n\n\tOPERA\u00c7AO2 := valor * juros\n\tOPERA\u00c7AO1 := OPERA\u00c7AO2 / float64(parcelas)\n\tfmt.Printf(\"%.2f\\n\", OPERA\u00c7AO1)\n\tfmt.Printf(\"%.2f\\n\", OPERA\u00c7AO2)\n\t}\n\t\n",
+            "lines": "36"
         }
     ]
 }

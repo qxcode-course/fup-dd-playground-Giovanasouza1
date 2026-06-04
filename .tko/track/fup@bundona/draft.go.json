@@ -107,8 +107,108 @@
         },
         {
             "label": "2026-06-02_14-23-17",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var x, M, D int\n    var S string\n    fmt.Scan(&x)\n    fmt.Scan(&M)\n    fmt.Scan(&S)\n    fmt.Scan(&D)\n\n    comeco := x * 60 + M\n    distancia := D * 10\n\n    var total int\n    if S == \"H\" {\n      total =  comeco + distancia\n    } else {\n       total = comeco - distancia\n    }\n\n   posicao := total % 720 \n   if posicao < 0 {\n    posicao += 720\n   } \n\n   hora := posicao / 60\n   min := posicao % 60\n   fmt.Printf(\"%02d %02d\\n\", hora, min)\n\n   \n\n}\n",
+            "content": "@@ -157,16 +157,14 @@\n  := \n-(\n x * 60\n-)\n  + M\n",
             "lines": "32"
+        },
+        {
+            "label": "2026-06-02_18-12-20",
+            "content": "@@ -174,104 +174,27 @@\n     \n-fmt.Println(%22comeco: %22, comeco)%0A    distancia := D * 10%0A    fmt.Println(%22distancia: %22,distancia)\n+distancia := D * 10\n %0A%0A  \n@@ -318,169 +318,55 @@\n   %7D%0A\n-    fmt.Println(%22total: %22,  total)%0A%0A   posicao := total %25 720%0A   fmt.Println(%22posicao: %22,posicao) %0A   if posicao %3C 0 %7B%0A      fmt.Println(%22posicao neg: %22,posicao)\n+%0A   posicao := total %25 720 %0A   if posicao %3C 0 %7B\n %0A   \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-02_18-14-48",
+            "content": "@@ -41,23 +41,17 @@\n     var \n-horario\n+x\n , M, D i\n@@ -86,44 +86,63 @@\n Scan\n-f(%22%25d%25d%25s%25d%22,&horario,&M,&S,&D)%0A    \n+(&x)%0A    fmt.Scan(&M)%0A    fmt.Scan(&S)%0A    fmt.Scan(&D)\n %0A%0A  \n@@ -158,15 +158,9 @@\n := (\n-horario\n+x\n  * 6\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-06-02_18-18-52",
+            "content": "@@ -73,12 +73,14 @@\n r S \n-rune\n+string\n %0A   \n@@ -96,17 +96,17 @@\n f(%22%25d%25d%25\n-c\n+s\n %25d%22,&hor\n@@ -295,11 +295,11 @@\n  == \n-'H'\n+%22H%22\n  %7B%0A \n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-06-02_18-20-01",
+            "content": "@@ -93,17 +93,16 @@\n nf(%22%25d%25d\n- \n %25c%25d%22,&h\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-06-02_18-20-10",
+            "content": "@@ -93,18 +93,17 @@\n nf(%22%25d%25d\n-%5Cn\n+ \n %25c%25d%22,&h\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-06-02_18-20-20",
+            "content": "@@ -97,18 +97,16 @@\n %25d%25d%5Cn%25c\n-%5Cn\n %25d%22,&hor\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-06-02_18-20-27",
+            "content": "@@ -89,17 +89,16 @@\n .Scanf(%22\n- \n %25d%25d%5Cn%25c\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-06-02_18-20-37",
+            "content": "@@ -41,17 +41,23 @@\n     var \n-x\n+horario\n , M, D i\n@@ -90,69 +90,49 @@\n Scan\n-(&x)%0A    fmt.Scan(&M)%0A    fmt.Scanf(%22%25c%22,&S)%0A    fmt.Scan(&D)\n+f(%22 %25d%25d%5Cn%25c%5Cn%25d%22,&horario,&M,&S,&D)%0A    \n %0A%0A  \n@@ -148,9 +148,15 @@\n := (\n-x\n+horario\n  * 6\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-06-02_18-21-49",
+            "content": "@@ -117,17 +117,16 @@\n .Scanf(%22\n- \n %25c%22,&S)%0A\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-06-02_18-21-58",
+            "content": "@@ -117,18 +117,16 @@\n .Scanf(%22\n-%5Cn\n  %25c%22,&S)\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-06-02_18-22-16",
+            "content": "@@ -119,16 +119,17 @@\n canf(%22%5Cn\n+ \n %25c%22,&S)%0A\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-06-02_18-22-21",
+            "content": "@@ -1,693 +1,109 @@\n-package main%0Aimport %22fmt%22%0Afunc main() %7B%0A    var x, M, D int%0A    var S rune%0A    fmt.Scan(&x)%0A    fmt.Scan(&M)%0A    fmt.Scanf(%22%25c%5Cn%22,&S)%0A    fmt.Scanf(%22%25d%22,&D)%0A%0A    comeco := (x * 60) + M%0A    fmt.Println(%22comeco: %22, comeco)%0A    distancia := D * 10%0A    fmt.Println(%22distancia: %22,distancia)%0A%0A    var total int%0A    if S == 'H' %7B%0A      total =  comeco + distancia%0A    %7D else %7B%0A       total = comeco - distancia%0A    %7D%0A    fmt.Println(%22total: %22,  total)%0A%0A   posicao := total %25 720%0A   fmt.Println(%22posicao: %22,posicao) %0A   if posicao %3C 0 %7B%0A      fmt.Println(%22posicao neg: %22,posicao)%0A    posicao += 720%0A   %7D %0A%0A   hora := posicao / 60%0A   min := posicao %25 60%0A   fmt.Printf(%22%2502d %2502d%5Cn%22, hora, min)%0A%0A   %0A%0A%7D\n+@@ -121,12 +121,12 @@%0A nf(%2522%0A-%2525c%0A %255Cn%0A+%2525c%0A %2522,&S%0A@@ -143,15 +143,9 @@%0A Scan%0A-f(%2522%2525d%2522,%0A+(%0A &D)%250A\n %0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-06-02_18-23-19",
+            "content": "@@ -84,19 +84,14 @@\n Scan\n-f(%22%25d%22,\n+(\n &x)%0A\n+ \n    f\n@@ -97,23 +97,17 @@\n fmt.Scan\n-f(%22%25d%22,\n+(\n &M)%0A    \n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-06-02_18-24-09",
+            "content": "@@ -89,32 +89,83 @@\n (%22%25d\n-%25d%25c%25d%22,&x,&M,&S,&D)%0A   \n+%22,&x)%0A   fmt.Scanf(%22%25d%22,&M)%0A    fmt.Scanf(%22%25c%5Cn%22,&S)%0A    fmt.Scanf(%22%25d%22,&D)\n %0A%0A  \n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-06-02_18-25-24",
+            "content": "@@ -87,17 +87,16 @@\n nf(%22%25d%25d\n- \n %25c%25d%22,&x\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-06-02_18-25-31",
+            "content": "@@ -87,18 +87,17 @@\n nf(%22%25d%25d\n-%5Cn\n+ \n %25c%25d%22,&x\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-06-02_18-25-40",
+            "content": "@@ -89,17 +89,16 @@\n (%22%25d%25d%5Cn\n- \n %25c%25d%22,&x\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-06-02_18-25-48",
+            "content": "@@ -87,16 +87,19 @@\n nf(%22%25d%25d\n+%5Cn \n %25c%25d%22,&x\n@@ -116,74 +116,8 @@\n %0A   \n-fmt.Scanf(%22%25d%22,&M)%0A    fmt.Scanf(%22%25c%5Cn%22,&S)%0A    fmt.Scanf(%22%25d%22,&D)\n %0A%0A  \n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-06-02_18-26-02",
+            "content": "@@ -204,26 +204,24 @@\n 60) + M%0A    \n-//\n fmt.Println(\n@@ -264,26 +264,24 @@\n  D * 10%0A    \n-//\n fmt.Println(\n@@ -429,26 +429,24 @@\n a%0A    %7D%0A    \n-//\n fmt.Println(\n@@ -494,18 +494,17 @@\n  720%0A   \n-//\n+f\n mt.Print\n@@ -558,10 +558,8 @@\n     \n-//\n fmt.\n@@ -664,16 +664,17 @@\n ao %25 60%0A\n+ \n   fmt.Pr\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-06-02_18-26-52",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var x, M, D int\n    var S rune\n    fmt.Scanf(\"%d%d%c%d\",&x,&M,&S,&D)\n   fmt.Scanf(\"%d\",&M)\n    fmt.Scanf(\"%c\\n\",&S)\n    fmt.Scanf(\"%d\",&D)\n\n    comeco := (x * 60) + M\n    //fmt.Println(\"comeco: \", comeco)\n    distancia := D * 10\n    //fmt.Println(\"distancia: \",distancia)\n\n    var total int\n    if S == 'H' {\n      total =  comeco + distancia\n    } else {\n       total = comeco - distancia\n    }\n    //fmt.Println(\"total: \",  total)\n\n   posicao := total % 720\n   //mt.Println(\"posicao: \",posicao) \n   if posicao < 0 {\n      //fmt.Println(\"posicao neg: \",posicao)\n    posicao += 720\n   } \n\n   hora := posicao / 60\n   min := posicao % 60\n  fmt.Printf(\"%02d %02d\\n\", hora, min)\n\n   \n\n}\n",
+            "lines": "37"
         }
     ]
 }

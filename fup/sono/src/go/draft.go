@@ -6,7 +6,7 @@ func main() {
     var h1, m1, s1 int
     var h2, m2, s2 int
 
-    fmt.Scan(&h1, &m1, &s1, &h2, &m2, &s2)
+    fmt.Scanf("%d %d %d\n%d %d %d",&h1, &m1, &s1, &h2, &m2, &s2)
 
     tempod := h1*3600 + m1*60 + s1
     tempoa := h2*3600 + m2*60 + s2

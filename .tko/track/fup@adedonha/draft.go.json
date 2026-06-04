@@ -42,8 +42,18 @@
         },
         {
             "label": "2026-06-02_15-32-30",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var soma int\n    fmt.Scan(&soma)\n    alfabeto := [26]string{\n        \"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\",\n    \"k\",\"l\",\"m\",\"n\",\"o\",\"p\",\"q\",\"r\",\"s\",\"t\",\n    \"u\",\"v\",\"w\",\"x\",\"y\",\"z\",\n}\n    \n   \n    for i := 0; i < 26; i ++ {\n        if i + 1 == soma {\n            fmt.Println(alfabeto[i])\n        }\n    }\nif soma == 0 {\n    fmt.Println(\"joguem de novo\")\n}\n}\n",
+            "content": "@@ -396,77 +396,8 @@\n o%22)%0A\n-%7D%0Aif soma %3E 26 %7B%0A    soma = soma - 26 %0A    fmt.Println(alfabeto%5Bi%5D)%0A%0A\n %7D%0A%7D%0A\n",
             "lines": "21"
+        },
+        {
+            "label": "2026-06-02_17-32-20",
+            "content": "@@ -232,16 +232,20 @@\n    %0A   %0A\n+    \n for i :=\n@@ -263,16 +263,20 @@\n  i ++ %7B%0A\n+    \n     if i\n@@ -342,17 +342,16 @@\n  %7D%0A    %7D\n- \n %0Aif soma\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-02_20-56-04",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var soma int\n    fmt.Scan(&soma)\n    alfabeto := [26]string{\n        \"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\",\n    \"k\",\"l\",\"m\",\"n\",\"o\",\"p\",\"q\",\"r\",\"s\",\"t\",\n    \"u\",\"v\",\"w\",\"x\",\"y\",\"z\",\n}\n    \n   \nfor i := 0; i < 26; i ++ {\n    if i + 1 == soma {\n            fmt.Println(alfabeto[i])\n        }\n    } \nif soma == 0 {\n    fmt.Println(\"joguem de novo\")\n}\nif soma > 26 {\n    soma = soma - 26 \n    fmt.Println(alfabeto[i])\n\n}\n}\n",
+            "lines": "26"
         }
     ]
 }

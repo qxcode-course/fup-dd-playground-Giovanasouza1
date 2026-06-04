@@ -21,24 +21,22 @@ sources:
 expanded:
 - fup@for2
 - fup@list
-- fup@if_extra
-- fup@struct
-- fup@if1
-- fup@if2
-- fup@base
-- fup@dict
-- eval1@eval1
-- fup@rec
-- fup@for_extra
 - fup@mat
 - fup@games
 - fup@string
+- fup@rec
+- fup@if_extra
+- fup@struct
+- fup@for_extra
+- fup@dict
+- fup@base
+- eval1@eval1
 flags:
-  inbox: all
+  inbox: inbox
   panel: skills
   show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
 selected: fup@adedonha
-selected_index: 64
+selected_index: 2

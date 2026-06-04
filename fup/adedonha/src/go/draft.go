@@ -10,11 +10,11 @@ func main() {
 }
     
    
-    for i := 0; i < 26; i ++ {
-        if i + 1 == soma {
+for i := 0; i < 26; i ++ {
+    if i + 1 == soma {
             fmt.Println(alfabeto[i])
         }
-    }
+    } 
 if soma == 0 {
     fmt.Println("joguem de novo")
 }
