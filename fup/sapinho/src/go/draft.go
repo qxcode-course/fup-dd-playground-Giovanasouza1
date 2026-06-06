@@ -4,13 +4,15 @@ func main() {
     var p, s, e int 
     fmt.Scan(&p, &s, &e)
 
-    for {
-        if s - e > p && {
-            fmt.Println(s)
+    altura := 0
+
+   for  {
+        if altura + s >= p {
+            fmt.Println(altura, "saiu")
             break
-        } else if s - e {
-            fmt.Println()
+        } else {
+            fmt.Println(altura, altura + s)
+            altura = altura + s - e
         }
-    }
-    fmt.Println("Hello, World!")
+   }
 }

@@ -52,8 +52,33 @@
         },
         {
             "label": "2026-06-02_20-56-04",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var soma int\n    fmt.Scan(&soma)\n    alfabeto := [26]string{\n        \"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\",\n    \"k\",\"l\",\"m\",\"n\",\"o\",\"p\",\"q\",\"r\",\"s\",\"t\",\n    \"u\",\"v\",\"w\",\"x\",\"y\",\"z\",\n}\n    \n   \nfor i := 0; i < 26; i ++ {\n    if i + 1 == soma {\n            fmt.Println(alfabeto[i])\n        }\n    } \nif soma == 0 {\n    fmt.Println(\"joguem de novo\")\n}\nif soma > 26 {\n    soma = soma - 26 \n    fmt.Println(alfabeto[i])\n\n}\n}\n",
+            "content": "@@ -78,51 +78,270 @@\n     \n-%0A    calculo := (soma - 1) %25 26 + 'a'%0A\n+alfabeto := %5B26%5Dstring%7B%0A        %22a%22,%22b%22,%22c%22,%22d%22,%22e%22,%22f%22,%22g%22,%22h%22,%22i%22,%22j%22,%0A    %22k%22,%22l%22,%22m%22,%22n%22,%22o%22,%22p%22,%22q%22,%22r%22,%22s%22,%22t%22,%0A    %22u%22,%22v%22,%22w%22,%22x%22,%22y%22,%22z%22,%0A%7D%0A    %0A   %0Afor i := 0; i %3C 26; i ++ %7B%0A    if i + 1 == soma %7B%0A            fmt.Println(alfabeto%5Bi%5D)%0A        %7D\n %0A    \n+%7D %0A\n if s\n@@ -351,28 +351,24 @@\n  == 0 %7B%0A    \n-  \n-  \n fmt.Println(\n@@ -372,9 +372,9 @@\n ln(%22\n-J\n+j\n ogue\n@@ -389,25 +389,47 @@\n o%22)%0A\n-    %7D else %7B%0A    \n+%7D%0Aif soma %3E 26 %7B%0A    soma = soma - 26 %0A\n     \n@@ -444,22 +444,22 @@\n tln(\n-c\n al\n-culo)%0A    %7D%0A\n+fabeto%5Bi%5D)%0A%0A%7D\n %0A%7D%0A\n",
             "lines": "26"
+        },
+        {
+            "label": "2026-06-05_13-19-50",
+            "content": "@@ -149,16 +149,18 @@\n mt.Print\n+ln\n (%22Joguem\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-06-05_13-20-00",
+            "content": "@@ -155,9 +155,9 @@\n nt(%22\n-j\n+J\n ogue\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-06-05_13-20-12",
+            "content": "@@ -149,18 +149,16 @@\n mt.Print\n-ln\n (%22joguem\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-06-05_13-20-18",
+            "content": "@@ -204,18 +204,11 @@\n rint\n-f(%22%25c%5Cn%22, \n+ln(\n calc\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-06-05_13-24-12",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var soma int\n    fmt.Scan(&soma)\n    \n    calculo := (soma - 1) % 26 + 'a'\n\n    if soma == 0 {\n        fmt.Println(\"joguem de novo\")\n    } else {\n        fmt.Printf(\"%c\\n\", calculo)\n    }\n\n}\n",
+            "lines": "15"
         }
     ]
 }

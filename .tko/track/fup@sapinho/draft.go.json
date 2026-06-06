@@ -1,0 +1,139 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-06_12-51-39",
+            "content": "@@ -87,11 +87,8 @@\n %0A   \n-for\n  alt\n@@ -99,29 +99,33 @@\n := 0\n-; altura\n+%0A   for i := 0; i\n  %3E= p; \n-altura\n+i\n ++ %7B\n@@ -136,22 +136,17 @@\n  if \n-altura\n+s\n  %3E p %7C%7C \n altu\n@@ -141,22 +141,17 @@\n  %3E p %7C%7C \n-altura\n+s\n  == p %7B%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-06_12-55-25",
+            "content": "@@ -83,16 +83,19 @@\n &e)%0A%0A   \n+for\n  altura \n@@ -98,25 +98,39 @@\n ura := 0\n-%0A%0A   for \n+; altura %3E= p; altura++\n  %7B%0A    i\n@@ -139,16 +139,30 @@\n altura %3E\n+ p %7C%7C altura =\n = p %7B%0A  \n@@ -185,16 +185,17 @@\n %22saiu%22)%0A\n+%0A\n     %7D el\n@@ -221,18 +221,13 @@\n  := \n-altura + s\n+s - e\n %0A   \n@@ -241,22 +241,17 @@\n t.Print(\n-altura\n+e\n )%0A      \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-06_13-02-32",
+            "content": "@@ -125,14 +125,54 @@\n ura \n-%3C\n+%3E=\n  p %7B%0A\n+        fmt.Print(%22saiu%22)%0A    %7D else %7B%0A\n     \n@@ -182,16 +182,17 @@\n  altura \n+:\n = altura\n@@ -196,29 +196,16 @@\n ura + s%0A\n-    %7D else %7B%0A\n         \n@@ -210,31 +210,41 @@\n   fmt.Print(\n-%22saiu%22)\n+altura)%0A        %7D\n %0A    %7D%0A   %7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-06_13-10-20",
+            "content": "@@ -111,27 +111,26 @@\n   %7B%0A    \n-   \n+if\n  altura \n = altura\n@@ -125,237 +125,88 @@\n ura \n-= altura + s%0A        fmt.Print(altura)%0A%0A        if altura %3E= p %7B%0A            fmt.Print(%22saiu%22)%0A            break%0A        %7D else %7B%0A            altura := altura - s%0A            fmt.Print(altura)%0A   \n+%3C p %7B%0A        altura = altura + s%0A    %7D else %7B%0A        fmt.Print(%22saiu%22)%0A\n     \n- \n %7D%0A   %7D%0A\n-   fmt.Println(%22saiu%22)%0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-06-06_13-17-36",
+            "content": "@@ -200,34 +200,32 @@\n        fmt.Print\n-ln\n (%22saiu%22)%0A       \n@@ -306,18 +306,16 @@\n mt.Print\n-ln\n (altura)\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-06_13-17-48",
+            "content": "@@ -285,17 +285,17 @@\n ltura - \n-e\n+s\n %0A       \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-06_13-18-42",
+            "content": "@@ -300,32 +300,34 @@\n        fmt.Print\n+ln\n (altura)%0A       \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-06_13-19-44",
+            "content": "@@ -308,18 +308,16 @@\n mt.Print\n-ln\n (altura)\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-06_13-19-50",
+            "content": "@@ -321,13 +321,8 @@\n tura\n-, %22 %22\n )%0A  \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-06_13-19-59",
+            "content": "@@ -355,17 +355,16 @@\n rintln(%22\n- \n saiu%22)%0A%7D\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-06_13-20-19",
+            "content": "@@ -152,30 +152,23 @@\n mt.Print\n-ln\n (altura\n-, %22 %22\n )%0A%0A     \n@@ -212,17 +212,16 @@\n rintln(%22\n-t\n saiu%22)%0A \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-06_13-20-38",
+            "content": "@@ -159,11 +159,8 @@\n tln(\n-0, \n altu\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-06_13-20-58",
+            "content": "@@ -222,16 +222,17 @@\n rintln(%22\n+t\n saiu%22)%0A \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-06_13-21-11",
+            "content": "@@ -197,16 +197,48 @@\n  %3E= p %7B%0A\n+            fmt.Println(%22saiu%22)%0A\n         \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-06_13-21-41",
+            "content": "@@ -155,16 +155,18 @@\n Println(\n+0,\n  altura,\n@@ -166,26 +166,19 @@\n altura, \n-altura + s\n+%22 %22\n )%0A%0A     \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-06_13-24-27",
+            "content": "@@ -248,32 +248,33 @@\n          altura \n+:\n = altura - e%0A   \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-06_13-25-36",
+            "content": "@@ -156,17 +156,22 @@\n rintln( \n-0\n+altura\n , altura\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-06_13-26-32",
+            "content": "@@ -166,16 +166,19 @@\n  altura \n++ s\n )%0A%0A     \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-06_13-26-39",
+            "content": "@@ -297,18 +297,11 @@\n ra, \n-s + altura\n+%22 %22\n )%0A  \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-06_13-27-15",
+            "content": "@@ -156,22 +156,17 @@\n rintln( \n-altura\n+0\n , altura\n@@ -166,19 +166,16 @@\n  altura \n-+ s\n )%0A%0A     \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-06_13-29-06",
+            "content": "@@ -199,12 +199,8 @@\n ura \n-+ s \n %3E= p\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-06_13-30-06",
+            "content": "@@ -119,10 +119,16 @@\n     \n-if\n+altura =\n  alt\n@@ -138,20 +138,9 @@\n  + s\n- %3E= p %7B%0A    \n+%0A\n     \n@@ -155,24 +155,25 @@\n Println(\n+ \n altura, \n %22saiu%22)%0A\n@@ -168,15 +168,49 @@\n ra, \n-%22saiu%22)\n+altura + s)%0A%0A        if altura + s %3E= p %7B\n %0A   \n@@ -328,12 +328,38 @@\n      %7D%0A   %7D%0A\n+   fmt.Println(%22 saiu%22)%0A%7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-06_13-31-34",
+            "content": "@@ -302,10 +302,8 @@\n  %7D%0A   %7D%0A\n-%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-06_13-31-42",
+            "content": "@@ -239,20 +239,16 @@\n  altura \n-+ s \n - e%0A    \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-06_13-32-47",
+            "content": "@@ -227,27 +227,16 @@\n     \n-fmt.Println(\n altura\n-+\n+ =\n  alt\n@@ -242,17 +242,20 @@\n tura + s\n-)\n+ - e\n %0A       \n@@ -259,39 +259,47 @@\n         \n+fmt.Println(\n altura\n- =\n+, s +\n  altura\n- + s - e\n+)\n %0A       \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-06_13-35-43",
+            "content": "@@ -241,17 +241,17 @@\n n(altura\n-,\n++\n  altura \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-06_13-36-36",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var p, s, e int \n    fmt.Scan(&p, &s, &e)\n\n    altura := 0\n\n   for  {\n        if altura + s >= p {\n            fmt.Println(altura, \"saiu\")\n            break\n        } else {\n            fmt.Println(altura, altura + s)\n            altura = altura + s - e\n        }\n   }\n}\n",
+            "lines": "18"
+        }
+    ]
+}

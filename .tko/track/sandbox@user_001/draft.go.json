@@ -67,8 +67,13 @@
         },
         {
             "label": "2026-04-14_17-23-51",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    // var qtd int\n    // fmt.Scan(&qtd)\n    // var idades []int = make([]int, qtd)\n    // fmt.Println(idades)\n\n    // arr := []int{9, 8, 4, 5, 6, 2, 3}\n    // fmt.Print(\"[ \")\n    // for i := 0; i < len(arr); i++ {\n    // fmt.Printf(\" %d \", arr[i])\n    // }\n    // fmt.Print(\"]\\n\")\n\n    //arr := []int{20, 19, 18, 17, 16}\n    //fmt.Print(\"[ \")\n    //for _, valor := range arr {\n        //fmt.Printf(\"%d \", valor)\n    //} \n    //fmt.Print(\"]\\n\")\n\n    arr := []int{20, 19, 18, 17, 16}\n    fmt.Print(\"[ \")\n    for i, valor := range arr {\n        if i != 0 {\n        fmt.Print(\", \")\n    } \n    fmt.Printf(\"%d\", valor)\n    } \n    fmt.Print(\"]\\n\")\n\n}\n",
+            "content": "@@ -475,34 +475,32 @@\n int(%22%5D%5Cn%22)%0A%0A    \n-//\n arr := %5B%5Dint%7B20,\n@@ -519,85 +519,13 @@\n  16%7D\n-  // essa usa para colocar a virgula antes do numero menos no primeiro\n %0A    \n-//\n fmt.\n@@ -536,26 +536,24 @@\n t(%22%5B %22)%0A    \n-//\n for i, valor\n@@ -576,18 +576,16 @@\n         \n-//\n if i != \n@@ -588,34 +588,32 @@\n  != 0 %7B%0A        \n-//\n fmt.Print(%22, %22)%0A\n@@ -612,35 +612,31 @@\n t(%22, %22)%0A    \n-//\n %7D %0A    \n-//\n fmt.Printf(%22\n@@ -647,35 +647,31 @@\n  valor)%0A    \n-//\n %7D %0A    \n-//\n fmt.Print(%22%5D\n@@ -680,112 +680,6 @@\n %22)%0A%0A\n-    var qtd int%0A    fmt.Scan(&qtd)%0A    var arr %5B%5Dint = %5B%5Dint%7B1, 2, 3, 4, 5%7D%0A    mostrar_vetor(arr, %22, %22)%0A%0A\n %7D%0A\n",
             "lines": "33"
+        },
+        {
+            "label": "2026-06-06_20-21-55",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    // var qtd int\n    // fmt.Scan(&qtd)\n    // var idades []int = make([]int, qtd)\n    // fmt.Println(idades)\n\n    // arr := []int{9, 8, 4, 5, 6, 2, 3}\n    // fmt.Print(\"[ \")\n    // for i := 0; i < len(arr); i++ {\n    // fmt.Printf(\" %d \", arr[i])\n    // }\n    // fmt.Print(\"]\\n\")\n\n    //arr := []int{20, 19, 18, 17, 16}\n    //fmt.Print(\"[ \")\n    //for _, valor := range arr {\n        //fmt.Printf(\"%d \", valor)\n    //} \n    //fmt.Print(\"]\\n\")\n\n    //arr := []int{20, 19, 18, 17, 16}  // essa usa para colocar a virgula antes do numero menos no primeiro\n    //fmt.Print(\"[ \")\n    //for i, valor := range arr {\n        //if i != 0 {\n        //fmt.Print(\", \")\n    //} \n    //fmt.Printf(\"%d\", valor)\n    //} \n    //fmt.Print(\"]\\n\")\n\n    var qtd int\n    fmt.Scan(&qtd)\n    var arr []int = []int{1, 2, 3, 4, 5}\n    mostrar_vetor(arr, \", \")\n\n}\n",
+            "lines": "38"
         }
     ]
 }

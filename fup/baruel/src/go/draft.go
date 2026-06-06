@@ -1,58 +1,37 @@
 package main
-
 import "fmt"
-
 func main() {
-    var total int
-    fmt.Scan(&total)
-    var tam int
-    fmt.Scan(&tam)
+    var qtd, possui int
+    fmt.Scan(&qtd,&possui)
 
-    vetor_normal := make([]int, tam)
-
-    for i := 0; i < tam; i++ {
-        fmt.Scan(&vetor_normal[i])
+    // Popula o Slice
+    slice := make([]int, possui)
+    for i := 0; i < possui; i++{
+        fmt.Scan(&slice[i])
     }
+    fmt.Print("[ ")
 
-    anterior := vetor_normal[0]
-    count := 0
-    vetor_repetidos := make([]int, tam)
-
-    for i := 1; i < tam; i++ {
-        if vetor_normal[i] == anterior {
-            vetor_repetidos[count] = vetor_normal[i]
-            count++
-        } else {
-            anterior = vetor_normal[i]
+    // Verifica as repetidas
+    for i:= 1; i < possui; i++{
+        if (slice[i] == slice[i - 1]){
+            fmt.Print(slice[i]," ");
         }
     }
+    fmt.Print("]\n")
 
-    vetor_faltantes := make([]int, total)
-    contar_indice := 0
-
-    for i := 1; i <= total; i++ {
-        encontrado := 0
-        for j := 0; j < tam; j++ {
-            if vetor_normal[j] == i {
-                encontrado = 1
+    // Encontra as que faltam
+    fmt.Print("[ ")
+    for i := 1; i <= qtd; i++{
+        encontrado := false
+        for j := 0; j < possui; j++{
+            if slice[j] == i{
+                encontrado = true
                 break
             }
         }
-
-        if encontrado == 0 {
-            vetor_faltantes[contar_indice] = i
-            contar_indice++
+        if encontrado == false{
+            fmt.Print(i," ")
         }
     }
-
-   
-    for i := 0; i < count; i++ {
-        fmt.Print(vetor_repetidos[i], " ")
-    }
-    
-    for i := 0; i < contar_indice; i++ {
-        fmt.Print(vetor_faltantes[i], " ")
-    }
-    
-
+    fmt.Print("]\n")
 }

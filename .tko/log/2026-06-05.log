@@ -1,0 +1,36 @@
+2026-06-05 12:37:03, SELF, v:1, k:eval1@bala, self:1, rate:100
+2026-06-05 12:37:10, SELF, v:1, k:eval1@mumia, self:1, rate:100
+2026-06-05 12:37:16, SELF, v:1, k:eval1@monica, self:1, rate:100
+2026-06-05 12:43:20, MOVE, v:1, k:fup@adedonha, mode:EDIT
+2026-06-05 13:04:19, MOVE, v:1, k:fup@adedonha, mode:EDIT
+2026-06-05 13:19:47, MOVE, v:1, k:fup@adedonha, mode:PICK
+2026-06-05 13:19:50, EXEC, v:1, k:fup@adedonha, mode:FULL, rate:0, size:15
+2026-06-05 13:20:00, EXEC, v:1, k:fup@adedonha, mode:FULL, rate:0, size:15
+2026-06-05 13:20:12, EXEC, v:1, k:fup@adedonha, mode:FULL, rate:0, size:15
+2026-06-05 13:20:18, EXEC, v:1, k:fup@adedonha, mode:FULL, rate:8, size:15
+2026-06-05 13:20:17, MOVE, v:1, k:fup@adedonha, mode:EDIT
+2026-06-05 13:20:18, MOVE, v:1, k:fup@adedonha, mode:EDIT
+2026-06-05 13:24:12, EXEC, v:1, k:fup@adedonha, mode:FULL, rate:100, size:15
+2026-06-05 13:24:16, SELF, v:1, k:fup@adedonha, self:1, rate:100
+2026-06-05 13:24:11, MOVE, v:1, k:fup@adedonha, mode:EDIT
+2026-06-05 13:24:12, MOVE, v:1, k:fup@adedonha, mode:EDIT
+2026-06-05 13:28:51, MOVE, v:1, k:fup@adedonha, mode:BACK
+2026-06-05 13:29:03, MOVE, v:1, k:fup@sapinho, mode:PICK
+2026-06-05 13:37:31, MOVE, v:1, k:fup@sapinho, mode:EDIT
+2026-06-05 13:42:26, MOVE, v:1, k:fup@sapinho, mode:EDIT
+2026-06-05 13:48:47, MOVE, v:1, k:fup@sapinho, mode:BACK
+2026-06-05 14:08:47, MOVE, v:1, k:fup@digitos, mode:DOWN
+2026-06-05 14:08:49, MOVE, v:1, k:fup@digitos, mode:PICK
+2026-06-05 14:08:47, MOVE, v:1, k:fup@digitos, mode:EDIT
+2026-06-05 14:11:49, MOVE, v:1, k:fup@digitos, mode:EDIT
+2026-06-05 14:18:04, MOVE, v:1, k:fup@digitos, mode:EDIT
+2026-06-05 14:22:46, EXEC, v:1, k:fup@digitos, mode:FULL, size:16, fail:COMP
+2026-06-05 14:23:06, EXEC, v:1, k:fup@digitos, mode:FULL, rate:0, size:20
+2026-06-05 14:23:37, EXEC, v:1, k:fup@digitos, mode:FULL, rate:16, size:21
+2026-06-05 14:23:43, MOVE, v:1, k:fup@digitos, mode:EDIT
+2026-06-05 14:23:37, MOVE, v:1, k:fup@digitos, mode:EDIT
+2026-06-05 14:31:58, MOVE, v:1, k:fup@digitos, mode:BACK
+2026-06-05 14:32:02, MOVE, v:1, k:fup@baruel, mode:PICK
+2026-06-05 14:33:46, MOVE, v:1, k:fup@baruel, mode:EDIT
+2026-06-05 14:36:42, MOVE, v:1, k:fup@baruel, mode:EDIT
+2026-06-05 14:41:47, MOVE, v:1, k:fup@baruel, mode:EDIT

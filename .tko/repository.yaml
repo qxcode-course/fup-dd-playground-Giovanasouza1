@@ -19,18 +19,16 @@ sources:
   writeable: false
   quests: null
 expanded:
-- fup@for2
-- fup@list
-- fup@mat
+- eval1@eval1
+- fup@dict
+- fup@for1
 - fup@games
 - fup@string
-- fup@rec
-- fup@if_extra
 - fup@struct
+- fup@mat
+- fup@rec
+- fup@list
 - fup@for_extra
-- fup@dict
-- fup@base
-- eval1@eval1
 flags:
   inbox: inbox
   panel: skills
@@ -38,5 +36,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@adedonha
-selected_index: 2
+selected: fup@castelos
+selected_index: 3

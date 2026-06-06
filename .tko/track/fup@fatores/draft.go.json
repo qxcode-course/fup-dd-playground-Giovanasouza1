@@ -1,0 +1,69 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-06_13-47-09",
+            "content": "@@ -78,17 +78,17 @@\n ator := \n-0\n+2\n %0A    con\n@@ -106,16 +106,20 @@\n %0A    for\n+ i %3C\n  a != 1%7B\n@@ -138,21 +138,17 @@\n a %25 \n-fator\n+2\n  == 0 %7B%0A\n     \n@@ -147,36 +147,8 @@\n 0 %7B%0A\n-            a = a / fator%0A  \n     \n@@ -153,33 +153,32 @@\n         contagem\n- \n ++%0A        %7D els\n@@ -185,33 +185,8 @@\n e %7B%0A\n-            contagem = 0%0A\n     \n@@ -198,17 +198,16 @@\n    fator\n- \n ++%0A     \n@@ -222,18 +222,19 @@\n ontagem \n-++\n+= 0\n %0A       \n@@ -251,10 +251,8 @@\n rint\n-ln\n (con\n@@ -272,13 +272,8 @@\n   %7D%0A\n-    %0A\n     \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-06_14-11-02",
+            "content": "@@ -82,9 +82,9 @@\n  := \n-2\n+0\n %0A   \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-06_14-12-15",
+            "content": "@@ -252,24 +252,48 @@\n    fator ++%0A\n+            contagem ++%0A\n             \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-06_14-12-45",
+            "content": "@@ -284,15 +284,8 @@\n tln(\n-fator, \n cont\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-06_14-13-32",
+            "content": "@@ -277,16 +277,18 @@\n mt.Print\n+ln\n (fator, \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-06_14-14-22",
+            "content": "@@ -226,16 +226,20 @@\n     \n-fator ++\n+contagem = 0\n %0A   \n@@ -243,36 +243,32 @@\n             \n-contagem = 0\n+fator ++\n %0A           \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-06_14-14-55",
+            "content": "@@ -214,47 +214,8 @@\n e %7B%0A\n-            fmt.Print(fator, contagem)%0A\n     \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-06_14-16-23",
+            "content": "@@ -189,24 +189,41 @@\n contagem ++%0A\n+        %7D else %7B%0A\n             \n@@ -253,38 +253,8 @@\n em)%0A\n-        %7D else %7B%0A            %0A\n     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-06_14-18-37",
+            "content": "@@ -189,24 +189,63 @@\n contagem ++%0A\n+            fmt.Print(fator, contagem)%0A\n         %7D el\n@@ -253,24 +253,28 @@\n e %7B%0A        \n+    \n %0A           \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-06_14-21-03",
+            "content": "@@ -222,34 +222,8 @@\n     \n-fmt.Print(fator, contagem)\n %0A   \n@@ -268,32 +268,59 @@\n  = 0%0A           \n+ fmt.Print(fator, contagem)\n %0A        %7D%0A    %0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-06_14-26-19",
+            "content": "@@ -210,16 +210,51 @@\n  else %7B%0A\n+        fmt.Print(fator, contagem)%0A\n         \n@@ -306,37 +306,8 @@\n     \n- fmt.Println(fator, contagem)\n %0A   \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-06_14-37-51",
+            "content": "@@ -214,97 +214,8 @@\n e %7B%0A\n-            if contagem %3E 0 %7B%0A                fmt.Println(fator, contagem)%0A            %7D%0A\n     \n@@ -264,30 +264,12 @@\n     \n-%7D%0A%7D%0Aif contagem %3E 0 %7B%0A\n+    \n     \n@@ -297,12 +297,31 @@\n ntagem)%0A\n+        %7D%0A    %0A    \n %7D%0A%7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-06_14-42-12",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a int\n    fmt.Scan(&a)\n\n    fator := 2\n    contagem := 0\n\n    for a != 1{\n        if a % fator == 0 {\n            a = a / fator\n            contagem ++\n        } else {\n            if contagem > 0 {\n                fmt.Println(fator, contagem)\n            }\n            fator ++\n            contagem = 0\n    }\n}\nif contagem > 0 {\n    fmt.Println(fator, contagem)\n}\n}\n",
+            "lines": "25"
+        }
+    ]
+}

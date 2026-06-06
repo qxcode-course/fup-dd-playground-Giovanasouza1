@@ -2,8 +2,53 @@
     "patches": [
         {
             "label": "2026-04-13_17-41-10",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a , b int\n    fmt.Scan(&a, &b)\n    pares := a % b == 0\n    fmt.Println(pares + a + b)\n}\n",
+            "content": "@@ -40,21 +40,23 @@\n %0A   \n+ \n var a\n+ \n , b int%0A\n    f\n@@ -51,16 +51,17 @@\n , b int%0A\n+ \n    fmt.S\n@@ -79,66 +79,33 @@\n %0A   \n-intervalo := b  - a + 1%0A%0A   if intervalo %25 2\n+ pares := a %25 b\n  == 0\n- %7B\n %0A    \n-  \n fmt.\n@@ -116,65 +116,21 @@\n tln(\n-intervalo)%0A   %7D else %7B%0A      fmt.Println(%22invalido%22)%0A   %7D%0A\n+pares + a + b)\n %0A%7D%0A\n",
             "lines": "8"
+        },
+        {
+            "label": "2026-06-06_20-27-10",
+            "content": "@@ -69,17 +69,16 @@\n &a, &b)%0A\n-%0A\n    inter\n@@ -95,20 +95,16 @@\n  - a + 1\n-%0A   \n %0A%0A   if \n@@ -162,24 +162,12 @@\n   %7D \n-%0A   %0A   if a %3E b\n+else\n  %7B%0A \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-06-06_20-28-55",
+            "content": "@@ -77,61 +77,52 @@\n %0A   \n-pares := 0%0A   for i := a; i %3C= b; i += 2 %7B\n+intervalo := b  - a + 1\n %0A   \n+%0A%0A\n    if i\n+ntervalo\n  %25 2\n@@ -130,16 +130,17 @@\n == 0\n+ \n %7B%0A      \n    p\n@@ -139,26 +139,54 @@\n     \n-   pares++\n+fmt.Println(intervalo)%0A   %7D \n %0A   \n+%0A\n    \n-%7D\n+if a %3E b %7B\n %0A   \n@@ -204,37 +204,24 @@\n tln(\n-pares)%0A   %7D%0A%0A   %0A   %0A%0A%0A   %7D %0A   \n+%22invalido%22)%0A   %7D%0A%0A%7D\n %0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-06_20-33-17",
+            "content": "@@ -165,18 +165,16 @@\n    %7D%0A   \n-%7D%0A\n    fmt.P\n@@ -187,16 +187,32 @@\n (pares)%0A\n+   %7D%0A%0A   %0A   %0A%0A%0A\n    %7D %0A  \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-06_20-33-53",
+            "content": "@@ -110,17 +110,20 @@\n = b; i +\n-+\n+= 2 \n %7B%0A      \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-06-06_20-34-30",
+            "content": "@@ -190,65 +190,12 @@\n es)%0A\n-%0A   if a %3E b %7B%0A      fmt.Println(%22invalido%22)%0A   %7D%0A   %7D%0A\n   \n+ %7D\n  %0A  \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-06-06_20-35-48",
+            "content": "@@ -88,58 +88,8 @@\n = 0%0A\n-    if a %3E b %7B%0A      fmt.Println(%22invalido%22)%0A   %7D%0A\n    f\n@@ -189,16 +189,62 @@\n res)%0A%0A  \n+ if a %3E b %7B%0A      fmt.Println(%22invalido%22)%0A   %7D\n %0A   %7D%0A  \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-06_20-36-21",
+            "content": "@@ -133,21 +133,8 @@\n o%22)%0A\n-      return%0A\n    %7D\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-06_20-36-43",
+            "content": "@@ -73,20 +73,21 @@\n &b)%0A%0A   \n-soma\n+pares\n  := 0%0A  \n@@ -210,17 +210,15 @@\n     \n-soma += i\n+pares++\n %0A   \n@@ -246,12 +246,13 @@\n tln(\n-soma\n+pares\n )%0A%0A \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-06_20-37-58",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n   var a, b int\n   fmt.Scan(&a, &b)\n\n   soma := 0\n    if a > b {\n      fmt.Println(\"invalido\")\n      return\n   }\n   for i := a; i <= b; i ++{\n      if i % 2 == 0{\n         soma += i\n      }\n   }\n   fmt.Println(soma)\n\n  \n   }\n   \n   \n",
+            "lines": "22"
         }
     ]
 }

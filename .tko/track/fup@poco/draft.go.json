@@ -1,0 +1,269 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-06_15-05-45",
+            "content": "@@ -78,16 +78,108 @@\n &S, &E)%0A\n+%0A    package main%0Aimport %22fmt%22%0Afunc main() %7B%0A    var p, s, e int %0A    fmt.Scan(&p, &s, &e)%0A%0A\n     altu\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-06_15-05-56",
+            "content": "@@ -310,9 +310,10 @@\n %7D%0A%7D%0A   %0A\n+%7D\n %0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-06_15-06-01",
+            "content": "@@ -45,15 +45,15 @@\n var \n-p, s, e\n+P, S, E\n  int\n@@ -71,17 +71,17 @@\n an(&\n-p, &s, &e\n+P, &S, &E\n )%0A  \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-06_15-06-31",
+            "content": "@@ -292,13 +292,8 @@\n  - e\n- - 10\n %0A   \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-06_15-07-50",
+            "content": "@@ -255,13 +255,8 @@\n  + s\n- - 10\n )%0A  \n@@ -289,16 +289,20 @@\n + s - e \n+- 10\n %0A       \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-06_15-08-07",
+            "content": "@@ -252,16 +252,20 @@\n ura + s \n+- 10\n )%0A      \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-06_15-08-18",
+            "content": "@@ -241,17 +241,27 @@\n altura, \n-s\n+altura + s \n )%0A      \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-06_15-08-49",
+            "content": "@@ -284,12 +284,8 @@\n - e \n-- 10\n %0A   \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-06_15-09-02",
+            "content": "@@ -280,16 +280,20 @@\n + s - e \n+- 10\n %0A       \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-06_15-11-24",
+            "content": "@@ -276,16 +276,20 @@\n ura + s \n+- e \n %0A       \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-06_15-13-41",
+            "content": "@@ -280,11 +280,8 @@\n + s \n-- e\n %0A   \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-06_15-13-48",
+            "content": "@@ -292,31 +292,9 @@\n     \n-    s-=%0A        %7D%0A    %0A\n+%7D\n %0A   \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-06_15-22-48",
+            "content": "@@ -297,14 +297,10 @@\n    s\n- \n -=\n- 10\n %0A   \n@@ -305,16 +305,21 @@\n        %7D\n+%0A    \n %0A%0A   %7D%0A%7D\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-06_15-23-17",
+            "content": "@@ -248,28 +248,8 @@\n  s)%0A\n-            s -= 10%0A\n     \n@@ -292,16 +292,23 @@\n         \n+s -= 10\n %0A       \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-06_15-24-51",
+            "content": "@@ -244,16 +244,36 @@\n ura, s)%0A\n+            s -= 10%0A\n         \n@@ -316,25 +316,8 @@\n     \n- s + altura -= 10\n %0A   \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-06_15-25-36",
+            "content": "@@ -295,16 +295,25 @@\n       s \n++ altura \n -= 10%0A  \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-06_15-25-45",
+            "content": "@@ -240,25 +240,16 @@\n (altura,\n- altura +\n  s)%0A    \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-06_15-27-25",
+            "content": "@@ -324,83 +324,8 @@\n   %7D%0A\n-        if altura %3C 0 %7B%0A            fmt.Println(altura, %22morreu%22)%0A        %7D\n %0A   \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-06_15-28-49",
+            "content": "@@ -386,34 +386,16 @@\n orreu%22)%0A\n-            break%0A\n         \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-06_15-29-57",
+            "content": "@@ -378,13 +378,8 @@\n tura\n- - 10\n , %22m\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-06_15-30-28",
+            "content": "@@ -375,20 +375,16 @@\n (altura \n-+ s \n - 10, %22m\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-06_15-30-59",
+            "content": "@@ -374,16 +374,25 @@\n n(altura\n+ + s - 10\n , %22morre\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-06_15-32-47",
+            "content": "@@ -339,17 +339,16 @@\n altura %3C\n-=\n  0 %7B%0A   \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-06_15-33-38",
+            "content": "@@ -339,16 +339,17 @@\n altura %3C\n+=\n  0 %7B%0A   \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-06_15-33-43",
+            "content": "@@ -417,92 +417,8 @@\n    %7D\n-%0A%0A        if salto  == 0 %7B%0A            fmt.Println(0, 0)%0A            break%0A        %7D\n %0A   \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-06_15-40-30",
+            "content": "@@ -427,16 +427,20 @@\n     if s\n+alto\n   == 0 %7B\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-06_15-40-36",
+            "content": "@@ -470,35 +470,8 @@\n  0)%0A\n-            fmt.Println(e)%0A\n     \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-06_15-41-31",
+            "content": "@@ -490,17 +490,16 @@\n Println(\n--\n e)%0A     \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-06_15-41-53",
+            "content": "@@ -492,26 +492,16 @@\n intln(-e\n-, %22morreu%22\n )%0A      \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-06_15-42-04",
+            "content": "@@ -339,17 +339,16 @@\n altura %3C\n-=\n  0 %7B%0A   \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-06_15-42-29",
+            "content": "@@ -420,16 +420,128 @@\n  %7D%0A%0A    \n+    if s  == 0 %7B%0A            fmt.Println(0, 0)%0A            fmt.Println(-e, %22morreu%22)%0A            break%0A        %7D\n %0A   %7D%0A%7D%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-06_15-42-38",
+            "content": "@@ -339,16 +339,17 @@\n altura %3C\n+=\n  0 %7B%0A   \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-06_15-43-12",
+            "content": "@@ -419,79 +419,8 @@\n  %7D%0A%0A\n-        if altura %3C 0 %7B%0A    fmt.Println(altura, %22morreu%22)%0A    break%0A%7D%0A%0A\n     \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-06_15-43-32",
+            "content": "@@ -455,17 +455,16 @@\n Println(\n--\n altura, \n@@ -484,16 +484,22 @@\n  break%0A%7D\n+%0A%0A    \n %0A   %7D%0A%7D%0A\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-06_15-43-38",
+            "content": "@@ -415,16 +415,87 @@\n      %7D%0A%0A\n+        if altura %3C 0 %7B%0A    fmt.Println(-altura, %22morreu%22)%0A    break%0A%7D%0A\n    %7D%0A%7D%0A \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-06_15-45-17",
+            "content": "@@ -314,22 +314,8 @@\n  10%0A\n-             %0A\n     \n@@ -420,19 +420,15 @@\n %7D%0A%0A   %7D%0A\n-   %0A\n %7D%0A   %0A%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-06_19-46-04",
+            "content": "@@ -432,76 +432,17 @@\n   %7D%0A\n-        if altura == 0 %7B%0A            fmt.Println(0, 0)%0A     \n+%0A\n    %7D%0A   \n %7D%0A%0A%7D\n@@ -437,18 +437,16 @@\n    %7D%0A   \n-%7D%0A\n %0A%7D%0A   %0A%0A\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-06_20-00-44",
+            "content": "@@ -450,21 +450,8 @@\n ura \n-+ s - e - 10 \n == 0\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-06_20-01-29",
+            "content": "@@ -116,44 +116,30 @@\n     \n-topo := p + s%0A       if topo\n+ if altura + s\n  %3E= p %7B%0A\n     \n@@ -134,16 +134,20 @@\n  %3E= p %7B%0A\n+    \n         \n@@ -174,32 +174,36 @@\n %22saiu%22)%0A        \n+    \n break%0A       %7D %0A\n@@ -203,15 +203,23 @@\n     \n+ \n %7D \n+else %7B\n %0A   \n-%0A\n+  \n     \n@@ -241,20 +241,26 @@\n altura, \n-topo\n+altura + s\n )%0A      \n@@ -264,28 +264,83 @@\n     \n+ \n+    \n altura \n-:\n = \n-topo - e%0A%0A\n+altura + s - e%0A             s -= 10%0A             %0A        %7D%0A \n     \n@@ -357,14 +357,17 @@\n ra %3C\n-=\n  0 %7B%0A\n+    \n     \n@@ -400,32 +400,36 @@\n orreu%22)%0A        \n+    \n break%0A       %7D%0A \n@@ -429,14 +429,98 @@\n     \n+ \n %7D%0A    \n-%7D%0A%7D\n+    if altura + s - e - 10 == 0 %7B%0A            fmt.Println(0, 0)%0A        %7D%0A   %7D%0A%0A%7D%0A   %0A\n %0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-06_20-07-41",
+            "content": "@@ -120,22 +120,17 @@\n topo := \n-altura\n+p\n  + s%0A   \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-06_20-08-46",
+            "content": "@@ -264,16 +264,17 @@\n  altura \n+:\n = topo -\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-06_20-09-07",
+            "content": "@@ -278,20 +278,8 @@\n  - e\n-%0A       s -=\n %0A%0A  \n@@ -342,20 +342,8 @@\n u%22)%0A\n-        s-=%0A\n     \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-06_20-10-15",
+            "content": "@@ -290,11 +290,8 @@\n s -=\n- 10\n %0A%0A  \n@@ -350,16 +350,27 @@\n orreu%22)%0A\n+        s-=\n %0A       \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-06_20-10-27",
+            "content": "@@ -346,14 +346,8 @@\n ura,\n- topo,\n  %22mo\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-06_20-12-18",
+            "content": "@@ -309,16 +309,17 @@\n altura %3C\n+=\n  0 %7B%0A   \n@@ -342,16 +342,22 @@\n (altura,\n+ topo,\n  %22morreu\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-06_20-12-54",
+            "content": "@@ -331,16 +331,18 @@\n mt.Print\n+ln\n (altura,\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-06_20-13-12",
+            "content": "@@ -341,17 +341,16 @@\n ltura, %22\n- \n morreu%22)\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-06_20-13-28",
+            "content": "@@ -323,34 +323,32 @@\n        fmt.Print\n-ln\n (altura, %22 morre\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-06_20-13-40",
+            "content": "@@ -343,16 +343,17 @@\n ltura, %22\n+ \n morreu%22)\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-06_20-13-49",
+            "content": "@@ -298,17 +298,16 @@\n %0A       \n- \n if altur\n@@ -314,20 +314,16 @@\n a %3C 0 %7B%0A\n-    \n         \n@@ -348,28 +348,25 @@\n , %22morreu%22)%0A\n-    \n+%0A\n         brea\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-06_20-17-02",
+            "content": "@@ -216,45 +216,8 @@\n   %7D \n-else %7B%0A        topo = altura%0A       %7D\n %0A   \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-06_20-19-26",
+            "content": "@@ -109,56 +109,8 @@\n   %7B%0A\n-    topo := altura + s%0A        if s %3C= 0 %7B%0A     \n     \n@@ -121,16 +121,17 @@\n opo \n+:\n = altura\n %0A   \n@@ -130,21 +130,13 @@\n tura\n-%0A        %7D%0A%0A \n+ + s%0A\n     \n@@ -153,20 +153,16 @@\n  %3E= p %7B%0A\n-    \n         \n@@ -193,35 +193,68 @@\n u%22)%0A        \n-    \n break%0A \n+      %7D else %7B%0A        topo = altura%0A\n        %7D%0A   \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-06_20-20-30",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var p, s, e int\n    fmt.Scan(&p, &s, &e)\n    altura := 0\n\n   for  {\n    topo := altura + s\n        if s <= 0 {\n            topo = altura\n        }\n\n        if topo >= p {\n            fmt.Println(altura, \"saiu\")\n            break\n        }\n   \n       fmt.Println(altura, topo)\n       altura = topo - e\n       s -= 10\n\n        if altura < 0 {\n            fmt.Println(altura, \"morreu\")\n            break\n       }\n    }\n}\n",
+            "lines": "28"
+        }
+    ]
+}
