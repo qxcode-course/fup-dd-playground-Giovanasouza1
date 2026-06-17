@@ -1,0 +1,74 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-09_17-03-36",
+            "content": "@@ -225,21 +225,9 @@\n  if \n-quantidade%5Bi%5D\n+i\n  %25 2\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-09_19-42-23",
+            "content": "@@ -47,16 +47,25 @@\n r limite\n+, pessoas\n  int%0A   \n@@ -77,24 +77,34 @@\n Scan(&limite\n+, &pessoas\n )%0A%0A    quant\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-09_19-46-50",
+            "content": "@@ -173,9 +173,9 @@\n  := \n-1\n+0\n ; i \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-09_19-47-55",
+            "content": "@@ -78,27 +78,8 @@\n te)%0A\n-    fmt.Print(%22%5B %22)\n %0A   \n@@ -169,17 +169,17 @@\n or i := \n-0\n+1\n ; i %3C= l\n@@ -334,16 +334,67 @@\n ln(%22\n- %5D%22)%0A    \n+%5B%22, contnegativ, %22%5D%22)%0A    fmt.Println(%22%5B%22, contpositiv, %22%5D%22)\n %0A%7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-09_19-55-39",
+            "content": "@@ -45,118 +45,141 @@\n var \n-profstars, alunos, &qtd int%0A    fmt.Scan(&profstars, &alunos, &qtd)%0A    %0A%0A    numeros := make(%5B%5Dint, qtd)%0A    \n+limite int%0A    fmt.Scan(&limite)%0A    fmt.Print(%22%5B %22)%0A    quantidade := make(%5B%5Dint, limite)%0A%0A    contpositiv := 0%0A    contnegativ := 0\n %0A   \n@@ -197,14 +197,17 @@\n ; i \n-:= qtd\n+%3C= limite\n ; i+\n@@ -222,397 +222,143 @@\n     \n-fmt.Scan(&numeros%5Bi%5D)%0A        if numeros%5Bi%5D %25 2 == 0 %7B%0A            profstars = append(profstars,  numeros%5Bi%5D)%0A        %7D else %7B%0A            alunos = append(alunos, numeros%5Bi%5D)%0A        %7D%0A    %7D%0A    fmt.Println(%22%5B %22)%0A    if numeros%5Bi%5D %25 2 != 0 %7B%0A    fmt.Println(alunos, %22 %22)%0A    fmt.Println(%22 %5D%22)%0A    %7D else %7B%0A        fmt.Println(profstars, %22 %22)%0A        fmt.Println(%22 %5D%22)%0A    %7D%0A    fmt println\n+if quantidade%5Bi%5D %25 2 == 0 %7B%0A            contpositiv++%0A        %7D else %7B%0A            contnegativ++%0A        %7D%0A    %7D%0A%0A    fmt.Println(%22 %5D%22)\n %0A   \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-10_13-48-22",
+            "content": "@@ -174,9 +174,10 @@\n ; i \n-%3C\n+:=\n  qtd\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-10_13-53-07",
+            "content": "@@ -54,42 +54,19 @@\n tars\n-%5B%5Dint%0A    var alunos%5B%5Dint%0A    var \n+, alunos, &\n qtd \n@@ -382,17 +382,16 @@\n %7D%0A    %7D%0A\n-%0A\n     fmt.\n@@ -408,40 +408,34 @@\n  %22)%0A\n-%0A\n     \n-for _, num :=  range alunos\n+if numeros%5Bi%5D %25 2 != 0\n  %7B%0A \n@@ -449,32 +449,29 @@\n Println(\n-num\n+alunos\n , %22 %22)%0A\n-    %7D%0A\n     fmt.\n@@ -488,42 +488,18 @@\n %5D%22)%0A\n-%0A\n     \n-for _, num := range profstars\n+%7D else\n  %7B%0A \n@@ -517,19 +517,25 @@\n Println(\n-num\n+profstars\n , %22 %22)%0A \n@@ -533,26 +533,24 @@\n s, %22 %22)%0A    \n-%7D%0A\n     fmt.Prin\n@@ -565,13 +565,31 @@\n )%0A    %7D%0A    \n+fmt println%0A    %0A%7D\n %0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-10_14-03-10",
+            "content": "@@ -45,78 +45,98 @@\n var \n-qtd int%0A    fmt.Scan(&qtd)%0A%0A    var profstars%5B%5Dint%0A    var alunos%5B%5Dint\n+profstars%5B%5Dint%0A    var alunos%5B%5Dint%0A    var qtd int%0A    fmt.Scan(&profstars, &alunos, &qtd)\n %0A   \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-10_14-04-16",
+            "content": "@@ -399,16 +399,18 @@\n mt.Print\n+ln\n (%22%5B %22)%0A%0A\n@@ -448,32 +448,34 @@\n  %7B%0A    fmt.Print\n+ln\n (num, %22 %22)%0A    %7D\n@@ -488,16 +488,18 @@\n mt.Print\n+ln\n (%22 %5D%22)%0A%0A\n@@ -551,16 +551,18 @@\n mt.Print\n+ln\n (num, %22 \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-06-10_14-04-32",
+            "content": "@@ -486,16 +486,17 @@\n .Print(%22\n+ \n %5D%22)%0A%0A   \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-06-10_14-04-41",
+            "content": "@@ -488,22 +488,15 @@\n rint\n-ln\n (%22%5D%22)%0A%0A\n-    %0A\n     \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-06-10_14-04-58",
+            "content": "@@ -493,16 +493,20 @@\n n(%22%5D%22)%0A%0A\n+    \n %0A    for\n@@ -581,24 +581,25 @@\n mt.Println(%22\n+ \n %5D%22)%0A    %7D%0A  \n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-06-10_14-05-05",
+            "content": "@@ -493,35 +493,16 @@\n n(%22%5D%22)%0A%0A\n-    fmt.Print(%22%5B %22)\n %0A    for\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-06-10_14-05-19",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var qtd int\n    fmt.Scan(&qtd)\n\n    var profstars[]int\n    var alunos[]int\n    \n\n    numeros := make([]int, qtd)\n    \n    for i := 0; i < qtd; i++ {\n        fmt.Scan(&numeros[i])\n        if numeros[i] % 2 == 0 {\n            profstars = append(profstars,  numeros[i])\n        } else {\n            alunos = append(alunos, numeros[i])\n        }\n    }\n\n    fmt.Print(\"[ \")\n\n    for _, num :=  range alunos {\n    fmt.Print(num, \" \")\n    }\n    fmt.Println(\"]\")\n\n    fmt.Print(\"[ \")\n    for _, num := range profstars {\n        fmt.Print(num, \" \")\n    }\n    fmt.Println(\"]\")\n    }\n    \n",
+            "lines": "35"
+        }
+    ]
+}

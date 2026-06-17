@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-10_01-35-03",
+            "content": "@@ -7,16 +7,17 @@\n ge main%0A\n+%0A\n import %22\n@@ -21,16 +21,17 @@\n t %22fmt%22%0A\n+%0A\n func mai\n@@ -36,24 +36,25 @@\n ain() %7B%0A    \n+/\n var m int%0A  \n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-06-10_01-35-12",
+            "content": "@@ -34,16 +34,372 @@\n ain() %7B%0A\n+    var m int%0A    fmt.Scan(&m)%0A%0A    anterior := 0%0A    fmt.Scan(&anterior)%0A    var x int%0A    parkour := 0%0A    for i := 1; i %3C m; i++ %7B%0A        fmt.Scan(&x)%0A        if x-anterior %3E 1 %7C%7C x-anterior %3C -1 %7B%0A            anterior = x%0A            parkour++%0A        %7D else %7B%0A            anterior = x%0A            continue%0A        %7D%0A    %7D%0A%0A    fmt.Println(parkour)/%0A%0A\n     var \n@@ -408,24 +408,25 @@\n ementos int%0A\n+%0A\n     fmt.Scan\n@@ -438,16 +438,17 @@\n mentos)%0A\n+%0A\n     veto\n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-06-10_01-36-01",
+            "content": "\npackage main\nimport \"fmt\"\nfunc main() {\n    var elementos int\n    fmt.Scan(&elementos)\n    vetorElementos := make([]int, elementos)\n\n    for i := 0; i < elementos; i++ {\n        fmt.Scan(&vetorElementos[i])\n    }\n\n    movimentos := 0\n\n    for i := 0; i < elementos-1; i++ {\n        if vetorElementos[i] < vetorElementos[i+1] && vetorElementos[i+1]-vetorElementos[i] > 1 {\n            movimentos++\n        } else if vetorElementos[i] > vetorElementos[i+1] && vetorElementos[i]-vetorElementos[i+1] > 1 {\n            movimentos++\n        }\n    }\n\n    fmt.Println(movimentos)\n}\n",
+            "lines": "24"
+        }
+    ]
+}

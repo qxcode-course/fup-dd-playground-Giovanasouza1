@@ -2,8 +2,23 @@
     "patches": [
         {
             "label": "2026-05-04_16-55-39",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var nome string = \"J\u00falia\"\n    var letras []rune = []rune(nome)\n \n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -45,107 +45,100 @@\n var \n-x\n+nome\n  string\n-%0A    fmt.Scan(&x)%0A%0A    for i := len(x)-1; i %3E= 0; i-- %7B%0A        fmt.Printf(%22%25c%22, x%5Bi%5D)%0A    %7D\n+ = %22J%C3%BAlia%22%0A    var letras %5B%5Drune = %5B%5Drune(nome)%0A %0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
             "lines": "8"
+        },
+        {
+            "label": "2026-06-08_14-07-26",
+            "content": "@@ -36,9 +36,116 @@\n () %7B%0A   \n+ var x string%0A    fmt.Scan(&x)%0A%0A    for i := len(x)-1; i %3E= 0; i-- %7B%0A        fmt.Printf(%22%25c%22, x%5Bi%5D)%0A    %7D%0A%7D\n %0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-06-14_20-21-37",
+            "content": "@@ -37,529 +37,8 @@\n ) %7B%0A\n-%09func separarvogais( frase string) string %7B%0A%09%09count := 0%0A%09%09for i := 0; i %3C len(frase); i++ %7B%0A%09%09%09if frase%5Bi%5D == 'a' %7C%7C frase%5Bi%5D == 'e' %7C%7Cfrase%5Bi%5D == 'i' %7C%7Cfrase%5Bi%5D == 'o' %7C%7Cfrase%5Bi%5D == 'u' %7B%0A%09%09%09%09count += frase%5Bi%5D%0A%09%09%09%7D%0A%09%09%09return separavogais%0A%09%09%7D%0A%09%7D%0A   %0A%09func separaconsoantes(frase string) string %7B%0A%09%09count := 0%0A%09%09for i := 0; i %3C len(frase); i++ %7B%0A%09%09%09if frase%5Bi%5D != 'a' && frase%5Bi%5D != 'e' && frase%5Bi%5D != 'i' && frase%5Bi%5D != 'o' && frase%5Bi%5D != 'u' && frase%5Bi%5D != ' ' %7B%0A%09%09%09%09count += frase%5Bi%5D%0A%09%09%09%7D%0A%09%09%09return separaconsoantes%0A%09%7D%0A%7D%0A\n+   \n %0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2026-06-15_16-57-55",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tfunc separarvogais( frase string) string {\n\t\tcount := 0\n\t\tfor i := 0; i < len(frase); i++ {\n\t\t\tif frase[i] == 'a' || frase[i] == 'e' ||frase[i] == 'i' ||frase[i] == 'o' ||frase[i] == 'u' {\n\t\t\t\tcount += frase[i]\n\t\t\t}\n\t\t\treturn separavogais\n\t\t}\n\t}\n   \n\tfunc separaconsoantes(frase string) string {\n\t\tcount := 0\n\t\tfor i := 0; i < len(frase); i++ {\n\t\t\tif frase[i] != 'a' && frase[i] != 'e' && frase[i] != 'i' && frase[i] != 'o' && frase[i] != 'u' && frase[i] != ' ' {\n\t\t\t\tcount += frase[i]\n\t\t\t}\n\t\t\treturn separaconsoantes\n\t}\n}\n\n",
+            "lines": "23"
         }
     ]
 }

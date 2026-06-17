@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-15_17-24-38",
+            "content": "@@ -99,19 +99,16 @@\n n(&vetor\n-%5Bi%5D\n )%0A   %7D%0A \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-15_17-25-10",
+            "content": "@@ -113,50 +113,20 @@\n   %7D%0A\n-%0A\n    \n-maior := vetor%5B0%5D%0A   menor := vetor%5B0%5D\n+cont := 0\n %0A   \n@@ -171,70 +171,20 @@\n %5D %3E \n-maior %7B%0A        maior = vetor%5Bi%5D%0A    %7D%0A    if vetor%5Bi%5D %3C menor\n+vetor%5Bi + 1%5D\n  %7B%0A \n@@ -194,14 +194,14 @@\n     \n-menor \n+cont +\n = ve\n@@ -207,16 +207,17 @@\n etor%5Bi%5D%0A\n+%0A\n     %7D%0A  \n@@ -239,21 +239,12 @@\n tln(\n-maior + menor\n+cont\n )%0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-15_17-36-44",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n   var vetor[5]int\n\n   for i := 0; i < 5; i++{\n    fmt.Scan(&vetor[i])\n   }\n\n   maior := vetor[0]\n   menor := vetor[0]\n   for i := 0; i < 5; i++{\n    if vetor[i] > maior {\n        maior = vetor[i]\n    }\n    if vetor[i] < menor {\n        menor = vetor[i]\n    }\n   }\n    fmt.Println(maior + menor)\n}\n",
+            "lines": "21"
+        }
+    ]
+}

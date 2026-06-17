@@ -412,8 +412,53 @@
         },
         {
             "label": "2026-06-06_20-46-35",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var qtd, possui int\n    fmt.Scan(&qtd,&possui)\n\n    // Popula o Slice\n    slice := make([]int, possui)\n    for i := 0; i < possui; i++{\n        fmt.Scan(&slice[i])\n    }\n    fmt.Print(\"[ \")\n\n    // Verifica as repetidas\n    for i:= 1; i < possui; i++{\n        if (slice[i] == slice[i - 1]){\n            fmt.Print(slice[i],\" \");\n        }\n    }\n    fmt.Print(\"]\\n\")\n\n    // Encontra as que faltam\n    fmt.Print(\"[ \")\n    for i := 1; i <= qtd; i++{\n        encontrado := false\n        for j := 0; j < possui; j++{\n            if slice[j] == i{\n                encontrado = true\n                break\n            }\n        }\n        if encontrado == false{\n            fmt.Print(i,\" \")\n        }\n    }\n    fmt.Print(\"]\\n\")\n}\n",
+            "content": "@@ -214,780 +214,8 @@\n %0A   \n- // fmt.Print(%22%5B %22)%0A%0A    // Verifica as repetidas%0A    for i:= 1; i %3C possui; i++%7B%0A        if (slice%5Bi%5D == slice%5Bi - 1%5D)%7B%0A            fmt.Print(slice%5Bi%5D,%22 %22);%0A        %7D%0A    %7D%0A    fmt.Print(%22%5Cn%22)%0A%0A    // Encontra as que faltam%0A    // fmt.Print(%22%5B %22)%0A    for i := 1; i %3C= qtd; i++%7B%0A        encontrado := false%0A        for j := 0; j %3C possui; j++%7B%0A            if slice%5Bj%5D == i%7B%0A                encontrado = true%0A                break%0A            %7D%0A        %7D%0A        if encontrado == false%7B%0A            fmt.Print(i,%22 %22)%0A        %7D%0A    %7D%0A    fmt.Print(%22%5Cn%22)%0A%7Dpackage main%0Aimport %22fmt%22%0Afunc main() %7B%0A    var qtd, possui int%0A    fmt.Scan(&qtd,&possui)%0A%0A    // Popula o Slice%0A    slice := make(%5B%5Dint, possui)%0A    for i := 0; i %3C possui; i++%7B%0A        fmt.Scan(&slice%5Bi%5D)%0A    %7D%0A    //\n  fmt\n@@ -227,16 +227,16 @@\n t(%22%5B %22)%0A\n+\n %0A    // \n@@ -392,24 +392,25 @@\n  fmt.Print(%22\n+%5D\n %5Cn%22)%0A%0A    //\n@@ -436,19 +436,16 @@\n ltam%0A   \n- //\n  fmt.Pri\n@@ -728,32 +728,32 @@\n         %7D%0A    %7D%0A\n-\n     fmt.Print(%22%5C\n@@ -751,15 +751,16 @@\n .Print(%22\n+%5D\n %5Cn%22)%0A%7D%0A\n",
             "lines": "37"
+        },
+        {
+            "label": "2026-06-09_19-38-32",
+            "content": "@@ -1,8 +1,777 @@\n+package main%0Aimport %22fmt%22%0Afunc main() %7B%0A    var qtd, possui int%0A    fmt.Scan(&qtd,&possui)%0A%0A    // Popula o Slice%0A    slice := make(%5B%5Dint, possui)%0A    for i := 0; i %3C possui; i++%7B%0A        fmt.Scan(&slice%5Bi%5D)%0A    %7D%0A    // fmt.Print(%22%5B %22)%0A%0A    // Verifica as repetidas%0A    for i:= 1; i %3C possui; i++%7B%0A        if (slice%5Bi%5D == slice%5Bi - 1%5D)%7B%0A            fmt.Print(slice%5Bi%5D,%22 %22);%0A        %7D%0A    %7D%0A    fmt.Print(%22%5Cn%22)%0A%0A    // Encontra as que faltam%0A    // fmt.Print(%22%5B %22)%0A    for i := 1; i %3C= qtd; i++%7B%0A        encontrado := false%0A        for j := 0; j %3C possui; j++%7B%0A            if slice%5Bj%5D == i%7B%0A                encontrado = true%0A                break%0A            %7D%0A        %7D%0A        if encontrado == false%7B%0A            fmt.Print(i,%22 %22)%0A        %7D%0A    %7D%0A    fmt.Print(%22%5Cn%22)%0A%7D\n package \n",
+            "lines": "73"
+        },
+        {
+            "label": "2026-06-09_19-38-47",
+            "content": "@@ -399,17 +399,16 @@\n .Print(%22\n- \n %5Cn%22)%0A%0A  \n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-06-09_19-52-24",
+            "content": "@@ -395,24 +395,25 @@\n  fmt.Print(%22\n+ \n %5Cn%22)%0A%0A    //\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-06-09_19-52-59",
+            "content": "@@ -399,17 +399,16 @@\n .Print(%22\n- \n %5Cn%22)%0A%0A  \n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-06-09_19-53-49",
+            "content": "@@ -264,28 +264,8 @@\n das%0A\n-    var salva %5B%5Dint%0A\n     \n@@ -347,226 +347,31 @@\n     \n-salva = append(salva, slice%5Bi%5D)%0A        %7D%0A    %7D%0A%0A    for i := 0 ; i %3C len(salva);i++%7B%0A        aux := i%0A        if aux + 2 %3E len(salva)%7B%0A            fmt.Print(salva%5Bi%5D)%0A        %7Delse%7B%0A            fmt.Print(salva\n+fmt.Print(slice\n %5Bi%5D,%22 %22)\n %0A   \n@@ -362,24 +362,25 @@\n lice%5Bi%5D,%22 %22)\n+;\n %0A        %7D%0A \n@@ -384,17 +384,16 @@\n %7D%0A    %7D%0A\n-%0A\n     fmt.\n@@ -401,21 +401,16 @@\n rint\n-ln()%0A        \n+(%22 %5Cn%22)%0A\n %0A   \n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-06-10_01-28-51",
+            "content": "@@ -977,16 +977,15 @@\n .Print(%22\n- \n %5Cn%22)%0A%7D%0A\n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-06-10_01-29-01",
+            "content": "@@ -977,15 +977,16 @@\n .Print(%22\n+ \n %5Cn%22)%0A%7D%0A\n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-06-10_01-29-14",
+            "content": "@@ -206,16 +206,39 @@\n %5D)%0A    %7D\n+%0A    // fmt.Print(%22%5B %22)\n %0A%0A    //\n@@ -260,16 +260,36 @@\n petidas%0A\n+    var salva %5B%5Dint%0A\n     for \n@@ -367,31 +367,226 @@\n     \n-fmt.Print(slice\n+salva = append(salva, slice%5Bi%5D)%0A        %7D%0A    %7D%0A%0A    for i := 0 ; i %3C len(salva);i++%7B%0A        aux := i%0A        if aux + 2 %3E len(salva)%7B%0A            fmt.Print(salva%5Bi%5D)%0A        %7Delse%7B%0A            fmt.Print(salva\n %5Bi%5D,%22 %22)\n ;%0A  \n@@ -581,17 +581,16 @@\n %5Bi%5D,%22 %22)\n-;\n %0A       \n@@ -590,32 +590,33 @@\n         %7D%0A    %7D%0A\n+%0A\n     fmt.Println(\n@@ -615,22 +615,26 @@\n Println(\n-%22%5Cb%22)%0A\n+)%0A        \n %0A    // \n@@ -656,16 +656,39 @@\n  faltam%0A\n+    // fmt.Print(%22%5B %22)%0A\n     for \n@@ -979,14 +979,12 @@\n rint\n-ln\n (%22%5C\n-b\n+n\n %22)%0A%7D\n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-06-10_13-23-32",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var qtd, possui int\n    fmt.Scan(&qtd,&possui)\n\n    // Popula o Slice\n    slice := make([]int, possui)\n    for i := 0; i < possui; i++{\n        fmt.Scan(&slice[i])\n    }\n\n    // Verifica as repetidas\n    for i:= 1; i < possui; i++{\n        if (slice[i] == slice[i - 1]){\n            fmt.Print(slice[i],\" \");\n        }\n    }\n    fmt.Println(\"\\b\")\n\n    // Encontra as que faltam\n    for i := 1; i <= qtd; i++{\n        encontrado := false\n        for j := 0; j < possui; j++{\n            if slice[j] == i{\n                encontrado = true\n                break\n            }\n        }\n        if encontrado == false{\n            fmt.Print(i,\" \")\n        }\n    }\n    fmt.Println(\"\\b\")\n}\n",
+            "lines": "35"
         }
     ]
 }

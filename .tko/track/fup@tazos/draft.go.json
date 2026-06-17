@@ -227,8 +227,163 @@
         },
         {
             "label": "2026-06-06_20-47-13",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var qtd, possui int\n    fmt.Scan(&qtd,&possui)\n\n    // Popula o Slice\n    slice := make([]int, possui)\n    for i := 0; i < possui; i++{\n        fmt.Scan(&slice[i])\n    }\n    fmt.Print(\"[ \")\n\n    // Verifica as repetidas\n    for i:= 1; i < possui; i++{\n        if (slice[i] == slice[i - 1]){\n            fmt.Print(slice[i],\" \");\n        }\n    }\n    fmt.Print(\"]\\n\")\n\n    // Encontra as que faltam\n    fmt.Print(\"[ \")\n    for i := 1; i <= qtd; i++{\n        encontrado := false\n        for j := 0; j < possui; j++{\n            if slice[j] == i{\n                encontrado = true\n                break\n            }\n        }\n        if encontrado == false{\n            fmt.Print(i,\" \")\n        }\n    }\n    fmt.Print(\"]\\n\")\n}\n",
-            "lines": "37"
+            "content": "@@ -1,237 +1,403 @@\n-package main%0Aimport %22fmt%22%0Afunc main() %7B%0A    var qtd, possui int%0A    fmt.Scan(&qtd,&possui)%0A%0A    slice := make(%5B%5Dint, possui)%0A    for i := 0; i %3C possui; i++%7B%0A        fmt.Scan(&slice%5Bi%5D)%0A    %7D%0A    fmt.Print(%22%5B %22)%0A%0A%0A    for i := 1; i %3C\n+@@ -85,16 +85,38 @@%0A ossui)%250A%250A%0A+    // Popula o Slice%250A%0A     slic%0A@@ -228,16 +228,44 @@%0A (%2522%255B %2522)%250A%250A%0A+    // Verifica as repetidas%0A %250A    for%0A@@ -266,17 +266,16 @@%0A    for i%0A- %0A := 1; i %0A@@ -401,11 +401,366 @@%0A t(%2522%255D%255Cn%2522)%0A+%250A%250A    // Encontra as que faltam%250A    fmt.Print(%2522%255B %2522)%250A    for i := 1; i %253C= qtd; i++%257B%250A        encontrado := false%250A        for j := 0; j %253C\n  pos\n@@ -405,13 +405,21 @@\n ui; \n-i++%7B%0A\n+j++%257B%250A    \n     \n@@ -429,108 +429,254 @@\n  if \n-(\n slice\n-%5Bi%5D == slice%5Bi - 1%5D)%7B%0A            fmt.Print(slice%5Bi%5D,%22 %22);%0A        %7D%0A    %7D%0A    fmt.Print(%22%5D%5Cn%22)%0A%7D\n+%255Bj%255D == i%257B%250A                encontrado = true%250A                break%250A            %257D%250A        %257D%250A        if encontrado == false%257B%250A            fmt.Print(i,%2522 %2522)%250A        %257D%250A    %257D%250A    fmt.Print(%2522%255D%255Cn%2522)%0A %250A%257D%250A\n %0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-10_17-55-58",
+            "content": "@@ -40,16 +40,21 @@\n %0A    var\n+ qtd,\n  possui \n@@ -71,16 +71,21 @@\n t.Scan(&\n+qtd,&\n possui)%0A\n@@ -349,13 +349,13 @@\n rint\n-ln\n (%22%5D\n+%5Cn\n %22)%0A%7D\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-10_17-57-03",
+            "content": "@@ -310,83 +310,8 @@\n %22);%0A\n-        %7D else if (slice%5Bi%5D == slice%5Bi%5D) %7B%0A            fmt.Print(slice%5Bi%5D)%0A\n     \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-10_17-59-02",
+            "content": "@@ -191,16 +191,17 @@\n Print(%22%5B\n+ \n %22)%0A%0A%0A   \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-10_17-59-13",
+            "content": "@@ -44,13 +44,8 @@\n  var\n- qtd,\n  pos\n@@ -70,13 +70,8 @@\n an(&\n-qtd,&\n poss\n@@ -191,17 +191,16 @@\n Print(%22%5B\n- \n %22)%0A%0A%0A   \n@@ -305,16 +305,91 @@\n %5D,%22 %22);%0A\n+        %7D else if (slice%5Bi%5D == slice%5Bi%5D) %7B%0A            fmt.Print(slice%5Bi%5D)%0A\n         \n@@ -392,24 +392,24 @@\n     %7D%0A    %7D%0A\n-\n     fmt.Prin\n@@ -409,16 +409,18 @@\n mt.Print\n+ln\n (%22%5D%22)%0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-10_17-59-51",
+            "content": "@@ -40,16 +40,21 @@\n %0A    var\n+ qtd,\n  possui \n@@ -71,16 +71,21 @@\n t.Scan(&\n+qtd,&\n possui)%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-10_18-00-49",
+            "content": "@@ -339,10 +339,8 @@\n rint\n-ln\n (%22%5D%22\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-10_18-00-56",
+            "content": "@@ -200,26 +200,8 @@\n %22)%0A%0A\n-    repitidas := 0\n %0A   \n@@ -285,72 +285,48 @@\n     \n-cont++%0A        %7D%0A    %7D%0A%0A    for_ , num := range(slice) %7B%0A%0A\n+fmt.Print(slice%5Bi%5D,%22 %22);%0A    \n     %7D%0A\n+    %7D\n %0A   \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-10_18-23-18",
+            "content": "@@ -302,45 +302,73 @@\n     \n-repitidas += slice%5Bi%5D%0A        %7D%0A    %7D\n+ cont++%0A        %7D%0A    %7D%0A%0A    for_ , num := range(slice) %7B%0A%0A    %7D%0A\n %0A   \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-10_21-02-18",
+            "content": "@@ -340,35 +340,8 @@\n   %7D%0A\n-    fmt.Println(repitidas)%0A\n     \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-10_21-03-08",
+            "content": "@@ -367,13 +367,8 @@\n as)%0A\n-    %0A\n     \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-10_21-03-17",
+            "content": "@@ -365,13 +365,8 @@\n idas\n-, %22%5D%22\n )%0A  \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-10_21-03-30",
+            "content": "@@ -361,16 +361,21 @@\n epitidas\n+, %22%5D%22\n )%0A    %0A \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-10_21-03-40",
+            "content": "@@ -381,16 +381,18 @@\n mt.Print\n+ln\n (%22%5D%22)%0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-10_21-03-47",
+            "content": "@@ -349,16 +349,18 @@\n mt.Print\n+ln\n (repitid\n@@ -381,18 +381,16 @@\n mt.Print\n-ln\n (%22%5D%22)%0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-10_21-03-55",
+            "content": "@@ -383,15 +383,14 @@\n rintln(%22\n- \n %5D%22)%0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-10_21-04-01",
+            "content": "@@ -219,28 +219,8 @@\n = 0%0A\n-    diferentes := 0%0A\n     \n@@ -333,192 +333,39 @@\n    %7D\n- else if (slice%5Bi%5D != slice%5Bi - 1%5D)%7B%0A            diferentes += slice%5Bi%5D%0A    %7D%0A    if repitidas %3E 0 %7B%0A        fmt.Print(repitidas)%0A    %7D else %7B%0A        fmt.Print(diferentes)%0A    %7D%0A    %7D\n+%0A    %7D%0A    fmt.Print(repitidas)\n %0A   \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-10_21-08-32",
+            "content": "@@ -199,25 +199,25 @@\n  %22)%0A%0A    rep\n-e\n+i\n tidas := 0%0A \n@@ -317,25 +317,25 @@\n          rep\n-e\n+i\n tidas += sli\n@@ -427,23 +427,16 @@\n %5D%0A    %7D%0A\n-    %7D%0A \n     if r\n@@ -437,17 +437,17 @@\n   if rep\n-e\n+i\n tidas %3E \n@@ -447,16 +447,17 @@\n idas %3E 0\n+ \n %7B%0A      \n@@ -471,17 +471,17 @@\n rint(rep\n-e\n+i\n tidas)%0A \n@@ -524,24 +524,30 @@\n ntes)%0A    %7D%0A\n+    %7D%0A\n     %0A    fmt\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-10_21-10-34",
+            "content": "@@ -500,35 +500,8 @@\n lse \n-if diferentes == repetidas \n %7B%0A  \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-10_21-11-03",
+            "content": "@@ -543,24 +543,26 @@\n t.Print(\n-slice%5Bi%5D\n+diferentes\n )%0A    %7D%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-10_21-11-24",
+            "content": "@@ -548,16 +548,19 @@\n nt(slice\n+%5Bi%5D\n )%0A    %7D%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-10_21-11-29",
+            "content": "@@ -437,41 +437,8 @@\n   %7D%0A\n-    for i := 1; i %3C possui; i++%7B%0A\n     \n@@ -544,27 +544,24 @@\n .Print(slice\n-%5Bi%5D\n )%0A    %7D%0A    \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-10_23-04-04",
+            "content": "@@ -621,10 +621,8 @@\n %22 %5D%22)%0A%7D%0A\n-%7D%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-10_23-04-12",
+            "content": "@@ -83,61 +83,14 @@\n     \n-var repetidas%5B%5Dint%0A    var diferentes%5B%5Dint%0A%0A    tazos\n+slice \n := m\n@@ -104,25 +104,24 @@\n nt, possui)%0A\n-%0A\n     for i :=\n@@ -159,21 +159,21 @@\n t.Scan(&\n-tazos\n+slice\n %5Bi%5D)%0A   \n@@ -177,42 +177,142 @@\n     \n+%7D%0A\n     \n-if tazos\n+fmt.Print(%22%5B %22)%0A%0A    repetidas := 0%0A    diferentes := 0%0A    for i := 1; i %3C possui; i++%7B%0A        if (slice\n %5Bi%5D == \n-tazos\n+slice\n %5Bi - 1%5D\n+)\n %7B%0A\n- \n     \n@@ -332,38 +332,19 @@\n das \n++\n = \n-append(repetidas,  tazos\n+slice\n %5Bi%5D\n-)\n %0A   \n@@ -355,16 +355,45 @@\n  %7D else \n+if (slice%5Bi%5D != slice%5Bi - 1%5D)\n %7B%0A      \n@@ -413,99 +413,72 @@\n tes \n++\n = \n-append(diferentes, tazos%5Bi%5D)%0A        %7D%0A    %7D%0A    fmt.Print(%22%5B %22)%0A    for _, num :=  range\n+slice%5Bi%5D%0A    %7D%0A    %7D%0A    for i := 1; i %3C possui; i++%7B%0A     if\n  rep\n@@ -488,39 +488,80 @@\n das \n+%3E 0\n %7B%0A    \n-if repetidas %3E diferentes\n+    fmt.Print(repetidas)%0A    %7D else if diferentes == repetidas \n %7B%0A  \n@@ -580,23 +580,17 @@\n int(\n-num, %22 %22)%0A    %7D\n+slice%5Bi%5D)\n %0A   \n@@ -621,8 +621,10 @@\n %22 %5D%22)%0A%7D%0A\n+%7D%0A\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-10_23-38-37",
+            "content": "@@ -83,14 +83,61 @@\n     \n-slice \n+var repetidas%5B%5Dint%0A    var diferentes%5B%5Dint%0A%0A    tazos\n := m\n@@ -155,16 +155,17 @@\n possui)%0A\n+%0A\n     for \n@@ -207,21 +207,21 @@\n t.Scan(&\n-slice\n+tazos\n %5Bi%5D)%0A   \n@@ -225,314 +225,267 @@\n     \n-%7D%0A\n     \n-fmt.Print(%22%5B %22)%0A%0A    maior := 0%0A    contador := 0%0A    vencedor := 0%0A\n+if tazos%5Bi%5D == tazos%5Bi - 1%5D%7B%0A     \n     \n-%0A \n    \n-for i := 0; i %3C possui; i++ %7B%0A        fmt.Scan(&slice)%0A        if slice%5Bi%5D == slice%5Bi + 1%5D %7B%0A            contador +=%0A        %7D else if slice%5Bi%5D != slice%5Bi + 1%5D %7B%0A\n+repetidas = append(repetidas,  tazos%5Bi%5D)%0A        %7D else %7B%0A            diferentes = append(diferentes, tazos%5Bi%5D)%0A    \n     \n+%7D%0A\n     \n+%7D%0A\n     \n-continue%0A        %7D%0A    %7D%0A    if contador %3E maior \n+fmt.Print(%22%5B %22)%0A    for _, num :=  range repetidas %7B%0A    if repetidas %3E diferentes\n %7B%0A  \n@@ -503,27 +503,25 @@\n rint\n-ln(contador\n+(num, %22 %22\n )%0A    %7D%0A\n     \n@@ -512,24 +512,35 @@\n  %22 %22)%0A    %7D%0A\n+    %7D%0A    %0A\n     fmt.Prin\n@@ -551,10 +551,8 @@\n %22 %5D%22)%0A%7D%0A\n-%7D%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-10_23-59-03",
+            "content": "@@ -541,8 +541,10 @@\n %22 %5D%22)%0A%7D%0A\n+%7D%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-10_23-59-22",
+            "content": "@@ -372,25 +372,16 @@\n tador +=\n- slice%5Bi%5D\n %0A       \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-11_00-00-05",
+            "content": "@@ -229,16 +229,33 @@\n or := 0%0A\n+    vencedor := 0\n %0A    %0A  \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-11_00-00-14",
+            "content": "@@ -269,16 +269,41 @@\n ; i++ %7B%0A\n+        fmt.Scan(&slice)%0A\n         \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-11_00-00-52",
+            "content": "@@ -265,12 +265,8 @@\n ssui\n- - 1\n ; i+\n@@ -419,49 +419,8 @@\n    %7D\n- else if slice%5Bi%5D == possui %7B%0A%0A        %7D \n %0A   \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-11_00-03-05",
+            "content": "@@ -510,16 +510,18 @@\n mt.Print\n+ln\n (contado\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-11_00-03-13",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var possui int\n    fmt.Scan(&possui)\n\n    slice := make([]int, possui)\n    for i := 0; i < possui; i++{\n        fmt.Scan(&slice[i])\n    }\n    fmt.Print(\"[ \")\n\n    maior := 0\n    contador := 0\n\n    \n    for i := 0; i < possui - 1; i++ {\n        if slice[i] == slice[i + 1] {\n            contador += slice[i]\n        } else if slice[i] != slice[i + 1] {\n            continue\n        } else if slice[i] == possui {\n\n        } \n    }\n    if contador > maior {\n        fmt.Print(contador)\n    }\n    fmt.Println(\" ]\")\n}\n",
+            "lines": "30"
         }
     ]
 }

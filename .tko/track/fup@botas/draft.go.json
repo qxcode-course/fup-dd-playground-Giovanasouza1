@@ -32,7 +32,12 @@
         },
         {
             "label": "2026-05-25_17-57-18",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var N, M, L int\n    fmt.Scan(&N, &M, &L)\n\n    tamanho := make([]int, M)\n    pe := make([]string, L)\n\n    for i := 0; i < M; i++ {\n        fmt.Scan(&tamanho[i])\n    }\n    for p := 0; p < L; p++ {\n        fmt.Scan(&pe[p])\n    }\n    \n    botas := 0\n    for i := 0; i < M; i++ {\n        if tamanho[i] == tamanho[i]  {\n            botas++\n}\n    }\n    for p := 0; p < L; p++ {\n        if pe[p] == pe[p]  {\n            botas++\n}\n}\n    }\n",
+            "content": "@@ -1,9 +1,8 @@\n-v\n package \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-17_12-36-22",
+            "content": "vpackage main\nimport \"fmt\"\nfunc main() {\n    var N, M, L int\n    fmt.Scan(&N, &M, &L)\n\n    tamanho := make([]int, M)\n    pe := make([]string, L)\n\n    for i := 0; i < M; i++ {\n        fmt.Scan(&tamanho[i])\n    }\n    for p := 0; p < L; p++ {\n        fmt.Scan(&pe[p])\n    }\n    \n    botas := 0\n    for i := 0; i < M; i++ {\n        if tamanho[i] == tamanho[i]  {\n            botas++\n}\n    }\n    for p := 0; p < L; p++ {\n        if pe[p] == pe[p]  {\n            botas++\n}\n}\n    }\n",
             "lines": "28"
         }
     ]

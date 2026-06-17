@@ -1,0 +1,104 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-10_14-11-26",
+            "content": "@@ -73,24 +73,21 @@\n d)%0A%0A    \n-inteiros\n+lista\n  := make\n@@ -100,17 +100,16 @@\n , qtd)%0A%0A\n-%0A\n     for \n@@ -153,315 +153,55 @@\n an(&\n-inteiros%5Bi%5D)%0A    %7D%0A%0A    pares := 0%0A    impares := 0%0A    for i := 0; i %3C qtd; i++ %7B%0A        if inteiros%5Bi%5D %25 2 == 0 %7B%0A            pares++%0A        %7D else %7B%0A            impares++%0A        %7D%0A    if pares %3E impares %7B%0A        fmt.Println(%22rebeldes%22)%0A    %7D else if pares %3E impares %7B%0A        fmt.Println(%22rebeldes%22)%0A%7D\n+lista%5Bi%5D)%0A    %7D%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-06-10_15-00-52",
+            "content": "@@ -464,75 +464,8 @@\n s%22)%0A\n-    %7D else if pares == impares %7B%0A        fmt.Println(%22empate%22)%0A    \n %7D%0A%7D%0A\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-10_15-02-10",
+            "content": "@@ -48,11 +48,8 @@\n  qtd\n-, N\n  int\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-10_15-02-23",
+            "content": "@@ -73,12 +73,8 @@\n &qtd\n-, &N\n )%0A%0A \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-10_15-02-34",
+            "content": "@@ -349,31 +349,8 @@\n    %7D\n-%0A%0A    fmt.Println(%22%5B %22)\n %0A   \n@@ -542,24 +542,4 @@\n %7D%0A%7D%0A\n-fmt.Println(%22 %5D%22)%0A%7D%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-10_17-16-44",
+            "content": "@@ -360,16 +360,18 @@\n mt.Print\n+ln\n (%22%5B %22)%0A \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-10_17-16-50",
+            "content": "@@ -363,16 +363,17 @@\n Print(%22%5B\n+ \n %22)%0A    i\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-10_17-16-55",
+            "content": "@@ -571,14 +571,15 @@\n rintln(%22\n+ \n %5D%22)%0A%7D%0A\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-10_17-17-01",
+            "content": "@@ -443,17 +443,17 @@\n f pares \n-%3C\n+%3E\n  impares\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-10_17-17-44",
+            "content": "@@ -480,15 +480,15 @@\n ln(%22\n-soldado\n+rebelde\n s%22)%0A\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-10_17-18-30",
+            "content": "@@ -567,16 +567,18 @@\n mt.Print\n+ln\n (%22%5D%22)%0A%7D%0A\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-10_17-18-41",
+            "content": "@@ -346,18 +346,21 @@\n       %7D%0A\n-%7D\n %0A\n+    \n fmt.Prin\n@@ -556,16 +556,18 @@\n )%0A    %7D%0A\n+%7D%0A\n fmt.Prin\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-10_17-18-59",
+            "content": "@@ -562,18 +562,16 @@\n mt.Print\n-ln\n (%22%5D%22)%0A%7D%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-10_17-19-06",
+            "content": "@@ -405,16 +405,18 @@\n mt.Print\n+ln\n (%22rebeld\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-10_17-19-17",
+            "content": "@@ -348,17 +348,31 @@\n     %7D%0A%7D%0A\n+fmt.Print(%22%5B%22)\n %0A\n-\n     if p\n@@ -467,16 +467,18 @@\n mt.Print\n+ln\n (%22soldad\n@@ -532,16 +532,18 @@\n mt.Print\n+ln\n (%22empate\n@@ -547,14 +547,31 @@\n ate%22)%0A    %7D%0A\n+fmt.Println(%22%5D%22)%0A\n %7D%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-10_17-19-39",
+            "content": "@@ -391,18 +391,16 @@\n mt.Print\n-ln\n (%22rebeld\n@@ -400,24 +400,24 @@\n %22rebeldes%22)%0A\n+\n     %7D else i\n@@ -453,18 +453,16 @@\n mt.Print\n-ln\n (%22soldad\n@@ -491,32 +491,32 @@\n es == impares %7B%0A\n+\n         fmt.Prin\n@@ -520,10 +520,8 @@\n rint\n-ln\n (%22em\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-10_17-19-55",
+            "content": "@@ -295,18 +295,17 @@\n   pares+\n-= \n++\n %0A       \n@@ -334,17 +334,17 @@\n impares+\n-=\n++\n %0A       \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-10_17-27-10",
+            "content": "@@ -297,28 +297,16 @@\n pares+= \n-inteiros%5Bi%5D \n %0A       \n@@ -336,28 +336,16 @@\n mpares+=\n- inteiros%5Bi%5D\n %0A       \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-10_17-27-46",
+            "content": "@@ -44,16 +44,19 @@\n  var qtd\n+, N\n  int%0A   \n@@ -69,16 +69,20 @@\n can(&qtd\n+, &N\n )%0A%0A    i\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-10_17-28-52",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var qtd int\n    fmt.Scan(&qtd)\n\n    inteiros := make([]int, qtd)\n\n\n    for i := 0; i < qtd; i++ {\n        fmt.Scan(&inteiros[i])\n    }\n\n    pares := 0\n    impares := 0\n    for i := 0; i < qtd; i++ {\n        if inteiros[i] % 2 == 0 {\n            pares+= inteiros[i] \n        } else {\n            impares+= inteiros[i]\n        }\n}\n\n    if pares > impares {\n        fmt.Println(\"rebeldes\")\n    } else if pares < impares {\n        fmt.Println(\"soldados\")\n    } else if pares == impares {\n        fmt.Println(\"empate\")\n    }\n}\n",
+            "lines": "31"
+        }
+    ]
+}

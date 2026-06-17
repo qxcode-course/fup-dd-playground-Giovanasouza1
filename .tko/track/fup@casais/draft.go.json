@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-11_00-42-11",
+            "content": "@@ -244,11 +244,40 @@\n    %7D%0A   \n+ fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-11_00-42-18",
+            "content": "@@ -138,71 +138,21 @@\n     \n-fmt.Scan(&especies%5Bi%5D)%0A        if especies%5Bi%5D == -especies%5Bi+1%5D\n+if i == -(-i)\n  %7B%0A \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-11_00-44-08",
+            "content": "@@ -100,22 +100,8 @@\n  N)%0A\n-    casal := 0\n %0A   \n@@ -152,16 +152,19 @@\n especies\n+%5Bi%5D\n )%0A      \n@@ -184,87 +184,52 @@\n %5Bi%5D \n-%3C 0 %7B%0A            for j := 0; j %3C N; j++ %7B%0A                if especies%5Bj%5D == - \n+== -especies%5Bi+1%5D %7B%0A            fmt.Println(\n espe\n@@ -235,16 +235,17 @@\n ecies%5Bi%5D\n+)\n %0A       \n@@ -249,95 +249,53 @@\n     \n-        casal ++%0A                especies%5Bj%5D = 0%0A        %7D%0A    %7D%0A    fmt.Println(casal)\n+%7D else %7B%0A            continue%0A        %7D%0A    %7D\n %0A   \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-11_00-58-52",
+            "content": "@@ -281,17 +281,16 @@\n ecies%5Bi%5D\n-%7B\n %0A       \n@@ -303,16 +303,17 @@\n    casal\n+ \n ++%0A     \n@@ -351,30 +351,24 @@\n     %7D%0A    %7D%0A\n-    %7D%0A\n     fmt.Prin\n@@ -378,12 +378,14 @@\n (casal)%0A\n-%7D\n+   \n %0A%7D%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-11_00-59-30",
+            "content": "@@ -361,18 +361,19 @@\n %7D%0A    %7D%0A\n-%7D%0A\n+   \n  fmt.Pri\n@@ -386,8 +386,10 @@\n asal)%0A%7D%0A\n+%7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-11_01-00-03",
+            "content": "@@ -166,19 +166,16 @@\n especies\n-%5Bi%5D\n )%0A      \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-11_01-00-38",
+            "content": "@@ -346,40 +346,8 @@\n = 0%0A\n-                especies%5Bi%5D = 0%0A\n     \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-11_01-01-32",
+            "content": "@@ -362,13 +362,23 @@\n     \n-break\n+especies%5Bi%5D = 0\n %0A   \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-11_01-02-06",
+            "content": "@@ -175,48 +175,8 @@\n i%5D)%0A\n-    %7D%0A    %0A    for i := 0; i %3C N; i++ %7B%0A\n     \n@@ -346,40 +346,8 @@\n = 0%0A\n-                especies%5Bi%5D = 0%0A\n     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-11_01-03-50",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var N int\n    fmt.Scan(&N)\n\n    especies := make([]int, N)\n    casal := 0\n    for i := 0; i < N; i++ {\n        fmt.Scan(&especies[i])\n    }\n    \n    for i := 0; i < N; i++ {\n        if especies[i] < 0 {\n            for j := 0; j < N; j++ {\n                if especies[j] == - especies[i]{\n                casal++\n                especies[j] = 0\n                especies[i] = 0\n                break\n        }\n    }\n    }\n}\n fmt.Println(casal)\n}\n",
+            "lines": "26"
+        }
+    ]
+}

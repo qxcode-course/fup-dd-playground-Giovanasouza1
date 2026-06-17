@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-15_12-33-24",
+            "content": "@@ -28,51 +28,58 @@\n unc \n-contarvogaiseconsoantes(frase string) int %7B\n+main() %7B%0A    var frase string%0A    fmt.Scan(&frase)\n %0A%0A  \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-15_12-38-45",
+            "content": "@@ -567,21 +567,6 @@\n es)%0A\n-    return%0A    \n %7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-15_12-39-34",
+            "content": "@@ -28,58 +28,51 @@\n unc \n-main() %7B%0A    var frase string%0A    fmt.Scan(&frase)\n+contarvogaiseconsoantes(frase string) int %7B\n %0A%0A  \n@@ -519,16 +519,17 @@\n     %7D   \n+ \n %0Afmt.Pri\n@@ -563,10 +563,25 @@\n oantes)%0A\n+    return%0A    \n %7D%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-15_12-39-57",
+            "content": "@@ -536,16 +536,18 @@\n mt.Print\n+ln\n (vogais)\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-15_12-40-03",
+            "content": "@@ -540,10 +540,8 @@\n rint\n-ln\n (vog\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-15_12-40-15",
+            "content": "@@ -66,18 +66,16 @@\n fmt.Scan\n-ln\n (&frase)\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-15_12-42-00",
+            "content": "@@ -33,28 +33,8 @@\n ain(\n-%22bufio%22, %22fmt%22, %22os%22\n ) %7B%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-15_12-44-04",
+            "content": "@@ -1,17 +1,72 @@\n-func Separar(\n+package main%0Aimport %22fmt%22%0Afunc main(%22bufio%22, %22fmt%22, %22os%22) %7B%0A    var \n fras\n@@ -77,13 +77,37 @@\n ring\n-) %7B%0A%09\n+%0A    fmt.Scanln(&frase)%0A%0A    \n voga\n@@ -115,17 +115,20 @@\n s := %22%22%0A\n-%09\n+    \n consoant\n@@ -137,17 +137,20 @@\n  := %22%22%0A%0A\n-%09\n+    \n for i :=\n@@ -175,18 +175,24 @@\n ; i++ %7B%0A\n-%09%09\n+        \n if frase\n@@ -200,28 +200,25 @@\n i%5D == 'a' %7C%7C\n-%0A%09%09%09\n+ \n frase%5Bi%5D == \n@@ -219,28 +219,25 @@\n i%5D == 'e' %7C%7C\n-%0A%09%09%09\n+ \n frase%5Bi%5D == \n@@ -238,28 +238,25 @@\n i%5D == 'i' %7C%7C\n-%0A%09%09%09\n+ \n frase%5Bi%5D == \n@@ -261,20 +261,17 @@\n = 'o' %7C%7C\n-%0A%09%09%09\n+ \n frase%5Bi%5D\n@@ -280,20 +280,28 @@\n = 'u' %7B%0A\n-%0A%09%09%09\n+            \n vogais +\n@@ -319,19 +319,24 @@\n ase%5Bi%5D)%0A\n-%0A%09%09\n+        \n %7D else i\n@@ -354,53 +354,247 @@\n != '\n- ' %7B%0A%0A%09%09%09consoantes += string(frase%5Bi%5D)%0A%09%09%7D%0A%09%7D\n+a' && frase%5Bi%5D != 'e' && frase%5Bi%5D != 'i' && frase%5Bi%5D != 'o' && frase%5Bi%5D != 'u' && frase%5Bi%5D != 'u' %7B%0A            consoantes += string(frase%5Bi%5D)%0A        %7D else if frase%5Bi%5D == ' ' %7B%0A%0A        %7D%0A    %7D   %0Afmt.Println(vogais)%0Afmt.Print(consoantes)\n %0A%7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-15_12-46-16",
+            "content": "@@ -1,141 +1,32 @@\n-package main%0A%0Aimport (%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A)%0A%0Afunc main() %7B%0A%09leitor := bufio.NewReader(os.Stdin)%0A%0A%09frase, _ := leitor.ReadString('%5Cn')%0A\n+func Separar(frase string) %7B\n %0A%09vo\n@@ -90,17 +90,16 @@\n ; i++ %7B%0A\n-%0A\n %09%09if fra\n@@ -264,28 +264,8 @@\n  ' '\n- && frase%5Bi%5D != '%5Cn'\n  %7B%0A%0A\n@@ -308,54 +308,7 @@\n %7D%0A%09%7D\n-%0A%0A%09fmt.Println(vogais)%0A%09fmt.Println(consoantes)\n %0A%7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-15_12-47-46",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\nfunc main() {\n\tleitor := bufio.NewReader(os.Stdin)\n\n\tfrase, _ := leitor.ReadString('\\n')\n\n\tvogais := \"\"\n\tconsoantes := \"\"\n\n\tfor i := 0; i < len(frase); i++ {\n\n\t\tif frase[i] == 'a' ||\n\t\t\tfrase[i] == 'e' ||\n\t\t\tfrase[i] == 'i' ||\n\t\t\tfrase[i] == 'o' ||\n\t\t\tfrase[i] == 'u' {\n\n\t\t\tvogais += string(frase[i])\n\n\t\t} else if frase[i] != ' ' && frase[i] != '\\n' {\n\n\t\t\tconsoantes += string(frase[i])\n\t\t}\n\t}\n\n\tfmt.Println(vogais)\n\tfmt.Println(consoantes)\n}\n",
+            "lines": "35"
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-16_17-28-52",
+            "content": "@@ -471,10 +471,8 @@\n rint\n-ln\n (con\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-16_17-29-18",
+            "content": "@@ -407,10 +407,8 @@\n == N\n--1\n  && \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-16_17-29-26",
+            "content": "@@ -321,25 +321,24 @@\n vetor%5Bi - 1%5D\n- \n == 0 && veto\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-16_17-29-52",
+            "content": "@@ -395,14 +395,23 @@\n  if \n-i\n+vetor%5Bi%5D\n  == N\n+-1\n  && \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-16_17-31-17",
+            "content": "@@ -401,10 +401,8 @@\n == N\n--1\n  && \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-16_17-35-03",
+            "content": "@@ -397,16 +397,18 @@\n f i == N\n+-1\n  && veto\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-16_17-35-21",
+            "content": "@@ -401,10 +401,8 @@\n == N\n--1\n  && \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-16_17-38-26",
+            "content": "@@ -418,33 +418,16 @@\n  - 1%5D ==\n- 0 && vetor%5Bi%5D ==\n  0 %7B%0A   \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-16_17-39-03",
+            "content": "@@ -282,35 +282,8 @@\n t++%0A\n-            fmt.Print(%22e%22)%0A\n     \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-16_17-45-24",
+            "content": "@@ -270,32 +270,59 @@\n          cont++%0A\n+            fmt.Print(%22e%22)%0A\n         %7D else i\n@@ -389,39 +389,30 @@\n             \n- fmt.Print(%22e%22)\n+cont++\n %0A        %7D e\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-16_17-45-46",
+            "content": "@@ -358,38 +358,47 @@\n 0 %7B%0A            \n-cont++\n+ fmt.Print(%22e%22)\n %0A        %7D else \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-16_17-46-35",
+            "content": "@@ -335,10 +335,10 @@\n = 0 \n-%7C%7C\n+&&\n  vet\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-16_22-44-38",
+            "content": "@@ -335,63 +335,10 @@\n = 0 \n-%7B%0A            cont++%0A        %7D else if vetor%5Bi%5D == 0 &&\n+%7C%7C\n  vet\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-16_22-46-22",
+            "content": "@@ -516,43 +516,8 @@\n t++%0A\n-        %7D else %7B%0A            break%0A\n     \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-16_22-47-49",
+            "content": "@@ -320,32 +320,85 @@\n  vetor%5Bi - 1%5D ==\n+ 0 %7B%0A            cont++%0A        %7D else if vetor%5Bi%5D ==\n  0 && vetor%5Bi + \n@@ -504,32 +504,67 @@\n          cont++%0A\n+        %7D else %7B%0A            break%0A\n         %7D%0A%7D%0Afmt.\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-16_22-51-25",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var N int\n    fmt.Scan(&N)\n\n    vetor := make([]int, N)\n\n    for i := 0; i < N; i++ {\n        fmt.Scan(&vetor[i])\n    }\n\n    cont := 0\n    for i := 0; i < N; i++ {\n        if i == 0 && vetor[i] == 0 && vetor[i + 1] == 0 {\n            cont++\n        } else if vetor[i] == 0 && vetor[i - 1] == 0 && vetor[i + 1] == 0 {\n            cont++\n        } else if i == N-1 && vetor[i - 1] == 0 && vetor[i] == 0 {\n            cont++\n        }\n}\nfmt.Println(cont)\n}\n",
+            "lines": "24"
+        }
+    ]
+}

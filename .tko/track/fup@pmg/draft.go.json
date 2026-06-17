@@ -1,0 +1,84 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-15_18-10-22",
+            "content": "@@ -19,16 +19,82 @@\n t %22fmt%22%0A\n+func main() %7B%0A    var a int%0A    var b float64%0A    fmt.Scan(&a, &b)\n %0A%0A    fu\n@@ -547,16 +547,14 @@\n  return \n-soldado\n+vetor\n %0A\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-15_18-11-39",
+            "content": "@@ -20,16 +20,17 @@\n  %22fmt%22%0A%0A\n+%0A\n     func\n@@ -152,16 +152,22 @@\n      %7D%0A \n+   %7D %0A\n     m%C3%A9di\n@@ -189,23 +189,16 @@\n at64(a)%0A\n-    %7D %0A\n     %0A%0A  \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-15_18-18-05",
+            "content": "@@ -98,34 +98,25 @@\n i := 0; i %3C \n-len(vetor)\n+a\n ; i++ %7B%0A    \n@@ -135,24 +135,16 @@\n  += \n-float64(\n vetor%5Bi%5D\n )%0A  \n@@ -139,17 +139,16 @@\n vetor%5Bi%5D\n-)\n %0A       \n@@ -156,17 +156,17 @@\n %7D%0A     m\n-e\n+%C3%A9\n dia := s\n@@ -183,36 +183,10 @@\n t64(\n-len(vetor))%0A     return som\n a\n+)\n %0A   \n@@ -225,17 +225,23 @@\n  %5B%5Dint) \n-%7B\n+float64\n %0A    for\n@@ -257,18 +257,9 @@\n i %3C \n-len(vetor)\n+a\n ; i+\n@@ -286,17 +286,17 @@\n %5Bi%5D == m\n-e\n+%C3%A9\n dia %7B%0A  \n@@ -352,17 +352,17 @@\n r%5Bi%5D %3C m\n-e\n+%C3%A9\n dia %7B%0A  \n@@ -418,17 +418,17 @@\n r%5Bi%5D %3E m\n-e\n+%C3%A9\n dia %7B%0A  \n@@ -478,171 +478,19 @@\n     \n-%7D%0A    func main ()%7B%0A        var qtd int%0A        vetor := make(%5B%5Dint, qtd) %0A        var altura%0A        fmt.Println(%22%25.2f%5Cn%22, m%C3%A9dia)%0A        fmt.Println(soldados)%0A    %7D\n+return soldado\n %0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-16_12-25-28",
+            "content": "@@ -221,20 +221,19 @@\n  return \n-medi\n+som\n a%0A    %7D \n@@ -273,39 +273,9 @@\n nt) \n-float64 %7B%0A    m := media(vetor)\n+%7B\n %0A   \n@@ -333,16 +333,20 @@\n %5Bi%5D == m\n+edia\n  %7B%0A     \n@@ -399,16 +399,20 @@\n r%5Bi%5D %3C m\n+edia\n  %7B%0A     \n@@ -465,16 +465,21 @@\n r%5Bi%5D %3E m\n+edia \n %7B%0A      \n@@ -596,25 +596,24 @@\n , qtd) %0A\n-%0A\n         \n for i :=\n@@ -608,83 +608,18 @@\n     \n-for i := 0; i %3C len(vetor); i++ %7B%0A            fmt.Scan(&vetor%5Bi%5D)%0A        %0A\n+var altura\n %0A   \n@@ -672,21 +672,24 @@\n Println(\n-vetor\n+soldados\n )%0A    %7D%0A\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-16_12-31-03",
+            "content": "@@ -269,16 +269,24 @@\n r %5B%5Dint)\n+ float64\n  %7B%0A    m\n@@ -351,32 +351,24 @@\n      if \n-float64(\n vetor%5Bi%5D\n ) == m %7B\n@@ -359,17 +359,16 @@\n vetor%5Bi%5D\n-)\n  == m %7B%0A\n@@ -414,32 +414,24 @@\n else if \n-float64(\n vetor%5Bi%5D\n ) %3C m %7B%0A\n@@ -422,17 +422,16 @@\n vetor%5Bi%5D\n-)\n  %3C m %7B%0A \n@@ -476,32 +476,24 @@\n else if \n-float64(\n vetor%5Bi%5D\n ) %3E m%7B%0A \n@@ -484,17 +484,16 @@\n vetor%5Bi%5D\n-)\n  %3E m%7B%0A  \n@@ -730,17 +730,17 @@\n 2f%5Cn%22, m\n-e\n+%C3%A9\n dia)%0A   \n@@ -769,10 +769,8 @@\n )%0A    %7D%0A\n-%7D%0A\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-06-16_12-33-27",
+            "content": "@@ -602,31 +602,8 @@\n int%0A\n-        fmt.Scan(&qtd)%0A\n     \n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-06-16_12-34-30",
+            "content": "@@ -739,17 +739,16 @@\n         \n-%7D\n %0A%0A      \n@@ -805,11 +805,16 @@\n (vetor)%0A\n+    %7D\n %0A%7D%0A\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-06-16_12-34-55",
+            "content": "@@ -745,33 +745,8 @@\n   %7D%0A\n-        m := media(vetor)\n %0A   \n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-06-16_12-35-23",
+            "content": "@@ -798,16 +798,20 @@\n 2f%5Cn%22, m\n+edia\n )%0A      \n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-06-16_12-35-31",
+            "content": "@@ -820,20 +820,18 @@\n Println(\n-soldado\n+vetor\n )%0A%0A%7D%0A\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-06-16_12-36-00",
+            "content": "@@ -784,17 +784,18 @@\n mt.Print\n-f\n+ln\n (%22%25.2f%5Cn\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-06-16_12-36-23",
+            "content": "@@ -826,20 +826,13 @@\n (soldado\n-(vetor)\n )%0A%0A%7D%0A\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-06-16_12-37-00",
+            "content": "@@ -221,19 +221,20 @@\n  return \n-som\n+medi\n a%0A    %7D \n@@ -272,16 +272,38 @@\n %5Dint) %7B%0A\n+    m := media(vetor)%0A\n     for \n@@ -343,24 +343,32 @@\n      if \n+float64(\n vetor%5Bi%5D\n  == medi\n@@ -363,17 +363,14 @@\n r%5Bi%5D\n+)\n  == m\n-edia\n  %7B%0A \n@@ -415,24 +415,32 @@\n else if \n+float64(\n vetor%5Bi%5D\n  %3C media\n@@ -435,16 +435,13 @@\n r%5Bi%5D\n+)\n  %3C m\n-edia\n  %7B%0A \n@@ -486,24 +486,32 @@\n else if \n+float64(\n vetor%5Bi%5D\n  %3E media\n@@ -506,17 +506,13 @@\n r%5Bi%5D\n+)\n  %3E m\n-edia \n %7B%0A  \n@@ -602,13 +602,244 @@\n int%0A        \n+fmt.Scan(&qtd)%0A        vetor := make(%5B%5Dint, qtd) %0A%0A        for i := 0; i %3C len(vetor); i++ %7B%0A            fmt.Scan(&vetor%5Bi%5D)%0A        %7D%0A        m := media(vetor)%0A        fmt.Printf(%22%25.2f%5Cn%22, m)%0A        fmt.Println(soldado(vetor))%0A%0A%7D\n %0A\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-06-16_16-49-21",
+            "content": "@@ -221,20 +221,19 @@\n  return \n-medi\n+som\n a%0A    %7D \n@@ -271,38 +271,16 @@\n %5Dint) %7B%0A\n-    m := media(vetor)%0A\n     for \n@@ -320,32 +320,24 @@\n      if \n-float64(\n vetor%5Bi%5D\n ) == m %7B\n@@ -332,14 +332,17 @@\n r%5Bi%5D\n-)\n  == m\n+edia\n  %7B%0A \n@@ -387,32 +387,24 @@\n else if \n-float64(\n vetor%5Bi%5D\n ) %3C m %7B%0A\n@@ -399,13 +399,16 @@\n r%5Bi%5D\n-)\n  %3C m\n+edia\n  %7B%0A \n@@ -453,32 +453,24 @@\n else if \n-float64(\n vetor%5Bi%5D\n ) %3E m %7B%0A\n@@ -465,13 +465,16 @@\n r%5Bi%5D\n-)\n  %3E m\n+edia\n  %7B%0A \n@@ -573,135 +573,5 @@\n     \n-fmt.Scan(&qtd)%0A        m := media(vetor)%0A        fmt.Print(m)%0A        fmt.Printf(%22%25.2f%5Cn%22, soldado(vetor))%0A        %0A        %0A    %7D\n %0A\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-16_16-59-57",
+            "content": "@@ -626,59 +626,8 @@\n td)%0A\n-        var vetor float64%0A        fmt.Scan(&vetor)%0A\n     \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-06-16_17-02-08",
+            "content": "package main\nimport \"fmt\"\n\n    func media(vetor []int) float64 {\n        soma := 0.0\n        for i := 0; i < len(vetor); i++ {\n            soma += float64(vetor[i])\n        }\n     media := soma / float64(len(vetor))\n     return media\n    } \n    \n\n    func soldado(vetor []int) {\n    m := media(vetor)\n    for i := 0; i < len(vetor); i++ {\n        if float64(vetor[i]) == m {\n            fmt.Println(\"M\")\n        } else if float64(vetor[i]) < m {\n            fmt.Println(\"P\")\n        } else if float64(vetor[i]) > m {\n            fmt.Println(\"G\")\n        }\n    }\n    }\n    func main (){\n        var qtd int\n        fmt.Scan(&qtd)\n        var vetor float64\n        fmt.Scan(&vetor)\n        m := media(vetor)\n        fmt.Print(m)\n        fmt.Printf(\"%.2f\\n\", soldado(vetor))\n        \n        \n    }\n",
+            "lines": "36"
+        }
+    ]
+}

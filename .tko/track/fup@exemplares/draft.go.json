@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-11_01-11-39",
+            "content": "@@ -346,15 +346,8 @@\n iona)%0A%7D%0A\n-     %7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-16_22-26-10",
+            "content": "@@ -55,19 +55,22 @@\n     fmt.\n-Sca\n+Printl\n n(&N)%0A%0A \n@@ -346,10 +346,15 @@\n iona)%0A%7D%0A\n+     \n %7D%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-16_22-26-40",
+            "content": "@@ -345,10 +345,8 @@\n na)%0A%7D%0A%7D%0A\n-%7D%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-16_22-26-45",
+            "content": "@@ -290,45 +290,18 @@\n     \n-continue%0A        %7D else if vetor%5Bj%5D !\n+adiciona +\n = ve\n@@ -298,34 +298,32 @@\n iona += vetor%5Bi%5D\n- %7B\n %0A            adi\n@@ -319,39 +319,13 @@\n     \n+%7D%0A\n    \n- adiciona += vetor%5Bj%5D%0A%7D%0A%7D%0A%7D%0A\n  fmt\n@@ -343,8 +343,12 @@\n iona)%0A%7D%0A\n+%7D%0A%7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-16_22-28-57",
+            "content": "@@ -162,24 +162,24 @@\n   %7D%0A    \n-primeiro\n+adiciona\n  := 0%0A  \n@@ -220,17 +220,16 @@\n    for j\n- \n := 0; j \n@@ -234,16 +234,17 @@\n j %3C N; j\n+ \n ++ %7B%0A   \n@@ -264,9 +264,9 @@\n %5Bj%5D \n-!\n+=\n = ve\n@@ -290,27 +290,16 @@\n     \n-primeiro+= vetor%5Bj%5D\n+continue\n %0A   \n@@ -314,33 +314,33 @@\n lse if vetor%5Bj%5D \n-=\n+!\n = vetor%5Bi%5D %7B%0A   \n@@ -352,31 +352,31 @@\n     \n-continue%0A        %7D%0A    \n+adiciona += vetor%5Bj%5D%0A%7D%0A\n %7D%0A%7D%0A\n@@ -390,16 +390,16 @@\n int(\n-primeiro\n+adiciona\n )%0A%7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-16_22-39-21",
+            "content": "@@ -294,17 +294,17 @@\n primeiro\n- \n++\n = vetor%5B\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-16_22-40-37",
+            "content": "@@ -359,16 +359,24 @@\n         \n+continue\n %0A       \n@@ -386,17 +386,16 @@\n     %7D%0A%7D%0A\n-%0A\n  fmt.Pri\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-16_22-41-20",
+            "content": "@@ -363,16 +363,8 @@\n     \n-continue\n %0A   \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-16_22-44-29",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var N int\n    fmt.Scan(&N)\n\n    vetor := make([]int, N)\n\n    for i := 0; i < N; i ++ {\n        fmt.Scan(&vetor[i])\n    }\n    primeiro := 0\n     for i := 0; i < N; i ++ {\n        for j := 0; j < N; j++ {\n        if vetor[j] != vetor[i] {\n            primeiro = vetor[j]\n        } else if vetor[j] == vetor[i] {\n            continue\n        }\n    }\n}\n\n fmt.Print(primeiro)\n}\n",
+            "lines": "24"
+        }
+    ]
+}

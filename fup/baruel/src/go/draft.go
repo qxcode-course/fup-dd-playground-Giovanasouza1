@@ -9,7 +9,6 @@ func main() {
     for i := 0; i < possui; i++{
         fmt.Scan(&slice[i])
     }
-    fmt.Print("[ ")
 
     // Verifica as repetidas
     for i:= 1; i < possui; i++{
@@ -17,10 +16,9 @@ func main() {
             fmt.Print(slice[i]," ");
         }
     }
-    fmt.Print("]\n")
+    fmt.Println("\b")
 
     // Encontra as que faltam
-    fmt.Print("[ ")
     for i := 1; i <= qtd; i++{
         encontrado := false
         for j := 0; j < possui; j++{
@@ -33,5 +31,5 @@ func main() {
             fmt.Print(i," ")
         }
     }
-    fmt.Print("]\n")
+    fmt.Println("\b")
 }

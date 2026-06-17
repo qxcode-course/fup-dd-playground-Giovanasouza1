@@ -1,37 +1,20 @@
 package main
 import "fmt"
 func main() {
-    var qtd, possui int
-    fmt.Scan(&qtd,&possui)
+    var qtd int
+    fmt.Scan(&qtd)
+    vetor := make([]int, qtd)
 
-    // Popula o Slice
-    slice := make([]int, possui)
-    for i := 0; i < possui; i++{
-        fmt.Scan(&slice[i])
+    for i := 0; i < qtd; i++{
+        fmt.Scan(&vetor[i])
     }
-    fmt.Print("[ ")
 
-    // Verifica as repetidas
-    for i:= 1; i < possui; i++{
-        if (slice[i] == slice[i - 1]){
-            fmt.Print(slice[i]," ");
+    atual := 1
+    maxfreq := 1
+    for i := 0; i < qtd; i++{
+        if vetor[i] == vetor[i + 1]{
+            atual++
         }
-    }
-    fmt.Print("]\n")
-
-    // Encontra as que faltam
-    fmt.Print("[ ")
-    for i := 1; i <= qtd; i++{
-        encontrado := false
-        for j := 0; j < possui; j++{
-            if slice[j] == i{
-                encontrado = true
-                break
-            }
+        if atual > maxfre
         }
-        if encontrado == false{
-            fmt.Print(i," ")
-        }
-    }
-    fmt.Print("]\n")
 }

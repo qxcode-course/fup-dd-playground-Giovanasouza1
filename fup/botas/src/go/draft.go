@@ -1,4 +1,4 @@
-package main
+vpackage main
 import "fmt"
 func main() {
     var N, M, L int

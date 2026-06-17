@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-09_17-36-20",
+            "content": "@@ -219,34 +219,34 @@\n   for troco %3E 0 \n-&&\n+%7C%7C\n  troco %3C 0.05 %7B%0A\n@@ -249,51 +249,8 @@\n 5 %7B%0A\n-        for i := o; i %3C len(vetor); i++ %7B%0A%0A\n     \n@@ -429,16 +429,16 @@\n i%5D = 0;%0A\n+\n         \n@@ -448,224 +448,7 @@\n    %7D\n-%0A%0A%7D%0Afor i := o; i %3C len(vetor); i++ %7B%0A if celulas%5Bi%5D == 0 %7B%0A    continue%0A %7D%0A fmt.Printf(%22%25d de %250.2f%5Cn%22, cedulas%5Bi%5D, vetor%5Bi%5D)%0A    %7D%0A%0A    if troco %3E 0 && troco %3C 0.05 %7B%0A        fmt.Printf(%22Falta %250.2f%5Cn%22, troco)%0A    %7D\n %0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-09_18-12-33",
+            "content": "@@ -262,17 +262,17 @@\n or i := \n-0\n+o\n ; i %3C le\n@@ -311,23 +311,22 @@\n co %3E= ve\n-t\n o\n+t\n r%5Bi%5D\n-)\n  %7B%0A     \n@@ -423,19 +423,16 @@\n (cedulas\n-%5Bi%5D\n ))%0A%0A    \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-09_18-14-54",
+            "content": "@@ -496,33 +496,33 @@\n   %7D%0A%0A%7D%0Afor i := \n-0\n+o\n ; i %3C len(celula\n@@ -515,23 +515,21 @@\n i %3C len(\n-celulas\n+vetor\n ); i++ %7B\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-09_18-15-28",
+            "content": "@@ -209,17 +209,16 @@\n vetor))%0A\n-%0A\n     for \n@@ -517,17 +517,17 @@\n %3C len(ce\n-d\n+l\n ulas); i\n@@ -537,17 +537,17 @@\n %7B%0A if ce\n-d\n+l\n ulas%5Bi%5D \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-09_18-17-20",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -55,17 +55,16 @@\n float64%0A\n-%0A\n     fmt.\n@@ -150,17 +150,16 @@\n .00, 0.5\n-0\n , 0.25, \n@@ -170,17 +170,16 @@\n , 0.05%7D%0A\n-%0A\n     cedu\n@@ -237,18 +237,17 @@\n & troco \n-%3E=\n+%3C\n  0.05 %7B%0A\n@@ -284,28 +284,25 @@\n tor); i++ %7B%0A\n-    \n+%0A\n         if t\n@@ -296,24 +296,25 @@\n %0A        if \n+(\n troco %3E= vet\n@@ -318,16 +318,17 @@\n vetor%5Bi%5D\n+)\n  %7B%0A     \n@@ -326,36 +326,32 @@\n ) %7B%0A            \n-   \n- \n cedulas%5Bi%5D = (in\n@@ -356,18 +356,16 @@\n int)\n+ \n (troco\n- / (\n+/\n veto\n@@ -365,30 +365,25 @@\n co/vetor%5Bi%5D)\n-)%0A    \n+%0A\n             \n@@ -431,20 +431,17 @@\n as%5Bi%5D))%0A\n-    \n+%0A\n         \n@@ -453,36 +453,32 @@\n e %7B%0A            \n-    \n cedulas%5Bi%5D = 0%0A \n@@ -475,16 +475,17 @@\n s%5Bi%5D = 0\n+;\n %0A       \n@@ -489,35 +489,19 @@\n     \n-    \n %7D%0A    \n- \n-   %7D%0A    %7D%0A%0A    \n+%7D%0A%0A%7D%0A\n for \n@@ -532,23 +532,16 @@\n ; i++ %7B%0A\n-       \n  if cedu\n@@ -554,24 +554,16 @@\n  == 0 %7B%0A\n-        \n     cont\n@@ -572,25 +572,10 @@\n ue%0A \n-       %7D%0A%0A       \n+%7D%0A\n  fmt\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-09_18-18-08",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    var troco float64\n\n    fmt.Scan(&troco)\n\n    vetor := []float64{100.00, 50.00, 20.00, 10.00, 5.00, 2.00, 1.00, 0.50, 0.25, 0.10, 0.05}\n\n    cedulas := make([]int, len(vetor))\n\n    for troco > 0 && troco >= 0.05 {\n        for i := 0; i < len(vetor); i++ {\n            if troco >= vetor[i] {\n                cedulas[i] = (int)(troco / (vetor[i]))\n                troco = troco - (vetor[i] * float64(cedulas[i]))\n            } else {\n                cedulas[i] = 0\n            }\n        }\n    }\n\n    for i := 0; i < len(cedulas); i++ {\n        if cedulas[i] == 0 {\n            continue\n        }\n\n        fmt.Printf(\"%d de %0.2f\\n\", cedulas[i], vetor[i])\n    }\n\n    if troco > 0 && troco < 0.05 {\n        fmt.Printf(\"Falta %0.2f\\n\", troco)\n    }\n}\n",
+            "lines": "36"
+        }
+    ]
+}

@@ -1,11 +1,15 @@
 package main
-import "fmt"
-func main() {
-    var nome string = "eu gosto de batata frita 5.6 frita/banana"
-    palavras := strings.fields(frase)
-    for_, elem := range palavras {
-        fmt.Println(elem)
-    }
-    unidos := strings.Join(palavras, "-")
-    fmt.Println(unidos)
+import (
+	"bufio"
+	"fmt"
+	"os"
+)
+func invertervetor(frase string) string {
+	r := []rune(frase)
+	invertida := make([]rune, len[r]
+		j := 0
+
+		for 
 }
+func main() {
+	

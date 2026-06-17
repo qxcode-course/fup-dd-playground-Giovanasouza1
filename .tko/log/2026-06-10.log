@@ -1,0 +1,161 @@
+2026-06-10 01:28:02, MOVE, v:1, k:fup@fila, mode:PICK
+2026-06-10 01:28:04, EXEC, v:1, k:fup@fila, mode:FULL, rate:0
+2026-06-10 01:28:11, MOVE, v:1, k:fup@fila, mode:BACK
+2026-06-10 01:28:18, MOVE, v:1, k:fup@baruel, mode:PICK
+2026-06-10 01:28:51, EXEC, v:1, k:fup@baruel, mode:FULL, rate:0, size:48
+2026-06-10 01:29:01, EXEC, v:1, k:fup@baruel, mode:FULL, rate:0, size:48
+2026-06-10 01:29:12, MOVE, v:1, k:fup@baruel, mode:PICK
+2026-06-10 01:29:14, EXEC, v:1, k:fup@baruel, mode:FULL, rate:0, size:48
+2026-06-10 01:31:32, MOVE, v:1, k:fup@baruel, mode:BACK
+2026-06-10 01:32:30, MOVE, v:1, k:fup@parkour, mode:PICK
+2026-06-10 01:32:56, MOVE, v:1, k:fup@parkour, mode:BACK
+2026-06-10 01:32:57, MOVE, v:1, k:fup@parkour, mode:PICK
+2026-06-10 01:33:10, MOVE, v:1, k:fup@parkour, mode:BACK
+2026-06-10 01:33:39, MOVE, v:1, k:fup@jedi, mode:PICK
+2026-06-10 01:33:43, EXEC, v:1, k:fup@jedi, mode:FULL, rate:0, size:5
+2026-06-10 01:29:14, MOVE, v:1, k:fup@baruel, mode:EDIT
+2026-06-10 01:33:43, MOVE, v:1, k:fup@jedi, mode:EDIT
+2026-06-10 01:33:49, MOVE, v:1, k:fup@baruel, mode:EDIT
+2026-06-10 01:34:19, EXEC, v:1, k:fup@jedi, mode:FULL, rate:100, size:34
+2026-06-10 01:34:23, SELF, v:1, k:fup@jedi, self:1, rate:100
+2026-06-10 01:34:24, EXEC, v:1, k:fup@jedi, mode:FULL, rate:100
+2026-06-10 01:34:25, MOVE, v:1, k:fup@jedi, mode:BACK
+2026-06-10 01:34:52, MOVE, v:1, k:fup@parkour, mode:PICK
+2026-06-10 01:35:03, EXEC, v:1, k:fup@parkour, mode:FULL, size:48, fail:COMP
+2026-06-10 01:35:12, EXEC, v:1, k:fup@parkour, mode:FULL, size:46, fail:COMP
+2026-06-10 01:36:01, EXEC, v:1, k:fup@parkour, mode:FULL, rate:100, size:24
+2026-06-10 01:36:05, SELF, v:1, k:fup@parkour, self:1, rate:100
+2026-06-10 01:36:05, MOVE, v:1, k:fup@parkour, mode:BACK
+2026-06-10 01:36:26, MOVE, v:1, k:fup@troco, mode:PICK
+2026-06-10 01:36:38, EXEC, v:1, k:fup@troco, mode:FULL, rate:100
+2026-06-10 01:36:42, SELF, v:1, k:fup@troco, self:1, rate:100
+2026-06-10 01:36:54, MOVE, v:1, k:fup@troco, mode:BACK
+2026-06-10 13:23:17, MOVE, v:1, k:fup@baruel, mode:PICK
+2026-06-10 13:23:32, EXEC, v:1, k:fup@baruel, mode:FULL, rate:0, size:35
+2026-06-10 13:24:13, EXEC, v:1, k:fup@baruel, mode:FULL, rate:0
+2026-06-10 13:26:10, MOVE, v:1, k:fup@baruel, mode:BACK
+2026-06-10 13:26:16, MOVE, v:1, k:fup@fila, mode:PICK
+2026-06-10 13:28:02, MOVE, v:1, k:fup@fila, mode:BACK
+2026-06-10 13:28:04, MOVE, v:1, k:fup@fila, mode:PICK
+2026-06-10 13:24:12, MOVE, v:1, k:fup@baruel, mode:EDIT
+2026-06-10 13:24:13, MOVE, v:1, k:fup@baruel, mode:EDIT
+2026-06-10 13:32:14, MOVE, v:1, k:fup@fila, mode:EDIT
+2026-06-10 13:37:58, MOVE, v:1, k:fup@fila, mode:EDIT
+2026-06-10 13:41:16, MOVE, v:1, k:fup@fila, mode:EDIT
+2026-06-10 13:48:00, MOVE, v:1, k:fup@fila, mode:EDIT
+2026-06-10 13:48:22, EXEC, v:1, k:fup@fila, mode:FULL, size:28, fail:COMP
+2026-06-10 13:53:03, MOVE, v:1, k:fup@fila, mode:EDIT
+2026-06-10 13:53:07, EXEC, v:1, k:fup@fila, mode:FULL, size:28, fail:COMP
+2026-06-10 13:56:53, MOVE, v:1, k:fup@fila, mode:EDIT
+2026-06-10 14:03:05, MOVE, v:1, k:fup@fila, mode:EDIT
+2026-06-10 14:03:10, EXEC, v:1, k:fup@fila, mode:FULL, rate:0, size:33
+2026-06-10 14:04:16, EXEC, v:1, k:fup@fila, mode:FULL, rate:0, size:34
+2026-06-10 14:04:32, EXEC, v:1, k:fup@fila, mode:FULL, rate:0, size:34
+2026-06-10 14:04:41, EXEC, v:1, k:fup@fila, mode:FULL, rate:0, size:34
+2026-06-10 14:04:58, EXEC, v:1, k:fup@fila, mode:FULL, rate:0, size:35
+2026-06-10 14:05:05, EXEC, v:1, k:fup@fila, mode:FULL, rate:0, size:35
+2026-06-10 14:05:20, EXEC, v:1, k:fup@fila, mode:FULL, rate:100, size:35
+2026-06-10 14:05:23, SELF, v:1, k:fup@fila, self:1, rate:100
+2026-06-10 14:05:24, EXEC, v:1, k:fup@fila, mode:FULL, rate:100
+2026-06-10 14:05:24, MOVE, v:1, k:fup@fila, mode:BACK
+2026-06-10 14:06:54, MOVE, v:1, k:fup@revolta, mode:PICK
+2026-06-10 14:05:24, MOVE, v:1, k:fup@fila, mode:EDIT
+2026-06-10 14:05:17, MOVE, v:1, k:fup@fila, mode:EDIT
+2026-06-10 14:11:26, EXEC, v:1, k:fup@revolta, mode:FULL, rate:0, size:13
+2026-06-10 14:13:06, MOVE, v:1, k:fup@revolta, mode:EDIT
+2026-06-10 14:11:25, MOVE, v:1, k:fup@revolta, mode:EDIT
+2026-06-10 14:16:19, MOVE, v:1, k:fup@revolta, mode:EDIT
+2026-06-10 15:00:50, MOVE, v:1, k:fup@revolta, mode:PICK
+2026-06-10 15:00:52, EXEC, v:1, k:fup@revolta, mode:FULL, size:27, fail:COMP
+2026-06-10 15:02:10, EXEC, v:1, k:fup@revolta, mode:FULL, size:29, fail:COMP
+2026-06-10 15:02:23, EXEC, v:1, k:fup@revolta, mode:FULL, size:29, fail:COMP
+2026-06-10 15:02:34, EXEC, v:1, k:fup@revolta, mode:FULL, size:29, fail:COMP
+2026-06-10 15:04:38, MOVE, v:1, k:fup@revolta, mode:EDIT
+2026-06-10 17:16:40, MOVE, v:1, k:fup@revolta, mode:PICK
+2026-06-10 17:16:44, EXEC, v:1, k:fup@revolta, mode:FULL, rate:0, size:33
+2026-06-10 17:16:50, EXEC, v:1, k:fup@revolta, mode:FULL, rate:0, size:33
+2026-06-10 17:16:55, EXEC, v:1, k:fup@revolta, mode:FULL, rate:0, size:33
+2026-06-10 17:17:01, EXEC, v:1, k:fup@revolta, mode:FULL, rate:0, size:33
+2026-06-10 17:17:44, EXEC, v:1, k:fup@revolta, mode:FULL, rate:0, size:33
+2026-06-10 17:18:30, EXEC, v:1, k:fup@revolta, mode:FULL, rate:0, size:33
+2026-06-10 17:18:41, EXEC, v:1, k:fup@revolta, mode:FULL, rate:0, size:33
+2026-06-10 17:18:59, EXEC, v:1, k:fup@revolta, mode:FULL, rate:0, size:32
+2026-06-10 17:19:06, EXEC, v:1, k:fup@revolta, mode:FULL, rate:0, size:32
+2026-06-10 17:19:17, EXEC, v:1, k:fup@revolta, mode:FULL, rate:0, size:32
+2026-06-10 17:19:39, EXEC, v:1, k:fup@revolta, mode:FULL, rate:0, size:31
+2026-06-10 17:19:55, EXEC, v:1, k:fup@revolta, mode:FULL, rate:40, size:31
+2026-06-10 17:19:55, MOVE, v:1, k:fup@revolta, mode:EDIT
+2026-06-10 17:19:54, MOVE, v:1, k:fup@revolta, mode:EDIT
+2026-06-10 17:25:58, MOVE, v:1, k:fup@revolta, mode:EDIT
+2026-06-10 17:27:10, EXEC, v:1, k:fup@revolta, mode:FULL, size:31, fail:COMP
+2026-06-10 17:27:46, EXEC, v:1, k:fup@revolta, mode:FULL, rate:80, size:31
+2026-06-10 17:28:52, EXEC, v:1, k:fup@revolta, mode:FULL, rate:100, size:31
+2026-06-10 17:28:59, SELF, v:1, k:fup@revolta, self:1, rate:100
+2026-06-10 17:29:29, MOVE, v:1, k:fup@revolta, mode:BACK
+2026-06-10 17:30:00, MOVE, v:1, k:fup@tazos, mode:PICK
+2026-06-10 17:30:11, EXEC, v:1, k:fup@tazos, mode:FULL, rate:0
+2026-06-10 17:28:52, MOVE, v:1, k:fup@revolta, mode:EDIT
+2026-06-10 17:28:52, MOVE, v:1, k:fup@revolta, mode:EDIT
+2026-06-10 17:30:10, MOVE, v:1, k:fup@tazos, mode:EDIT
+2026-06-10 17:30:57, MOVE, v:1, k:fup@tazos, mode:EDIT
+2026-06-10 17:55:56, EXEC, v:1, k:fup@tazos, mode:FULL, rate:0, size:20
+2026-06-10 17:55:56, EXEC, v:1, k:fup@tazos, mode:FULL, rate:0, size:20
+2026-06-10 17:55:58, EXEC, v:1, k:fup@tazos, mode:FULL, rate:0, size:20
+2026-06-10 17:56:07, EXEC, v:1, k:fup@tazos, mode:FULL, rate:0
+2026-06-10 17:55:38, MOVE, v:1, k:fup@tazos, mode:EDIT
+2026-06-10 17:56:07, MOVE, v:1, k:fup@tazos, mode:EDIT
+2026-06-10 17:56:36, EXEC, v:1, k:fup@tazos, mode:FULL, rate:0
+2026-06-10 17:57:03, EXEC, v:1, k:fup@tazos, mode:FULL, rate:38, size:20
+2026-06-10 17:59:02, EXEC, v:1, k:fup@tazos, mode:FULL, rate:0, size:22
+2026-06-10 17:59:13, EXEC, v:1, k:fup@tazos, mode:FULL, rate:0, size:22
+2026-06-10 17:59:51, EXEC, v:1, k:fup@tazos, mode:FULL, rate:0, size:20
+2026-06-10 18:00:06, EXEC, v:1, k:fup@tazos, mode:FULL, rate:0
+2026-06-10 18:00:49, EXEC, v:1, k:fup@tazos, mode:FULL, rate:0, size:20
+2026-06-10 18:00:56, EXEC, v:1, k:fup@tazos, mode:FULL, rate:38, size:20
+2026-06-10 18:00:56, MOVE, v:1, k:fup@tazos, mode:EDIT
+2026-06-10 18:01:22, MOVE, v:1, k:fup@tazos, mode:EDIT
+2026-06-10 18:04:08, MOVE, v:1, k:fup@tazos, mode:BACK
+2026-06-10 18:04:28, MOVE, v:1, k:fup@revolta, mode:PICK
+2026-06-10 18:04:46, MOVE, v:1, k:fup@revolta, mode:BACK
+2026-06-10 18:06:04, MOVE, v:1, k:fup@tazos, mode:EDIT
+2026-06-10 18:23:17, MOVE, v:1, k:fup@tazos, mode:PICK
+2026-06-10 18:23:18, EXEC, v:1, k:fup@tazos, mode:FULL, size:25, fail:COMP
+2026-06-10 18:24:20, MOVE, v:1, k:fup@tazos, mode:EDIT
+2026-06-10 20:59:08, MOVE, v:1, k:fup@tazos, mode:PICK
+2026-06-10 21:02:18, EXEC, v:1, k:fup@tazos, mode:FULL, rate:0, size:20
+2026-06-10 21:03:08, EXEC, v:1, k:fup@tazos, mode:FULL, rate:0, size:21
+2026-06-10 21:03:17, EXEC, v:1, k:fup@tazos, mode:FULL, rate:0, size:22
+2026-06-10 21:03:30, EXEC, v:1, k:fup@tazos, mode:FULL, rate:0, size:22
+2026-06-10 21:03:40, EXEC, v:1, k:fup@tazos, mode:FULL, rate:0, size:22
+2026-06-10 21:03:40, MOVE, v:1, k:fup@tazos, mode:EDIT
+2026-06-10 21:03:40, MOVE, v:1, k:fup@tazos, mode:EDIT
+2026-06-10 21:03:47, EXEC, v:1, k:fup@tazos, mode:FULL, rate:0, size:22
+2026-06-10 21:03:55, EXEC, v:1, k:fup@tazos, mode:FULL, rate:0, size:22
+2026-06-10 21:04:01, EXEC, v:1, k:fup@tazos, mode:FULL, rate:7, size:22
+2026-06-10 21:08:32, EXEC, v:1, k:fup@tazos, mode:FULL, rate:0, size:29
+2026-06-10 21:08:42, EXEC, v:1, k:fup@tazos, mode:FULL, rate:0
+2026-06-10 21:08:30, MOVE, v:1, k:fup@tazos, mode:EDIT
+2026-06-10 21:08:42, MOVE, v:1, k:fup@tazos, mode:EDIT
+2026-06-10 21:10:34, EXEC, v:1, k:fup@tazos, mode:FULL, rate:7, size:29
+2026-06-10 21:11:03, EXEC, v:1, k:fup@tazos, mode:FULL, rate:7, size:29
+2026-06-10 21:11:24, EXEC, v:1, k:fup@tazos, mode:FULL, size:29, fail:COMP
+2026-06-10 21:11:29, EXEC, v:1, k:fup@tazos, mode:FULL, rate:7, size:29
+2026-06-10 21:11:28, MOVE, v:1, k:fup@tazos, mode:EDIT
+2026-06-10 21:11:29, MOVE, v:1, k:fup@tazos, mode:EDIT
+2026-06-10 23:03:25, MOVE, v:1, k:fup@tazos, mode:PICK
+2026-06-10 23:03:30, EXEC, v:1, k:fup@tazos, mode:FULL, rate:7
+2026-06-10 23:04:04, EXEC, v:1, k:fup@tazos, mode:FULL, size:30, fail:COMP
+2026-06-10 23:04:12, EXEC, v:1, k:fup@tazos, mode:FULL, rate:0, size:31
+2026-06-10 23:04:12, MOVE, v:1, k:fup@tazos, mode:EDIT
+2026-06-10 23:04:10, MOVE, v:1, k:fup@tazos, mode:EDIT
+2026-06-10 23:13:18, MOVE, v:1, k:fup@tazos, mode:EDIT
+2026-06-10 23:18:17, MOVE, v:1, k:fup@tazos, mode:EDIT
+2026-06-10 23:21:54, MOVE, v:1, k:fup@tazos, mode:EDIT
+2026-06-10 23:38:20, MOVE, v:1, k:fup@tazos, mode:EDIT
+2026-06-10 23:38:37, EXEC, v:1, k:fup@tazos, mode:FULL, size:28, fail:COMP
+2026-06-10 23:42:28, MOVE, v:1, k:fup@tazos, mode:EDIT
+2026-06-10 23:47:13, MOVE, v:1, k:fup@tazos, mode:EDIT
+2026-06-10 23:50:25, MOVE, v:1, k:fup@tazos, mode:EDIT
+2026-06-10 23:58:04, MOVE, v:1, k:fup@tazos, mode:EDIT
+2026-06-10 23:59:03, EXEC, v:1, k:fup@tazos, mode:FULL, size:30, fail:COMP
+2026-06-10 23:59:22, EXEC, v:1, k:fup@tazos, mode:FULL, size:29, fail:COMP
