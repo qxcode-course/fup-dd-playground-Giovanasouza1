@@ -14,9 +14,9 @@ func main() {
     for i := 0; i < N; i++ {
         if i == 0 && vetor[i] == 0 && vetor[i + 1] == 0 {
             cont++
-        } else if vetor[i] == 0 && vetor[i - 1] == 0 && vetor[i + 1] == 0 {
-            cont++
         } else if i == N-1 && vetor[i - 1] == 0 && vetor[i] == 0 {
+            cont ++
+        } else if i > 0 && i < N-1 && vetor[i] == 0 && vetor[i-1] == 0 && vetor[i+1] == 0 {
             cont++
         }
 }

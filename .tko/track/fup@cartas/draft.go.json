@@ -1,0 +1,84 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-19_00-26-29",
+            "content": "@@ -239,16 +239,205 @@\n nt(%22A%22)%0A\n+        %7D else if vetor%5Bi%5D == 11  %7B%0A            vetor%5Bi%5D = %22J%22%0A        %7D else if vetor%5Bi%5D == 12  %7B%0A            vetor%5Bi%5D = %22Q%22%0A        %7D else if vetor%5Bi%5D == 13  %7B%0A            vetor%5Bi%5D = %22K%22%0A\n     %7D%0A%7D%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-19_00-26-36",
+            "content": "@@ -161,33 +161,8 @@\n  %7D%0A%0A\n-    fmt.Print(%22%5B %22)%0A    %0A\n     \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-19_00-27-20",
+            "content": "@@ -96,33 +96,8 @@\n , N)\n-%0A    fmt.Print(%22%5B %22)%0A    \n %0A%0A  \n@@ -157,16 +157,41 @@\n %0A    %7D%0A%0A\n+    fmt.Print(%22%5B %22)%0A    %0A\n     for \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-19_00-27-43",
+            "content": "@@ -68,33 +68,8 @@\n &N)%0A\n-     fmt.Print(%22%5B %22)%0A    \n %0A   \n@@ -93,16 +93,36 @@\n int, N)%0A\n+    fmt.Print(%22%5B %22)%0A\n     %0A%0A  \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-19_00-28-00",
+            "content": "@@ -64,16 +64,37 @@\n can(&N)%0A\n+     fmt.Print(%22%5B %22)%0A\n     %0A   \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-19_00-28-10",
+            "content": "@@ -252,182 +252,8 @@\n A%22)%0A\n-    %7D else if vetor%5Bi%5D == 11  %7B%0A           fmt.Print(%22J%22)%0A    %7D else if vetor%5Bi%5D == 12  %7B%0A           fmt.Print(%22Q%22)%0A    %7D else if vetor%5Bi%5D == 13  %7B%0A           fmt.Print(%22K%22)%0A\n     \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-19_00-29-50",
+            "content": "@@ -101,40 +101,8 @@\n  N)%0A\n-    letras := make(%5B%5Dstring, N)%0A\n     \n@@ -236,23 +236,23 @@\n     \n-letras%5Bi%5D = \n+ fmt.Print(\n %22A%22\n+)\n %0A   \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-19_00-32-39",
+            "content": "@@ -327,23 +327,22 @@\n     \n-letras%5Bi%5D = \n+fmt.Print(\n %22J%22\n+)\n %0A   \n@@ -385,23 +385,22 @@\n     \n-letras%5Bi%5D = \n+fmt.Print(\n %22Q%22\n+)\n %0A   \n@@ -443,23 +443,22 @@\n     \n-letras%5Bi%5D = \n+fmt.Print(\n %22K%22\n+)\n %0A   \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-19_00-33-18",
+            "content": "@@ -477,18 +477,17 @@\n Println(\n-l\n+v\n et\n+o\n r\n-as\n )%0A%7D%0A\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-19_00-33-46",
+            "content": "@@ -470,70 +470,25 @@\n %0A%7D%0Af\n-or i :=  0; i %3C N; i++%7B%0Afmt.Println(vetor%5Bi%5D, %22,%22, letras%5Bi%5D)%0A%7D\n+mt.Println(letras)\n %0A%7D%0A\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-19_00-35-45",
+            "content": "@@ -466,24 +466,36 @@\n    %7D\n- else %7B%0A        \n+%0A%7D%0Afor i :=  0; i %3C N; i++%7B%0A\n fmt.\n@@ -499,16 +499,18 @@\n mt.Print\n+ln\n (vetor%5Bi\n@@ -519,35 +519,21 @@\n  %22,%22\n-)%0A    %7D%0A%7D%0Afmt.Println(vetor)\n+, letras%5Bi%5D)%0A%7D\n %0A%7D%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-19_00-37-00",
+            "content": "@@ -224,19 +224,22 @@\n %3C N; i++\n- \n %7B%0A\n+    \n     if v\n@@ -251,16 +251,17 @@\n i%5D == 1 \n+ \n %7B%0A      \n@@ -266,22 +266,25 @@\n     \n-fmt.Print(\n+  letras%5Bi%5D = \n %22A%22\n-)\n %0A   \n@@ -309,16 +309,17 @@\n %5D == 11 \n+ \n %7B%0A      \n@@ -324,22 +324,26 @@\n     \n-fmt.Print(\n+   letras%5Bi%5D = \n %22J%22\n-)\n %0A   \n@@ -368,16 +368,17 @@\n %5D == 12 \n+ \n %7B%0A      \n@@ -383,22 +383,26 @@\n     \n-fmt.Print(\n+   letras%5Bi%5D = \n %22Q%22\n-)\n %0A   \n@@ -427,16 +427,17 @@\n %5D == 13 \n+ \n %7B%0A      \n@@ -442,22 +442,26 @@\n     \n+ \n-fmt.Print(\n+  letras%5Bi%5D = \n %22K%22\n-)\n %0A   \n@@ -492,32 +492,37 @@\n int(vetor%5Bi%5D\n+, %22,%22\n )%0A    %7D%0A\n %0A    if i %3C \n@@ -513,55 +513,27 @@\n   %7D%0A\n-%0A    if i %3C N-1 %7B%0A        fmt.Print(%22,%22)%0A    %7D%0A%7D\n+%7D%0Afmt.Println(vetor)\n %0A%7D%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-19_00-38-40",
+            "content": "@@ -97,16 +97,48 @@\n int, N)%0A\n+    letras := make(%5B%5Dstring, N)%0A\n     %0A%0A  \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-19_00-39-47",
+            "content": "@@ -174,23 +174,8 @@\n     \n-fmt.Print(%22%5B%22)%0A\n for \n@@ -488,17 +488,16 @@\n Print(%22,\n- \n %22)%0A    %7D\n@@ -503,23 +503,6 @@\n %7D%0A%7D%0A\n-fmt.Println(%22%5D%22)%0A\n %7D%0A\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-19_00-41-34",
+            "content": "@@ -185,20 +185,16 @@\n nt(%22%5B%22)%0A\n-    \n for i :=\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-19_12-05-33",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var N int\n    fmt.Scan(&N)\n    \n    vetor := make([]int, N)\n    \n\n    for i := 0; i < N; i++{\n        fmt.Scan(&vetor[i])\n    }\n\n    fmt.Print(\"[\")\n    for i := 0; i < N; i++ {\n    if vetor[i] == 1 {\n        fmt.Print(\"A\")\n    } else if vetor[i] == 11 {\n        fmt.Print(\"J\")\n    } else if vetor[i] == 12 {\n        fmt.Print(\"Q\")\n    } else if vetor[i] == 13 {\n        fmt.Print(\"K\")\n    } else {\n        fmt.Print(vetor[i])\n    }\n\n    if i < N-1 {\n        fmt.Print(\", \")\n    }\n}\nfmt.Println(\"]\")\n}\n",
+            "lines": "33"
+        }
+    ]
+}

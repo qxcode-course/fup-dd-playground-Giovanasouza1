@@ -37,8 +37,58 @@
         },
         {
             "label": "2026-06-17_12-36-22",
-            "content": "vpackage main\nimport \"fmt\"\nfunc main() {\n    var N, M, L int\n    fmt.Scan(&N, &M, &L)\n\n    tamanho := make([]int, M)\n    pe := make([]string, L)\n\n    for i := 0; i < M; i++ {\n        fmt.Scan(&tamanho[i])\n    }\n    for p := 0; p < L; p++ {\n        fmt.Scan(&pe[p])\n    }\n    \n    botas := 0\n    for i := 0; i < M; i++ {\n        if tamanho[i] == tamanho[i]  {\n            botas++\n}\n    }\n    for p := 0; p < L; p++ {\n        if pe[p] == pe[p]  {\n            botas++\n}\n}\n    }\n",
+            "content": "@@ -325,94 +325,122 @@\n     \n-for p := 0; p %3C L; p++ %7B%0A        if tamanho%5Bi%5D == tamanho%5Bi - i%5D && pe%5BL%5D != pe%5BL - 1%5D\n+if tamanho%5Bi%5D == tamanho%5Bi%5D  %7B%0A            botas++%0A%7D%0A    %7D%0A    for p := 0; p %3C L; p++ %7B%0A        if pe%5Bp%5D == pe%5Bp%5D \n  %7B%0A \n@@ -472,27 +472,4 @@\n   %7D%0A\n-    fmt.Print(botas)%0A%7D%0A\n",
             "lines": "28"
+        },
+        {
+            "label": "2026-06-19_12-10-18",
+            "content": "@@ -1,8 +1,9 @@\n+v\n package \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-19_12-10-29",
+            "content": "@@ -380,17 +380,17 @@\n manho%5Bi \n-+\n+-\n  i%5D && p\n@@ -402,17 +402,17 @@\n != pe%5BL \n-+\n+-\n  1%5D %7B%0A  \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-19_12-11-33",
+            "content": "@@ -382,17 +382,21 @@\n nho%5B\n-p\n+i + i\n %5D && pe%5B\n i%5D !\n@@ -395,17 +395,17 @@\n  pe%5B\n-i\n+L\n %5D != pe%5B\n p%5D %7B\n@@ -400,17 +400,21 @@\n %5D != pe%5B\n-p\n+L + 1\n %5D %7B%0A    \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-19_12-13-19",
+            "content": "@@ -425,26 +425,8 @@\n s++%0A\n-            break%0A\n %7D%0A%7D%0A\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-19_12-13-36",
+            "content": "@@ -42,16 +42,22 @@\n    var N\n+, M, L\n  int%0A   \n@@ -68,16 +68,24 @@\n .Scan(&N\n+, &M, &L\n )%0A%0A    t\n@@ -106,17 +106,17 @@\n (%5B%5Dint, \n-N\n+M\n )%0A    pe\n@@ -134,17 +134,17 @@\n string, \n-N\n+L\n )%0A%0A    f\n@@ -150,33 +150,33 @@\n for i := 0; i %3C \n-N\n+M\n ; i++ %7B%0A        \n@@ -215,33 +215,33 @@\n for p := 0; p %3C \n-N\n+L\n ; p++ %7B%0A        \n@@ -303,17 +303,17 @@\n  0; i %3C \n-N\n+M\n ; i++ %7B%0A\n@@ -336,17 +336,17 @@\n  0; p %3C \n-N\n+L\n ; p++ %7B%0A\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-19_12-15-18",
+            "content": "@@ -452,10 +452,8 @@\n rint\n-ln\n (bot\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-19_12-15-24",
+            "content": "@@ -319,13 +319,9 @@\n  := \n-i + 1\n+0\n ; p \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-19_12-16-30",
+            "content": "@@ -185,15 +185,67 @@\n o%5Bi%5D\n-, \n+)%0A    %7D%0A    for p := 0; p %3C N; p++ %7B%0A        fmt.Scan(\n &pe%5B\n-i\n+p\n %5D)%0A \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-19_12-17-40",
+            "content": "@@ -69,23 +69,23 @@\n N)%0A%0A    \n-direita\n+tamanho\n  := make\n@@ -96,21 +96,17 @@\n nt, \n-61)%0A%09esquerda\n+N)%0A    pe\n  := \n@@ -116,15 +116,17 @@\n e(%5B%5D\n+str\n in\n-t, 61\n+g, N\n )%0A%0A \n@@ -157,43 +157,8 @@\n + %7B%0A\n-%09%09var tamanho int%0A%09%09var pe string%0A%0A\n     \n@@ -182,280 +182,221 @@\n anho\n+%5Bi%5D\n , &pe\n-)%0A%0A%09%09if pe == %22D%22 %7B%0A%09%09%09direita%5Btamanho%5D++%0A%09%09%7D else %7B%0A%09%09%09esquerda%5Btamanho%5D++%0A%09%09%7D%0A%09%7D%0A%0A%09botas := 0%0A%0A%09for tamanho\n+%5Bi%5D)%0A    %7D%0A    %0A    botas := 0%0A    for i\n  := \n-3\n 0; \n-tamanho %3C= 60; tamanho++ %7B%0A%09%09if direita%5Btamanho%5D %3C esquerda%5Btamanho%5D %7B%0A%09%09%09botas += direita%5Btamanho%5D%0A%09%09%7D else %7B%0A%09%09%09botas += esquerda%5Btamanho%5D%0A%09%09\n+i %3C N; i++ %7B%0A        for p := i + 1; p %3C N; p++ %7B%0A        if tamanho%5Bi%5D == tamanho%5Bp%5D && pe%5Bi%5D != pe%5Bp%5D %7B%0A            botas++%0A            break%0A\n %7D%0A\n-%09\n %7D%0A\n-%0A%09\n+    %7D%0A    \n fmt.\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-19_12-31-26",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var N int\n    fmt.Scan(&N)\n\n    direita := make([]int, 61)\n\tesquerda := make([]int, 61)\n\n    for i := 0; i < N; i++ {\n\t\tvar tamanho int\n\t\tvar pe string\n\n        fmt.Scan(&tamanho, &pe)\n\n\t\tif pe == \"D\" {\n\t\t\tdireita[tamanho]++\n\t\t} else {\n\t\t\tesquerda[tamanho]++\n\t\t}\n\t}\n\n\tbotas := 0\n\n\tfor tamanho := 30; tamanho <= 60; tamanho++ {\n\t\tif direita[tamanho] < esquerda[tamanho] {\n\t\t\tbotas += direita[tamanho]\n\t\t} else {\n\t\t\tbotas += esquerda[tamanho]\n\t\t}\n\t}\n\n\tfmt.Println(botas)\n}\n",
+            "lines": "34"
         }
     ]
 }

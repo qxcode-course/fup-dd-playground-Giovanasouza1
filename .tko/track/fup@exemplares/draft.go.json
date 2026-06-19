@@ -42,8 +42,113 @@
         },
         {
             "label": "2026-06-16_22-44-29",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var N int\n    fmt.Scan(&N)\n\n    vetor := make([]int, N)\n\n    for i := 0; i < N; i ++ {\n        fmt.Scan(&vetor[i])\n    }\n    primeiro := 0\n     for i := 0; i < N; i ++ {\n        for j := 0; j < N; j++ {\n        if vetor[j] != vetor[i] {\n            primeiro = vetor[j]\n        } else if vetor[j] == vetor[i] {\n            continue\n        }\n    }\n}\n\n fmt.Print(primeiro)\n}\n",
+            "content": "@@ -162,32 +162,25 @@\n   %7D%0A\n-%0A\n     \n-unicos := %5B%5Dint %7B%7D%0A\n+primeiro := 0\n %0A   \n@@ -211,34 +211,8 @@\n + %7B%0A\n-        repetido := false%0A\n     \n@@ -231,27 +231,17 @@\n  0; j %3C \n-len(unicos)\n+N\n ; j++ %7B%0A\n@@ -261,24 +261,22 @@\n tor%5B\n-i%5D == unicos%5Bj%5D \n+j%5D != vetor%5Bi%5D\n  %7B%0A \n@@ -290,194 +290,128 @@\n     \n-repetido = true%0A            break%0A        %7D\n+primeiro = vetor%5Bj%5D%0A        %7D else if vetor%5Bj%5D == vetor%5Bi%5D %7B\n %0A      \n-  %7D%0A\n       \n-  if !repetido %7B%0A        unicos = append(unicos, vetor%5Bi%5D)%0A%7D%0A%7D%0Afor i := 0; i %3C len(unicos); i++ %7B%0A%09%09fmt.Print(unicos%5Bi%5D, %22 %22)%0A%7D\n+continue%0A        %7D%0A    %7D%0A%7D%0A%0A fmt.Print(primeiro)\n %0A%7D%0A\n",
             "lines": "24"
+        },
+        {
+            "label": "2026-06-17_13-06-54",
+            "content": "@@ -504,10 +504,8 @@\n rint\n-ln\n (uni\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-17_13-07-01",
+            "content": "@@ -500,16 +500,18 @@\n mt.Print\n+ln\n (unicos%5B\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-17_13-07-06",
+            "content": "@@ -458,144 +458,8 @@\n %7D%0A%7D%0A\n-for i := 0; i %3C len(unicos); i++ %7B%0A    if unicos%5Bi%5D %3E unicos%5Bi + 1%5D %7B%0A        unicos%5Bi%5D, unicos%5Bi + j%5D = unicos%5Bi +j%5D, unicos%5Bi%5D%0A    %7D%0A%0A\n for \n@@ -521,10 +521,8 @@\n  %22)%0A%7D%0A%7D%0A\n-%7D%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-17_13-14-47",
+            "content": "@@ -1,669 +1,104 @@\n-package main%0Aimport %22fmt%22%0Afunc main() %7B%0A    var N int%0A    fmt.Scan(&N)%0A%0A    vetor := make(%5B%5Dint, N)%0A%0A    for i := 0; i %3C N; i ++ %7B%0A        fmt.Scan(&vetor%5Bi%5D)%0A    %7D%0A%0A    unicos := %5B%5Dint %7B%7D%0A%0A     for i := 0; i %3C N; i ++ %7B%0A        repetido := false%0A        for j := 0; j %3C len(unicos)- 1; j++ %7B%0A        if vetor%5Bi%5D == unicos%5Bj%5D  %7B%0A            repetido = true%0A            break%0A        %7D%0A        %7D%0A        if !repetido %7B%0A        unicos = append(unicos, vetor%5Bi%5D)%0A%7D%0A%7D%0Afor i := 0; i %3C len(unicos); i++ %7B%0A    if unicos%5Bi%5D %3E unicos%5Bi + 1%5D %7B%0A        unicos%5Bi%5D, unicos%5Bi + 1%5D = unicos%5Bi +1%5D, unicos%5Bi%5D%0A    %7D%0A%0Afor i := 0; i %3C len(unicos); i++ %7B%0A%09%09fmt.Print(unicos%5Bi%5D, %22 %22)%0A%7D%0A%7D%0A%7D\n+@@ -554,17 +554,17 @@%0A cos%255Bi + %0A-1%0A+j%0A %255D = unic%0A@@ -569,17 +569,17 @@%0A icos%255Bi +%0A-1%0A+j%0A %255D, unico\n %0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-06-17_13-15-47",
+            "content": "@@ -488,18 +488,16 @@\n cos)\n--1\n ; i++ %7B%0A\n     \n@@ -496,50 +496,8 @@\n + %7B%0A\n-    for j := 0; j %3C len(unicos)-1 -i; i++%0A\n     \n@@ -506,17 +506,17 @@\n  unicos%5B\n-j\n+i\n %5D %3E unic\n@@ -518,18 +518,20 @@\n  unicos%5B\n-j+\n+i + \n 1%5D %7B%0A   \n@@ -542,17 +542,17 @@\n  unicos%5B\n-j\n+i\n %5D, unico\n@@ -553,18 +553,20 @@\n  unicos%5B\n-j+\n+i + \n 1%5D = uni\n@@ -569,17 +569,18 @@\n  unicos%5B\n-j\n+i \n +1%5D, uni\n@@ -587,15 +587,11 @@\n cos%5B\n-j\n+i\n %5D%0A\n-    \n     \n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-06-17_13-20-02",
+            "content": "@@ -535,17 +535,16 @@\n  -i; i++\n-%7B\n %0A    if \n@@ -701,14 +701,12 @@\n  %22 %22)%0A%7D%0A%7D%0A%7D%0A\n-%7D%0A\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-06-17_13-20-23",
+            "content": "@@ -275,16 +275,19 @@\n (unicos)\n+- 1\n ; j++ %7B%0A\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-06-17_13-21-09",
+            "content": "@@ -633,19 +633,16 @@\n       %7D%0A\n-%7D%0A%7D\n %0Afor i :\n@@ -697,12 +697,16 @@\n %5D, %22 %22)%0A%7D%0A%7D%0A\n+%7D%0A%7D%0A\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-06-17_13-22-17",
+            "content": "@@ -529,17 +529,17 @@\n )-1 -i; \n-j\n+i\n ++%7B%0A    \n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-06-17_13-22-58",
+            "content": "@@ -687,10 +687,8 @@\n rint\n-ln\n (uni\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-06-17_13-23-07",
+            "content": "@@ -683,16 +683,18 @@\n mt.Print\n+ln\n (unicos%5B\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-06-17_13-23-13",
+            "content": "@@ -676,74 +676,8 @@\n + %7B%0A\n-    if i == len(unicos)%7B%0A        fmt.Print(unicos%5Bi%5D)%0A    %7D else%7B%0A\n %09%09fm\n@@ -700,14 +700,12 @@\n %5D, %22 %22)%0A%7D%0A%7D%0A\n-%7D%0A\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-06-17_13-25-11",
+            "content": "@@ -676,33 +676,76 @@\n + %7B%0A\n-%09%09\n+    \n if i \n-%3E 0 %7B%0A            \n+== len(unicos)%7B%0A        fmt.Print(unicos%5Bi%5D)%0A    %7D else%7B%0A%09%09\n fmt.\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-06-17_13-30-53",
+            "content": "@@ -711,35 +711,26 @@\n int(\n-%22 %22)%0A%7D%0A%7D%0Afmt.Println(unicos)\n+unicos%5Bi%5D, %22 %22)%0A%7D%0A%7D\n %0A%7D%0A\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-06-17_13-31-40",
+            "content": "@@ -714,16 +714,18 @@\n (%22 %22)%0A%7D%0A\n+%7D%0A\n fmt.Prin\n@@ -734,17 +734,12 @@\n n(unicos\n-%5Bi%5D)%0A%7D\n+)\n %0A%7D%0A\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-06-17_13-32-14",
+            "content": "@@ -723,16 +723,18 @@\n mt.Print\n+ln\n (unicos%5B\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-06-17_13-32-21",
+            "content": "@@ -727,10 +727,8 @@\n rint\n-ln\n (uni\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-06-17_13-34-27",
+            "content": "@@ -710,10 +710,8 @@\n rint\n-ln\n (%22 %22\n@@ -723,16 +723,18 @@\n mt.Print\n+ln\n (unicos%5B\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-06-17_13-34-37",
+            "content": "@@ -706,16 +706,18 @@\n mt.Print\n+ln\n (%22 %22)%0A%7D%0A\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-06-17_13-34-42",
+            "content": "@@ -741,20 +741,6 @@\n )%0A%7D%0A\n-fmt.Println()%0A\n %7D%0A\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-06-17_13-35-47",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var N int\n    fmt.Scan(&N)\n\n    vetor := make([]int, N)\n\n    for i := 0; i < N; i ++ {\n        fmt.Scan(&vetor[i])\n    }\n\n    unicos := []int {}\n\n     for i := 0; i < N; i ++ {\n        repetido := false\n        for j := 0; j < len(unicos); j++ {\n        if vetor[i] == unicos[j]  {\n            repetido = true\n            break\n        }\n        }\n        if !repetido {\n        unicos = append(unicos, vetor[i])\n}\n}\nfor i := 0; i < len(unicos)-1; i++ {\n    for j := 0; j < len(unicos)-1 -i; j++{\n    if unicos[j] > unicos[j+1] {\n        unicos[j], unicos[j+1] = unicos[j+1], unicos[j]\n        }\n}\n}\nfor i := 0; i < len(unicos); i++ {\n\t\tif i > 0 {\n            fmt.Print(\" \")\n}\nfmt.Print(unicos[i])\n}\nfmt.Println()\n}\n",
+            "lines": "41"
         }
     ]
 }

@@ -1,35 +1,62 @@
 package main
-import "fmt"
-func main() {
-    var qtd, possui int
-    fmt.Scan(&qtd,&possui)
 
-    // Popula o Slice
-    slice := make([]int, possui)
-    for i := 0; i < possui; i++{
-        fmt.Scan(&slice[i])
+import "fmt"
+
+func main() {
+    var N, M int
+
+    fmt.Scan(&N)
+    fmt.Scan(&M)
+
+    fig := make([]int, M)
+
+    for i := 0; i < M; i++ {
+        fmt.Scan(&fig[i])
     }
 
-    // Verifica as repetidas
-    for i:= 1; i < possui; i++{
-        if (slice[i] == slice[i - 1]){
-            fmt.Print(slice[i]," ");
+    temRepetida := false
+
+    for i := 1; i < M; i++ {
+        if fig[i] == fig[i-1] {
+            if temRepetida {
+                fmt.Print(" ")
+            }
+            fmt.Print(fig[i])
+            temRepetida = true
         }
     }
-    fmt.Println("\b")
 
-    // Encontra as que faltam
-    for i := 1; i <= qtd; i++{
-        encontrado := false
-        for j := 0; j < possui; j++{
-            if slice[j] == i{
-                encontrado = true
+    if !temRepetida {
+        fmt.Print("N")
+    }
+
+    fmt.Println()
+
+    temFaltando := false
+
+    for num := 1; num <= N; num++ {
+
+        encontrou := false
+
+        for i := 0; i < M; i++ {
+            if fig[i] == num {
+                encontrou = true
                 break
             }
         }
-        if encontrado == false{
-            fmt.Print(i," ")
+
+        if !encontrou {
+            if temFaltando {
+                fmt.Print(" ")
+            }
+            fmt.Print(num)
+            temFaltando = true
         }
     }
-    fmt.Println("\b")
+
+    if !temFaltando {
+        fmt.Print("N")
+    }
+
+    fmt.Println()
 }

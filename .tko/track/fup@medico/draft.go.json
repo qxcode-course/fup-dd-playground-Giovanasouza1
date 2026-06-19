@@ -77,7 +77,27 @@
         },
         {
             "label": "2026-06-16_22-51-25",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var N int\n    fmt.Scan(&N)\n\n    vetor := make([]int, N)\n\n    for i := 0; i < N; i++ {\n        fmt.Scan(&vetor[i])\n    }\n\n    cont := 0\n    for i := 0; i < N; i++ {\n        if i == 0 && vetor[i] == 0 && vetor[i + 1] == 0 {\n            cont++\n        } else if vetor[i] == 0 && vetor[i - 1] == 0 && vetor[i + 1] == 0 {\n            cont++\n        } else if i == N-1 && vetor[i - 1] == 0 && vetor[i] == 0 {\n            cont++\n        }\n}\nfmt.Println(cont)\n}\n",
+            "content": "@@ -300,24 +300,21 @@\n  if \n-else if i\n+vetor%5Bi%5D\n  == \n-N-1\n+0\n  && \n@@ -337,24 +337,28 @@\n 0 && vetor%5Bi\n+ + 1\n %5D == 0 %7B%0A   \n@@ -374,31 +374,75 @@\n cont\n- \n ++%0A    \n-%0A\n     \n-    \n %7D else\n+ if i == N-1 && vetor%5Bi - 1%5D == 0 && vetor%5Bi%5D == 0\n  %7B%0A \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-18_23-19-44",
+            "content": "@@ -292,24 +292,32 @@\n   %7D else if \n+else if \n i == N-1 && \n@@ -373,16 +373,21 @@\n cont ++%0A\n+    %0A\n         \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-18_23-19-57",
+            "content": "@@ -384,121 +384,8 @@\n lse \n-if i %3E 0 && i %3C N-1 &&%0A            vetor%5Bi%5D == 0 &&%0A            vetor%5Bi-1%5D == 0 &&%0A            vetor%5Bi+1%5D == 0 %7B%0A\n %7B%0A  \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-18_23-21-06",
+            "content": "@@ -398,24 +398,36 @@\n & i %3C N-1 &&\n+%0A           \n  vetor%5Bi%5D ==\n@@ -423,32 +423,44 @@\n vetor%5Bi%5D == 0 &&\n+%0A           \n  vetor%5Bi-1%5D == 0\n@@ -454,32 +454,44 @@\n tor%5Bi-1%5D == 0 &&\n+%0A           \n  vetor%5Bi+1%5D == 0\n@@ -485,32 +485,34 @@\n tor%5Bi+1%5D == 0 %7B%0A\n+%7B%0A\n             cont\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-18_23-22-00",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var N int\n    fmt.Scan(&N)\n\n    vetor := make([]int, N)\n\n    for i := 0; i < N; i++ {\n        fmt.Scan(&vetor[i])\n    }\n\n    cont := 0\n    for i := 0; i < N; i++ {\n        if i == 0 && vetor[i] == 0 && vetor[i + 1] == 0 {\n            cont++\n        } else if i == N-1 && vetor[i - 1] == 0 && vetor[i] == 0 {\n            cont ++\n        } else if i > 0 && i < N-1 && vetor[i] == 0 && vetor[i-1] == 0 && vetor[i+1] == 0 {\n            cont++\n        }\n}\nfmt.Println(cont)\n}\n",
             "lines": "24"
         }
     ]

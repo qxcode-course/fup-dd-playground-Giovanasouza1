@@ -25,12 +25,6 @@ import "fmt"
     }
     func main (){
         var qtd int
-        fmt.Scan(&qtd)
-        var vetor float64
-        fmt.Scan(&vetor)
-        m := media(vetor)
-        fmt.Print(m)
-        fmt.Printf("%.2f\n", soldado(vetor))
-        
+    
         
     }

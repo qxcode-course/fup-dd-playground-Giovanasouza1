@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-19_13-34-03",
+            "content": "@@ -320,16 +320,18 @@\n %3C ultimo\n+%5D=\n  %7B%0A     \n@@ -354,18 +354,18 @@\n       %7D%0A\n-%7D%0A\n+  \n   fmt.Pr\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-19_13-34-23",
+            "content": "@@ -355,68 +355,9 @@\n    %7D\n- else if vetor%5Bi%5D == primeiro && vetor%5Bi%5D == ultimo %7B%0A%7D%0A    \n+%0A\n %7D%0A  \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-19_13-34-57",
+            "content": "@@ -405,35 +405,16 @@\n ltimo %7B%0A\n-            cont++%0A\n %7D%0A    %7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-19_13-35-06",
+            "content": "@@ -385,10 +385,10 @@\n iro \n-%7C%7C\n+&&\n  vet\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-19_13-37-24",
+            "content": "@@ -145,33 +145,45 @@\n    for i := \n-0\n+primeiro\n ; i %3C= \n-N\n+ultimo\n ; i++ %7B%0A    \n@@ -239,23 +239,34 @@\n for \n- \n i := \n-0\n+primeiro\n ; i %3C= \n-N\n+ultimo\n ; i+\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-19_13-38-39",
+            "content": "@@ -147,32 +147,33 @@\n  for i := 0; i %3C\n+=\n  N; i++ %7B%0A      \n@@ -235,16 +235,17 @@\n = 0; i %3C\n+=\n  N; i++ \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-19_13-39-16",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var N, primeiro, ultimo int\n    fmt.Scan(&N, &primeiro, &ultimo)\n\n    vetor := make([]int, N)\n    \n    for i := 0; i < N; i++ {\n        fmt.Scan(&vetor[i])\n    }\n\n    cont := 0\n    for  i := 0; i < N; i++ {\n        if vetor[i] > primeiro && vetor[i] < ultimo {\n            cont++\n        } else if vetor[i] == primeiro || vetor[i] == ultimo {\n            cont++\n}\n    }\n  fmt.Println(cont)\n}\n",
+            "lines": "22"
+        }
+    ]
+}

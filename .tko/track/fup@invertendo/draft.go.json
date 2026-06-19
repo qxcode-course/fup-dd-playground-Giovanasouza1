@@ -1,0 +1,94 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-19_01-04-08",
+            "content": "@@ -297,34 +297,6 @@\n %5D%0A%7D%0A\n-fmt.Println(vetorinvertido)%0A\n %7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-19_01-04-43",
+            "content": "@@ -325,21 +325,6 @@\n do)%0A\n-fmt.Print(%22%5D%22)%0A\n %7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-19_01-05-06",
+            "content": "@@ -297,24 +297,8 @@\n %5D%0A%7D%0A\n-fmt.Print(%22%5B %22)%0A\n fmt.\n@@ -330,18 +330,16 @@\n mt.Print\n-ln\n (%22%5D%22)%0A%7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-19_01-05-46",
+            "content": "@@ -293,16 +293,32 @@\n  - i%5D%0A%7D%0A\n+fmt.Print(%22%5B %22)%0A\n fmt.Prin\n@@ -337,11 +337,27 @@\n ertido)%0A\n+fmt.Println(%22%5D%22)\n %0A%7D%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-19_01-06-10",
+            "content": "@@ -309,13 +309,8 @@\n tln(\n-%22 %22, \n veto\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-19_01-06-22",
+            "content": "@@ -68,26 +68,8 @@\n &N)%0A\n-    fmt.Print(%22%5B%22)\n %0A   \n@@ -305,16 +305,21 @@\n Println(\n+%22 %22, \n vetorinv\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-19_01-06-49",
+            "content": "@@ -315,49 +315,8 @@\n %5D%0A%7D%0A\n-if vetor%5Bi%5D == N && vetor%5Bi%5D == vetor%5B0%5D%0A\n fmt.\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-19_01-08-41",
+            "content": "@@ -355,31 +355,8 @@\n r%5B0%5D\n- %7B%0A    fmt.Print(%22 %22)%0A%7D\n %0Afmt\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-19_01-08-57",
+            "content": "@@ -1,8 +1,29 @@\n+@@ -1,282 +1,114 @@%0A-\n package \n@@ -30,22 +30,30 @@\n main\n-%0A\n+%250A\n import \n-%22fmt%22%0A\n+%2522fmt%2522%250A\n func\n@@ -60,18 +60,22 @@\n  main() \n-%7B%0A\n+%257B%250A\n     var \n@@ -79,17 +79,19 @@\n ar N int\n-%0A\n+%250A\n     fmt.\n@@ -98,17 +98,19 @@\n Scan(&N)\n-%0A\n+%250A\n     fmt.\n@@ -119,13 +119,21 @@\n int(\n-%22%5B%22)%0A\n+%2522%255B%2522)%250A\n     \n@@ -148,34 +148,40 @@\n mal := make(\n-%5B%5D\n+%255B%255D\n int, N)\n-%0A\n+%250A\n     vetorinv\n@@ -199,23 +199,31 @@\n ake(\n-%5B%5D\n+%255B%255D\n int, N)\n-%0A\n+%250A\n     \n-%0A\n+%250A\n     \n@@ -232,33 +232,35 @@\n r i := 0; i \n-%3C\n+%253C\n  N; i++ \n %7B%0A        fm\n@@ -239,34 +239,38 @@\n 0; i %253C N; i++ \n-%7B%0A\n+%257B%250A\n         fmt.Scan\n@@ -286,20 +286,32 @@\n rmal\n-%5Bi%5D)%0A    %7D%0A%0A\n+%255Bi%255D)%250A    %257D%250A%250A\n     \n@@ -324,25 +324,27 @@\n := 0; i \n-%3C\n+%253C\n  N; i++ \n %7B%0A      \n@@ -339,23 +339,80 @@\n i++ \n-%7B%0A\n+%257B%250A\n        \n+%0A+@@ -315,33 +315,24 @@%250A %25255D%25250A%25257D%25250Aif\n  vetor\n+%250A-\n inve\n@@ -416,19 +416,131 @@\n nvertido\n-%5Bi%5D\n+%250A %25255Bi%25255D == N && %250A@@ -332,33 +332,24 @@%250A = N &&%0A  vetor%0A+%250A-%0A inve%0A@@ -116,73 +116,60 @@%0A tido%0A-%255Bi%255D\n  = vetor\n@@ -545,17 +545,19 @@\n ornormal\n-%5B\n+%255B\n N - 1 - \n@@ -561,102 +561,296 @@\n  - i\n-%5D%0A%7D%0Afmt.Print(%22%5B %22)%0Afor i := 0; i %3C N; i++ %7B%0Afmt.Println(vetorinvertido%5Bi%5D)%0A%7D%0Afmt.Println(%22 %5D%22)%0A%7D\n+%255D%250A%257D%250Aif vetorinvertido%255Bi%255D == N &&%0A+%250A %25255Bi%25255D == vetor%250A@@ -348,25 +348,16 @@%250A ==%0A  vetor%0A+%250A-%0A inve%0A@@ -177,83 +177,23 @@%0A tido%0A-%255Bi%255D == vetorinvertido%255B0%255D %257B%250A    fmt.Print(%2522 %2522)%250A%257D%250Afmt.Println(vetorinvertido)%250A%250A%257D%0A+%250A %25255B0%25255D %25257B%25250A  %0A %250A\n %0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-19_01-11-43",
+            "content": "@@ -361,16 +361,18 @@\n mt.Print\n+ln\n (vetorin\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-19_01-11-50",
+            "content": "@@ -383,13 +383,8 @@\n o%5Bi%5D\n-, %22 %22\n )%0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-19_01-12-16",
+            "content": "@@ -311,16 +311,32 @@\n  - i%5D%0A%7D%0A\n+fmt.Print(%22%5B %22)%0A\n for i :=\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-19_01-12-25",
+            "content": "@@ -340,24 +340,8 @@\n + %7B%0A\n-fmt.Print(%22%5B %22)%0A\n fmt.\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-19_01-12-41",
+            "content": "@@ -336,16 +336,32 @@\n ; i++ %7B%0A\n+fmt.Print(%22%5B %22)%0A\n fmt.Prin\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-19_01-12-56",
+            "content": "@@ -315,24 +315,8 @@\n %5D%0A%7D%0A\n-fmt.Print(%22%5B %22)%0A\n for \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-19_01-13-12",
+            "content": "@@ -67,16 +67,31 @@\n (&N)%0A   \n+ fmt.Print(%22%5B%22)\n %0A    vet\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-19_01-14-00",
+            "content": "@@ -386,14 +386,15 @@\n rintln(%22\n+ \n %5D%22)%0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-19_01-14-06",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var N int\n    fmt.Scan(&N)\n   \n    vetornormal := make([]int, N)\n    vetorinvertido := make([]int, N)\n    \n    for i := 0; i < N; i++ {\n        fmt.Scan(&vetornormal[i])\n    }\n\n    for i := 0; i < N; i++ {\n        vetorinvertido[i] = vetornormal[N - 1 - i]\n}\nfmt.Print(\"[ \")\nfor i := 0; i < N; i++ {\nfmt.Print(vetorinvertido[i], \" \")\n}\nfmt.Println(\"]\")\n}\n",
+            "lines": "22"
+        }
+    ]
+}

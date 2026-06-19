@@ -1,0 +1,59 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-19_00-10-32",
+            "content": "@@ -216,23 +216,21 @@\n if ve %3C \n-paredes\n+vetor\n %5Bi%5D %7B%0A  \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-19_00-10-48",
+            "content": "@@ -233,36 +233,8 @@\n %5D %7B%0A\n-            ve = paredes%5Bi%5D%0A\n     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-19_00-11-13",
+            "content": "@@ -138,17 +138,16 @@\n mt.Scan(\n-&\n paredes%5B\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-19_00-11-42",
+            "content": "@@ -303,10 +303,8 @@\n rint\n-ln\n (con\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-19_00-11-52",
+            "content": "@@ -290,70 +290,8 @@\n    %7D\n- else if ve == parede%5Bi%5D %7B%0A            continue%0A        %7D%0A    \n %0A%0A%7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-19_00-12-38",
+            "content": "@@ -303,25 +303,24 @@\n ve == parede\n-s\n %5Bi%5D %7B%0A      \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-19_00-12-46",
+            "content": "@@ -326,16 +326,24 @@\n         \n+continue\n %0A       \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-19_00-12-54",
+            "content": "@@ -174,18 +174,9 @@\n  := \n-paredes%5B0%5D\n+1\n %0A   \n@@ -185,17 +185,17 @@\n or i := \n-1\n+0\n ; i %3C N;\n@@ -277,16 +277,66 @@\n  cont++%0A\n+        %7D else if ve == paredes%5Bi%5D %7B%0A            %0A\n         \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-19_00-13-56",
+            "content": "@@ -162,17 +162,17 @@\n cont := \n-0\n+1\n %0Ave := p\n@@ -186,33 +186,33 @@\n 0%5D%0A    for i := \n-0\n+1\n ; i %3C N; i++ %7B%0A \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-19_00-14-18",
+            "content": "@@ -170,17 +170,26 @@\n 0%0Ave := \n-0\n+paredes%5B0%5D\n %0A    for\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-19_00-15-13",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var N int\n    fmt.Scan(&N)\n\n    paredes := make([]int, N)\n\n    for i := 0; i < N; i++ {\n    fmt.Scan(&paredes[i])\n}\n\ncont := 0\nve := 0\n    for i := 0; i < N; i++ {\n        if ve < paredes[i] {\n            ve = paredes[i]\n            cont++\n        }\n    \n\n}\nfmt.Println(cont)\n}\n",
+            "lines": "24"
+        }
+    ]
+}

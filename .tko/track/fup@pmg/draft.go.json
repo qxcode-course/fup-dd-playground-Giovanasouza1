@@ -77,8 +77,13 @@
         },
         {
             "label": "2026-06-16_17-02-08",
-            "content": "package main\nimport \"fmt\"\n\n    func media(vetor []int) float64 {\n        soma := 0.0\n        for i := 0; i < len(vetor); i++ {\n            soma += float64(vetor[i])\n        }\n     media := soma / float64(len(vetor))\n     return media\n    } \n    \n\n    func soldado(vetor []int) {\n    m := media(vetor)\n    for i := 0; i < len(vetor); i++ {\n        if float64(vetor[i]) == m {\n            fmt.Println(\"M\")\n        } else if float64(vetor[i]) < m {\n            fmt.Println(\"P\")\n        } else if float64(vetor[i]) > m {\n            fmt.Println(\"G\")\n        }\n    }\n    }\n    func main (){\n        var qtd int\n        fmt.Scan(&qtd)\n        var vetor float64\n        fmt.Scan(&vetor)\n        m := media(vetor)\n        fmt.Print(m)\n        fmt.Printf(\"%.2f\\n\", soldado(vetor))\n        \n        \n    }\n",
+            "content": "@@ -599,24 +599,194 @@\n qtd int%0A    \n+    fmt.Scan(&qtd)%0A        var vetor float64%0A        fmt.Scan(&vetor)%0A        m := media(vetor)%0A        fmt.Print(m)%0A        fmt.Printf(%22%25.2f%5Cn%22, soldado(vetor))%0A        \n %0A        %0A  \n",
             "lines": "36"
+        },
+        {
+            "label": "2026-06-19_12-46-07",
+            "content": "package main\nimport \"fmt\"\n\n    func media(vetor []int) float64 {\n        soma := 0.0\n        for i := 0; i < len(vetor); i++ {\n            soma += float64(vetor[i])\n        }\n     media := soma / float64(len(vetor))\n     return media\n    } \n    \n\n    func soldado(vetor []int) {\n    m := media(vetor)\n    for i := 0; i < len(vetor); i++ {\n        if float64(vetor[i]) == m {\n            fmt.Println(\"M\")\n        } else if float64(vetor[i]) < m {\n            fmt.Println(\"P\")\n        } else if float64(vetor[i]) > m {\n            fmt.Println(\"G\")\n        }\n    }\n    }\n    func main (){\n        var qtd int\n    \n        \n    }\n",
+            "lines": "30"
         }
     ]
 }
