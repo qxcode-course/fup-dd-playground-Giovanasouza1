@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-22_19-05-40",
+            "content": "@@ -181,17 +181,16 @@\n  i++ %7B%0A%0A\n-%0A\n %09%09if jog\n@@ -397,16 +397,17 @@\n %0A%09%09%7D%0A%09%7D%0A\n+%0A\n %09return \n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-06-22_19-10-38",
+            "content": "package main\n\nimport \"fmt\"\n\ntype Jogada struct {\n\tp1 int\n\tp2 int\n}\n\nfunc procurar_melhor_jogada(jogadas []Jogada) int {\n\tmelhor := -1\n\tmenorDif := 0\n\n\tfor i := 0; i < len(jogadas); i++ {\n\n\n\t\tif jogadas[i].p1 < 10 || jogadas[i].p2 < 10 {\n\t\t\tcontinue\n\t\t}\n\n\t\tdif := jogadas[i].p1 - jogadas[i].p2\n\n\t\tif dif < 0 {\n\t\t\tdif = -dif\n\t\t}\n\n\t\tif melhor == -1 || dif < menorDif {\n\t\t\tmelhor = i\n\t\t\tmenorDif = dif\n\t\t}\n\t}\n\treturn melhor\n}\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tjogadas := make([]Jogada, n)\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&jogadas[i].p1, &jogadas[i].p2)\n\t}\n\n\tganhador := procurar_melhor_jogada(jogadas)\n\n\tif ganhador == -1 {\n\t\tfmt.Println(\"sem ganhador\")\n\t} else {\n\t\tfmt.Println(ganhador)\n\t}\n}\n",
+            "lines": "52"
+        }
+    ]
+}

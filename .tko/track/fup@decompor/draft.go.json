@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-22_19-54-02",
+            "content": "@@ -169,16 +169,17 @@\n o%5Bqtd%5D =\n+=\n  numero \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-22_19-54-30",
+            "content": "@@ -289,10 +289,8 @@\n rint\n-ln\n (vet\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-22_19-54-44",
+            "content": "@@ -285,16 +285,18 @@\n mt.Print\n+ln\n (vetorva\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-22_19-54-51",
+            "content": "@@ -347,10 +347,8 @@\n rint\n-ln\n (%22 %22\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-22_19-55-00",
+            "content": "@@ -343,16 +343,18 @@\n mt.Print\n+ln\n (%22 %22)%0A  \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-22_19-55-07",
+            "content": "@@ -369,26 +369,6 @@\n   %7D%0A\n-      fmt.Println()%0A\n %7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-22_19-56-08",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var numero int\n    fmt.Scan(&numero)\n\n    vetorvazio := make([]int, 8) \n\n    qtd := 0\n    for numero > 0 {\n        vetorvazio[qtd] = numero % 10\n        qtd++\n        numero = numero / 10\n    }\n     for i := qtd - 1; i >= 0; i-- {\n        fmt.Print(vetorvazio[i])\n\n        if i != 0 {\n            fmt.Print(\" \")\n        }\n    }\n      fmt.Println()\n}\n",
+            "lines": "23"
+        }
+    ]
+}

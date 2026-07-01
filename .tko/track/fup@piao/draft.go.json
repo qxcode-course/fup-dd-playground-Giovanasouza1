@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-22_18-32-54",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var L, N int\n    fmt.Scan(&L, &N)\n\n    jogadas := make([]int, N)\n\n    for i := 0; i < N; i++ {\n        fmt.Scan(&jogadas[i])\n    }   \n\n\n    jog0 := 0\n     for i := 0; i < N; i++ {\n        if jogadas[i] >\n        }\n    }\n}\n",
+            "lines": "19"
+        }
+    ]
+}

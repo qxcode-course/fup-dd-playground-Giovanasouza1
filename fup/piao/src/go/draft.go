@@ -11,12 +11,9 @@ func main() {
     }   
 
 
-    jog0 := 0
+    dist := jogadas[i]
      for i := 0; i < N; i++ {
-        if jogadas[i] < jogadas[i + 1]{
-           fmt.Println(jogador[i + 1])
-        } else if jogadas[i] == jogadas[i + 1] {
-            fmt.
-        } else {
-            fmt.Print("nenhum")
+        if jogadas[i] 
         }
+    }
+}

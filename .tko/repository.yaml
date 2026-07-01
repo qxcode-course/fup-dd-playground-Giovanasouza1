@@ -19,11 +19,11 @@ sources:
   writeable: false
   quests: null
 expanded:
-- fup@string
-- fup@for2
-- fup@struct
 - fup@mat
+- fup@struct
 - fup@list
+- fup@for2
+- fup@string
 flags:
   inbox: all
   panel: skills
@@ -31,5 +31,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@mmc
-selected_index: 52
+selected: fup@blackjack
+selected_index: 48
