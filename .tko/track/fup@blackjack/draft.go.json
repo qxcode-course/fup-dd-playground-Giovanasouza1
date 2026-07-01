@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-01_12-56-48",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var qtd int\n    fmt.Scan(&qtd)\n\n    soma := 0\n    ases := 0\n\n    for i := 0; i < qtd; i++ {\n\t\tvar carta int\n\t\tfmt.Scan(&carta)\n\n\t\tif carta == 1 {\n            soma += 11\n\t\t\tases++\n        } else if carta == 11 || carta == 12 || carta == 13 {\n\t\t\tsoma += 10\n\t\t} else {\n\t\t\tsoma += carta\n\t\t}\n\t}\n    for soma > 21 && ases > 0 {\n\t\tsoma -= 10\n\t\tases--\n\t}\n\n\tfmt.Println(soma)\n}\n",
+            "lines": "29"
+        }
+    ]
+}

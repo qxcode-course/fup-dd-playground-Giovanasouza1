@@ -12,8 +12,18 @@
         },
         {
             "label": "2026-06-05_14-23-37",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    fmt.Scan(&a, &b)\n\n    contador := 0\n    if b == 0 && a == 0 {\n        fmt.Println(1)\n    } else {\n    for i := b; i < 0; i /= 10 {\n    \n    \n         aux := i % 10\n         if a == aux {\n            contador++\n         }\n        }\n    fmt.Println(contador)\n}\n}\n",
+            "content": "@@ -181,24 +181,34 @@\n ; i /= 10 %7B%0A\n+    %0A    %0A\n          aux\n",
             "lines": "21"
+        },
+        {
+            "label": "2026-07-01_12-29-15",
+            "content": "@@ -174,9 +174,9 @@\n ; i \n-%3E\n+%3C\n  0; \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-07-01_12-36-23",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    fmt.Scan(&a, &b)\n\n    contador := 0\n    if b == 0 && a == 0 {\n        fmt.Println(1)\n    } else {\n    for i := b; i > 0; i /= 10 {\n         aux := i % 10\n         if a == aux {\n            contador++\n         }\n        }\n    fmt.Println(contador)\n}\n}\n",
+            "lines": "19"
         }
     ]
 }

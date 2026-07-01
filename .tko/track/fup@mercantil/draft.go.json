@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-01_13-10-50",
+            "content": "@@ -794,16 +794,18 @@\n mt.Print\n+ln\n (%22segund\n@@ -838,16 +838,18 @@\n mt.Print\n+ln\n (%22empate\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-07-01_13-11-09",
+            "content": "@@ -836,18 +836,16 @@\n mt.Print\n-ln\n (%22empate\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-07-01_13-11-45",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,20 +37,28 @@\n ) %7B%0A\n-%09\n+    \n var \n-n\n+qtd\n  int%0A\n-%09\n+    \n fmt.\n@@ -67,19 +67,23 @@\n an(&\n-n)%0A%0A%09\n+qtd)%0A%0A    \n valor\n- \n := m\n@@ -101,18 +101,22 @@\n 64, \n-n)%0A%09\n+qtd)%0A    \n chute\n- \n := m\n@@ -134,12 +134,17 @@\n 64, \n-n)%0A%09\n+qtd)%0A    \n esco\n@@ -167,13 +167,18 @@\n ne, \n-n)%0A%0A%09\n+qtd)%0A%0A    \n for \n@@ -181,33 +181,35 @@\n for i := 0; i %3C \n-n\n+qtd\n ; i++ %7B%0A%09%09fmt.Sc\n@@ -235,33 +235,35 @@\n for i := 0; i %3C \n-n\n+qtd\n ; i++ %7B%0A%09%09fmt.Sc\n@@ -289,33 +289,35 @@\n for i := 0; i %3C \n-n\n+qtd\n ; i++ %7B%0A%09%09fmt.Sc\n@@ -336,17 +336,20 @@\n i%5D)%0A%09%7D%0A%0A\n-%09\n+    \n primeiro\n@@ -354,17 +354,20 @@\n ro := 0%0A\n-%09\n+    \n segundo \n@@ -371,18 +371,20 @@\n do := 0%0A\n-%0A%09\n+    \n for i :=\n@@ -395,17 +395,19 @@\n i %3C \n-n\n+qtd\n ; i++ %7B%0A\n %0A%09%09i\n@@ -402,19 +402,24 @@\n ; i++ %7B%0A\n-%0A%09%09\n+        \n if chute\n@@ -433,22 +433,30 @@\n valor%5Bi%5D\n- \n %7B%0A\n-%09%09%09\n+            \n primeiro\n@@ -450,34 +450,40 @@\n      primeiro++%0A\n-%09%09\n+        \n %7D else if escolh\n@@ -511,35 +511,44 @@\n i%5D %3C chute%5Bi%5D %7B%0A\n-%09%09%09\n+            \n primeiro++%0A%09%09%7D e\n@@ -538,26 +538,32 @@\n  primeiro++%0A\n-%09%09\n+        \n %7D else if es\n@@ -590,17 +590,17 @@\n alor%5Bi%5D \n-%3E\n+%3C\n  chute%5Bi\n@@ -603,19 +603,28 @@\n te%5Bi%5D %7B%0A\n-%09%09%09\n+            \n primeiro\n@@ -626,18 +626,24 @@\n meiro++%0A\n-%09%09\n+        \n %7D else %7B\n@@ -647,30 +647,51 @@\n e %7B%0A\n-%09%09%09segundo++%0A%09%09%7D%0A%09%7D%0A%0A%09\n+            segundo++%0A        %7D%0A    %7D%0A%0A    \n if p\n@@ -706,26 +706,32 @@\n %3E segundo %7B%0A\n-%09%09\n+        \n fmt.Println(\n@@ -738,25 +738,28 @@\n %22primeiro%22)%0A\n-%09\n+    \n %7D else if se\n@@ -777,18 +777,24 @@\n meiro %7B%0A\n-%09%09\n+        \n fmt.Prin\n@@ -794,18 +794,16 @@\n mt.Print\n-ln\n (%22segund\n@@ -806,17 +806,20 @@\n gundo%22)%0A\n-%09\n+    \n %7D else %7B\n@@ -819,18 +819,24 @@\n  else %7B%0A\n-%09%09\n+        \n fmt.Prin\n@@ -849,13 +849,16 @@\n mpate%22)%0A\n-%09\n+    \n %7D%0A%7D%0A\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-07-01_13-12-41",
+            "content": "@@ -142,14 +142,12 @@\n e(%5B%5D\n-string\n+rune\n , n)\n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-07-01_13-14-24",
+            "content": "@@ -437,11 +437,11 @@\n  == \n-%22M%22\n+'M'\n  && \n@@ -506,11 +506,11 @@\n  == \n-%22m%22\n+'m'\n  && \n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-07-01_13-14-41",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tvalor := make([]float64, n)\n\tchute := make([]float64, n)\n\tescolha := make([]string, n)\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&valor[i])\n\t}\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&chute[i])\n\t}\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&escolha[i])\n\t}\n\n\tprimeiro := 0\n\tsegundo := 0\n\n\tfor i := 0; i < n; i++ {\n\n\t\tif chute[i] == valor[i] {\n\t\t\tprimeiro++\n\t\t} else if escolha[i] == \"M\" && valor[i] < chute[i] {\n\t\t\tprimeiro++\n\t\t} else if escolha[i] == \"m\" && valor[i] > chute[i] {\n\t\t\tprimeiro++\n\t\t} else {\n\t\t\tsegundo++\n\t\t}\n\t}\n\n\tif primeiro > segundo {\n\t\tfmt.Println(\"primeiro\")\n\t} else if segundo > primeiro {\n\t\tfmt.Println(\"segundo\")\n\t} else {\n\t\tfmt.Println(\"empate\")\n\t}\n}\n",
+            "lines": "48"
+        }
+    ]
+}
